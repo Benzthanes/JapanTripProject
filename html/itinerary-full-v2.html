@@ -1,0 +1,1982 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan Trip · Benz & Unz · ธ.ค. 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── VARIABLES ── */
+:root {
+  --bg:            #f0f2f5;
+  --card:          #ffffff;
+  --transport:     #2563eb;
+  --transport-bg:  #eff6ff;
+  --place:         #16a34a;
+  --place-bg:      #f0fdf4;
+  --food:          #dc2626;
+  --food-bg:       #fef2f2;
+  --tip:           #d97706;
+  --tip-bg:        #fffbeb;
+  --hotel:         #7c3aed;
+  --hotel-bg:      #f5f3ff;
+  --text:          #111827;
+  --text-2:        #6b7280;
+  --text-3:        #9ca3af;
+  --border:        #e5e7eb;
+  --radius:        12px;
+  --shadow:        0 1px 3px rgba(0,0,0,.08);
+}
+
+/* ── BASE ── */
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Sarabun', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  min-height: 100vh;
+}
+
+/* ── APP HEADER ── */
+.app-header {
+  background: #1a1a2e;
+  color: white;
+  padding: 14px 16px 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.app-header h1 { font-size: 1.1rem; font-weight: 800; }
+.app-header span { font-size: 0.82rem; opacity: 0.55; }
+
+/* ── DAY TABS ── */
+.day-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #1a1a2e;
+  display: flex;
+  overflow-x: auto;
+  gap: 6px;
+  padding: 0 12px 12px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.day-tabs::-webkit-scrollbar { display: none; }
+
+.tab {
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 22px;
+  padding: 7px 14px;
+  color: rgba(255,255,255,0.55);
+  font-family: 'Sarabun', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.3;
+  -webkit-tap-highlight-color: transparent;
+  transition: background 0.15s, color 0.15s;
+}
+.tab .tab-day { font-size: 0.9rem; font-weight: 800; }
+.tab .tab-date { font-size: 0.72rem; opacity: 0.8; }
+.tab.active { background: white; color: #1a1a2e; }
+.tab.active .tab-date { opacity: 0.55; }
+
+/* ── MAIN ── */
+main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
+
+.day-section { display: none; }
+.day-section.active { display: block; }
+
+/* ── DAY HEADING ── */
+.day-heading { margin-bottom: 14px; }
+.day-heading .label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 2px;
+}
+.day-heading .title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.3;
+}
+.day-heading .subtitle {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  margin-top: 2px;
+}
+
+/* ── SECTION LABEL ── */
+.sec { margin: 18px 0 8px 2px; }
+.sec-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+/* ── BASE CARD ── */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+/* Card header strip */
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 11px 14px;
+}
+.card-head .icon { font-size: 1.15rem; line-height: 1.4; }
+.card-head .info { flex: 1; min-width: 0; }
+.card-head .info .name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.card-head .info .meta {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+/* Card body */
+.card-body {
+  padding: 10px 14px 12px;
+  border-top: 1px solid var(--border);
+}
+.card-body p {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+/* ── TRANSPORT CARD ── */
+.card.transport { border-left: 4px solid var(--transport); }
+.card.transport .card-head { background: var(--transport-bg); }
+.card.transport .card-head .name { color: var(--transport); }
+
+/* ── PLACE CARD ── */
+.card.place { border-left: 4px solid var(--place); }
+.card.place .card-head { background: var(--place-bg); }
+.card.place .card-head .name { color: var(--place); }
+
+/* ── FOOD CARD ── */
+.card.food { border-left: 4px solid var(--food); }
+.card.food .card-head { background: var(--food-bg); }
+.card.food .card-head .name { color: var(--food); }
+
+/* ── TIP CARD ── */
+.card.tip {
+  border-left: 4px solid var(--tip);
+  background: var(--tip-bg);
+  padding: 12px 14px;
+}
+.card.tip .tip-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--tip);
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card.tip ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.card.tip li {
+  font-size: 0.92rem;
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.55;
+}
+.card.tip li::before { content: '·'; position: absolute; left: 4px; color: var(--tip); font-weight: 900; }
+
+/* ── HOTEL CARD ── */
+.card.hotel {
+  border-left: 4px solid var(--hotel);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+}
+.card.hotel .icon { font-size: 1.4rem; }
+.card.hotel .name { font-size: 0.9rem; font-weight: 700; color: var(--hotel); }
+.card.hotel .meta { font-size: 0.78rem; color: var(--text-2); margin-top: 2px; }
+
+/* ── MAP BUTTON ── */
+.map-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  min-height: 44px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  margin-top: 10px;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.15s;
+}
+.map-btn:active { opacity: 0.75; }
+.map-btn.place { background: var(--place); }
+.map-btn.food { background: var(--food); }
+.map-btn.transport { background: var(--transport); }
+
+/* ── STEP LIST ── */
+.steps { display: flex; flex-direction: column; gap: 10px; }
+.step { display: flex; gap: 10px; align-items: flex-start; }
+.step-num {
+  flex-shrink: 0;
+  width: 22px; height: 22px;
+  background: var(--transport);
+  color: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; font-weight: 800;
+  margin-top: 2px;
+}
+.step-text { font-size: 0.92rem; line-height: 1.55; flex: 1; }
+
+/* ── INFO ROWS ── */
+.info-rows { display: flex; flex-direction: column; }
+.info-row {
+  display: flex;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+  align-items: baseline;
+}
+.info-row:last-child { border-bottom: none; padding-bottom: 0; }
+.info-row .lbl {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--text-3);
+  min-width: 48px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+.info-row .val { flex: 1; line-height: 1.5; }
+
+/* ── TAGS ── */
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; }
+.tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.tag-must  { background: #fee2e2; color: #dc2626; }
+.tag-free  { background: #dcfce7; color: #16a34a; }
+.tag-book  { background: #fef3c7; color: #d97706; }
+.tag-price { background: #f3f4f6; color: #374151; }
+.tag-rate  { background: #fef9c3; color: #854d0e; }
+
+/* ── DIVIDER ── */
+.divider { height: 1px; background: var(--border); margin: 8px 0; }
+
+/* ── EXTRA OPTIONS LIST ── */
+.extra-list { display: flex; flex-direction: column; }
+.extra-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  -webkit-tap-highlight-color: transparent;
+}
+.extra-item:last-child { border-bottom: none; }
+.extra-item:active { background: #f9fafb; }
+.extra-item .ei-icon { font-size: 1rem; flex-shrink: 0; }
+.extra-item .ei-info { flex: 1; min-width: 0; }
+.extra-item .ei-name { font-size: 0.92rem; font-weight: 600; }
+.extra-item .ei-meta { font-size: 0.8rem; color: var(--text-2); margin-top: 2px; }
+.extra-item .ei-map {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--place);
+  background: var(--place-bg);
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ── EMPTY STATE ── */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-3);
+  font-size: 0.9rem;
+}
+
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <h1>🇯🇵 Japan Trip</h1>
+  <span>Benz & Unz · 10–22 ธ.ค. 2026</span>
+</header>
+
+<nav class="day-tabs" id="dayTabs">
+  <button class="tab active" data-day="0"><span class="tab-day">Day 0</span><span class="tab-date">10/12 พฤ</span></button>
+  <button class="tab" data-day="1"><span class="tab-day">Day 1</span><span class="tab-date">11/12 ศ</span></button>
+  <button class="tab" data-day="2"><span class="tab-day">Day 2</span><span class="tab-date">12/12 ส</span></button>
+  <button class="tab" data-day="3"><span class="tab-day">Day 3</span><span class="tab-date">13/12 อา</span></button>
+  <button class="tab" data-day="4"><span class="tab-day">Day 4</span><span class="tab-date">14/12 จ</span></button>
+  <button class="tab" data-day="5"><span class="tab-day">Day 5</span><span class="tab-date">15/12 อ</span></button>
+  <button class="tab" data-day="6"><span class="tab-day">Day 6</span><span class="tab-date">16/12 พ</span></button>
+  <button class="tab" data-day="7"><span class="tab-day">Day 7</span><span class="tab-date">17/12 พฤ</span></button>
+  <button class="tab" data-day="8"><span class="tab-day">Day 8</span><span class="tab-date">18/12 ศ</span></button>
+  <button class="tab" data-day="9"><span class="tab-day">Day 9</span><span class="tab-date">19/12 ส</span></button>
+  <button class="tab" data-day="10"><span class="tab-day">Day 10</span><span class="tab-date">20/12 อา</span></button>
+  <button class="tab" data-day="11"><span class="tab-day">Day 11</span><span class="tab-date">21/12 จ</span></button>
+  <button class="tab" data-day="12"><span class="tab-day">✈️</span><span class="tab-date">22/12 อ</span></button>
+</nav>
+
+<main>
+  <!-- ══ DAY 0 ══ -->
+  <section class="day-section active" id="day-0">
+    <div class="day-heading">
+      <div class="label">Day 0 · 10 ธ.ค. 2026 · พฤหัสบดี</div>
+      <div class="title">✈️ เดินทางถึงโตเกียว</div>
+      <div class="subtitle">NH878 · ถึง Haneda 22:10 · นอน Asakusabashi</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03" target="_blank">
+      <span class="icon">🏨</span>
+      <div>
+        <div class="name">Toyoko Inn Asakusabashi</div>
+        <div class="meta">2 คืน (10–11 ธ.ค.) · Late check-in ได้ ✅ จองแล้ว</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">ขั้นตอนสนามบิน</div></div>
+    <div class="card tip">
+      <div class="tip-title">📋 ทำตามลำดับ</div>
+      <ul>
+        <li>ลงเครื่อง Terminal 3 → เดินตาม Immigration → ยื่น Passport + Visit Japan Web QR</li>
+        <li>รับกระเป๋า → ผ่าน Customs → ออก Arrivals Hall ชั้น 1</li>
+        <li>ซื้อ <strong>Suica (ตู้สีเขียว JR East)</strong> ก่อนลงรถไฟ</li>
+        <li>เลือก <strong>Name-Inscribed</strong> — ถ้าหายออกใหม่ได้ (ค่ามัดจำ 500¥) · Blank = ถ้าหายหายเลย</li>
+        <li>ซื้อสำรองได้ที่ Ninja Wifi ชั้น 2 เปิดถึง 23:45</li>
+      </ul>
+    </div>
+
+    <div class="sec"><div class="sec-label">เดินทางไปที่พัก</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🔴</span>
+        <div class="info">
+          <div class="name">ทาง 1 — Keikyu Line → Asakusabashi</div>
+          <div class="meta">⭐ แนะนำสุด · ไม่ต้องเปลี่ยนสาย · ~610¥ · ~35 นาที</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">ออก Arrival Hall → ป้ายสีแดง <strong>Keikyu Line</strong> → ลงชานชาลา</span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้นขบวนที่เขียน <strong>Through Asakusa / Oshiage / Aoto</strong> — ห้ามขึ้น Yokohama</span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">ลง <strong>Asakusabashi (A16)</strong> → ออก Exit A3 → เลี้ยวขวา เดิน 150 ม. → โรงแรม</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">⬛</span>
+        <div class="info">
+          <div class="name">ทาง 2 — Monorail → Daimon → Asakusabashi</div>
+          <div class="meta">~650¥ · ⚠️ ต้องถึง Daimon ก่อน 00:05</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">เข้า Monorail → ขึ้น Platform 2 <strong>For Hamamatsucho</strong></span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ลง Hamamatsucho → ออก North Exit → เดินตรง → ลงใต้ดิน <strong>Daimon (A09)</strong> Exit B4</span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">สาย A สีชมพู ไป Asakusa/Oshiage → ลง <strong>Asakusabashi (A16)</strong> → ออก Exit 3 → เลี้ยวขวา</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚂</span>
+        <div class="info">
+          <div class="name">ทาง 3 — Monorail → JR Akihabara → Asakusabashi</div>
+          <div class="meta">~650¥ · ทางสำรอง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">Monorail → Hamamatsucho → ป้าย <strong>Transfer to JR</strong> (ไม่ต้องออกตึก)</span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">Yamanote / Keihin-Tohoku ชานชาลา 4 → ไปทาง Tokyo/Ueno → ลง <strong>Akihabara</strong></span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">Chuo-Sobu Line ชานชาลา 6 → ไปทาง Chiba → ลง <strong>Asakusabashi</strong> → ออก Exit 3 → เลี้ยวขวา</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">อาหาร</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🏪</span>
+        <div class="info">
+          <div class="name">Lawson / 7-Eleven</div>
+          <div class="meta">🌙 ดึก · ถึงดึก ไม่ต้องหาร้าน · ~600¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>Lawson Chicken + Onigiri + ของว่าง มีทุกสาขาใกล้โรงแรม</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DAY 1 ══ -->
+  <section class="day-section" id="day-1">
+    <div class="day-heading">
+      <div class="label">Day 1 · 11 ธ.ค. 2026 · ศุกร์</div>
+      <div class="title">🛍️ Shopping Day</div>
+      <div class="subtitle">Shinjuku + Harajuku · ซื้อเสื้อกันหนาว</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03" target="_blank">
+      <span class="icon">🏨</span>
+      <div>
+        <div class="name">Toyoko Inn Asakusabashi</div>
+        <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เช้า — Shinjuku</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">☕</span>
+        <div class="info">
+          <div class="name">7-Eleven ใกล้โรงแรม</div>
+          <div class="meta">☀️ เช้า · Onigiri + กาแฟ</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🧥</span>
+        <div class="info">
+          <div class="name">Uniqlo Shinjuku Flagship</div>
+          <div class="meta">เปิด 10:00 · ฟรีเข้า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ซื้อก่อนเลย!</span><span class="tag tag-free">ฟรีเข้า</span></div>
+        <p style="margin-top:8px">Heattech + Ultra Light Down — ซื้อก่อนออกจาก Shinjuku วันต่อๆ ไปหนาวมาก โดยเฉพาะ Kawaguchiko</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/UNIQLO+Shinjuku+Honten+(Flagship+Store)/data=!4m2!3m1!1s0x60188d0034883f09:0xd2a050fb0a44b058" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">👕</span>
+        <div class="info">
+          <div class="name">GU Shinjuku</div>
+          <div class="meta">แฟชั่น ถูกกว่า Uniqlo · ฟรีเข้า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/GU+Bic+Camera+Shinjuku+East+Exit+Store/data=!4m2!3m1!1s0x60188cda44100001:0x73c544829526b6cd" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — Harajuku</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍜</span>
+        <div class="info">
+          <div class="name">Afuri Shibuya Dōgenzaka</div>
+          <div class="meta">⭐ 4.8 · ราเมงยูซุ · ~950¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">แนะนำสุด</span></div>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Afuri+Shibuya+Dōgenzaka/data=!4m2!3m1!1s0x60188b00639fa863:0xea13c2e94629f523" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — Harajuku</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">⛩️</span>
+        <div class="info">
+          <div class="name">ศาลเจ้าเมจิ</div>
+          <div class="meta">⭐ 4.6 · ฟรีเข้า · เดิน 5 นาทีจากสถานี</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>ศาลเจ้าชินโตกลางสวนป่า เงียบสงบ บรรยากาศดีมาก</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/ศาลเจ้าเมจิ/data=!4m2!3m1!1s0x60188cb79a4c26e5:0x8fca893849103f73" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🛍️</span>
+        <div class="info">
+          <div class="name">Takeshita Street</div>
+          <div class="meta">เสื้อผ้าสไตล์ญี่ปุ่น vintage · ฟรีเข้า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>เดินจากปากซอยจนสุด → วนออก Cat Street (Ura-Harajuku) เงียบกว่าและ local กว่า</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Takeshita+Street/data=!4m2!3m1!1s0x60188d795a699d2f:0x3499ed0ca0a1edf9" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥞</span>
+        <div class="info">
+          <div class="name">Marion Crepes</div>
+          <div class="meta">ของกินระหว่างเดิน · ~600¥</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เย็น</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍜</span>
+        <div class="info">
+          <div class="name">Ichiran Ramen Shinjuku</div>
+          <div class="meta">⭐ 4.5 · Solo booth · ~1,200¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>ราเมงโต้เดี่ยว iconic — นั่งคนเดียวในบูธส่วนตัว ปรับความเข้มซุปได้เอง</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/อิชิรัน+สาขาชินจูกุชูโอฮิงาชิกุจิ/data=!4m2!3m1!1s0x60188cda5f050cf1:0x397988c6d1296d56" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">คืน — Illumination</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🎄</span>
+        <div class="info">
+          <div class="name">Shinjuku Southern Terrace</div>
+          <div class="meta">Christmas Illumination · ฟรี</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-free">ฟรี</span></div>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Shinjuku+Southern+Terrace/data=!4m2!3m1!1s0x60188cd021f78cf5:0x823af66c60803c01" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">อย่าพลาด</div></div>
+    <div class="card tip">
+      <div class="tip-title">🌟 Bonus</div>
+      <ul>
+        <li><strong>Omoide Yokocho</strong> — ซอยยากิโทริควัน บรรยากาศโชวะ ถ่ายรูปสวยมาก เปิดแต่เย็น</li>
+        <li><strong>Golden Gai</strong> — บาร์เล็กๆ หลายร้อยร้านในซอยเดียว เข้าไปดูบรรยากาศได้ไม่ต้องดื่ม</li>
+      </ul>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด — Shinjuku / Harajuku</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/Fuunji/data=!4m2!3m1!1s0x60188cd57d3b49e1:0x46a7186ab0a0a14c" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">Fuunji Ramen — Tsukemen</div><div class="ei-meta">⭐ 4.3 · Tsukemen ดังมาก · ไปก่อน 11:00 คิวยาว · ~950¥</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Wagyu+Steak+Hamburger+%26+Ramen+(Halal+Vegan+Gluten+Free)+Shinjuku+Restaurant/data=!4m2!3m1!1s0x60188d0c0928ee9f:0x9c3d641e3f981830" target="_blank"><span class="ei-icon">🥩</span><div class="ei-info"><div class="ei-name">Wagyu Steak Hamburger & Ramen</div><div class="ei-meta">⭐ 4.9 · วากิวฮัมเบอร์เกอร์ · ~2,000¥ · Halal</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Harebare+Pecori+Shinjuku/data=!4m2!3m1!1s0x60188cd79a8cb48b:0x1c2318ad6dabda6a" target="_blank"><span class="ei-icon">🍻</span><div class="ei-info"><div class="ei-name">Harebare Pecori Shinjuku</div><div class="ei-meta">⭐ 4.7 · อิซาคายะบรรยากาศดี · ~3,500¥</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Gyu+Tongue+Lemon+Shinjuku/data=!4m2!3m1!1s0x60188d29c40e3255:0x148f6cd600a5a08" target="_blank"><span class="ei-icon">🥩</span><div class="ei-info"><div class="ei-name">Gyu Tongue Lemon Shinjuku</div><div class="ei-meta">⭐ 4.6 · ลิ้นวัว</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/ステーキライスとカレーの店+センタービーフ+西新宿店/data=!4m2!3m1!1s0x60188d2d13b16a6f:0x4cb4738aca876a63" target="_blank"><span class="ei-icon">🥩</span><div class="ei-info"><div class="ei-name">Japanese Steak Bowl & Beef Curry</div><div class="ei-meta">⭐ 4.6 · สเต็กบาวล์</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Ichibankaraage/data=!4m2!3m1!1s0x60188d1a196d8f33:0xc7d4939f74fefe35" target="_blank"><span class="ei-icon">🍗</span><div class="ei-info"><div class="ei-name">Ichibankaraage</div><div class="ei-meta">⭐ 4.5 · ไก่ทอด</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/ビーフシチューとハンバーグステーキのお店+BUN吉(ブンキチ)/data=!4m2!3m1!1s0x6018f2a2574bf0df:0x643fb70dbb1cd2" target="_blank"><span class="ei-icon">🍲</span><div class="ei-info"><div class="ei-name">BUN吉 — บีฟสตูว์ + ฮัมเบอร์ก</div><div class="ei-meta">⭐ 4.4</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Shinjiko+Shijimi+Chūkasoba+Kohaku+Main+Store/data=!4m2!3m1!1s0x601861d14a9591d9:0xcd7fdc76ad127c78" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">Shinjiko Shijimi Chūkasoba Kohaku</div><div class="ei-meta">⭐ 4.3 · ราเมงหอยน้ำจืด</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- ══ DAY 2 ══ -->
+  <section class="day-section" id="day-2">
+    <div class="day-heading">
+      <div class="label">Day 2 · 12 ธ.ค. 2026 · เสาร์</div>
+      <div class="title">🗻 เดินทาง → Fujinomiya</div>
+      <div class="subtitle">Check-out Asakusabashi · Check-in Fujinomiya</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f" target="_blank">
+      <span class="icon">🗻</span>
+      <div>
+        <div class="name">Kuretake Inn Premium Fujinomiya</div>
+        <div class="meta">2 คืน (12–13 ธ.ค.) · ⚠️ รอจองเดือน มิ.ย.</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เช้า — เดินทาง</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚌</span>
+        <div class="info">
+          <div class="name">ทาง 1 — บัส Tokyo Station → Fujinomiya</div>
+          <div class="meta">⭐ แนะนำสุด · ~2,000¥ · ~2:30 ชม.</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-book">จองล่วงหน้า 1 เดือน</span></div>
+        <div class="steps" style="margin-top:10px">
+          <div class="step"><span class="step-num">1</span><span class="step-text">โรงแรม → JR Asakusabashi → Akihabara → <strong>Tokyo Station</strong> (Yaesu South Exit)</span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">Bus Terminal → ช่อง 8 หรือ 9 → รถ <strong>Fujikyu</strong> ป้าย Fujinomiya</span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">ลง <strong>Fujinomiya Sta.</strong> → เช็คอิน → วางกระเป๋า</span></div>
+        </div>
+        <p style="margin-top:10px;font-size:0.82rem;color:var(--text-2)">💡 มีรถรับส่งโรงแรม → Akihabara ฟรี เช้าจนถึง 10 โมง</p>
+      </div>
+    </div>
+
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚂</span>
+        <div class="info">
+          <div class="name">ทาง 2 — รถไฟ Tokaido Line → Fuji → Minobu Line</div>
+          <div class="meta">ทางสำรอง · จ่ายผ่าน Suica · ~2,000¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">Asakusabashi → Akihabara → <strong>Tokyo Sta.</strong> ชั้น 2</span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ป้ายสีส้ม <strong>Tokaido Line</strong> ชานชาลา 9–10 → ขึ้นขบวนไป Shizuoka/Shimada หรือ Atami/Numazu</span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">ลง <strong>Fuji Sta.</strong> → ป้ายสีแดง <strong>Minobu Line</strong> → ขบวนสีขาว-ส้ม ทุก 20–30 นาที</span></div>
+          <div class="step"><span class="step-num">4</span><span class="step-text">ลง <strong>Fujinomiya Sta.</strong></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — ใจกลางเมือง Fujinomiya</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">⛩️</span>
+        <div class="info">
+          <div class="name">ศาลเจ้าฟูจิซัง ฮงกู เซ็นเก็น ไทฉะ</div>
+          <div class="meta">⭐ 4.4 · ศาลเจ้าหลักของภูเขาฟูจิ · เดินจากโรงแรม</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/ศาลเจ้าฟูจิซัง+ฮงกุ+เซ็นเก็น+ไทฉะ/data=!4m2!3m1!1s0x601bd4e7917cf813:0xd8084ba66510ceb7" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍜</span>
+        <div class="info">
+          <div class="name">虹屋ミミ — ยากิโซบะฟูจิโนมิยะ</div>
+          <div class="meta">⭐ 4.2 · กลางวัน · ~800¥ · ใกล้ศาลเจ้า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ต้องกิน</span></div>
+        <p style="margin-top:8px">ยากิโซบะสูตรเฉพาะฟูจิโนมิยะ กินกลางวันตรงนี้เลย ก่อนออกนอกเมือง</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/虹屋ミミ/data=!4m2!3m1!1s0x601bd1666367465b:0xdbfd957d44f57795" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — นอกเมือง (~20 นาที)</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">💧</span>
+        <div class="info">
+          <div class="name">น้ำตกชิราอิโตะ</div>
+          <div class="meta">⭐ 4.4 · น้ำตกม่านขาว UNESCO</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/น้ำตกชิราอิโตะ/data=!4m2!3m1!1s0x601bdaee0081ae4d:0x92a3a8ec3ba65a3" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌉</span>
+        <div class="info">
+          <div class="name">Takido Bridge</div>
+          <div class="meta">⭐ 4.4 · วิวฟูจิ · ใกล้น้ำตก</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Takido+Bridge/data=!4m2!3m1!1s0x601bd49b630f1631:0x637f0ea0fc90a31d" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เย็น — กลับเมือง</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">Sawayaka Fujinishiki</div>
+          <div class="meta">⭐ 4.4 · ฮัมเบิร์กสเต็ก · ~1,500¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ห้ามพลาด</span></div>
+        <p style="margin-top:8px">ไม่รับจอง — ไปรอคิวก่อนร้านเปิด รอ 1–3 ชม. ปกติ</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Sawayaka+Fujinishiki+Store/data=!4m2!3m1!1s0x601a2b27565f9a19:0x987914d11f91a8b6" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🔥</span>
+        <div class="info">
+          <div class="name">焼肉ふじ山 富士宮店</div>
+          <div class="meta">⭐ 4.8 · ยากินิคุ · สำรอง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/焼肉ふじ山+富士宮店/data=!4m2!3m1!1s0x601bd141f004c22d:0x1ad6a865946a4697" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด — Fujinomiya</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/Sagami/data=!4m2!3m1!1s0x601bd15df8d95555:0x29be8035f8df0e19" target="_blank"><span class="ei-icon">🍱</span><div class="ei-info"><div class="ei-name">Sagami Fujinomiya</div><div class="ei-meta">⭐ 4.8 · อาหารญี่ปุ่น local</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Abe/data=!4m2!3m1!1s0x601bd161cc1ee105:0x58f8902cceae8e6d" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">Abe</div><div class="ei-meta">⭐ 4.6</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/ぽっかぽか食堂/data=!4m2!3m1!1s0x601a319c7f2fde91:0x975d0b51a2defbb5" target="_blank"><span class="ei-icon">🍱</span><div class="ei-info"><div class="ei-name">ぽっかぽか食堂</div><div class="ei-meta">⭐ 4.6 · บ้านๆ อบอุ่น</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Sano+Seicha/data=!4m2!3m1!1s0x601bd383c2b81157:0xe6a4ccbfe9edf2c3" target="_blank"><span class="ei-icon">🍵</span><div class="ei-info"><div class="ei-name">Sano Seicha</div><div class="ei-meta">⭐ 4.5 · ชาเขียว (แวะระหว่างทาง)</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c" target="_blank"><span class="ei-icon">🍮</span><div class="ei-info"><div class="ei-name">Fujisan Pudding</div><div class="ei-meta">⭐ 4.5 · พุดดิ้งรูปฟูจิ</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/とんかつ零+富士駅前店/data=!4m2!3m1!1s0x601a2b58143ca617:0x555203cb144c26b8" target="_blank"><span class="ei-icon">🍱</span><div class="ei-info"><div class="ei-name">とんかつ零</div><div class="ei-meta">⭐ 4.4 · ทงคัทสุ</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/The+Blues+Noodles/data=!4m2!3m1!1s0x601bd16f5fd3c3a5:0xd2943cf6eba2c3a8" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">The Blues Noodles</div><div class="ei-meta">⭐ 4.3 · ราเมง</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DAY 3 ══ -->
+  <section class="day-section" id="day-3">
+    <div class="day-heading">
+      <div class="label">Day 3 · 13 ธ.ค. 2026 · อาทิตย์</div>
+      <div class="title">🗻 Fujinomiya Day 2</div>
+      <div class="subtitle">วัด · สตรอว์เบอร์รี่ · เนื้อดัง</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f" target="_blank">
+      <span class="icon">🗻</span>
+      <div>
+        <div class="name">Kuretake Inn Premium Fujinomiya</div>
+        <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เช้า — ทิศตะวันออกของเมือง</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🏯</span>
+        <div class="info">
+          <div class="name">Taisekiji Sanmon Gate</div>
+          <div class="meta">⭐ 4.7 · ประตูวัดใหญ่ · ~15 นาทีจากเมือง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Taisekiji+Sanmon+Gate/data=!4m2!3m1!1s0x601bd138c9b4b399:0x5d621bf73ecf030b" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌊</span>
+        <div class="info">
+          <div class="name">Ryuganbuchi</div>
+          <div class="meta">⭐ 4.3 · แอ่งน้ำธรรมชาติ · ใกล้ Taisekiji</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Ryuganbuchi/data=!4m2!3m1!1s0x601bd5d1a18b8889:0xcf8979f96fb67468" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — กลับเมือง</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍱</span>
+        <div class="info">
+          <div class="name">楽味人 / らくみん</div>
+          <div class="meta">⭐ 4.8 · Local gem · กลางวัน</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ดาวสูงสุด</span></div>
+        <a class="map-btn food" href="https://www.google.com/maps/place/楽味人+%2F+らくみん/data=!4m2!3m1!1s0x601bd161686cbeeb:0x95b421b2ad0c6ecb" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — ทางตะวันตก</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🍓</span>
+        <div class="info">
+          <div class="name">Strawberry Field</div>
+          <div class="meta">⭐ 4.4 · เก็บสตรอว์เบอร์รี่สด</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Strawberry+Field/data=!4m2!3m1!1s0x601a30cf0cbe36b9:0xe65189eccc84948e" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍰</span>
+        <div class="info">
+          <div class="name">Yamasan Strawberry Farm Cafe</div>
+          <div class="meta">⭐ 4.3 · คาเฟ่ในฟาร์มสตรอว์เบอร์รี่</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>แวะกินของหวานได้เลยหลังเก็บ</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Yamasan+Strawberry+Farm+Cafe/data=!4m2!3m1!1s0x601a3708c8e9cc0f:0xbf1cc08eaf19a313" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เย็น — กลับเมือง</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">Sawayaka</div>
+          <div class="meta">⭐ 4.4 · ถ้ายังไม่ได้กินเมื่อวาน</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Sawayaka+Fujinishiki+Store/data=!4m2!3m1!1s0x601a2b27565f9a19:0x987914d11f91a8b6" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">Mr.Aging</div>
+          <div class="meta">⭐ 4.5 · Aged steak เนื้อบ่ม · สำรอง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Mr.Aging/data=!4m2!3m1!1s0x601bd105f9f7376f:0x6d73fdc636e35940" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/Sagami/data=!4m2!3m1!1s0x601bd15df8d95555:0x29be8035f8df0e19" target="_blank"><span class="ei-icon">🍱</span><div class="ei-info"><div class="ei-name">Sagami Fujinomiya</div><div class="ei-meta">⭐ 4.8 · อาหารญี่ปุ่น</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Unaten/data=!4m2!3m1!1s0x601bd163b00e6bb3:0x311ae2c62097dcdc" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">Unaten</div><div class="ei-meta">⭐ 4.4 · ระดับสูง</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/フラワーズ/data=!4m2!3m1!1s0x601a2b4df11134e3:0x4ab3f46f120ef15a" target="_blank"><span class="ei-icon">🌸</span><div class="ei-info"><div class="ei-name">Flowers</div><div class="ei-meta">⭐ 4.4 · ตะวันตก</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c" target="_blank"><span class="ei-icon">🍮</span><div class="ei-info"><div class="ei-name">Fujisan Pudding</div><div class="ei-meta">⭐ 4.5</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">พรุ่งนี้</div></div>
+    <div class="card tip">
+      <div class="tip-title">📋 เตรียมพร้อม</div>
+      <ul>
+        <li>Check-out เช้า → รถออก <strong>07:39</strong> ไป Shizuoka</li>
+        <li>จัดกระเป๋าคืนนี้ ไม่งั้นเช้าจะรีบ</li>
+      </ul>
+    </div>
+  </section>
+  <!-- ══ DAY 4 ══ -->
+  <section class="day-section" id="day-4">
+    <div class="day-heading">
+      <div class="label">Day 4 · 14 ธ.ค. 2026 · จันทร์</div>
+      <div class="title">🚅 เดินทาง → Shizuoka</div>
+      <div class="subtitle">Check-out Fujinomiya · Check-in Shizuoka</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f" target="_blank">
+      <span class="icon">🏙️</span>
+      <div>
+        <div class="name">Hotel Associa Shizuoka</div>
+        <div class="meta">2 คืน (14–15 ธ.ค.) · ✅ จองแล้ว</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เช้า — เดินทาง</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚂</span>
+        <div class="info">
+          <div class="name">JR Minobu Line → Fuji → Tokaido Line</div>
+          <div class="meta">~1,400¥ · ~1:10 ชม. · รถออกเช้าสุด 07:39</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">เดิน 200 ม. → <strong>JR Fujinomiya Sta.</strong> ชานชาลา 1 → Minobu Line ไป Fuji ~25 นาที / <strong>~420¥</strong></span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ที่ <strong>Fuji Sta.</strong> → ป้ายสีส้ม Tokaido Line ชานชาลา 3 หรือ 4 → ไป Shizuoka/Hamamatsu ~45 นาที / <strong>~990¥</strong></span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">ลง <strong>Shizuoka Sta.</strong> → North Exit → เลี้ยวขวา เดิน 1 นาที → โรงแรม</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — ใจกลางเมือง Shizuoka</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🚗</span>
+        <div class="info">
+          <div class="name">Tamiya Headquarters & Shop</div>
+          <div class="meta">⭐ 4.4 · สำนักงานใหญ่ Tamiya · เดินจากสถานี</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Tamiya+Headquarters/data=!4m2!3m1!1s0x601a364076d2c313:0x5c411a7631b58223" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">Sawayaka (สาขา Shizuoka)</div>
+          <div class="meta">⭐ 4.3 · ฮัมเบิร์กสเต็ก · กลางวัน · ใกล้ Tamiya</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ถ้ายังไม่ได้กิน</span></div>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Sawayaka/data=!4m2!3m1!1s0x601a49f7d7dc365b:0xc5c40682ffe03322" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍵</span>
+        <div class="info">
+          <div class="name">Nanaya Shizuoka</div>
+          <div class="meta">⭐ 4.3 · ไอศกรีมชาเขียว ระดับ 1–7 · ของหวานหลังข้าว</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>กินหลัง Sawayaka ก่อนออกนอกเมือง ระดับ 7 = ขมมาก</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Nanaya+Shizuoka/data=!4m2!3m1!1s0x601a49f58a8bce6f:0x90ea0667fe37c95b" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — Nihondaira (~30 นาทีจากเมือง)</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🍵</span>
+        <div class="info">
+          <div class="name">จุดชมวิวไร่ชาเขียวและฟูจิ</div>
+          <div class="meta">⭐ 4.4 · วิวฟูจิหลังไร่ชา · แวะก่อนขึ้น Nihondaira</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/จุดชมวิวไร่ชาเขียวและฟูจิ/data=!4m2!3m1!1s0x601bd5a25f0cd969:0xa5fbeaa053091843" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🏔️</span>
+        <div class="info">
+          <div class="name">Nihondaira Yume Terrace</div>
+          <div class="meta">⭐ 4.3 · จุดชมวิว 360 องศา · ยอดเขา Nihondaira</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Nihondaira+Yume+Terrace/data=!4m2!3m1!1s0x601a37e1806efdb7:0x901b0166105e08f1" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">⛩️</span>
+        <div class="info">
+          <div class="name">Kunōzan Tōshōgū</div>
+          <div class="meta">⭐ 4.4 · ศาลเจ้าบนยอดเขา · ลงจาก Nihondaira ได้เลย</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Kunōzan+Tōshōgū/data=!4m2!3m1!1s0x601a37253a82e1e5:0xffcba401b35afa6d" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">คืน — กลับเมือง</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍢</span>
+        <div class="info">
+          <div class="name">Aoba Oden Street</div>
+          <div class="meta">⭐ 5.0 · โอเด้งเก่าแก่ · ใจกลางเมือง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ห้ามพลาด</span></div>
+        <p style="margin-top:8px">ซอยเล็กๆ มีร้านโอเด้งหลายร้าน นั่งเคาน์เตอร์ บรรยากาศ local มาก</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Aoba+Oden+Street/data=!4m2!3m1!1s0x601a490037ea8be9:0x94d1d86232792a3d" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด — Shizuoka</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/宮本屋/data=!4m2!3m1!1s0x60195e28eba9cc8d:0x79b4e12470cb2b6d" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">Miyamotoya</div><div class="ei-meta">⭐ 4.7</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/SafeHouse/data=!4m2!3m1!1s0x601a4b6424ad7877:0x3300af0098be188a" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">SafeHouse</div><div class="ei-meta">⭐ 4.7</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/えのき/data=!4m2!3m1!1s0x601a49d9188d7a91:0xb19b394cfe834ea1" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">Enoki</div><div class="ei-meta">⭐ 4.5</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/静岡かきセンター+呉服町店/data=!4m2!3m1!1s0x601a49f5f96f8a23:0x21dabdf70da52163" target="_blank"><span class="ei-icon">🦪</span><div class="ei-info"><div class="ei-name">Shizuoka Kaki Center</div><div class="ei-meta">⭐ 4.4 · หอยนางรม</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Kashi-no-Ichi+Market/data=!4m2!3m1!1s0x601a33e2fabe7215:0x790ec2e33bedaf1" target="_blank"><span class="ei-icon">🐟</span><div class="ei-info"><div class="ei-name">Kashi-no-Ichi Market</div><div class="ei-meta">⭐ 4.0 · ตลาดอาหารทะเล</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- ══ DAY 5 ══ -->
+  <section class="day-section" id="day-5">
+    <div class="day-heading">
+      <div class="label">Day 5 · 15 ธ.ค. 2026 · อังคาร</div>
+      <div class="title">🌊 Shizuoka Day 2</div>
+      <div class="subtitle">ศาลเจ้า · ป่าสน UNESCO · อาหารทะเลสด</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f" target="_blank">
+      <span class="icon">🏙️</span>
+      <div>
+        <div class="name">Hotel Associa Shizuoka</div>
+        <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เช้า — ใจกลางเมือง</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">⛩️</span>
+        <div class="info">
+          <div class="name">ศาลเจ้าชิซุโอกะเซ็นเก็น</div>
+          <div class="meta">⭐ 4.3 · เดินจากโรงแรมได้</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/ศาลเจ้าชิซึโอกะเซ็นเก็น/data=!4m2!3m1!1s0x60199a83ba2c46c3:0xbfe48b90f00b10f" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน–บ่าย — Shimizu (~30 นาที)</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌲</span>
+        <div class="info">
+          <div class="name">มิโฮะโนะมัตสึบาระ</div>
+          <div class="meta">⭐ 4.2 · ป่าสนชายหาด UNESCO · วิวฟูจิ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>ป่าสนริมทะเล UNESCO ถ่ายรูปฟูจิคู่ป่าสนได้สวยมาก ก่อนกินข้าวที่ท่าเรือ</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/มิโฮะโนะมัตสึบาระ/data=!4m2!3m1!1s0x601a3053466e6bed:0x64cf88a387b4c212" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🐟</span>
+        <div class="info">
+          <div class="name">Shimizuko Minami</div>
+          <div class="meta">⭐ 4.6 · อาหารทะเลสด · ท่าเรือชิมิสุ · กินหลังเดินป่าสน</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ปลาสดมาก</span></div>
+        <p style="margin-top:8px">อยู่ที่ท่าเรือชิมิสุ แวะกินได้เลยหลังเดินมิโฮะ ไม่ต้องย้อนกลับเมือง</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/清水港みなみ/data=!4m2!3m1!1s0x601a49fbcc6a32c1:0x1fb07338f8134cf0" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">คืน — กลับเมือง</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍶</span>
+        <div class="info">
+          <div class="name">Ho-mei (ほーめい)</div>
+          <div class="meta">⭐ 4.7 · อิซาคายะ local · ใจกลางเมือง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/ほーめい/data=!4m2!3m1!1s0x601960bf5595fdd7:0x6fc913f3c80e4ce2" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/宮本屋/data=!4m2!3m1!1s0x60195e28eba9cc8d:0x79b4e12470cb2b6d" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">Miyamotoya</div><div class="ei-meta">⭐ 4.7 · เมือง</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/SafeHouse/data=!4m2!3m1!1s0x601a4b6424ad7877:0x3300af0098be188a" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">SafeHouse</div><div class="ei-meta">⭐ 4.7 · เมือง</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/えのき/data=!4m2!3m1!1s0x601a49d9188d7a91:0xb19b394cfe834ea1" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">Enoki</div><div class="ei-meta">⭐ 4.5 · เมือง</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/静岡かきセンター+呉服町店/data=!4m2!3m1!1s0x601a49f5f96f8a23:0x21dabdf70da52163" target="_blank"><span class="ei-icon">🦪</span><div class="ei-info"><div class="ei-name">Shizuoka Kaki Center</div><div class="ei-meta">⭐ 4.4 · หอยนางรม · เมือง</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Kashi-no-Ichi+Market/data=!4m2!3m1!1s0x601a33e2fabe7215:0x790ec2e33bedaf1" target="_blank"><span class="ei-icon">🐟</span><div class="ei-info"><div class="ei-name">Kashi-no-Ichi Market</div><div class="ei-meta">⭐ 4.0 · ตลาดทะเล · Shimizu</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">พรุ่งนี้</div></div>
+    <div class="card tip">
+      <div class="tip-title">📋 เตรียมพร้อม</div>
+      <ul>
+        <li>Check-out เช้า → บัสตรงไป <strong>Kawaguchiko</strong> มี 2 รอบ <strong>07:40 / 14:40</strong></li>
+        <li>จองล่วงหน้าที่ sekitori.jp — ที่นั่งเต็มเร็ว</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══ DAY 6 ══ -->
+  <section class="day-section" id="day-6">
+    <div class="day-heading">
+      <div class="label">Day 6 · 16 ธ.ค. 2026 · พุธ</div>
+      <div class="title">🗻 เดินทาง → Kawaguchiko</div>
+      <div class="subtitle">Check-out Shizuoka · Check-in Kawaguchiko</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce" target="_blank">
+      <span class="icon">🏔️</span>
+      <div>
+        <div class="name">Habitacion Station Mobile Cottage</div>
+        <div class="meta">2 คืน (16–17 ธ.ค.) · ✅ จองแล้ว</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เดินทาง Shizuoka → Kawaguchiko</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚌</span>
+        <div class="info">
+          <div class="name">บัส Shizuoka → Kawaguchiko (ตรง)</div>
+          <div class="meta">~2,200¥ · ~2:10 ชม. · ไม่ต้องเปลี่ยน</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-book">จองล่วงหน้า sekitori.jp</span></div>
+        <div class="steps" style="margin-top:10px">
+          <div class="step"><span class="step-num">1</span><span class="step-text">ออกจากโรงแรม → <strong>JR Shizuoka Sta. North Exit</strong> → Bus Terminal ป้าย <strong>หมายเลข 12</strong></span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">มี 2 รอบ: <strong>07:40</strong> หรือ <strong>14:40–15:00</strong> — ถึงก่อน 15 นาที</span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">มี 6 ป้าย ลงป้ายสุดท้าย <strong>Kawaguchiko Sta.</strong></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — ริมทะเลสาบ Kawaguchi</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">☕</span>
+        <div class="info">
+          <div class="name">CAFETINO MT.FUJI</div>
+          <div class="meta">⭐ 4.8 · กาแฟวิวฟูจิ · แวะทันทีหลังเช็คอิน</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/CAFETINO+MT.FUJI/data=!4m2!3m1!1s0x60195f0e69acef3b:0x7748b4fa9ec63a21" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌅</span>
+        <div class="info">
+          <div class="name">Tanukiko Fugaku Terrace</div>
+          <div class="meta">⭐ 4.5 · วิวฟูจิริมทะเลสาบ · ใกล้คาเฟ่</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Tanukiko+Fugaku+Terrace/data=!4m2!3m1!1s0x601bc353f95b5745:0x5546ff72e4ff7c0c" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌲</span>
+        <div class="info">
+          <div class="name">Yagizaki Park</div>
+          <div class="meta">⭐ 4.4 · สวนริมทะเลสาบ · ถ่ายรูปฟูจิได้</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เย็น — ใกล้ที่พัก</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍽️</span>
+        <div class="info">
+          <div class="name">Amano Japanese Restaurant (割烹天野)</div>
+          <div class="meta">⭐ 4.8 · อาหารญี่ปุ่น · ใกล้โรงแรม</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/割烹天野/data=!4m2!3m1!1s0x60196168c0b980c7:0x7b024ba20cc67d2f" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍶</span>
+        <div class="info">
+          <div class="name">Akasaka (海鮮料理赤坂)</div>
+          <div class="meta">⭐ 4.8 · อิซาคายะซีฟู้ด · สำรอง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/海鮮料理赤坂/data=!4m2!3m1!1s0x6019609bb23b896f:0xe4213ccf70294f67" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด — Kawaguchiko</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/KURA+HOUSE+FUJIYOSHIDA/data=!4m2!3m1!1s0x601967c61e5dbe51:0x33629db04c9ffc8c" target="_blank"><span class="ei-icon">☕</span><div class="ei-info"><div class="ei-name">KURA HOUSE FUJIYOSHIDA</div><div class="ei-meta">⭐ 4.9 · คาเฟ่</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/ラ・ヴェルデュール木村屋/data=!4m2!3m1!1s0x60196078d8d009bb:0x20929fe8eee95200" target="_blank"><span class="ei-icon">🍰</span><div class="ei-info"><div class="ei-name">Patisserie Kimuraya</div><div class="ei-meta">⭐ 4.9 · ขนมหวาน</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/シャンテ・ルヴォン/data=!4m2!3m1!1s0x60195e2a18b1ef89:0x73a23ee97b08cee9" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">シャンテ・ルヴォン</div><div class="ei-meta">⭐ 4.8</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/三笑/data=!4m2!3m1!1s0x60195fc919deedf7:0x1ad0d89685a3bade" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">三笑</div><div class="ei-meta">⭐ 4.8 · ญี่ปุ่น</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">toe (トー)</div><div class="ei-meta">⭐ 4.7 · บรรยากาศดี เหมาะหลัง 20:00</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/ディノ+ダイナー/data=!4m2!3m1!1s0x60196508f602fc3b:0xee2dc2fc6fe626e4" target="_blank"><span class="ei-icon">🍔</span><div class="ei-info"><div class="ei-name">Dino DINER</div><div class="ei-meta">⭐ 4.7</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/38KAWAGUCHIKO/data=!4m2!3m1!1s0x60195fd25ac644b3:0xefffd53eaea4da7f" target="_blank"><span class="ei-icon">🍽️</span><div class="ei-info"><div class="ei-name">38KAWAGUCHIKO</div><div class="ei-meta">⭐ 4.6 · relaxed บรรยากาศ Fuji</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">Hoto Tempura Wakana</div><div class="ei-meta">⭐ 4.6 · Hoto เส้นแป้งมิโซะ + เทมปุระ</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/不曹庵/data=!4m2!3m1!1s0x60195fb62a4b31df:0xc57ed562f2d387ea" target="_blank"><span class="ei-icon">🍵</span><div class="ei-info"><div class="ei-name">Fuso Ann (不曹庵)</div><div class="ei-meta">⭐ 4.7 · คาเฟ่ / ของหวาน</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">สิ่งที่ต้องรู้</div></div>
+    <div class="card tip">
+      <div class="tip-title">☁️ Fuji Tips</div>
+      <ul>
+        <li>เมฆมักบัง Fuji <strong>ตอนบ่าย</strong> — วางแผนดูฟูจิตอนเช้าเสมอ</li>
+        <li>ซื้อ <strong>Fuji Five Lakes Omni Bus Pass</strong> ~1,600¥/วัน ใช้ได้ทุกสาย</li>
+      </ul>
+    </div>
+  </section>
+  <!-- ══ DAY 7 ══ -->
+  <section class="day-section" id="day-7">
+    <div class="day-heading">
+      <div class="label">Day 7 · 17 ธ.ค. 2026 · พฤหัสบดี</div>
+      <div class="title">🗻 Kawaguchiko Day 2</div>
+      <div class="subtitle">Chureito · Oshino Hakkai · วิวฟูจิ</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce" target="_blank">
+      <span class="icon">🏔️</span>
+      <div>
+        <div class="name">Habitacion Station Mobile Cottage</div>
+        <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
+      </div>
+    </a>
+
+    <div class="card tip">
+      <div class="tip-title">☁️ Fuji Tips + แผนสำรอง</div>
+      <ul>
+        <li>ดูฟูจิ <strong>ตอนเช้า</strong> เมฆมักบังตอนบ่าย — ออกให้เร็วที่สุด</li>
+        <li>ซื้อ <strong>Fuji Five Lakes Omni Bus Pass</strong> ~1,600¥/วัน ใช้ได้ทุกสาย ไม่ต้องนับเงินทอน</li>
+        <li>🎡 <strong>ถ้าอยากไป Fuji-Q Highland แทน</strong> — ข้าม Chureito + Oshino ได้เลย Fuji-Q ใช้เวลาทั้งวัน ~¥6,000–7,000/คน แนะนำจองออนไลน์ก่อน</li>
+      </ul>
+    </div>
+
+    <div class="sec"><div class="sec-label">เช้ามืด — Fujiyoshida (~15 นาทีจากโรงแรม)</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🗼</span>
+        <div class="info">
+          <div class="name">Chureito Pagoda (Arakurayama Sengen Park)</div>
+          <div class="meta">⭐ 4.7 · 398 ขั้น · วิวฟูจิ + Pagoda · 07:00–08:30</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ห้ามพลาด</span><span class="tag tag-free">ฟรี</span></div>
+        <p style="margin-top:8px">จุดถ่ายรูปฟูจิ + Pagoda คู่กัน iconic ที่สุดในญี่ปุ่น แสงเช้าดีที่สุด ขึ้น 398 ขั้น</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/เจดีย์ชูเรโตะ/data=!4m2!3m1!1s0x6019674cfd52a073:0xda57e34920aee799" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — แถว Oshino</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍜</span>
+        <div class="info">
+          <div class="name">Hoto Tempura Wakana</div>
+          <div class="meta">⭐ 4.6 · Hoto เส้นแป้งมิโซะ + เทมปุระ · ใกล้ Oshino</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">เมนู Kawaguchiko</span></div>
+        <p style="margin-top:8px">กินก่อนไป Oshino Hakkai ร้านอยู่แถวเดียวกัน ไม่ต้องวนรถ</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — Oshino Hakkai</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">💧</span>
+        <div class="info">
+          <div class="name">Oshino Hakkai — หมู่บ้านน้ำใส</div>
+          <div class="meta">⭐ 4.6 · บ่อน้ำผุด 8 แห่ง · วิวฟูจิสะท้อนน้ำ · 14:00–16:00</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ห้ามพลาด</span></div>
+        <p style="margin-top:8px">น้ำใสจนมองเห็นก้น ไปก่อน 9:00 นักท่องเที่ยวยังน้อย (ถ้าไม่ทำ Chureito เช้า)</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/หมู่บ้านน้ำใส+(โอชิโนะ+ฮักไก)/data=!4m2!3m1!1s0x601966859f99842b:0x163aa46bb0af9f71" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย–เย็น — กลับ Kawaguchiko</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍰</span>
+        <div class="info">
+          <div class="name">Patisserie Kimuraya (ラ・ヴェルデュール木村屋)</div>
+          <div class="meta">⭐ 4.9 · ขนมหวาน · ของหวานระหว่างทางกลับ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ดาวสูงสุดในย่าน</span></div>
+        <a class="map-btn food" href="https://www.google.com/maps/place/ラ・ヴェルデュール木村屋/data=!4m2!3m1!1s0x60196078d8d009bb:0x20929fe8eee95200" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍽️</span>
+        <div class="info">
+          <div class="name">toe (トー)</div>
+          <div class="meta">⭐ 4.7 · บรรยากาศดี · เหมาะหลัง 20:00</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍽️</span>
+        <div class="info">
+          <div class="name">38KAWAGUCHIKO</div>
+          <div class="meta">⭐ 4.6 · relaxed บรรยากาศ Fuji · สำรอง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/38KAWAGUCHIKO/data=!4m2!3m1!1s0x60195fd25ac644b3:0xefffd53eaea4da7f" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกทั้งหมด — Kawaguchiko</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/KURA+HOUSE+FUJIYOSHIDA/data=!4m2!3m1!1s0x601967c61e5dbe51:0x33629db04c9ffc8c" target="_blank"><span class="ei-icon">☕</span><div class="ei-info"><div class="ei-name">KURA HOUSE FUJIYOSHIDA</div><div class="ei-meta">⭐ 4.9 · คาเฟ่ · Fujiyoshida (ใกล้ Chureito)</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/鉄焼Tetsuyaki/data=!4m2!3m1!1s0x60195e29daa0ce4b:0x58630a1c66491ce1" target="_blank"><span class="ei-icon">🍖</span><div class="ei-info"><div class="ei-name">鉄焼 Tetsuyaki</div><div class="ei-meta">⭐ 4.7 · เทปันยากิ local</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/不曹庵/data=!4m2!3m1!1s0x60195fb62a4b31df:0xc57ed562f2d387ea" target="_blank"><span class="ei-icon">🍵</span><div class="ei-info"><div class="ei-name">Fuso Ann (不曹庵)</div><div class="ei-meta">⭐ 4.7 · คาเฟ่ / ของหวาน</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/ケーキのジョージワシントン河口湖店/data=!4m2!3m1!1s0x60195e2a0e545555:0xf19ba6bccc1a3433" target="_blank"><span class="ei-icon">🎂</span><div class="ei-info"><div class="ei-name">George Washington Cake Shop</div><div class="ei-meta">⭐ 4.7 · เค้ก</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Hotokura+Funari+Kawaguchiko/data=!4m2!3m1!1s0x601960873a296345:0x6a9569412ecbf456" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">Hotokura Funari</div><div class="ei-meta">⭐ 4.2 · Hoto บะหมี่</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Fuji-Q+Highland" target="_blank"><span class="ei-icon">🎡</span><div class="ei-info"><div class="ei-name">Fuji-Q Highland</div><div class="ei-meta">~¥6,000–7,000 · สวนสนุก roller coaster · ถ้าเลือกวันนี้ทำแทน Chureito+Oshino</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DAY 8 ══ -->
+  <section class="day-section" id="day-8">
+    <div class="day-heading">
+      <div class="label">Day 8 · 18 ธ.ค. 2026 · ศุกร์</div>
+      <div class="title">🏙️ กลับโตเกียว — Asakusa</div>
+      <div class="subtitle">Check-out Kawaguchiko · Check-in Oku-Asakusa</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741" target="_blank">
+      <span class="icon">🏨</span>
+      <div>
+        <div class="name">Hotel Little Bird Oku-Asakusa</div>
+        <div class="meta">3 คืน (18–20 ธ.ค.) · ✅ จองแล้ว</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เช้า — เดินทาง</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚌</span>
+        <div class="info">
+          <div class="name">บัส Kawaguchiko → Busta Shinjuku → TX → Oku-Asakusa</div>
+          <div class="meta">~2+ ชม. · จอง highwaybus.com · จองล่วงหน้า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">ออกจากโรงแรม → เลี้ยวขวาถนนใหญ่ → ฝั่งตรงข้ามมี 7-Eleven → เดินทิศตะวันออก → เลี้ยวขวาที่สี่แยกมีร้านของฝาก → เจอ <strong>อาคารไม้ทรงยุโรป = สถานี Kawaguchiko</strong></span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ที่สถานี ไม่ต้องเข้ารถไฟ → หาลานจอดบัส → เสาป้าย <strong>หมายเลข 3 หรือ 4</strong> (เช็คหน้าจอ LCD) → ขึ้นรถดูป้าย <strong>Shinjuku</strong></span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">รถจอด <strong>Busta Shinjuku ชั้น 3</strong> → ลงรับกระเป๋า → ลิฟต์ลงชั้น 2 → เชื่อมต่ออาคาร JR Shinjuku (Exit New South Gate)</span></div>
+          <div class="step"><span class="step-num">4</span><span class="step-text">ป้ายเหลือง <strong>Chou-Sobu Line</strong> ชานชาลา 13/16 → ขึ้นขบวนไป Akihabara/Chiba → ลง <strong>Akihabara</strong></span></div>
+          <div class="step"><span class="step-num">5</span><span class="step-text">มองป้าย <strong>Central Gate</strong> → ออกช่องตรวจตั๋ว JR → เลี้ยวขวาทันที → เดินออกนอกอาคาร → เห็น <strong>Yodobashi Camera</strong> → ทางเข้า TX อยู่ลานหน้าตึก</span></div>
+          <div class="step"><span class="step-num">6</span><span class="step-text">ลิฟต์ TX สีน้ำเงิน-แดง → ลงชั้น B4 (Platform) → รอขบวนไป <strong>Asakusa/Tsukuba</strong> → นั่ง 2 สถานี → ลง <strong>Asakusa (TX03)</strong> → Exit A1</span></div>
+          <div class="step"><span class="step-num">7</span><span class="step-text">ลิฟต์ขึ้นมา → เลี้ยวขวา → เดิน 850 ม. (ผ่าน <strong>Donki ขวามือ</strong> → ข้ามสี่แยก) → Hotel Little Bird ในซอยขวามือ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — แถว Asakusabashi</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🐄</span>
+        <div class="info">
+          <div class="name">Gyutan Biyori Asakusabashi</div>
+          <div class="meta">⭐ 4.9 · ลิ้นวัว · ใกล้สถานี TX Asakusa</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ดาวสูงมาก</span></div>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Gyutan+Biyori+Asakusabashi/data=!4m2!3m1!1s0x60188f5cdf296a85:0x13149fd430984602" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — Asakusa / Kappabashi</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🛕</span>
+        <div class="info">
+          <div class="name">วัดเซ็นโซจิ + Nakamise-dori</div>
+          <div class="meta">⭐ 4.5 · วัดดังที่สุดในโตเกียว · ฟรีเข้า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-free">ฟรี</span></div>
+        <a class="map-btn place" href="https://www.google.com/maps/place/วัดเซ็นโซ/data=!4m2!3m1!1s0x60188ec1a4463df1:0x6c0d289a8292810d" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍗</span>
+        <div class="info">
+          <div class="name">Asakusa Chicken</div>
+          <div class="meta">⭐ 4.9 · ไก่ทอด street food · กินเดินได้เลย แถว Nakamise</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Asakusa+Chicken/data=!4m2!3m1!1s0x60188fa5687280db:0xb5b3cc06ea2470d8" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍡</span>
+        <div class="info">
+          <div class="name">Asakusa Chaya Tabanenoshi</div>
+          <div class="meta">⭐ 4.4 · ขนมหวานญี่ปุ่น traditional · แถว Nakamise</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Asakusa+Chaya+Tabanenoshi/data=!4m2!3m1!1s0x60188f0aa634cc65:0x95df867bb53ebca9" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🔪</span>
+        <div class="info">
+          <div class="name">Takanojin — ร้านมีด Kappabashi</div>
+          <div class="meta">⭐ 4.9 · เดินจาก Nakamise ~10 นาที</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>ของฝากดีมาก มีดญี่ปุ่นคุณภาพสูง ราคาคุ้มกว่าในเมือง</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Takanojin/data=!4m2!3m1!1s0x60188f49c9fd64df:0x6b8f508838611be6" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เย็น — Asakusa</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">Kuroge Wagyu Ichinoya Asakusa</div>
+          <div class="meta">⭐ 4.8 · วากิวสเต็ก · ดีที่สุดใน list</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ห้ามพลาด</span><span class="tag tag-book">เสาร์-อาทิตย์ต้องจอง</span></div>
+        <p style="margin-top:8px">~¥3,300–5,000/คน วันธรรมดา walk-in ได้ วันหยุดโทรจองก่อน</p>
+        <a class="map-btn food" href="https://www.google.com/maps/place/Kuroge+Wagyu+Ichinoya+Asakusa/data=!4m2!3m1!1s0x60188f048f799e7f:0xd3cf44241683f24b" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🔥</span>
+        <div class="info">
+          <div class="name">Hinomaru Asakusa</div>
+          <div class="meta">⭐ 4.9 · ปิ้งย่าง · 15,720 รีวิว · สำรอง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Hinomaru/data=!4m2!3m1!1s0x60188d99f52eb625:0xe197007c0cbddf40" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">คืน — หลังอาหาร</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🐙</span>
+        <div class="info">
+          <div class="name">Tako Oji</div>
+          <div class="meta">⭐ 4.8 · ทาโกยากิ street food · กินเดินได้</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Tako+Oji/data=!4m2!3m1!1s0x60188bb7ddcd8e2b:0xdd4fe622e0c5332f" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍦</span>
+        <div class="info">
+          <div class="name">asakusa RARA gelateria & caffe</div>
+          <div class="meta">⭐ 5.0 · เจลาโต้ · ปิดท้ายคืน</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/asakusa+RARA+gelateria%EF%BC%86caffe/data=!4m2!3m1!1s0x60188f72f1e84091:0xbe72d1e5ce63102e" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด — Asakusa</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/神戸牛ダイア+ロック忍者店/data=!4m2!3m1!1s0x60188f2eacf42459:0xfd6a273fad8b4dd0" target="_blank"><span class="ei-icon">🥩</span><div class="ei-info"><div class="ei-name">Daia Rock Kobe Beef</div><div class="ei-meta">⭐ 4.9 · อิซาคายะ โกเบบีฟ</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Honolu's+Wagyu+Udon+%26+Ramen+Halal+%D8%AD%D9%84%D8%A7%D9%84+Asakusa/data=!4m2!3m1!1s0x60188f6bc19081c9:0x6aeac1934a4f05a9" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">Honolu's Wagyu Udon & Ramen</div><div class="ei-meta">⭐ 4.9 · Halal · อุดัง+ราเมงวากิว</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/麺処一龍+仲見世店/data=!4m2!3m1!1s0x60188f4c0b6b4981:0x847df59e516a5447" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">Ichi ryu (仲見世店)</div><div class="ei-meta">⭐ 4.8 · ราเมง · ใน Nakamise</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/居酒屋+風鐸+-FUTAKU-/data=!4m2!3m1!1s0x60188fbabbdd8e91:0x1a4a8d0641e0e6c5" target="_blank"><span class="ei-icon">🍶</span><div class="ei-info"><div class="ei-name">居酒屋 風鐸 FUTAKU</div><div class="ei-meta">⭐ 5.0 · อิซาคายะ บรรยากาศดีมาก</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Okonomiyaki%2Fmonja+Shiraiwa+Asakusa/data=!4m2!3m1!1s0x60188f24f7f3cd9f:0x4c727d0a1a3ad8ec" target="_blank"><span class="ei-icon">🥞</span><div class="ei-info"><div class="ei-name">Okonomiyaki Shiraiwa</div><div class="ei-meta">⭐ 4.8 · โอโคโนมิยากิ/มอนจา</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/浅草+花月堂+本店/data=!4m2!3m1!1s0x60188ec040443549:0x3dc80edf1b29be6b" target="_blank"><span class="ei-icon">🍞</span><div class="ei-info"><div class="ei-name">Asakusa Kagetsudō Melon Bread</div><div class="ei-meta">⭐ 4.4 · เมล่อนปัง ดังมาก</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- ══ DAY 9 ══ -->
+  <section class="day-section" id="day-9">
+    <div class="day-heading">
+      <div class="label">Day 9 · 19 ธ.ค. 2026 · เสาร์</div>
+      <div class="title">🎡 Theme Park วันเต็ม</div>
+      <div class="subtitle">DisneySea หรือ Disneyland · จองผ่านแอปล่วงหน้า</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741" target="_blank">
+      <span class="icon">🏨</span>
+      <div>
+        <div class="name">Hotel Little Bird Oku-Asakusa</div>
+        <div class="meta">คืนที่ 2</div>
+      </div>
+    </a>
+
+    <div class="card tip">
+      <div class="tip-title">⚠️ ต้องทำก่อนวันนี้</div>
+      <ul>
+        <li>จองตั๋วผ่านแอป <strong>Tokyo Disney Resort</strong> — ไม่มีขายหน้าประตู</li>
+        <li>ราคา ~¥7,900–10,900/คน · เสาร์ราคาสูงสุด</li>
+        <li>ดาวน์โหลดแอป Tokyo Disney Resort ไว้ใช้ในงาน</li>
+      </ul>
+    </div>
+
+    <div class="sec"><div class="sec-label">เลือก 1 จาก 2</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌊</span>
+        <div class="info">
+          <div class="name">Tokyo DisneySea</div>
+          <div class="meta">~¥10,900/คน · Fantasy Springs ใหม่ 2024 · บรรยากาศสวยกว่า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">แนะนำ</span></div>
+        <p style="margin-top:8px">วิวทะเลสวย zones หลากหลาย Fantasy Springs เพิ่งเปิด 2024 — ถ่ายรูปสวยกว่า Disneyland มาก</p>
+        <a class="map-btn place" href="https://www.google.com/maps/search/?api=1&query=Tokyo+DisneySea" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🏰</span>
+        <div class="info">
+          <div class="name">Tokyo Disneyland</div>
+          <div class="meta">~¥10,900/คน · Classic · ขบวนพาเหรด · Castle</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/search/?api=1&query=Tokyo+Disneyland" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เดินทาง — Oku-Asakusa → Maihama</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚂</span>
+        <div class="info">
+          <div class="name">TX → Akihabara → JR Keiyo Line → Maihama</div>
+          <div class="meta">~45 นาที · ~550¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">TX Asakusa → ลง <strong>Akihabara</strong> → ออก Central Gate → JR ชานชาลา Keiyo Line</span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้นขบวนไป <strong>Maihama</strong> (สถานีสุดท้ายที่ Disney) → ลงแล้วต่อ Disney Resort Line</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DAY 10 ══ -->
+  <section class="day-section" id="day-10">
+    <div class="day-heading">
+      <div class="label">Day 10 · 20 ธ.ค. 2026 · อาทิตย์</div>
+      <div class="title">🐟 Tsukiji · Ueno · Odaiba</div>
+      <div class="subtitle">ตลาดปลา · ตลาดอาหาร · Gundam</div>
+    </div>
+
+    <a class="card hotel" href="https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741" target="_blank">
+      <span class="icon">🏨</span>
+      <div>
+        <div class="name">Hotel Little Bird Oku-Asakusa</div>
+        <div class="meta">คืนที่ 3</div>
+      </div>
+    </a>
+
+    <div class="sec"><div class="sec-label">เช้ามืด — Tsukiji (ไปถึงก่อน 07:00)</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🐟</span>
+        <div class="info">
+          <div class="name">Tsukiji Outer Market</div>
+          <div class="meta">เปิด 05:00 · ฟรีเข้า · ไปช้าของหมด</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ไปก่อน 07:00</span><span class="tag tag-free">ฟรีเข้า</span></div>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Fish+Market+Tsukiji+Outer+Market/data=!4m2!3m1!1s0x60188b21cd0b675b:0xa26e24a1bf97025c" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍣</span>
+        <div class="info">
+          <div class="name">ซูชิเช้าสด + หอยนางรม + Tamagoyaki</div>
+          <div class="meta">แถว Tsukiji · กินที่ตลาด · ~1,500¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>Tamagoyaki ไม้เสียบยืนกินได้เลย ~300¥ · ซูชิสดมากกว่าที่ไหนๆ ในโตเกียว</p>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เช้า — Ueno + Ameyoko</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🛍️</span>
+        <div class="info">
+          <div class="name">Ameyoko Market</div>
+          <div class="meta">ตลาดกลางแจ้ง · ของทะเล ผลไม้ เสื้อผ้า · ฟรีเข้า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-free">ฟรี</span></div>
+        <p style="margin-top:8px">ออกทางซ้ายจากสถานี Ueno เลย ราคาถูก ต่อรองได้ กินเล่นระหว่างเดิน</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Ameyoko+market/data=!4m2!3m1!1s0x60188f00af83b787:0x654b0a29a45fcf0a" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌳</span>
+        <div class="info">
+          <div class="name">Ueno Park</div>
+          <div class="meta">ฟรีเข้า · เดินเล่นแถวบ่อน้ำ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-free">ฟรี</span></div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — แถว Ueno / Akihabara</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">กิวคัตสึ โมโตมุระ สาขาอุเอโนะ</div>
+          <div class="meta">⭐ 4.8 · เนื้อวัวชุบแป้งทอด กรอบนอกดิบใน · ~2,500¥</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ต้องลอง</span></div>
+        <a class="map-btn food" href="https://www.google.com/maps/place/กิวคัตสึ+โมโตมุระ+สาขาอุเอโนะ/data=!4m2!3m1!1s0x60188e9e48da5555:0x5aae1122eba9fa2c" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">Roast Beef Ōno Akihabara</div>
+          <div class="meta">⭐ 4.6 · โรสต์บีฟหั่นบาง + ข้าว · ~1,500¥ · แวะ Akihabara</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Roast+Beef+Ōno+Akihabara/data=!4m2!3m1!1s0x60188c1d19140001:0x6bbfd1a1cafa29df" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">บ่าย — Ginza → Odaiba</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌉</span>
+        <div class="info">
+          <div class="name">Marunouchi Naka-dori</div>
+          <div class="meta">⭐ 4.4 · ถนน Illumination · แวะก่อน Yurikamome</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-free">ฟรี</span></div>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Marunouchi+Naka-dori+St./data=!4m2!3m1!1s0x60188b39eb095801:0x64a29f9f2f81d5f7" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚝</span>
+        <div class="info">
+          <div class="name">Ginza → Odaiba — Yurikamome Line</div>
+          <div class="meta">~20 นาที · วิว Rainbow Bridge ระหว่างทาง</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🤖</span>
+        <div class="info">
+          <div class="name">DiverCity Tokyo — Gundam ยักษ์</div>
+          <div class="meta">ฟรีเข้า · ถ่ายรูปกับ Gundam ขนาดเท่าจริง</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-free">ฟรีเข้า</span></div>
+        <a class="map-btn place" href="https://www.google.com/maps/place/DiverCity+Tokyo+Plaza/data=!4m2!3m1!1s0x601889f9d36ebaa5:0x67f4219bfa09db77" target="_blank" style="margin-top:8px">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ตัวเลือกร้านอาหารทั้งหมด — Ueno / Akihabara</div></div>
+    <div class="card">
+      <div class="extra-list">
+        <a class="extra-item" href="https://www.google.com/maps/place/らーめん+鴨to葱+上野御徒町本店/data=!4m2!3m1!1s0x60188e9f836fe4eb:0xe59c5e732e04d0f7" target="_blank"><span class="ei-icon">🍜</span><div class="ei-info"><div class="ei-name">Kamo to Negi Ueno</div><div class="ei-meta">⭐ 4.8 · ราเมงเป็ด · 12,991 รีวิว</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Tsukiji+Yaki+Uo+Ishikawa/data=!4m2!3m1!1s0x60188b526bf51cff:0x31155b3d51c98e52" target="_blank"><span class="ei-icon">🐟</span><div class="ei-info"><div class="ei-name">Tsukiji Yaki Uo Ishikawa</div><div class="ei-meta">⭐ 4.4 · ปลาย่าง · Tsukiji</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Tsukiji+Unitora+Nakadori/data=!4m2!3m1!1s0x60188bdf270a08ed:0x6d303301c3bd21f8" target="_blank"><span class="ei-icon">🐟</span><div class="ei-info"><div class="ei-name">Tsukiji Unitora</div><div class="ei-meta">⭐ 4.3 · อาหารทะเล · Tsukiji</div></div><span class="ei-map">Maps</span></a>
+        <a class="extra-item" href="https://www.google.com/maps/place/Hamburg+:+Kiwamiya+Tokyo+Station/data=!4m2!3m1!1s0x60188b377681370b:0x5bf75a1e6ff95bf6" target="_blank"><span class="ei-icon">🍔</span><div class="ei-info"><div class="ei-name">Hamburg Kiwamiya Tokyo Station</div><div class="ei-meta">⭐ 4.1 · ฮัมเบอร์ก · แวะได้ถ้าผ่าน Tokyo Sta.</div></div><span class="ei-map">Maps</span></a>
+      </div>
+    </div>
+  </section>
+  <!-- ══ DAY 11 ══ -->
+  <section class="day-section" id="day-11">
+    <div class="day-heading">
+      <div class="label">Day 11 · 21 ธ.ค. 2026 · จันทร์</div>
+      <div class="title">🎄 ช้อปสุดท้าย + Illumination</div>
+      <div class="subtitle">Check-out · เที่ยวบินออก 01:25 คืนนี้</div>
+    </div>
+
+    <div class="card tip">
+      <div class="tip-title">⚠️ วันนี้สำคัญ — เครื่องออกตี 1</div>
+      <ul>
+        <li>Check-out ~11:00 แต่เครื่องออกตี 1 — ต้องอยู่ข้างนอกทั้งวัน</li>
+        <li><strong>ฝากกระเป๋าที่โรงแรม</strong> (ฟรี บอก Concierge ก่อน Check-out) — แนะนำสุด</li>
+        <li>ออกจากโรงแรมไปสนามบิน <strong>ไม่เกิน 21:00</strong> ใช้เวลา ~35–50 นาที</li>
+        <li>ซื้อของฝาก Duty-free <strong>ตอนกลางวัน</strong> อย่าทิ้งไว้ตอนค่ำ</li>
+      </ul>
+    </div>
+
+    <div class="sec"><div class="sec-label">กลางวัน — Ginza / Shinjuku ช้อปปิ้ง</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🛍️</span>
+        <div class="info">
+          <div class="name">Ginza / Shinjuku — ช้อปปิ้งสุดท้าย</div>
+          <div class="meta">ซื้อของฝาก Duty-free · Tax-free โชว์ Passport</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ซื้อตอนกลางวัน!</span></div>
+        <p style="margin-top:8px">Tokyo Banana · ขนม Ginza · ของฝากพรีเมียม — ซื้อก่อนไม่งั้นไม่ทันตอนค่ำ</p>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เย็น — มื้อสุดท้าย แถว Ginza / Shiodome</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🥩</span>
+        <div class="info">
+          <div class="name">Wagyu / Yakiniku ดีๆ — มื้อสุดท้าย</div>
+          <div class="meta">ฉลองส่งท้ายทริป · ~¥4,000/คน · แถว Ginza</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">มื้อสุดท้าย</span></div>
+        <p style="margin-top:8px">กินก่อนดู Illumination Caretta — อิ่มแล้วค่อยเดินชม ไม่ต้องรีบ</p>
+      </div>
+    </div>
+
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🔥</span>
+        <div class="info">
+          <div class="name">Gyumon Ikebukuro</div>
+          <div class="meta">⭐ 4.8 · ยากินิคุ Halal · Ikebukuro (~30 นาทีจาก Ginza)</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/Gyumon+Ikebukuro/data=!4m2!3m1!1s0x60188d9450d2d5e5:0x8f80c4c94e061fc1" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">คืน — Illumination (17:00–23:00)</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">✨</span>
+        <div class="info">
+          <div class="name">Caretta Shiodome</div>
+          <div class="meta">ฟรี · สวยสุดในโตเกียว · โชว์แสงซิงค์ดนตรีทุก 30 นาที</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-must">ห้ามพลาด</span><span class="tag tag-free">ฟรี</span></div>
+        <p style="margin-top:8px">Illumination สีน้ำเงิน+ขาว บรรยากาศหนาวๆ เหมาะมาก รอดูโชว์แสง ใช้เวลา ~30 นาที</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Caretta+Shiodome/data=!4m2!3m1!1s0x60188bc2cb06ba63:0xaf05087c2b3738c3" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌲</span>
+        <div class="info">
+          <div class="name">Tokyo Midtown Roppongi</div>
+          <div class="meta">ฟรี · ต้นไม้พันไฟ · เดินเล่นได้สบายๆ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tags"><span class="tag tag-free">ฟรี</span></div>
+        <p style="margin-top:8px">ถ้ายังมีแรง แวะต่อจาก Caretta ได้เลย Roppongi ห่างไม่ไกล</p>
+        <a class="map-btn place" href="https://www.google.com/maps/place/Tokyo+Midtown/data=!4m2!3m1!1s0x60188b78922e6353:0xeb3e39dbe18da4d6" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">~21:00 — เดินทางสนามบิน Haneda</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">✈️</span>
+        <div class="info">
+          <div class="name">ทาง 1 — Hibiya Line → Ningyocho → Haneda</div>
+          <div class="meta">⭐ แนะนำ · ออกโรงแรมไม่เกิน 21:00 · ~35–50 นาที</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">เก็บกระเป๋าที่โรงแรม → เดินไปสถานี <strong>Iriya (Hibiya Line สีเทา)</strong></span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้นขบวนไป Ueno/Ginza/Naka-meguro → ลง <strong>Ningyocho (H14)</strong></span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">ต่อ <strong>Toei Asakusa Line สีชมพู</strong> → รอขบวน Airport Kaitoku (เขียว) หรือ Access Express (ส้ม) — ห้ามขึ้น Nishi-magome</span></div>
+          <div class="step"><span class="step-num">4</span><span class="step-text">ลง <strong>Haneda Airport Terminal 3</strong> → ลิฟต์ขึ้นชั้น 3 จุดเช็คอิน NH877</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚶</span>
+        <div class="info">
+          <div class="name">ทาง 2 — เดินไป Asakusa Station → Toei Asakusa Line</div>
+          <div class="meta">ทางสำรอง · เดิน ~15 นาที</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">เดินจากโรงแรมมาสถานี <strong>Asakusa</strong> → หา Richmond Hotel Premier → ลิฟต์ Exit A2b ตรงข้าม</span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">กดลิฟต์ลง B1 → แตะบัตรเข้า → ชานชาลา 1 ไป Haneda Airport</span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">รอขบวน Airport Kaitoku (เขียว) หรือ Access Express (ส้ม) → ลง <strong>Haneda Terminal 3</strong></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DAY 12 ══ -->
+  <section class="day-section" id="day-12">
+    <div class="day-heading">
+      <div class="label">Day 12 · 22 ธ.ค. 2026 · อังคาร</div>
+      <div class="title">✈️ กลับบ้าน</div>
+      <div class="subtitle">NH877 · ออก 01:25 · ถึง BKK 06:30</div>
+    </div>
+
+    <div class="card tip">
+      <div class="tip-title">✈️ เที่ยวบินขากลับ</div>
+      <ul>
+        <li>สายการบิน <strong>ANA — NH877</strong></li>
+        <li>ออก Haneda Terminal 3 · <strong>01:25</strong></li>
+        <li>ถึง Suvarnabhumi (BKK) · <strong>06:30</strong></li>
+        <li>เช็คอินก่อนบิน 2 ชั่วโมง — เคาน์เตอร์เปิด ~23:00</li>
+      </ul>
+    </div>
+
+    <div class="card tip">
+      <div class="tip-title">🧳 สิ่งที่ต้องทำก่อนขึ้นเครื่อง</div>
+      <ul>
+        <li>คืน Suica — ที่ตู้ JR หรือ Midori no Madoguchi รับเงินมัดจำ 500¥ คืน</li>
+        <li>ช้อปปิ้ง Duty-free ในสนามบิน (เปิดถึงดึก)</li>
+        <li>แลกเงินเยนที่เหลือคืนที่สนามบิน</li>
+        <li>Tax Refund Counter ชั้น 4 ก่อนผ่าน Security</li>
+      </ul>
+    </div>
+
+    <div class="card" style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 16px;text-align:center;">
+      <div style="font-size:2rem;margin-bottom:8px">🇹🇭</div>
+      <div style="font-size:1rem;font-weight:800;color:#16a34a">ขอบคุณที่ใช้แพลนนี้</div>
+      <div style="font-size:0.88rem;color:#6b7280;margin-top:4px">Benz & Unz · Japan Dec 2026 · สร้างโดย Claude Code</div>
+    </div>
+  </section>
+</main>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const sections = document.querySelectorAll('.day-section');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      sections.forEach(function(s) { s.classList.remove('active'); });
+      tab.classList.add('active');
+      document.getElementById('day-' + tab.dataset.day).classList.add('active');
+      tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
