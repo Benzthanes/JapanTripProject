@@ -335,7 +335,19 @@
   }
 
   /* ── COLLAPSIBLE EXTRAS ────────────────────────── */
-  .extras { margin-top: 0.8rem; }
+  .extras { margin-top: 0.8rem; position: relative; padding-left: 1.4rem; }
+  .extras::before {
+    content: '▶';
+    position: absolute;
+    left: 0.1rem;
+    top: 0.6rem;
+    font-size: 0.55rem;
+    color: #aaa;
+    pointer-events: none;
+    display: inline-block;
+    transition: transform 0.2s;
+  }
+  .extras[open]::before { transform: rotate(90deg); }
   .extras summary {
     cursor: pointer;
     font-size: 0.8rem;
@@ -353,17 +365,6 @@
   }
   .extras summary:hover { background: #e2eaf4; border-color: #aabbd0; }
   .extras summary::-webkit-details-marker { display: none; }
-  .extras summary::before {
-    content: '▶';
-    font-size: 0.55rem;
-    transition: transform 0.2s;
-    color: #888;
-    pointer-events: none;
-    display: inline-block;
-    margin-right: 0.5rem;
-    vertical-align: middle;
-  }
-  .extras[open] summary::before { transform: rotate(90deg); }
   .extras[open] summary {
     background: #e2eaf4;
     border-color: #aabbd0;
@@ -2093,18 +2094,5 @@
   </footer>
 
 </div><!-- /container -->
-<script>
-  document.querySelectorAll('.extras').forEach(function(d) {
-    var s = d.querySelector(':scope > summary');
-    var busy = false;
-    s.addEventListener('click', function(e) {
-      e.preventDefault();
-      if (busy) return;
-      busy = true;
-      d.open = !d.open;
-      setTimeout(function() { busy = false; }, 300);
-    });
-  });
-</script>
 </body>
 </html>
