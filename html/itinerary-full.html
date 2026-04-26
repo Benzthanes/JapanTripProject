@@ -335,9 +335,7 @@
   }
 
   /* ── COLLAPSIBLE EXTRAS ────────────────────────── */
-  .extras-row { display: flex; align-items: flex-start; gap: 0.5rem; margin-top: 0.8rem; }
-  .extras-arrow { flex-shrink: 0; font-size: 0.55rem; color: #aaa; margin-top: 0.6rem; pointer-events: none; display: inline-block; transition: transform 0.2s; }
-  .extras { flex: 1; min-width: 0; }
+  .extras { margin-top: 0.8rem; }
   .extras summary {
     cursor: pointer;
     font-size: 0.8rem;
@@ -2084,20 +2082,5 @@
   </footer>
 
 </div><!-- /container -->
-<script>
-  document.querySelectorAll('.extras').forEach(function(d) {
-    var arrow = document.createElement('span');
-    arrow.className = 'extras-arrow';
-    arrow.textContent = '▶';
-    var row = document.createElement('div');
-    row.className = 'extras-row';
-    d.parentNode.insertBefore(row, d);
-    row.appendChild(arrow);
-    row.appendChild(d);
-    d.addEventListener('toggle', function() {
-      arrow.style.transform = d.open ? 'rotate(90deg)' : '';
-    });
-  });
-</script>
 </body>
 </html>
