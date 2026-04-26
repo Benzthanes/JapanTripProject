@@ -83,12 +83,12 @@
   .chip-warn { background: #fff4e0; color: #c0392b; font-weight: 700; }
 
   /* Collapsible extras */
-  .extras { margin-top: 0.55rem; border-top: 1px dashed #e8e8e8; padding-top: 0.45rem; position: relative; padding-left: 1.1rem; }
-  .extras::before { content: '▶'; position: absolute; left: 0; top: 0.55rem; font-size: 0.6rem; color: #aaa; pointer-events: none; display: inline-block; transition: transform 0.2s; }
-  .extras[open]::before { transform: rotate(90deg); }
+  .extras-row { display: flex; align-items: flex-start; gap: 0.4rem; margin-top: 0.55rem; border-top: 1px dashed #e8e8e8; padding-top: 0.45rem; }
+  .extras-arrow { flex-shrink: 0; font-size: 0.6rem; color: #aaa; margin-top: 0.4rem; pointer-events: none; display: inline-block; transition: transform 0.2s; }
+  .extras { flex: 1; min-width: 0; }
   .extras summary {
     cursor: pointer; font-size: 0.72rem; font-weight: 700; color: #888; letter-spacing: 0.5px;
-    list-style: none; display: block; user-select: none; padding: 6px 0;
+    list-style: none; display: block; user-select: none; padding: 4px 0;
     -webkit-tap-highlight-color: transparent;
   }
   .extras summary::-webkit-details-marker { display: none; }
@@ -600,5 +600,20 @@
 </div>
 
 <footer>🌸 Benz & Unz · Japan Dec 2026 · สร้างด้วย Claude Code</footer>
+<script>
+  document.querySelectorAll('.extras').forEach(function(d) {
+    var arrow = document.createElement('span');
+    arrow.className = 'extras-arrow';
+    arrow.textContent = '▶';
+    var row = document.createElement('div');
+    row.className = 'extras-row';
+    d.parentNode.insertBefore(row, d);
+    row.appendChild(arrow);
+    row.appendChild(d);
+    d.addEventListener('toggle', function() {
+      arrow.style.transform = d.open ? 'rotate(90deg)' : '';
+    });
+  });
+</script>
 </body>
 </html>
