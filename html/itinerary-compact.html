@@ -86,10 +86,11 @@
   .extras { margin-top: 0.55rem; border-top: 1px dashed #e8e8e8; padding-top: 0.45rem; }
   .extras summary {
     cursor: pointer; font-size: 0.72rem; font-weight: 700; color: #888; letter-spacing: 0.5px;
-    list-style: none; display: inline-block; user-select: none;
+    list-style: none; display: block; user-select: none; padding: 6px 0;
+    -webkit-tap-highlight-color: transparent;
   }
   .extras summary::-webkit-details-marker { display: none; }
-  .extras summary::before { content: '▶'; font-size: 0.6rem; transition: transform 0.2s; pointer-events: none; display: inline-block; margin-right: 0.4rem; vertical-align: middle; }
+  .extras summary::before { content: '▶'; font-size: 0.6rem; pointer-events: none; display: inline-block; margin-right: 0.4rem; vertical-align: middle; transition: transform 0.2s; }
   .extras[open] summary::before { transform: rotate(90deg); }
   .extra-chips { margin-top: 0.4rem; }
   .map-btn.sm { font-size: 0.72rem; padding: 0.18rem 0.5rem; background: #a0522d; }
@@ -600,14 +601,15 @@
 
 <footer>🌸 Benz & Unz · Japan Dec 2026 · สร้างด้วย Claude Code</footer>
 <script>
-  document.querySelectorAll('.extras summary').forEach(function(s) {
+  document.querySelectorAll('.extras').forEach(function(d) {
+    var s = d.querySelector(':scope > summary');
     var busy = false;
     s.addEventListener('click', function(e) {
       e.preventDefault();
       if (busy) return;
       busy = true;
-      s.parentElement.open = !s.parentElement.open;
-      setTimeout(function() { busy = false; }, 50);
+      d.open = !d.open;
+      setTimeout(function() { busy = false; }, 300);
     });
   });
 </script>
