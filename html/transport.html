@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>คู่มือเดินทาง | ญี่ปุ่น ธ.ค. 2026</title>
+<style>
+  :root {
+    --r0: #c0392b;   /* Day 0 – Haneda in  (Keikyu red)   */
+    --r1: #e67e22;   /* Day 2 – Tokyo→Fuji (bus orange)   */
+    --r2: #27ae60;   /* Day 4 – Fuji→Shiz  (JR green)    */
+    --r3: #2980b9;   /* Day 6 – Shiz→Kawa  (bus blue)    */
+    --r4: #8e44ad;   /* Day 8 – Kawa→Aksa  (TX purple)   */
+    --r5: #16a085;   /* Day 11 – Aksa→Hnd  (teal)        */
+    --bg: #f7f8fc;
+    --card: #ffffff;
+    --text: #1a1a2e;
+    --sub: #555e7b;
+    --border: #e2e8f0;
+    --warn-bg: #fff7ed;
+    --warn-bd: #f59e0b;
+    --tip-bg: #f0fdf4;
+    --tip-bd: #22c55e;
+    --danger-bg: #fef2f2;
+    --danger-bd: #ef4444;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Sarabun', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  /* ── NAV ─────────────────────────────────────── */
+  .topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: #1a1a2e;
+    display: flex; align-items: center; gap: 0;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    box-shadow: 0 2px 12px rgba(0,0,0,.3);
+    scrollbar-width: none;
+  }
+  .topbar::-webkit-scrollbar { display: none; }
+  .topbar a {
+    flex-shrink: 0;
+    color: #94a3b8; text-decoration: none;
+    padding: 13px 18px; font-size: 13px; font-weight: 600;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap; transition: .2s;
+  }
+  .topbar a:hover { color: #fff; }
+  .topbar a.d0  { border-color: var(--r0); }
+  .topbar a.d2  { border-color: var(--r1); }
+  .topbar a.d4  { border-color: var(--r2); }
+  .topbar a.d6  { border-color: var(--r3); }
+  .topbar a.d8  { border-color: var(--r4); }
+  .topbar a.d11 { border-color: var(--r5); }
+
+  /* ── HERO ────────────────────────────────────── */
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+    color: #fff; padding: 40px 24px 36px; text-align: center;
+  }
+  .hero h1 { font-size: 26px; font-weight: 800; letter-spacing: -.5px; }
+  .hero p  { color: #94a3b8; margin-top: 6px; font-size: 14px; }
+
+  /* overview table */
+  .overview-wrap { padding: 24px 16px 8px; max-width: 860px; margin: 0 auto; }
+  .overview-wrap h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--sub); margin-bottom: 12px; }
+  .ov-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,.06); }
+  .ov-table th { background: #1a1a2e; color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; padding: 10px 14px; text-align: left; }
+  .ov-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); font-size: 13.5px; }
+  .ov-table tr:last-child td { border-bottom: none; }
+  .ov-table tr:hover td { background: #f8faff; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+  .price-badge {
+    display: inline-block; background: #f1f5f9; color: var(--sub);
+    border-radius: 20px; padding: 2px 10px; font-size: 12px; font-weight: 700;
+  }
+  .book-link { font-size: 12px; color: #3b82f6; text-decoration: none; }
+  .book-link:hover { text-decoration: underline; }
+
+  /* ── SECTION ─────────────────────────────────── */
+  .section { max-width: 860px; margin: 0 auto; padding: 0 16px 60px; content-visibility: auto; contain-intrinsic-size: 0 700px; }
+  .section-header {
+    display: flex; align-items: center; gap: 16px;
+    margin: 36px 0 20px; padding-bottom: 14px;
+    border-bottom: 2px solid var(--border);
+  }
+  .day-badge {
+    flex-shrink: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    width: 62px; height: 62px; border-radius: 14px; color: #fff;
+    font-weight: 800; line-height: 1.1;
+  }
+  .day-badge .day-num { font-size: 22px; }
+  .day-badge .day-sub { font-size: 10px; opacity: .85; }
+  .section-title h2 { font-size: 20px; font-weight: 800; }
+  .section-title .route-line { font-size: 13px; color: var(--sub); margin-top: 2px; }
+  .meta-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 3px 11px; border-radius: 20px; font-size: 12px; font-weight: 600;
+    background: #f1f5f9; color: var(--sub);
+  }
+  .pill.price { background: #ecfdf5; color: #065f46; }
+  .pill.time  { background: #eff6ff; color: #1e40af; }
+  .pill.warn  { background: #fff7ed; color: #92400e; }
+  .pill.book  { background: #fdf4ff; color: #6b21a8; }
+
+  /* ── ROUTE OPTION CARD ────────────────────────── */
+  .route-card {
+    background: var(--card); border-radius: 14px;
+    box-shadow: 0 1px 8px rgba(0,0,0,.07);
+    margin-bottom: 20px; overflow: hidden;
+  }
+  .route-card-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 18px; border-bottom: 1px solid var(--border);
+  }
+  .route-icon {
+    flex-shrink: 0; width: 38px; height: 38px;
+    border-radius: 10px; display: flex; align-items: center;
+    justify-content: center; font-size: 18px; color: #fff;
+  }
+  .route-card-header h3 { font-size: 15px; font-weight: 700; }
+  .route-card-header .sub { font-size: 12px; color: var(--sub); margin-top: 1px; }
+  .badge-rec {
+    margin-left: auto; flex-shrink: 0;
+    background: #fef9c3; color: #713f12;
+    font-size: 11px; font-weight: 700; padding: 3px 9px;
+    border-radius: 20px;
+  }
+  .route-card-body { padding: 18px; }
+
+  /* sub-section title inside card */
+  .sub-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: .8px;
+    color: var(--sub); font-weight: 700; margin: 16px 0 8px;
+  }
+  .sub-label:first-child { margin-top: 0; }
+
+  /* ── STEPS ────────────────────────────────────── */
+  .steps { list-style: none; }
+  .steps li {
+    display: flex; gap: 14px; margin-bottom: 10px;
+  }
+  .step-num {
+    flex-shrink: 0; width: 26px; height: 26px;
+    border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; font-size: 12px; font-weight: 800;
+    color: #fff; margin-top: 2px;
+  }
+  .step-body { flex: 1; font-size: 14.5px; padding-top: 2px; }
+  .step-body strong { color: var(--text); }
+  .step-body .note {
+    display: block; font-size: 12.5px; color: var(--sub);
+    margin-top: 3px; padding-left: 2px;
+  }
+
+  /* ── BULLET LIST (non-numbered) ──────────────── */
+  .blist { list-style: none; }
+  .blist li {
+    display: flex; gap: 10px; margin-bottom: 7px;
+    font-size: 14.5px; align-items: flex-start;
+  }
+  .blist li::before {
+    content: '▸'; flex-shrink: 0; margin-top: 2px;
+    font-size: 12px; color: var(--sub);
+  }
+
+  /* ── CALLOUT BOXES ────────────────────────────── */
+  .callout {
+    border-left: 4px solid; border-radius: 8px;
+    padding: 12px 16px; margin-bottom: 14px; font-size: 13.5px;
+  }
+  .callout.warn   { background: var(--warn-bg); border-color: var(--warn-bd); }
+  .callout.tip    { background: var(--tip-bg);  border-color: var(--tip-bd);  }
+  .callout.danger { background: var(--danger-bg); border-color: var(--danger-bd); }
+  .callout strong { display: block; margin-bottom: 3px; }
+
+  /* ── TICKET OPTIONS ────────────────────────────── */
+  .ticket-grid { display: flex; flex-direction: column; gap: 8px; }
+  .ticket-item {
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 14px; font-size: 13.5px;
+  }
+  .ticket-item .ti-title { font-weight: 700; margin-bottom: 4px; }
+  .ticket-item .ti-detail { color: var(--sub); font-size: 12.5px; line-height: 1.5; }
+
+  /* ── TRAIN TYPE LEGEND ────────────────────────── */
+  .train-legend { display: flex; flex-direction: column; gap: 6px; margin: 8px 0; }
+  .tl-item { display: flex; align-items: center; gap: 10px; font-size: 13.5px; }
+  .tl-badge {
+    flex-shrink: 0; border-radius: 6px; padding: 2px 10px;
+    font-size: 11px; font-weight: 800; color: #fff;
+  }
+  .tl-last { color: var(--sub); font-size: 12px; }
+
+  /* ── ALERT ROW ────────────────────────────────── */
+  .alert-row {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--danger-bg); border: 1px solid var(--danger-bd);
+    border-radius: 8px; padding: 10px 14px; font-size: 13.5px;
+    margin-bottom: 14px; font-weight: 600; color: #991b1b;
+  }
+
+  /* ── BOOKING TABLE ────────────────────────────── */
+  .book-section { max-width: 860px; margin: 0 auto 60px; padding: 0 16px; }
+  .book-section h2 { font-size: 16px; font-weight: 800; margin-bottom: 14px; }
+  .book-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,.06); }
+  .book-table th { background: #1a1a2e; color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; padding: 10px 14px; text-align: left; }
+  .book-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); font-size: 13.5px; }
+  .book-table tr:last-child td { border-bottom: none; }
+
+  /* ── DIVIDER ─────────────────────────────────── */
+  hr.soft { border: none; border-top: 1px solid var(--border); margin: 22px 0; }
+
+  /* ── RESPONSIVE ──────────────────────────────── */
+  @media (min-width: 600px) {
+    .ticket-grid { flex-direction: row; flex-wrap: wrap; }
+    .ticket-item { flex: 1 1 calc(50% - 4px); }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="topbar">
+  <a href="#d0"  class="d0" >✈ Day 0 · เข้าถึง</a>
+  <a href="#d2"  class="d2" >🚌 Day 2 · Fujinomiya</a>
+  <a href="#d4"  class="d4" >🚂 Day 4 · Shizuoka</a>
+  <a href="#d6"  class="d6" >🚌 Day 6 · Kawaguchiko</a>
+  <a href="#d8"  class="d8" >🚌 Day 8 · กลับ BKK</a>
+  <a href="#d11" class="d11">✈ Day 11 · Haneda</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>🗾 คู่มือเดินทาง</h1>
+  <p>Benz &amp; Unz · ธันวาคม 2026 · 10–22 ธ.ค.</p>
+</div>
+
+<!-- OVERVIEW -->
+<div class="overview-wrap">
+  <h2>ภาพรวมทุกเส้นทาง</h2>
+  <table class="ov-table">
+    <thead>
+      <tr>
+        <th>วัน</th>
+        <th>เส้นทาง</th>
+        <th>วิธี</th>
+        <th>ราคา/คน</th>
+        <th>จองที่</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>10 ธ.ค.</strong></td>
+        <td><span class="dot" style="background:var(--r0)"></span>Haneda → Asakusabashi</td>
+        <td>Keikyu + Toei Asakusa</td>
+        <td><span class="price-badge">~610¥</span></td>
+        <td><span style="color:var(--sub);font-size:12px">Suica (ไม่จอง)</span></td>
+      </tr>
+      <tr>
+        <td><strong>12 ธ.ค.</strong></td>
+        <td><span class="dot" style="background:var(--r1)"></span>Tokyo → Fujinomiya</td>
+        <td>Highway Bus</td>
+        <td><span class="price-badge">~2,000–3,300¥</span></td>
+        <td><a href="https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare" target="_blank" class="book-link">shizuokabus.co.jp ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>14 ธ.ค.</strong></td>
+        <td><span class="dot" style="background:var(--r2)"></span>Fujinomiya → Shizuoka</td>
+        <td>JR Minobu + Tokaido</td>
+        <td><span class="price-badge">~1,400¥</span></td>
+        <td><span style="color:var(--sub);font-size:12px">Suica (ไม่จอง)</span></td>
+      </tr>
+      <tr>
+        <td><strong>16 ธ.ค.</strong></td>
+        <td><span class="dot" style="background:var(--r3)"></span>Shizuoka → Kawaguchiko</td>
+        <td>Highway Bus</td>
+        <td><span class="price-badge">~2,200¥</span></td>
+        <td><a href="https://sekitori.jp/en/" target="_blank" class="book-link">sekitori.jp ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>18 ธ.ค.</strong></td>
+        <td><span class="dot" style="background:var(--r4)"></span>Kawaguchiko → Oku-Asakusa</td>
+        <td>Bus + TX Line</td>
+        <td><span class="price-badge">~2,000¥</span></td>
+        <td><a href="https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction" target="_blank" class="book-link">highwaybus.com ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>21 ธ.ค.</strong></td>
+        <td><span class="dot" style="background:var(--r5)"></span>Oku-Asakusa → Haneda</td>
+        <td>Hibiya + Toei Asakusa</td>
+        <td><span style="color:var(--sub);font-size:12px">Suica</span></td>
+        <td><span style="color:var(--sub);font-size:12px">Suica (ไม่จอง)</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DAY 0 — Haneda → Asakusabashi
+═══════════════════════════════════════════════════════════ -->
+<div class="section" id="d0">
+  <div class="section-header">
+    <div class="day-badge" style="background:var(--r0)">
+      <span class="day-num">10</span>
+      <span class="day-sub">ธ.ค.</span>
+    </div>
+    <div class="section-title">
+      <h2>Haneda Airport → Asakusabashi</h2>
+      <div class="route-line">Haneda Airport Terminal 3 → Toyoko Inn Akiba Asakusabashi</div>
+      <div class="meta-pills">
+        <span class="pill warn">⚠ ถึง 22:10 · ผ่าน ตม. ก่อน 23:30</span>
+        <span class="pill">3 เส้นทาง</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROUTE 1 – Keikyu -->
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:var(--r0)">🔴</div>
+      <div>
+        <h3>ทาง 1 — Keikyu Airport Line → Toei Asakusa Line</h3>
+        <div class="sub">Terminal 3 → Asakusabashi (A16) · ~610¥</div>
+      </div>
+      <span class="badge-rec">⭐ แนะนำสุด</span>
+    </div>
+    <div class="route-card-body">
+
+      <div class="callout tip">
+        <strong>จุดเริ่มต้น</strong>
+        Terminal 3 ชั้น 2 (ขาเข้าประเทศ) → เดินออกมาเห็น Information Counter → ไปทางขวา → เจอป้ายสีแดง <strong>"Keikyu Line"</strong> → เดินตามป้าย → เข้าสถานี <strong>Haneda Airport Terminal 3</strong>
+      </div>
+
+      <div class="sub-label">ซื้อตั๋ว / บัตร (เลือกอย่างใดอย่างหนึ่ง)</div>
+      <div class="ticket-grid">
+        <div class="ticket-item">
+          <div class="ti-title">💳 ตู้อัตโนมัติ</div>
+          <div class="ti-detail">เลือก TH / EN → เลือกปลายทาง <strong>Asakusabashi</strong> → จ่ายเงินสด / บัตร ~610¥</div>
+        </div>
+        <div class="ticket-item">
+          <div class="ti-title">📱 Suica / Pasmo ใน Apple Wallet</div>
+          <div class="ti-detail">Wallet → (+) → Transit Card → ค้นหา "Suica" หรือ "Pasmo" → เติมเงินผ่าน Apple Pay → แตะโทรศัพท์ที่ทางเข้าได้เลย (รองรับ Visa / Mastercard / Amex บางประเภท)</div>
+        </div>
+        <div class="ticket-item" style="flex:1 1 100%;">
+          <div class="ti-title">🟢 ซื้อบัตร Suica (ตู้สีเขียว JR East) — แนะนำ</div>
+          <div class="ti-detail">
+            <strong>พิกัด:</strong> ออก Arrival Hall → เดินตามป้าย Tokyo Monorail → ผ่าน Information Center → <strong>เลี้ยวซ้าย</strong> → เจอ Seven Bank ATM / ตู้จอง JR East / ตู้ Suica เรียงกัน → <strong>ตู้ไกลสุด = ตู้สีเขียว</strong><br><br>
+            ใช้เงินสด · เติม 1,000–10,000¥ · ใช้ได้ 28 วัน · <strong>เงินเหลือคืนไม่ได้</strong> · ซื้อสำรองที่ <strong>Ninja Wifi</strong> ชั้น 2 Terminal 3 เปิดถึง <strong>23:45</strong><br><br>
+            <strong>⚠️ เลือก 2 แบบ:</strong><br>
+            <span style="color:#065f46;font-weight:700">✅ Name-Inscribed Suica (แนะนำ)</span> — พิมพ์ชื่อลงหน้าบัตร <strong>ถ้าหาย ออกใบใหม่ทดแทนได้</strong><br>
+            <span style="color:#92400e;">⬜ Blank Suica</span> — ไม่ระบุชื่อ ถ้าหายหายเลย ออกใหม่ไม่ได้<br><br>
+            <strong>ขั้นตอน (Name-Inscribed):</strong> กด English → เลือก "Name-Inscribed Suica" → กด Agree → กรอก ชื่อ-นามสกุล (ตาม Passport) / เพศ+วันเกิด / เบอร์โทร (ใส่เบอร์ไทยได้) → เลือกจำนวนเงิน (มีหักมัดจำ 500¥) → จ่ายเงิน → รับบัตรช่องซ้ายมือ<br><br>
+            <span style="color:#555;">Welcome Suica ไม่มีค่ามัดจำ 500¥ แต่ออกใหม่ไม่ได้ถ้าหาย</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-label">ขึ้นรถไฟ</div>
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:var(--r0)">1</span>
+          <div class="step-body">มองป้ายสีแดง <strong>"Keikyu Line"</strong> — ทางเข้าจะอยู่ติดกันเลยในโถงเดียวกัน → แตะบัตรเข้าเกทที่แถบสีฟ้า (สัญลักษณ์ IC)</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r0)">2</span>
+          <div class="step-body">
+            ลงชานชาลา:<br>
+            · บันไดเลื่อน: ตามป้าย <strong>"Shinagawa / Asakusa / Yokohama"</strong> ส่วนใหญ่ชานชาลา 2<br>
+            · ลิฟต์: สัญลักษณ์สีฟ้า → ชั้น 1 → ออกลิฟต์ไปทาง <strong>Track 2</strong>
+          </div>
+        </li>
+      </ol>
+
+      <div class="sub-label">⚡ เลือกขบวนที่ถูก — สำคัญมาก</div>
+      <div class="callout tip">
+        มองป้ายไฟเขียนว่า <strong>"Through Asakusa Line"</strong> หรือจุดหมาย <strong>Asakusa / Narita Airport / Inba-nihon-idai / Aoto / Oshiage</strong><br>
+        หรือ <strong>ดูหน้าจอชานชาลา</strong>ตอนอยู่สนามบิน — ชื่อปลายทางเหล่านี้จะขึ้นบนจอ<br>
+        → นั่งตรงถึง <strong>Asakusabashi (A16)</strong> ไม่ต้องเปลี่ยนสาย
+      </div>
+      <div class="callout danger">
+        <strong>🚫 ห้ามขึ้นขบวน Yokohama</strong>
+        หากรถสุดที่ Sengakuji / Shinagawa → ลงรอที่ชานชาลาเดิม รอขบวนถัดไปที่ไปทาง Asakusa
+      </div>
+
+      <div class="sub-label">ถึง Asakusabashi (A16) → โรงแรม</div>
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:var(--r0)">1</span>
+          <div class="step-body">มองป้ายสีเหลือง <strong>"Exit A3"</strong> บนเพดาน/เสา → แตะบัตร Suica ออก → เดินออก <strong>Exit A3</strong><br>
+            <span class="note">ถ้าหาป้าย A3 ไม่เจอ ให้หา "Edo-dori Avenue" หรือ "JR Asakusabashi Station" ทางออกอยู่ฝั่งเดียวกัน</span>
+          </div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r0)">2</span>
+          <div class="step-body">ขึ้นมาบนถนน → <strong>เลี้ยวขวา → เดิน 150 เมตร → เจอโรงแรม</strong></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ROUTE 2 – Monorail + Daimon -->
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:#475569">⬛</div>
+      <div>
+        <h3>ทาง 2 — Monorail → Daimon (ใต้ดิน) → Asakusabashi</h3>
+        <div class="sub">~650¥ · ต้องถึงก่อน 23:45</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <div class="alert-row">⏰ ต้องถึงสนามบิน Monorail ก่อน 23:45 — Daimon ออก 00:05</div>
+
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:#475569">1</span>
+          <div class="step-body">เข้า Monorail แตะบัตร → ลิฟต์ขึ้นชั้น 3 <strong>(Platform 2)</strong> หรือบันไดเลื่อนหาป้าย <strong>"Platform 2 - For Hamamatsucho"</strong></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#475569">2</span>
+          <div class="step-body">
+            ขึ้นรถ <strong>For Hamamatsucho</strong>:
+            <div class="train-legend" style="margin-top:8px">
+              <div class="tl-item"><span class="tl-badge" style="background:#e63946">Haneda Express</span> Last <strong>23:48</strong></div>
+              <div class="tl-item"><span class="tl-badge" style="background:#1d3557">Rapid</span> Last <strong>00:10</strong></div>
+              <div class="tl-item"><span class="tl-badge" style="background:#2d6a4f">Local</span> Last <strong>00:10</strong></div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#475569">3</span>
+          <div class="step-body">ลง <strong>Hamamatsucho</strong> → มองป้ายเหลือง <strong>North Exit</strong> → แตะบัตรออก → ลงลิฟต์/บันไดเลื่อนชั้น 1<br><span class="note">ทริก: เดินไปหัวขบวน สังเกตป้ายเหลือง North Exit</span></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#475569">4</span>
+          <div class="step-body">ออกจากสถานีเดินตรง → เจอสี่แยก <strong>Starbucks</strong> ตรงหัวมุม → เจอป้ายลงใต้ดิน <strong>Daimon (A09)</strong> → เลือก <strong>Exit B4</strong> (มีลิฟต์ลงไป)</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#475569">5</span>
+          <div class="step-body">เข้าสถานี แตะบัตร → เดินตามป้ายสีชมพู <strong>(สาย A)</strong> เขียนว่าไป Asakusa/Oshiage</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#475569">6</span>
+          <div class="step-body">ชานชาลา 2 → นั่งไปลง <strong>Asakusabashi (A16)</strong> → ออก Exit 3 → เลี้ยวขวา → โรงแรม</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ROUTE 3 – Monorail + JR -->
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:#2d6a4f">🚂</div>
+      <div>
+        <h3>ทาง 3 — Monorail → JR Akihabara → JR Asakusabashi</h3>
+        <div class="sub">~650¥ · ทางสำรอง</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <ol class="steps">
+        <li><span class="step-num" style="background:#2d6a4f">1</span><div class="step-body">เข้า Monorail แตะบัตร → ลิฟต์ขึ้นชั้น 3 หรือบันไดเลื่อนหาป้าย <strong>"Platform 2 - For Hamamatsucho"</strong></div></li>
+        <li><span class="step-num" style="background:#2d6a4f">2</span><div class="step-body">ขึ้นรถ <strong>For Hamamatsucho</strong> (สีแดง / น้ำเงิน / เขียว)</div></li>
+        <li><span class="step-num" style="background:#2d6a4f">3</span><div class="step-body">ลง <strong>Hamamatsucho</strong> → มองป้าย <strong>"Transfer to JR Line"</strong> สัญลักษณ์เขียว → เดินตามทางเชื่อม (ไม่ต้องออกตึก)</div></li>
+        <li><span class="step-num" style="background:#2d6a4f">4</span><div class="step-body">แตะบัตรผ่าน 1 ครั้ง → หาป้ายเหลือง/เลข 4 → แถบสีเขียว <strong>Yamanote Line</strong> หรือสีฟ้า <strong>Keihin-Tohoku Line</strong></div></li>
+        <li><span class="step-num" style="background:#2d6a4f">5</span><div class="step-body">ชานชาลา 4 <span style="color:var(--sub)">(เป็นเกาะกลาง)</span> — ยืนฝั่งเลข 4 → ขึ้นขบวนไป Tokyo/Ueno/<strong>Akihabara</strong> → ลง <strong>Akihabara</strong></div></li>
+        <li><span class="step-num" style="background:#2d6a4f">6</span><div class="step-body">มองป้ายเหลือง <strong>Chuo-Sobu Line</strong> → ชานชาลา 6 → ขึ้นขบวนไปทาง Chiba/Tsudanuma/Nishi-Funabashi</div></li>
+        <li><span class="step-num" style="background:#2d6a4f">7</span><div class="step-body">ลง <strong>Asakusabashi</strong> → ออก Exit 3 → <strong>เลี้ยวขวา → โรงแรม</strong></div></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DAY 2 — Tokyo → Fujinomiya
+═══════════════════════════════════════════════════════════ -->
+<div class="section" id="d2">
+  <div class="section-header">
+    <div class="day-badge" style="background:var(--r1)">
+      <span class="day-num">12</span>
+      <span class="day-sub">ธ.ค.</span>
+    </div>
+    <div class="section-title">
+      <h2>Tokyo → Fujinomiya</h2>
+      <div class="route-line">Toyoko Inn Asakusabashi → Kuretake Inn Premium Fujinomiya</div>
+      <div class="meta-pills">
+        <span class="pill price">🚌 Bus ~2,000¥ แนะนำ</span>
+        <span class="pill time">⏱ 2h 30m</span>
+        <span class="pill book">📅 จองล่วงหน้า 1 เดือน</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout tip">
+    <strong>💡 รถรับส่งฟรีจากโรงแรม!</strong>
+    มีรถรับส่งโรงแรมจาก <strong>Akihabara</strong> เช้าจนถึง 10 โมง — ช่วยประหยัดแรงมาก
+  </div>
+
+  <!-- BUS -->
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:var(--r1)">🚌</div>
+      <div>
+        <h3>ทาง 1 — Highway Bus (แนะนำ)</h3>
+        <div class="sub">~2,000–3,300¥ · 2 ชม. 30 นาที · ตรงไม่ต้องเปลี่ยน</div>
+      </div>
+      <span class="badge-rec">⭐ แนะนำ</span>
+    </div>
+    <div class="route-card-body">
+      <div class="callout warn">
+        <strong>📅 จอง:</strong> <a href="https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare" target="_blank">shizuokabus.co.jp ↗</a> · จองล่วงหน้า 1 เดือน · รอบแรก ~08:10 · ลงสถานี <strong>Fujinomiya Sta.</strong>
+      </div>
+
+      <div class="sub-label">จากโรงแรม Toyoko Inn Asakusabashi ไป Tokyo Station</div>
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:var(--r1)">1</span>
+          <div class="step-body">ออกจากโรงแรมเลี้ยวซ้าย ถนน Edo-dori → เจอสี่แยกใหญ่ (มีรางรถไฟยกระดับด้านบน) → ถึงใต้ทางด่วนเลี้ยวขวา → เข้า <strong>JR Asakusabashi (East Exit)</strong></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r1)">2</span>
+          <div class="step-body">แตะบัตร → หา <strong>Platform 1 (Chou Sobu Line สีเหลือง)</strong> → ไป Akihabara/Shinjuku/Mitaka → นั่ง 1 สถานี → ลง <strong>Akihabara</strong><br><span class="note">ไม่ใช่สาย Asakusa Line สีชมพูใต้ดิน</span></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r1)">3</span>
+          <div class="step-body">มองป้ายสีเขียว (Yamanote) หรือสีฟ้า (Keihin-Tohoku) → ชานชาลา 4 → ขึ้นขบวนไป <strong>Tokyo/Ueno</strong> → นั่ง 2 สถานี (ผ่าน Kanda) → ลง <strong>Tokyo Sta.</strong></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r1)">4</span>
+          <div class="step-body">มองป้าย <strong>Yaesu South Exit</strong> → เดินตามลูกศรออกประตูกระจกใหญ่ → เจออาคารสถานีบัส</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r1)">5</span>
+          <div class="step-body">หาตู้ขายตั๋วอัตโนมัติ (ถ้ายังไม่ซื้อ) → เช็คหน้าจอว่ารถเทียบช่องไหน (ปกติ 8, 9) → ขึ้นรถ <strong>Fujikyu</strong> ป้ายข้างรถเขียนว่า Fujikyu<br><span class="note">ถ้าไม่มีป้าย ถามคนตรวจตั๋วก่อนขึ้น</span></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- TRAIN -->
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:#f97316">🚂</div>
+      <div>
+        <h3>ทาง 2 — รถไฟ JR (สำรอง)</h3>
+        <div class="sub">จ่ายผ่าน Suica · ต้องต่อรถ</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:#f97316">1</span>
+          <div class="step-body">เส้นทาง Asakusabashi → Akihabara → Tokyo Sta. เหมือนทาง 1 ข้อ 1–3</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#f97316">2</span>
+          <div class="step-body">ที่ Tokyo Sta. ชั้น 2 → มองป้ายสีส้ม <strong>Tokaido Line</strong> (เลข 7–10) → หาชานชาลา 9–10 <span style="color:var(--sub)">(คาดว่า — ดูป้ายที่ชานชาลาด้วย)</span></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#f97316">3</span>
+          <div class="step-body">
+            ขึ้นขบวนไป <strong>Atami / Numazu</strong> หรือ <strong>Shizuoka / Shimada</strong> — ดูป้ายข้างตัวรถ + ดูตารางที่ชานชาลา (ดูเวลา, ประเภทรถ, Destination)<br>
+            <span class="note" style="display:block;margin-bottom:8px">รถมี 2 แบบ: Local และ Rapid · จุดสังเกต: ตัวรถอาจมีสีส้มตัดเขียว</span>
+            <ul class="blist" style="margin-top:8px">
+              <li>Shizuoka/Shimada → ลง <strong>Fuji Sta.</strong> ได้เลย</li>
+              <li>Atami → ลงแล้วเปลี่ยน Tokaido Line ไป Shizuoka/Shimada (ชานชาลาตรงข้าม) ขบวนเป็น <strong>JR Central สีส้มขาว</strong></li>
+              <li>Numazu → ลงแล้วเปลี่ยน มักจะจอดอยู่<strong>ตรงข้าม หรือ</strong>ชานชาลาถัดไปไป Shizuoka/Shimada</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#f97316">4</span>
+          <div class="step-body">ถึง <strong>Fuji Sta.</strong> → มองป้ายสีแดง <strong>Minobu Line</strong> หรือป้ายชานชาลา Fujinomiya/Kofu → ขึ้นบันไดเลื่อน<strong>ข้ามสะพานลอย</strong>ไปชานชาลา 1–2 (ตู้ขาว-ส้ม รถทุก 20–30 นาที) → ลง <strong>Fujinomiya Sta.</strong></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DAY 4 — Fujinomiya → Shizuoka
+═══════════════════════════════════════════════════════════ -->
+<div class="section" id="d4">
+  <div class="section-header">
+    <div class="day-badge" style="background:var(--r2)">
+      <span class="day-num">14</span>
+      <span class="day-sub">ธ.ค.</span>
+    </div>
+    <div class="section-title">
+      <h2>Fujinomiya → Shizuoka</h2>
+      <div class="route-line">Kuretake Inn Premium Fujinomiya → Hotel Associa Shizuoka</div>
+      <div class="meta-pills">
+        <span class="pill price">🚂 JR ~1,400¥</span>
+        <span class="pill time">⏱ ~1h 10m</span>
+        <span class="pill">รถแรก 07:39</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:var(--r2)">🚂</div>
+      <div>
+        <h3>JR Minobu Line → Fuji → JR Tokaido Line → Shizuoka</h3>
+        <div class="sub">ต่อรถ 1 ครั้งที่ Fuji Sta.</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:var(--r2)">1</span>
+          <div class="step-body">ออกจากโรงแรม <strong>Kuretake Inn</strong> เลี้ยวซ้าย เดิน 200 เมตร → เจอ <strong>JR Fujinomiya Sta.</strong> (ทางซ้าย) → ลิฟต์ขึ้นชั้น 2 → แตะบัตรเข้า</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r2)">2</span>
+          <div class="step-body">หาชานชาลา 1 → ป้ายเขียนว่าไป <strong>Fuji</strong> → นั่ง <strong>Minobu Line</strong> ลง <strong>Fuji Sta.</strong><br><span class="note">~25 นาที / ~420¥</span></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r2)">3</span>
+          <div class="step-body">ที่ Fuji Sta. → มองป้ายสีส้ม <strong>Tokaido Line</strong> เขียนว่า Shizuoka/Hamamatsu → ชานชาลา 3 หรือ 4</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r2)">4</span>
+          <div class="step-body">ขึ้นขบวนไป <strong>Shizuoka / Shimada / Hamamatsu</strong><br><span class="note">~45 นาที / ~990¥</span></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r2)">5</span>
+          <div class="step-body">ลง <strong>Shizuoka Sta.</strong> → มองป้ายเหลือง <strong>North Exit</strong> → ออกมาแล้วเลี้ยวขวา → เดิน 1 นาที → <strong>Hotel Associa Shizuoka</strong></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DAY 6 — Shizuoka → Kawaguchiko
+═══════════════════════════════════════════════════════════ -->
+<div class="section" id="d6">
+  <div class="section-header">
+    <div class="day-badge" style="background:var(--r3)">
+      <span class="day-num">16</span>
+      <span class="day-sub">ธ.ค.</span>
+    </div>
+    <div class="section-title">
+      <h2>Shizuoka → Kawaguchiko</h2>
+      <div class="route-line">Hotel Associa Shizuoka → Habitacion Station Mobile Cottage</div>
+      <div class="meta-pills">
+        <span class="pill price">🚌 Bus ~2,200¥</span>
+        <span class="pill time">⏱ ~2h 10m</span>
+        <span class="pill book">📅 จองล่วงหน้า 1 เดือน</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:var(--r3)">🚌</div>
+      <div>
+        <h3>Highway Bus — ตรงไม่ต้องเปลี่ยน</h3>
+        <div class="sub">Shizuoka Station Bus Terminal → Kawaguchiko Sta.</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <div class="callout warn">
+        <strong>📅 จอง: <a href="https://sekitori.jp/en/" target="_blank">sekitori.jp ↗</a></strong>
+        จองล่วงหน้า 1 เดือน · ถึงรถก่อน 15 นาที · มี 6 ป้าย ลงป้ายสุดท้าย <strong>Kawaguchiko Sta.</strong>
+      </div>
+
+      <div class="ticket-grid" style="margin-bottom:16px">
+        <div class="ticket-item">
+          <div class="ti-title">🕐 รอบเช้า</div>
+          <div class="ti-detail"><strong>07:40</strong></div>
+        </div>
+        <div class="ticket-item">
+          <div class="ti-title">🕑 รอบบ่าย</div>
+          <div class="ti-detail"><strong>14:40–15:00</strong></div>
+        </div>
+      </div>
+
+      <div class="sub-label">จากโรงแรม Hotel Associa ไปสถานีบัส</div>
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:var(--r3)">1</span>
+          <div class="step-body">ออกจากประตูหลักโรงแรม <strong>Hotel Associa</strong> เลี้ยวซ้าย → เดินตามทางเชื่อมขนานกับตึก ~30 เมตร → เจอ <strong>JR Shizuoka Sta. (North Exit)</strong> ทางซ้าย</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r3)">2</span>
+          <div class="step-body">เดินตรงต่อไปยังลานกว้าง → เจอ <strong>Bus Terminal</strong> → หาป้าย <strong>หมายเลข 12</strong><br><span class="note">ไม่ต้องข้ามถนนใหญ่</span></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r3)">3</span>
+          <div class="step-body">สังเกตป้ายเขียนว่าไป <strong>Gotemba / Kawaguchiko / Fujikyu Highland</strong></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DAY 8 — Kawaguchiko → Oku-Asakusa
+═══════════════════════════════════════════════════════════ -->
+<div class="section" id="d8">
+  <div class="section-header">
+    <div class="day-badge" style="background:var(--r4)">
+      <span class="day-num">18</span>
+      <span class="day-sub">ธ.ค.</span>
+    </div>
+    <div class="section-title">
+      <h2>Kawaguchiko → Oku-Asakusa</h2>
+      <div class="route-line">Habitacion Station → Hotel Little Bird Oku-Asakusa</div>
+      <div class="meta-pills">
+        <span class="pill price">🚌 Bus+TX ~2,000¥</span>
+        <span class="pill time">⏱ ~2h+</span>
+        <span class="pill book">📅 จองล่วงหน้า</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout warn">
+    <strong>📅 จอง Bus: <a href="https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction" target="_blank">highwaybus.com ↗</a></strong>
+    ลงสถานี <strong>Busta Shinjuku (Shinjuku Express Bus Terminal)</strong>
+  </div>
+
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:var(--r4)">🚌</div>
+      <div>
+        <h3>Part 1 — จากโรงแรม Habitacion ไปสถานีบัส Kawaguchiko</h3>
+        <div class="sub">เดินจากโรงแรมไปสถานีบัส</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:var(--r4)">1</span>
+          <div class="step-body">ออกจากรั้วโรงแรมเลี้ยวขวาไปถนนใหญ่ → ฝั่งตรงข้ามมี 7-Eleven → เดินทิศตะวันออก → เลี้ยวขวาที่สี่แยกที่มีร้านขายของฝาก → เดินต่อจะเห็น <strong>อาคารไม้ทรงยุโรป</strong> = สถานี Kawaguchiko</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r4)">2</span>
+          <div class="step-body">ที่สถานี <strong>ไม่ต้องเข้าไปในรถไฟ</strong> → หาลานจอดบัส → เสาป้าย <strong>หมายเลข 3 หรือ 4</strong> (เช็คหน้าจอ LCD ชานชาลา) → ขึ้นรถดูป้าย <strong>Shinjuku</strong></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:#6d28d9">🏢</div>
+      <div>
+        <h3>Part 2 — Busta Shinjuku → JR → TX Line → Oku-Asakusa</h3>
+        <div class="sub">ลงรถบัสที่ Busta Shinjuku แล้วเดินทางต่อ</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:#6d28d9">1</span>
+          <div class="step-body">รถจอด<strong>ชั้น 3</strong> → ลงรับกระเป๋า → ลิฟต์/บันไดเลื่อนลงชั้น 2 → เชื่อมต่ออาคาร <strong>JR Shinjuku (Exit New South Gate)</strong></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#6d28d9">2</span>
+          <div class="step-body">มองป้ายเหลือง <strong>Chou Sobu Line</strong> ชานชาลา 13, 16 → ขึ้นขบวนไปทาง Akihabara/Chiba → ลง <strong>Akihabara</strong></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#6d28d9">3</span>
+          <div class="step-body">มองป้าย <strong>Central Gate</strong> → ออกช่องตรวจตั๋ว JR <strong>เลี้ยวขวาทันที</strong> → เดินออกนอกอาคาร → เห็น Yodobashi Camera → ทางเข้า TX อยู่ลานหน้าตึก</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#6d28d9">4</span>
+          <div class="step-body">หาลิฟต์สัญลักษณ์ <strong>TX สีน้ำเงิน-แดง</strong> → ลงชั้น 1 → สถานี <strong>TX Akihabara</strong> → แตะบัตรเข้า</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#6d28d9">5</span>
+          <div class="step-body">ลิฟต์ไป Platform 1, 2 (ชั้น B4) → รอรถไปทาง <strong>Asakusa/Tsukuba</strong> → นั่ง 2 สถานี → ลง <strong>Asakusa (TX03)</strong></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#6d28d9">6</span>
+          <div class="step-body">ออก <strong>Exit A1</strong> → ลิฟต์ขึ้นมา → เลี้ยวขวา → เดิน 850 เมตร (ผ่าน Donki ขวามือ → ข้ามสี่แยก) → <strong>Hotel Little Bird Oku-Asakusa</strong> อยู่ในซอยขวามือ</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     DAY 11 — Oku-Asakusa → Haneda
+═══════════════════════════════════════════════════════════ -->
+<div class="section" id="d11">
+  <div class="section-header">
+    <div class="day-badge" style="background:var(--r5)">
+      <span class="day-num">21</span>
+      <span class="day-sub">ธ.ค.</span>
+    </div>
+    <div class="section-title">
+      <h2>Oku-Asakusa → Haneda Airport</h2>
+      <div class="route-line">Hotel Little Bird Oku-Asakusa → Terminal 3 · NH877 ออก 01:25</div>
+      <div class="meta-pills">
+        <span class="pill price">🚇 Suica</span>
+        <span class="pill warn">⚠ ออกก่อน 21:00</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert-row">⏰ ออกจากโรงแรมห้ามเกิน 21:00 น. — เครื่องออก 01:25</div>
+
+  <!-- ROUTE 1 – Hibiya -->
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:var(--r5)">🚇</div>
+      <div>
+        <h3>ทาง 1 — Hibiya Line → Toei Asakusa Line → Haneda</h3>
+        <div class="sub">จากโรงแรม → Iriya → Ningyocho → Haneda T3</div>
+      </div>
+      <span class="badge-rec">⭐ แนะนำ</span>
+    </div>
+    <div class="route-card-body">
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:var(--r5)">1</span>
+          <div class="step-body">เดินออกจากโรงแรมเลี้ยวขวา → เดินไปเรื่อยๆ → เจอสี่แยก Showa-dori → หาป้ายสถานี <strong>Iriya (สาย Hibiya Line สีเทา)</strong><br><span class="note">ลิฟต์อยู่ฝั่งตรงข้าม ต้องข้ามทางม้าลาย 2 จุด → เจอลิฟต์ "Elevator to Platform 1" ไปทาง Ueno/Ginza/Ningyocho</span></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r5)">2</span>
+          <div class="step-body">แตะบัตรเข้า → ขึ้นขบวนไปทาง <strong>Ueno/Ginza/Naka-meguro</strong> → ลง <strong>Ningyocho (H14)</strong></div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r5)">3</span>
+          <div class="step-body">มองป้าย <strong>A สีชมพู</strong> หรือ <strong>Toei Asakusa Line</strong> → หาสัญลักษณ์ลิฟต์เพื่อข้ามไปสายสีชมพู → แตะบัตรเข้า → <strong>ชานชาลา 1</strong> เขียนว่า Nihombashi/Sengakuji/Haneda Airport</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r5)">4</span>
+          <div class="step-body">
+            รอขบวน <strong>ไป Haneda Airport เท่านั้น</strong>:
+            <div class="train-legend" style="margin-top:10px">
+              <div class="tl-item"><span class="tl-badge" style="background:#22c55e">Airport Kaitoku</span><span>แถบสีเขียว = <strong>เร็วสุด</strong></span></div>
+              <div class="tl-item"><span class="tl-badge" style="background:#f97316">Access Express</span><span>สีส้ม = เร็ว</span></div>
+              <div class="tl-item"><span class="tl-badge" style="background:#64748b">Local</span><span>ขาวดำ = ได้แต่ช้า</span></div>
+            </div>
+            <div class="callout danger" style="margin-top:10px">
+              🚫 ห้ามขึ้นขบวนที่เขียนไป <strong>Nishi-magome</strong>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="step-num" style="background:var(--r5)">5</span>
+          <div class="step-body">ลง <strong>Haneda Airport Terminal 3</strong> → ลากกระเป๋าตามสัญลักษณ์เครื่องบิน+ลิฟต์ → กดชั้น 1 (ออกสถานี แตะบัตรออก) → ลิฟต์ขึ้น<strong>ชั้น 3</strong> (จุดเช็คอินสายการบิน)</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ROUTE 2 – Walk to Asakusa -->
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:#0891b2">🚶</div>
+      <div>
+        <h3>ทาง 2 — เดินไป Asakusa Station → Toei Asakusa Line</h3>
+        <div class="sub">จากโรงแรม → Asakusa Sta. → Haneda T3</div>
+      </div>
+    </div>
+    <div class="route-card-body">
+      <ol class="steps">
+        <li>
+          <span class="step-num" style="background:#0891b2">1</span>
+          <div class="step-body">เดินจากโรงแรมมาสถานี <strong>Asakusa</strong> → มองหาโรงแรม <strong>Richmond Hotel Premier Asakusa</strong> → ลิฟต์ <strong>Exit A2b</strong> อยู่ตรงข้ามโรงแรม</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#0891b2">2</span>
+          <div class="step-body">กดลิฟต์ลง B1 (ชั้นตรวจตั๋ว) → แตะบัตร → มองทางไปชานชาลา 1</div>
+        </li>
+        <li>
+          <span class="step-num" style="background:#0891b2">3</span>
+          <div class="step-body">ทำเหมือน <strong>ทาง 1 ข้อ 4–5</strong> — รอขบวน Airport Kaitoku / Access Express → ลง Haneda T3</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- BOOKING TABLE -->
+<div class="book-section">
+  <h2>📋 ลิงก์จองทั้งหมด</h2>
+  <table class="book-table">
+    <thead>
+      <tr><th>เส้นทาง</th><th>เว็บจอง</th><th>หมายเหตุ</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="dot" style="background:var(--r1)"></span>Tokyo → Fujinomiya (บัส)</td>
+        <td><a href="https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare" target="_blank" class="book-link">shizuokabus.co.jp ↗</a></td>
+        <td>จองล่วงหน้า 1 เดือน · รอบแรก 08:10</td>
+      </tr>
+      <tr>
+        <td><span class="dot" style="background:var(--r3)"></span>Shizuoka → Kawaguchiko</td>
+        <td><a href="https://sekitori.jp/en/" target="_blank" class="book-link">sekitori.jp ↗</a></td>
+        <td>จองล่วงหน้า 1 เดือน · 2 รอบ</td>
+      </tr>
+      <tr>
+        <td><span class="dot" style="background:var(--r4)"></span>Kawaguchiko → Shinjuku</td>
+        <td><a href="https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction" target="_blank" class="book-link">highwaybus.com ↗</a></td>
+        <td>จองล่วงหน้า</td>
+      </tr>
+      <tr>
+        <td><span class="dot" style="background:var(--r2)"></span>Fujinomiya → Shizuoka</td>
+        <td>Suica (ไม่ต้องจอง)</td>
+        <td>รถแรก 07:39</td>
+      </tr>
+      <tr>
+        <td><span class="dot" style="background:var(--r0)"></span>Haneda ↔ Asakusabashi</td>
+        <td>Suica (ไม่ต้องจอง)</td>
+        <td>แตะบัตรได้เลย</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
