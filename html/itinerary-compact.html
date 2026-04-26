@@ -89,7 +89,7 @@
     list-style: none; display: flex; align-items: center; gap: 0.4rem; user-select: none;
   }
   .extras summary::-webkit-details-marker { display: none; }
-  .extras summary::before { content: '▶'; font-size: 0.6rem; transition: transform 0.2s; }
+  .extras summary::before { content: '▶'; font-size: 0.6rem; transition: transform 0.2s; pointer-events: none; }
   .extras[open] summary::before { transform: rotate(90deg); }
   .extra-chips { margin-top: 0.4rem; }
   .map-btn.sm { font-size: 0.72rem; padding: 0.18rem 0.5rem; background: #a0522d; }
