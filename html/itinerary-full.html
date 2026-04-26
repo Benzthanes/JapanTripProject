@@ -2091,5 +2091,13 @@
   </footer>
 
 </div><!-- /container -->
+<script>
+  document.querySelectorAll('.extras summary').forEach(function(s) {
+    s.addEventListener('click', function(e) {
+      e.preventDefault();
+      s.parentElement.open = !s.parentElement.open;
+    });
+  });
+</script>
 </body>
 </html>

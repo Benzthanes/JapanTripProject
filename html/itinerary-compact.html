@@ -599,6 +599,13 @@
 </div>
 
 <footer>🌸 Benz & Unz · Japan Dec 2026 · สร้างด้วย Claude Code</footer>
-
+<script>
+  document.querySelectorAll('.extras summary').forEach(function(s) {
+    s.addEventListener('click', function(e) {
+      e.preventDefault();
+      s.parentElement.open = !s.parentElement.open;
+    });
+  });
+</script>
 </body>
 </html>
