@@ -342,13 +342,14 @@
     font-weight: 700;
     color: #555;
     list-style: none;
-    display: inline-block;
+    display: block;
     user-select: none;
     background: #f0f4f8;
     border: 1.5px solid #d0dae6;
     border-radius: 8px;
     padding: 0.45rem 0.9rem;
     transition: background 0.15s, border-color 0.15s;
+    -webkit-tap-highlight-color: transparent;
   }
   .extras summary:hover { background: #e2eaf4; border-color: #aabbd0; }
   .extras summary::-webkit-details-marker { display: none; }
@@ -2093,14 +2094,15 @@
 
 </div><!-- /container -->
 <script>
-  document.querySelectorAll('.extras summary').forEach(function(s) {
+  document.querySelectorAll('.extras').forEach(function(d) {
+    var s = d.querySelector(':scope > summary');
     var busy = false;
     s.addEventListener('click', function(e) {
       e.preventDefault();
       if (busy) return;
       busy = true;
-      s.parentElement.open = !s.parentElement.open;
-      setTimeout(function() { busy = false; }, 50);
+      d.open = !d.open;
+      setTimeout(function() { busy = false; }, 300);
     });
   });
 </script>
