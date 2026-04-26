@@ -342,9 +342,7 @@
     font-weight: 700;
     color: #555;
     list-style: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    display: inline-block;
     user-select: none;
     background: #f0f4f8;
     border: 1.5px solid #d0dae6;
@@ -360,6 +358,9 @@
     transition: transform 0.2s;
     color: #888;
     pointer-events: none;
+    display: inline-block;
+    margin-right: 0.5rem;
+    vertical-align: middle;
   }
   .extras[open] summary::before { transform: rotate(90deg); }
   .extras[open] summary {
@@ -2093,9 +2094,13 @@
 </div><!-- /container -->
 <script>
   document.querySelectorAll('.extras summary').forEach(function(s) {
+    var busy = false;
     s.addEventListener('click', function(e) {
       e.preventDefault();
+      if (busy) return;
+      busy = true;
       s.parentElement.open = !s.parentElement.open;
+      setTimeout(function() { busy = false; }, 50);
     });
   });
 </script>
