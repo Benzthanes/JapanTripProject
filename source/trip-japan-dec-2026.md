@@ -390,8 +390,6 @@
 |---|---|---|---|
 | Sano Seicha | 4.5★ | ชาเขียว (Fuji City — แวะได้ระหว่าง Fujinomiya → Fuji Sta.) | [Maps](https://www.google.com/maps/place/Sano+Seicha/data=!4m2!3m1!1s0x601bd383c2b81157:0xe6a4ccbfe9edf2c3) |
 | Abe | 4.6★ (545) | ร้านอาหาร | [Maps](https://www.google.com/maps/place/Abe/data=!4m2!3m1!1s0x601bd161cc1ee105:0x58f8902cceae8e6d) |
-| ぽっかぽか食堂 | 4.6★ (118) | ร้านบ้านๆ อบอุ่น | [Maps](https://www.google.com/maps/place/ぽっかぽか食堂/data=!4m2!3m1!1s0x601a319c7f2fde91:0x975d0b51a2defbb5) |
-| Fujisan Pudding | 4.5★ (95) | พุดดิ้ง | [Maps](https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c) |
 | Unno | 4.4★ (1,119) | ภัตตาคารญี่ปุ่น | [Maps](https://www.google.com/maps/place/Unno/data=!4m2!3m1!1s0x601a364a82629459:0x8f86e7b7c75c7bec) |
 | Unaten | 4.4★ (198) | ร้านอาหารระดับสูง | [Maps](https://www.google.com/maps/place/Unaten/data=!4m2!3m1!1s0x601bd163b00e6bb3:0x311ae2c62097dcdc) |
 | KITCHEN&BISTRO 光輪 | 4.4★ (104) | Bistro | [Maps](https://www.google.com/maps/place/KITCHEN%26BISTRO+光輪/data=!4m2!3m1!1s0x601a3144dae46b4d:0x1558a753fc99636) |
@@ -428,11 +426,10 @@
 
 | สถานที่ | ★ | Google Maps |
 |---|---|---|
-| จุดชมวิวไร่ชาเขียวและฟูจิ | 4.4★ | [Maps](https://www.google.com/maps/place/จุดชมวิวไร่ชาเขียวและฟูจิ/data=!4m2!3m1!1s0x601bd5a25f0cd969:0xa5fbeaa053091843) |
 | Nihondaira Yume Terrace | 4.3★ | [Maps](https://www.google.com/maps/place/Nihondaira+Yume+Terrace/data=!4m2!3m1!1s0x601a37e1806efdb7:0x901b0166105e08f1) |
 | Kunōzan Tōshōgū | 4.4★ | [Maps](https://www.google.com/maps/place/Kunōzan+Tōshōgū/data=!4m2!3m1!1s0x601a37253a82e1e5:0xffcba401b35afa6d) |
+| Strawberry Field | 4.4★ | [Maps](https://www.google.com/maps/place/Strawberry+Field/data=!4m2!3m1!1s0x601a30cf0cbe36b9:0xe65189eccc84948e) |
 | Aoba Oden Street | 5.0★ | [Maps](https://www.google.com/maps/place/Aoba+Oden+Street/data=!4m2!3m1!1s0x601a490037ea8be9:0x94d1d86232792a3d) |
-| **Tamiya Headquarters & Shop** — สำนักงานใหญ่ Tamiya ชิซุโอกะ ร้านขายโมเดลครบ | 4.4★ | [Maps](https://www.google.com/maps/place/Tamiya+Headquarters/data=!4m2!3m1!1s0x601a364076d2c313:0x5c411a7631b58223) |
 | ศาลเจ้าชิซุโอกะเซ็นเก็น | 4.3★ | [Maps](https://www.google.com/maps/place/ศาลเจ้าชิซึโอกะเซ็นเก็น/data=!4m2!3m1!1s0x60199a83ba2c46c3:0xbfe48b90f00b10f) |
 
 ### 🍽️ อาหาร
@@ -452,19 +449,19 @@
 | สถานที่ | ★ | Google Maps |
 |---|---|---|
 | มิโฮะโนะมัตสึบาระ — ป่าสนชายหาด UNESCO | 4.2★ | [Maps](https://www.google.com/maps/place/มิโฮะโนะมัตสึบาระ/data=!4m2!3m1!1s0x601a3053466e6bed:0x64cf88a387b4c212) |
+| **Tamiya Headquarters & Shop** — สำนักงานใหญ่ Tamiya ชิซุโอกะ ร้านขายโมเดลครบ | 4.4★ | [Maps](https://www.google.com/maps/place/Tamiya+Headquarters/data=!4m2!3m1!1s0x601a364076d2c313:0x5c411a7631b58223) |
 
 ### 🍽️ อาหาร
 
 | | ร้าน | ★ | Google Maps |
 |---|---|---|---|
 | 🐟 **กลางวัน** | **Shimizuko Minami** — อาหารทะเลสด ปลาสดมาก | 4.6★ | [Maps](https://www.google.com/maps/place/清水港みなみ/data=!4m2!3m1!1s0x601a49fbcc6a32c1:0x1fb07338f8134cf0) |
-| 🍶 | **Ho-mei** — อิซาคายะ local บรรยากาศดี | 4.7★ | [Maps](https://www.google.com/maps/place/ほーめい/data=!4m2!3m1!1s0x601960bf5595fdd7:0x6fc913f3c80e4ce2) |
 
 ### 🔖 ตัวเลือกเพิ่มเติม — Shizuoka Day 4–5 (จาก wishlist)
 
 | ร้าน/สถานที่ | ★ | ประเภท | Google Maps |
 |---|---|---|---|
-| Miyamotoya | 4.7★ (182) | ร้านอาหาร | [Maps](https://www.google.com/maps/place/宮本屋/data=!4m2!3m1!1s0x60195e28eba9cc8d:0x79b4e12470cb2b6d) |
+| ぽっかぽか食堂 | 4.6★ (118) | ร้านบ้านๆ อบอุ่น | [Maps](https://www.google.com/maps/place/ぽっかぽか食堂/data=!4m2!3m1!1s0x601a319c7f2fde91:0x975d0b51a2defbb5) |
 | SafeHouse | 4.7★ (47) | ร้านอาหาร | [Maps](https://www.google.com/maps/place/SafeHouse/data=!4m2!3m1!1s0x601a4b6424ad7877:0x3300af0098be188a) |
 | Enoki | 4.5★ (168) | ร้านอาหาร | [Maps](https://www.google.com/maps/place/えのき/data=!4m2!3m1!1s0x601a49d9188d7a91:0xb19b394cfe834ea1) |
 | Shizuoka Kaki Center | 4.4★ (418) | หอยนางรม/ซีฟู้ด | [Maps](https://www.google.com/maps/place/静岡かきセンター+呉服町店/data=!4m2!3m1!1s0x601a49f5f96f8a23:0x21dabdf70da52163) |
@@ -547,6 +544,9 @@
 
 | ร้าน | ★ | ประเภท | Google Maps |
 |---|---|---|---|
+| Ho-mei | 4.7★ (199) | อิซาคายะ | [Maps](https://www.google.com/maps/place/ほーめい/data=!4m2!3m1!1s0x601960bf5595fdd7:0x6fc913f3c80e4ce2) |
+| Miyamotoya | 4.7★ (182) | ร้านอาหาร | [Maps](https://www.google.com/maps/place/宮本屋/data=!4m2!3m1!1s0x60195e28eba9cc8d:0x79b4e12470cb2b6d) |
+| Fujisan Pudding | 4.5★ (95) | พุดดิ้งรูปฟูจิ | [Maps](https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c) |
 | KURA HOUSE FUJIYOSHIDA | 4.9★ (55) | คาเฟ่ | [Maps](https://www.google.com/maps/place/KURA+HOUSE+FUJIYOSHIDA/data=!4m2!3m1!1s0x601967c61e5dbe51:0x33629db04c9ffc8c) |
 | シャンテ・ルヴォン | 4.8★ (232) | ร้านอาหาร | [Maps](https://www.google.com/maps/place/シャンテ・ルヴォン/data=!4m2!3m1!1s0x60195e2a18b1ef89:0x73a23ee97b08cee9) |
 | 三笑 | 4.8★ (118) | ร้านอาหารญี่ปุ่น | [Maps](https://www.google.com/maps/place/三笑/data=!4m2!3m1!1s0x60195fc919deedf7:0x1ad0d89685a3bade) |
