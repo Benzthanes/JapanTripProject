@@ -66,7 +66,6 @@
 | **Fuji-Q Highland** | Day 6–7 | ⚠️ แนะนำจองล่วงหน้า | ¥6,000–7,000 | จองออนไลน์ได้ ช่วง ธ.ค. ไม่แน่นมาก |
 | **Kuroge Wagyu Ichinoya Asakusa** | Day 8 | ⚠️ เสาร์-อาทิตย์ต้องโทรจอง | ¥3,300–5,000 | วันธรรมดา walk-in ได้ วันหยุดจองก่อน |
 | **Habitacion Station Mobile Cottage** | Day 6–7 | ✅ จองแล้ว | — | เช็คอิน 16 ธ.ค. |
-| **Sawayaka** | Day 2–4 | ❌ ไม่รับจอง | ¥1,500–2,000 | ระบบบัตรคิว — ไปก่อนร้านเปิด รอ 1–3 ชม. ปกติ |
 
 ---
 
@@ -320,20 +319,33 @@
 
 > Check-out Toyoko Inn → เช็คอิน Kuretake Inn Premium Fujinomiya
 
+### แผนเที่ยว
+
+| เวลา | กิจกรรม | หมายเหตุ |
+|---|---|---|
+| 10:40 | ถึง Fujinomiya Station — ฝากกระเป๋า Kuretake Inn | เช็คอินจริง 15:00 |
+| 11:00–11:45 | **Sengen Shrine** | เดิน ~10 นาทีจากสถานี |
+| 12:00–13:00 | **虹屋ミミ** — กลางวัน | ยากิโซบะฟูจิโนมิยะ |
+| 13:00–13:30 | บัสไป Shiraito Falls | จาก Fujinomiya Station |
+| 13:30–14:30 | **น้ำตกชิราอิโตะ** | — |
+| 14:30–14:45 | บัสต่อไป Tanukiko | สายเดียวกัน ~4km |
+| 14:45–15:45 | **Tanukiko Fugaku Terrace** | ออกก่อนฟ้ามืด 16:30 |
+| 15:45–16:30 | บัสกลับ Fujinomiya | ~45 นาที |
+| 16:30 | เช็คอิน Kuretake Inn | — |
+| 19:00 | **焼肉ふじ山** — กินเย็น | ยากินิคุ หมู+ไก่+เนื้อ |
+
 ### สถานที่
 
 | สถานที่ | ★ | Google Maps |
 |---|---|---|
 | ศาลเจ้าฟูจิซัง ฮงกู เซ็นเก็น ไทฉะ | 4.4★ | [Maps](https://www.google.com/maps/place/ศาลเจ้าฟูจิซัง+ฮงกุ+เซ็นเก็น+ไทฉะ/data=!4m2!3m1!1s0x601bd4e7917cf813:0xd8084ba66510ceb7) |
 | น้ำตกชิราอิโตะ | 4.4★ | [Maps](https://www.google.com/maps/place/น้ำตกชิราอิโตะ/data=!4m2!3m1!1s0x601bdaee0081ae4d:0x92a3a8ec3ba65a3) |
-| Takido Bridge | 4.4★ | [Maps](https://www.google.com/maps/place/Takido+Bridge/data=!4m2!3m1!1s0x601bd49b630f1631:0x637f0ea0fc90a31d) |
-| Fujisan Yume No Ōhashi Bridge | 4.3★ | [Maps](https://www.google.com/maps/place/Fujisan+Yume+No+Ōhashi+Bridge/data=!4m2!3m1!1s0x601a2b0011e7937d:0x23d4ac86d1458a2e) |
+| Tanukiko Fugaku Terrace | 4.5★ | [Maps](https://www.google.com/maps/place/Tanukiko+Fugaku+Terrace/data=!4m2!3m1!1s0x601bc353f95b5745:0x5546ff72e4ff7c0c) |
 
 ### 🍽️ อาหาร
 
 | | ร้าน | ★ | Google Maps |
 |---|---|---|---|
-| 🥩 **ห้ามพลาด** | **Sawayaka Fujinishiki** — ฮัมเบิร์กสเต็กดัง ไปก่อนเปิดร้าน คิวยาว | 4.4★ | [Maps](https://www.google.com/maps/place/Sawayaka+Fujinishiki+Store/data=!4m2!3m1!1s0x601a2b27565f9a19:0x987914d11f91a8b6) |
 | 🍜 **Local** | **虹屋ミミ** — ยากิโซบะสไตล์ฟูจิโนมิยะ ต้องกิน | 4.2★ | [Maps](https://www.google.com/maps/place/虹屋ミミ/data=!4m2!3m1!1s0x601bd1666367465b:0xdbfd957d44f57795) |
 | 🥩 **เย็น** | **焼肉ふじ山 富士宮店** — ยากินิคุ ดาวสูงมาก | 4.8★ | [Maps](https://www.google.com/maps/place/焼肉ふじ山+富士宮店/data=!4m2!3m1!1s0x601bd141f004c22d:0x1ad6a865946a4697) |
 
@@ -341,22 +353,36 @@
 
 ## Day 3 — 13 ธ.ค. (อา) Fujinomiya Day 2 🗻
 
+### แผนเที่ยว
+
+| เวลา | กิจกรรม | หมายเหตุ |
+|---|---|---|
+| 08:30 | ออกจากโรงแรม | — |
+| 09:00–09:30 | Minobu Line: Fujinomiya → Fuji Station | ~30 นาที / ~420¥ |
+| 09:30–10:00 | เดินไป Yume No Ōhashi Bridge | ~2km / 25 นาที |
+| 10:00–11:00 | **Fujisan Yume No Ōhashi Bridge** | วิว Fuji ตอนเช้าดีสุด |
+| 11:00–11:30 | เดินกลับ Fuji Station | — |
+| 11:30–13:00 | **とんかつ零 富士駅前店** — กลางวัน | ทงคัทสุหมู แถว Fuji Station |
+| 13:00–13:15 | Minobu Line: Fuji → Iriyamase Station | — |
+| 13:15–15:30 | **Ryuganbuchi** + **Takido Bridge** | — |
+| 15:30–15:45 | Minobu Line: Iriyamase → Fujinomiya | 11 นาที |
+| 19:00 | กินเย็น — **楽味人** หรือ **Sagami** | แถว Fujinomiya city |
+
 ### สถานที่
 
 | สถานที่ | ★ | Google Maps |
 |---|---|---|
-| Taisekiji Sanmon Gate | 4.7★ | [Maps](https://www.google.com/maps/place/Taisekiji+Sanmon+Gate/data=!4m2!3m1!1s0x601bd138c9b4b399:0x5d621bf73ecf030b) |
+| Fujisan Yume No Ōhashi Bridge | 4.3★ | [Maps](https://www.google.com/maps/place/Fujisan+Yume+No+Ōhashi+Bridge/data=!4m2!3m1!1s0x601a2b0011e7937d:0x23d4ac86d1458a2e) |
 | Ryuganbuchi | 4.3★ | [Maps](https://www.google.com/maps/place/Ryuganbuchi/data=!4m2!3m1!1s0x601bd5d1a18b8889:0xcf8979f96fb67468) |
-| Strawberry Field | 4.4★ | [Maps](https://www.google.com/maps/place/Strawberry+Field/data=!4m2!3m1!1s0x601a30cf0cbe36b9:0xe65189eccc84948e) |
+| Takido Bridge | 4.4★ | [Maps](https://www.google.com/maps/place/Takido+Bridge/data=!4m2!3m1!1s0x601bd49b630f1631:0x637f0ea0fc90a31d) |
 
 ### 🍽️ อาหาร
 
 | | ร้าน | ★ | Google Maps |
 |---|---|---|---|
-| 🥩 | **Sawayaka** (ถ้ายังไม่ได้กินเมื่อวาน) | 4.4★ | [Maps](https://www.google.com/maps/place/Sawayaka+Fujinishiki+Store/data=!4m2!3m1!1s0x601a2b27565f9a19:0x987914d11f91a8b6) |
-| 🥩 | **Mr.Aging** — สเต็กเนื้อ aged | 4.5★ | [Maps](https://www.google.com/maps/place/Mr.Aging/data=!4m2!3m1!1s0x601bd105f9f7376f:0x6d73fdc636e35940) |
-| 🍱 | **楽味人 / らくみん** — ร้านเล็กซ่อน local gem ดาวสูงมาก | 4.8★ | [Maps](https://www.google.com/maps/place/楽味人+%2F+らくみん/data=!4m2!3m1!1s0x601bd161686cbeeb:0x95b421b2ad0c6ecb) |
-| 🍱 **กลางวัน (สำรอง)** | **[Sagami Fujinomiya](https://www.google.com/maps/place/Sagami/data=!4m2!3m1!1s0x601bd15df8d95555:0x29be8035f8df0e19)** — อาหารญี่ปุ่น local ดาวสูงมาก | 4.8★ | [Maps](https://www.google.com/maps/place/Sagami/data=!4m2!3m1!1s0x601bd15df8d95555:0x29be8035f8df0e19) |
+| 🍖 **กลางวัน** | **とんかつ零 富士駅前店** — ทงคัทสุหมู แถว Fuji Station | 4.4★ | [Maps](https://www.google.com/maps/place/とんかつ零+富士駅前店/data=!4m2!3m1!1s0x601a2b58143ca617:0x555203cb144c26b8) |
+| 🍱 **เย็น** | **楽味人 / らくみん** — local gem ดาวสูงมาก | 4.8★ | [Maps](https://www.google.com/maps/place/楽味人+%2F+らくみん/data=!4m2!3m1!1s0x601bd161686cbeeb:0x95b421b2ad0c6ecb) |
+| 🍱 **เย็น (สำรอง)** | **Sagami** — อาหารญี่ปุ่น local ดาวสูงมาก | 4.8★ | [Maps](https://www.google.com/maps/place/Sagami/data=!4m2!3m1!1s0x601bd15df8d95555:0x29be8035f8df0e19) |
 
 ### 🔖 ตัวเลือกเพิ่มเติม — Fujinomiya Day 2–3 (จาก wishlist)
 
@@ -367,7 +393,6 @@
 | ぽっかぽか食堂 | 4.6★ (118) | ร้านบ้านๆ อบอุ่น | [Maps](https://www.google.com/maps/place/ぽっかぽか食堂/data=!4m2!3m1!1s0x601a319c7f2fde91:0x975d0b51a2defbb5) |
 | Fujisan Pudding | 4.5★ (95) | พุดดิ้ง | [Maps](https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c) |
 | Unno | 4.4★ (1,119) | ภัตตาคารญี่ปุ่น | [Maps](https://www.google.com/maps/place/Unno/data=!4m2!3m1!1s0x601a364a82629459:0x8f86e7b7c75c7bec) |
-| とんかつ零 富士駅前店 | 4.4★ (325) | ทงคัทสุ | [Maps](https://www.google.com/maps/place/とんかつ零+富士駅前店/data=!4m2!3m1!1s0x601a2b58143ca617:0x555203cb144c26b8) |
 | Unaten | 4.4★ (198) | ร้านอาหารระดับสูง | [Maps](https://www.google.com/maps/place/Unaten/data=!4m2!3m1!1s0x601bd163b00e6bb3:0x311ae2c62097dcdc) |
 | KITCHEN&BISTRO 光輪 | 4.4★ (104) | Bistro | [Maps](https://www.google.com/maps/place/KITCHEN%26BISTRO+光輪/data=!4m2!3m1!1s0x601a3144dae46b4d:0x1558a753fc99636) |
 | Flowers | 4.4★ (318) | อาหารตะวันตก | [Maps](https://www.google.com/maps/place/フラワーズ/data=!4m2!3m1!1s0x601a2b4df11134e3:0x4ab3f46f120ef15a) |
@@ -377,6 +402,15 @@
 ---
 
 ## Day 4 — 14 ธ.ค. (จ) เดินทางไป Shizuoka ตัวเมือง 🚅
+
+### เช้า — ก่อนออกเดินทาง
+
+| เวลา | กิจกรรม | หมายเหตุ |
+|---|---|---|
+| 07:30–08:00 | บัสไป Taisekiji Sanmon Gate | จาก Fujinomiya Station |
+| 08:00–09:00 | **[Taisekiji Sanmon Gate](https://www.google.com/maps/place/Taisekiji+Sanmon+Gate/data=!4m2!3m1!1s0x601bd138c9b4b399:0x5d621bf73ecf030b)** 4.7★ | ⚠️ เช็คเวลาเปิดก่อน |
+| 09:00–10:00 | กลับโรงแรม เก็บกระเป๋า เช็คเอ้าต์ | — |
+| ~10:30 | ออกเดินทาง → Shizuoka | — |
 
 ### การเดินทาง ~1:10 ชม. / ~1,400¥
 
@@ -457,7 +491,6 @@
 
 | สถานที่ | ★ | Google Maps |
 |---|---|---|
-| Tanukiko Fugaku Terrace | 4.5★ | [Maps](https://www.google.com/maps/place/Tanukiko+Fugaku+Terrace/data=!4m2!3m1!1s0x601bc353f95b5745:0x5546ff72e4ff7c0c) |
 | Yagizaki Park | 4.4★ | [Maps](https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415) |
 
 > ⚠️ **Fuji tip:** เมฆมักบัง Fuji ตอนบ่าย — วางแผนดู Fuji ตอนเช้า
