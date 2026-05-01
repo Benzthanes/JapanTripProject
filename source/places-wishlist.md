@@ -43,6 +43,9 @@
 | ✅ Plan หมู่บ้านน้ำใส (Oshino Hakkai) | 4.2★ (42,118) | สถานที่ท่องเที่ยว | [Maps](https://www.google.com/maps/place/หมู่บ้านน้ำใส+(โอชิโนะ+ฮักไก)/data=!4m2!3m1!1s0x601966859f99842b:0x163aa46bb0af9f71) |
 | ✅ Plan หมู่บ้านอิยาชิโนะ (Iyashi no Sato) | 4.4★ (8,278) | พิพิธภัณฑ์กลางแจ้ง | [Maps](https://www.google.com/maps/place/หมู่บ้านอิยาชิโนะ/data=!4m2!3m1!1s0x601be1142cbd0f3f:0xe38f690fd5eaebe7) |
 | ✅ Plan Yagizaki Park | 4.4★ (2,154) | อุทยาน | [Maps](https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415) |
+| ✅ Plan Ubuyagasaki | — | จุดชมวิวริมทะเลสาบ | [Maps](https://maps.app.goo.gl/c8Z8ANEnTMfWqwjB6) |
+| ✅ Plan อุทยานคะวะงุชิโกะ เท็นโจซัง | — | อุทยานบนภูเขา | [Maps](https://maps.app.goo.gl/v29XXMwc631uEa9S7) |
+| ✅ Plan กระเช้าลอยฟ้าภูเขาไฟฟูจิ | — | กระเช้าลอยฟ้า | [Maps](https://maps.app.goo.gl/ERFGvbiKDhtYQr9x7) |
 
 ---
 

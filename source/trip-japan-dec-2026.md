@@ -489,6 +489,7 @@
 | สถานที่ | ★ | Google Maps |
 |---|---|---|
 | Yagizaki Park | 4.4★ | [Maps](https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415) |
+| Ubuyagasaki | — | [Maps](https://maps.app.goo.gl/c8Z8ANEnTMfWqwjB6) |
 
 > ⚠️ **Fuji tip:** เมฆมักบัง Fuji ตอนบ่าย — วางแผนดู Fuji ตอนเช้า
 
@@ -496,6 +497,7 @@
 
 | | ร้าน | ★ | Google Maps |
 |---|---|---|---|
+| 🍜 **กลางวัน** | **Hoto Tempura Wakana** — Hoto เส้นแป้งมิโซะ + เทมปุระ | 4.6★ | [Maps](https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8) |
 | ☕ **บ่าย** | **CAFETINO MT.FUJI** — กาแฟวิว Fuji ริมทะเลสาบ | 4.8★ | [Maps](https://www.google.com/maps/place/CAFETINO+MT.FUJI/data=!4m2!3m1!1s0x60195f0e69acef3b:0x7748b4fa9ec63a21) |
 | 🍱 **เย็น** | **Amano Japanese Restaurant** — ญี่ปุ่น รีวิวดีมาก | 4.8★ | [Maps](https://www.google.com/maps/place/割烹天野/data=!4m2!3m1!1s0x60196168c0b980c7:0x7b024ba20cc67d2f) |
 | 🍶 **เย็น (สำรอง)** | **Akasaka** — อิซาคายะ บรรยากาศดี | 4.8★ | [Maps](https://www.google.com/maps/place/海鮮料理赤坂/data=!4m2!3m1!1s0x6019609bb23b896f:0xe4213ccf70294f67) |
@@ -509,21 +511,21 @@
 | เวลา | กิจกรรม | หมายเหตุ |
 |---|---|---|
 | 07:00–08:30 | **Chureito Pagoda** | 398 ขั้น วิว Fuji + Pagoda — แสงเช้าดีที่สุด |
-| 12:00 | กลางวัน | **Hoto Tempura Wakana** (Hoto เส้นแป้งมิโซะ + เทมปุระ) |
-| 14:00–16:00 | **Oshino Hakkai** | น้ำผุดใส วิว Fuji สะท้อนน้ำ — ไปก่อนบ่ายเมฆบัง |
+| 10:00–12:00 | **กระเช้าลอยฟ้า + เท็นโจซัง** | ขึ้นกระเช้าชมวิว Fuji แบบพาโนรามา |
 | 16:00 | ของหวาน | **Patisserie Kimuraya** 4.9★ |
 
 ### สถานที่แนะนำในบริเวณ Kawaguchiko
 | สถานที่ | ค่าเข้า | หมายเหตุ |
 |---|---|---|
 | **Chureito Pagoda** (Arakurayama Sengen Park) | ฟรี | เดิน 398 ขั้น วิว Fuji + Pagoda iconic ที่สุด |
-| **Oshino Hakkai** | ฟรี (บางส่วน ~500¥) | บ่อน้ำผุด 8 แห่ง วิว Fuji สะท้อนน้ำ |
+| **กระเช้าลอยฟ้า + เท็นโจซัง** | มีค่าใช้จ่าย | ขึ้นกระเช้าชมวิว Fuji พาโนรามา |
 | **Iyashi no Sato** | 500¥ | หมู่บ้านหลังคาฟาง ริม Lake Saiko |
 | **Fuji-Q Highland** | ¥6,000–7,000/คน | สวนสนุก roller coaster วิว Fuji ฉากหลัง — ถ้าเลือกวันนี้ให้ทำแทน Chureito+Oshino |
 | **ศาลเจ้าคิตะกุจิ ฮงกูฟูจิเซ็นเก็น** | ฟรี | อยู่ติด Fuji-Q เดิน ~10 นาที แวะก่อน/หลังสวนได้เลย |
 
 - [Chureito Pagoda](https://www.google.com/maps/place/เจดีย์ชูเรโตะ/data=!4m2!3m1!1s0x6019674cfd52a073:0xda57e34920aee799)
-- [Oshino Hakkai](https://www.google.com/maps/place/หมู่บ้านน้ำใส+(โอชิโนะ+ฮักไก)/data=!4m2!3m1!1s0x601966859f99842b:0x163aa46bb0af9f71)
+- [กระเช้าลอยฟ้าภูเขาไฟฟูจิ](https://maps.app.goo.gl/ERFGvbiKDhtYQr9x7)
+- [อุทยานคะวะงุชิโกะ เท็นโจซัง](https://maps.app.goo.gl/v29XXMwc631uEa9S7)
 - [Iyashi no Sato](https://www.google.com/maps/place/หมู่บ้านอิยาชิโนะ/data=!4m2!3m1!1s0x601be1142cbd0f3f:0xe38f690fd5eaebe7)
 - [Fuji-Q Highland](https://www.google.com/maps/search/?api=1&query=Fuji-Q+Highland+Fujiyoshida)
 - [ศาลเจ้าคิตะกุจิ ฮงกูฟูจิเซ็นเก็น จิงจะ](https://www.google.com/maps/place/ศาลเจ้าคิตะกุจิ+ฮงกูฟูจิเซ็นเก็น+จิงจะ/data=!4m2!3m1!1s0x60196129b1baaaab:0x351d81311ed09dfe)
@@ -534,16 +536,15 @@
 
 | | ร้าน | ★ | Google Maps |
 |---|---|---|---|
-| 🍜 **กลางวัน** | **Hoto Tempura Wakana** — Hoto เส้นแป้งมิโซะ + เทมปุระ | 4.6★ | [Maps](https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8) |
-| 🥩 **กลางวัน (สำรอง)** | **鉄焼 (Tetsuyaki)** — เทปันยากิ local | 4.7★ | [Maps](https://www.google.com/maps/place/鉄焼Tetsuyaki/data=!4m2!3m1!1s0x60195e29daa0ce4b:0x58630a1c66491ce1) |
+| 🥩 **กลางวัน** | **鉄焼 (Tetsuyaki)** — เทปันยากิ local | 4.7★ | [Maps](https://www.google.com/maps/place/鉄焼Tetsuyaki/data=!4m2!3m1!1s0x60195e29daa0ce4b:0x58630a1c66491ce1) |
 | 🍰 **บ่าย** | **Patisserie Kimuraya** — ขนมหวาน ดาวสูงสุดในย่าน | 4.9★ | [Maps](https://www.google.com/maps/place/ラ・ヴェルデュール木村屋/data=!4m2!3m1!1s0x60196078d8d009bb:0x20929fe8eee95200) |
 | 🍽️ **เย็น (หลัง Illumination)** | **[toe (トー)](https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee)** — ร้านเย็น บรรยากาศดี เหมาะหลัง 20:00 | 4.7★ | [Maps](https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee) |
-| 🍽️ **เย็น (สำรอง)** | **[38KAWAGUCHIKO](https://www.google.com/maps/place/38KAWAGUCHIKO/data=!4m2!3m1!1s0x60195fd25ac644b3:0xefffd53eaea4da7f)** — ร้านอาหาร relaxed บรรยากาศ Fuji area | 4.6★ | [Maps](https://www.google.com/maps/place/38KAWAGUCHIKO/data=!4m2!3m1!1s0x60195fd25ac644b3:0xefffd53eaea4da7f) |
 
 ### 🔖 ตัวเลือกเพิ่มเติม — Kawaguchiko Day 6–7 (จาก wishlist)
 
 | ร้าน | ★ | ประเภท | Google Maps |
 |---|---|---|---|
+| 38KAWAGUCHIKO | 4.6★ (575) | ร้านอาหาร relaxed | [Maps](https://www.google.com/maps/place/38KAWAGUCHIKO/data=!4m2!3m1!1s0x60195fd25ac644b3:0xefffd53eaea4da7f) |
 | Ho-mei | 4.7★ (199) | อิซาคายะ | [Maps](https://www.google.com/maps/place/ほーめい/data=!4m2!3m1!1s0x601960bf5595fdd7:0x6fc913f3c80e4ce2) |
 | Miyamotoya | 4.7★ (182) | ร้านอาหาร | [Maps](https://www.google.com/maps/place/宮本屋/data=!4m2!3m1!1s0x60195e28eba9cc8d:0x79b4e12470cb2b6d) |
 | Fujisan Pudding | 4.5★ (95) | พุดดิ้งรูปฟูจิ | [Maps](https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c) |
