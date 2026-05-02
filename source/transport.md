@@ -5,9 +5,9 @@
 | วัน | เส้นทาง | วิธี | ราคา (ต่อคน) | จองที่ |
 |---|---|---|---|---|
 | 10 ธ.ค. | Haneda → Asakusabashi | Keikyu + Toei Asakusa | ~610¥ | ไม่ต้องจอง (Suica) |
-| 12 ธ.ค. | Tokyo → Fujinomiya | Highway Bus | ~2,000–3,300¥ | shizuokabus.co.jp |
+| 12 ธ.ค. | Tokyo → Fujinomiya | Highway Bus | 2,400–2,750¥ | shizuokabus.co.jp |
 | 14 ธ.ค. | Fujinomiya → Shizuoka | JR Minobu + Tokaido | ~1,400¥ | Suica |
-| 16 ธ.ค. | Shizuoka → Kawaguchiko | Highway Bus | ~2,200¥ | sekitori.jp |
+| 16 ธ.ค. | Shizuoka → Kawaguchiko | Highway Bus | 3,000¥ | sekitori.jp |
 | 18 ธ.ค. | Kawaguchiko → Oku-Asakusa | Bus + TX Line | ~2,000¥ | highwaybus.com |
 | 21 ธ.ค. | Oku-Asakusa → Haneda | Hibiya + Toei Asakusa | — | ไม่ต้องจอง (Suica) |
 
@@ -46,6 +46,7 @@
 
 - มองป้ายไฟเขียนว่า **"Through Asakusa Line"** หรือจุดหมาย **Asakusa / Narita Airport / Inba-nihon-idai / Aoto / Oshiage** → ไม่ต้องเปลี่ยนสาย นั่งถึง **Asakusabashi (A16)** เลย
 - **ห้ามขึ้นขบวน Yokohama**
+- **ห้ามขึ้น Airport Rapid Express** — ขบวนนี้ข้ามผ่าน Asakusabashi โดยไม่จอด ต้องขึ้น Rapid Express / Limited Express / Local เท่านั้น
 - หากรถสุดที่ Sengakuji / Shinagawa → ลงรอที่ชานชาลาเดิม รอขบวนถัดไปที่ไปทาง Asakusa
 
 **ถึง Asakusabashi (A16)**
@@ -91,7 +92,7 @@
 
 ---
 
-### 🚌 ทาง 1 — บัส (แนะนำ) ~2,000–3,300¥ / 2:30 ชม.
+### 🚌 ทาง 1 — บัส (แนะนำ) 2,400–2,750¥ / 2:30 ชม.
 
 จอง: **[shizuokabus.co.jp](https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare)** — จองล่วงหน้า 1 เดือน | รอบแรก ~08:10 | ลงสถานี **Fujinomiya Sta.**
 
@@ -131,9 +132,9 @@
 
 ## เส้นทางที่ 3 — Shizuoka → Kawaguchiko | 16 ธ.ค.
 
-**บัส Shizuoka → Kawaguchiko (ตรง ไม่ต้องเปลี่ยน)** ~2:10 ชม. / ~2,200¥
+**บัส Shizuoka → Kawaguchiko (ตรง ไม่ต้องเปลี่ยน)** ~2:10 ชม. / 3,000¥
 
-จอง: **[sekitori.jp](https://sekitori.jp/en/)** — จองล่วงหน้า 1 เดือน | มี 2 รอบ: **07:40 / 14:40–15:00** | ถึงก่อน 15 นาที | มี 6 ป้าย ลงป้ายสุดท้าย **Kawaguchiko Sta.**
+จอง: **[sekitori.jp](https://sekitori.jp/en/)** — จองล่วงหน้า 1 เดือน | มี 2 รอบ: **07:40** (ถึง 09:50) / **15:00** (ถึง 17:10) | ถึงก่อน 15 นาที | มี 6 ป้าย ลงป้ายสุดท้าย **Kawaguchiko Sta.**
 
 1. ออกจากประตูหลักโรงแรม **Hotel Associa** เลี้ยวซ้าย → เดินตามทางเชื่อมขนานกับตึก ~30 เมตร → เจอ **JR Shizuoka Sta. (North Exit)** ทางซ้าย
 2. เดินตรงต่อไปยังลานกว้าง → เจอ **Bus Terminal** → หาป้าย **หมายเลข 12** (ไม่ต้องข้ามถนนใหญ่)
