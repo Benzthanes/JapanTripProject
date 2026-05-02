@@ -342,6 +342,16 @@ main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
 }
 
 /* ── TRANSPORT ACCORDION ── */
+/* ── TRANSPORT TICKET + TRAIN LEGEND ── */
+.t-callout-tip { background: #f0fdf4; border-left: 3px solid #22c55e; border-radius: 6px; padding: 8px 12px; font-size: 0.85rem; margin-bottom: 10px; line-height: 1.55; }
+.t-ticket-grid-3 { display: flex; flex-direction: column; gap: 8px; margin: 8px 0 12px; }
+.t-ticket-item { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 0.85rem; line-height: 1.6; }
+.t-ticket-item .tti-title { font-weight: 700; margin-bottom: 3px; }
+.t-ticket-item .tti-detail { color: var(--text-2); line-height: 1.55; }
+.t-train-legend { display: flex; flex-direction: column; gap: 5px; margin: 6px 0 4px; }
+.t-train-item { display: flex; align-items: center; gap: 8px; font-size: 0.83rem; }
+.t-train-badge { flex-shrink: 0; border-radius: 5px; padding: 2px 8px; font-size: 0.75rem; font-weight: 800; color: #fff; }
+
 details.t-detail { margin-top: 8px; }
 details.t-detail > summary {
   cursor: pointer;
@@ -452,13 +462,50 @@ details.t-detail .t-inner {
         <details class="t-detail">
           <summary>ดูขั้นตอนเดินทาง</summary>
           <div class="t-inner">
-            <div class="t-sub">จุดเริ่มต้น</div>
-            <div class="steps">
-              <div class="step"><span class="step-num">1</span><span class="step-text">Terminal 3 ชั้น 2 (ขาเข้าประเทศ) → เดินออกมาเห็น Information Counter → ไปทางขวา → เจอป้ายสีแดง <strong>Keikyu Line</strong> → ลงชานชาลา</span></div>
-              <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้นขบวนที่เขียน <strong>Through Asakusa / Oshiage / Aoto / Narita</strong><br><span style="color:#991b1b;font-weight:700">🚫 ห้ามขึ้น Yokohama และห้ามขึ้น Airport Rapid Express</span> (ข้ามผ่าน Asakusabashi โดยไม่จอด)</span></div>
-              <div class="step"><span class="step-num">3</span><span class="step-text">ลง <strong>Asakusabashi (A16)</strong> → ป้ายเหลือง <strong>Exit A3</strong> → แตะบัตรออก → ขึ้นมาบนถนน → <strong>เลี้ยวขวา เดิน 150 ม.</strong> → โรงแรม</span></div>
+            <div class="t-callout-tip"><strong>จุดเริ่มต้น</strong> — Terminal 3 ชั้น 2 (ขาเข้าประเทศ) → เดินออกมาเห็น Information Counter → ไปทางขวา → เจอป้ายสีแดง <strong>"Keikyu Line"</strong> → เดินตามป้าย → เข้าสถานี <strong>Haneda Airport Terminal 3</strong></div>
+
+            <div class="t-sub">ซื้อตั๋ว / บัตร (เลือกอย่างใดอย่างหนึ่ง)</div>
+            <div class="t-ticket-grid-3">
+              <div class="t-ticket-item">
+                <div class="tti-title">💳 ตู้อัตโนมัติ</div>
+                <div class="tti-detail">เลือก TH / EN → เลือกปลายทาง <strong>Asakusabashi</strong> → จ่ายเงินสด / บัตรเครดิต (ในบางตู้เท่านั้น) ~610¥</div>
+              </div>
+              <div class="t-ticket-item">
+                <div class="tti-title">📱 Suica / Pasmo ใน Apple Wallet</div>
+                <div class="tti-detail">Wallet → (+) → Transit Card → ค้นหา "Suica" หรือ "Pasmo" → เติมเงินผ่าน Apple Pay (รองรับ Visa / Mastercard / Amex บางประเภท) → แตะโทรศัพท์ที่ทางเข้าได้เลย</div>
+              </div>
+              <div class="t-ticket-item">
+                <div class="tti-title">🟢 ซื้อบัตร Suica (ตู้สีเขียว JR East) — แนะนำ</div>
+                <div class="tti-detail">
+                  <strong>พิกัด:</strong> ออก Arrival Hall → เดินตามป้าย Tokyo Monorail → ผ่าน Information Center → <strong>เลี้ยวซ้าย</strong> → เจอ Seven Bank ATM / ตู้จอง JR East / ตู้ Suica เรียงกัน → <strong>ตู้ไกลสุด = ตู้สีเขียว</strong><br>
+                  ใช้เงินสด · เติม 1,000–10,000¥ · ใช้ได้ 28 วัน · <strong>เงินเหลือคืนไม่ได้</strong> · ซื้อสำรองที่ <strong>Ninja Wifi</strong> ชั้น 2 Terminal 3 ใกล้จุดจอดรถบัส เปิดถึง <strong>23:45</strong><br><br>
+                  <strong>⚠️ เลือก 2 แบบ:</strong><br>
+                  <span style="color:#065f46;font-weight:700">✅ Name-Inscribed Suica (แนะนำ)</span> — พิมพ์ชื่อลงหน้าบัตร ถ้าหายออกใบใหม่ทดแทนได้<br>
+                  <span style="color:#92400e">⬜ Blank Suica</span> — ไม่ระบุชื่อ ถ้าหายหายเลย ออกใหม่ไม่ได้<br><br>
+                  <strong>ขั้นตอน (Name-Inscribed):</strong> กด English (ที่มุมขวาบน) → เลือก "Name-Inscribed Suica" → กด Agree (ยอมรับเงื่อนไข) → กรอก ชื่อ-นามสกุล (ตาม Passport) / เพศ+วันเกิด (ปี ค.ศ.-เดือน-วัน) / เบอร์โทร (ใส่เบอร์ไทยได้) → เลือกจำนวนเงิน (เช่น 1,000 / 2,000 / 5,000 / 10,000¥ — มีหักมัดจำ 500¥) → จ่ายเงิน: สอดธนบัตรหรือหยอดเหรียญลงในช่องเรืองแสง → รับบัตรช่องซ้ายมือ<br>
+                  <span style="color:#555;font-size:0.82rem">Welcome Suica ไม่มีค่ามัดจำ 500¥ เงินที่จ่ายไปจะเป็นเงินในบัตรทั้งหมด แต่ออกใหม่ไม่ได้ถ้าหาย</span>
+                </div>
+              </div>
             </div>
-            <div class="t-warn" style="margin-top:10px">หากรถสุดที่ Sengakuji/Shinagawa → ลงรอที่ชานชาลาเดิม รอขบวนถัดไปที่ไปทาง Asakusa</div>
+
+            <div class="t-sub">ขึ้นรถไฟ</div>
+            <div class="steps">
+              <div class="step"><span class="step-num">1</span><span class="step-text">มองป้ายสีแดง <strong>"Keikyu Line"</strong> — ทางเข้าจะอยู่ติดกันเลยในโถงเดียวกัน → แตะบัตรเข้าเกทที่แถบสีฟ้า (สัญลักษณ์ IC) ประตูจะเปิดให้ผ่านเข้าไป</span></div>
+              <div class="step"><span class="step-num">2</span><span class="step-text">ลงชานชาลา:<br>
+                · บันไดเลื่อน: ตามป้าย <strong>"Shinagawa / Asakusa / Yokohama"</strong> ส่วนใหญ่ชานชาลา 2<br>
+                · ลิฟต์: อยู่ใกล้ประตูตรวจตั๋ว สังเกตสัญลักษณ์สีฟ้า มีชั้นเดียว → ชั้น 1 → ออกลิฟต์ไปทาง <strong>Track 2</strong></span></div>
+            </div>
+
+            <div class="t-sub">⚡ เลือกขบวนที่ถูก — สำคัญมาก</div>
+            <div class="t-callout-tip">มองป้ายไฟเขียนว่า <strong>"Through Asakusa Line"</strong> หรือจุดหมาย <strong>Asakusa / Narita Airport / Inba-nihon-idai / Aoto / Oshiage</strong> หรือดูหน้าจอชานชาลาตอนอยู่สนามบิน → นั่งตรงถึง <strong>Asakusabashi (A16)</strong> ไม่ต้องเปลี่ยนสาย</div>
+            <div class="t-danger">🚫 <strong>ห้ามขึ้นขบวน Yokohama</strong> — หากรถสุดที่ Sengakuji / Shinagawa → ลงรอที่ชานชาลาเดิม รอขบวนถัดไปที่ไปทาง Asakusa</div>
+            <div class="t-danger" style="margin-top:6px">🚫 <strong>ห้ามขึ้น Airport Rapid Express (เขียวเข้ม)</strong> — ขบวนนี้ข้ามผ่าน Asakusabashi โดยไม่จอด ต้องขึ้น Rapid Express / Limited Express / Local เท่านั้น</div>
+
+            <div class="t-sub">ถึง Asakusabashi (A16) → โรงแรม</div>
+            <div class="steps">
+              <div class="step"><span class="step-num">1</span><span class="step-text">มองป้ายสีเหลือง <strong>"Exit A3"</strong> บนเพดาน/เสา → แตะบัตร Suica ออก → เดินออก <strong>Exit A3</strong><br><small style="color:var(--text-2)">ถ้าหาป้าย A3 ไม่เจอ ให้หา "Edo-dori Avenue" หรือ "JR Asakusabashi Station" ทางออกอยู่ฝั่งเดียวกัน</small></span></div>
+              <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้นมาบนถนน → <strong>เลี้ยวขวา → เดิน 150 เมตร → เจอโรงแรม</strong></span></div>
+            </div>
           </div>
         </details>
       </div>
@@ -473,14 +520,23 @@ details.t-detail .t-inner {
         </div>
       </div>
       <div class="card-body">
+        <div class="t-danger" style="margin-bottom:8px">⏰ ต้องถึงสนามบิน Monorail ก่อน 23:45 — Daimon ออก 00:05</div>
         <details class="t-detail">
           <summary>ดูขั้นตอนเดินทาง</summary>
           <div class="t-inner">
             <div class="steps">
-              <div class="step"><span class="step-num">1</span><span class="step-text">เข้า Monorail → ลิฟต์ขึ้นชั้น 3 หรือบันไดเลื่อนหาป้าย <strong>Platform 2 - For Hamamatsucho</strong></span></div>
-              <div class="step"><span class="step-num">2</span><span class="step-text">ลง <strong>Hamamatsucho</strong> → ออก <strong>North Exit</strong> → เดินตรง → เจอสี่แยก Starbucks → ลงใต้ดิน <strong>Daimon (A09) Exit B4</strong></span></div>
-              <div class="step"><span class="step-num">3</span><span class="step-text">เดินตามป้ายสีชมพู <strong>สาย A</strong> ไป Asakusa/Oshiage → ชานชาลา 2</span></div>
-              <div class="step"><span class="step-num">4</span><span class="step-text">ลง <strong>Asakusabashi (A16)</strong> → ออก Exit 3 → เลี้ยวขวา → โรงแรม</span></div>
+              <div class="step"><span class="step-num">1</span><span class="step-text">เข้า Monorail แตะบัตร → ลิฟต์ขึ้นชั้น 3 <strong>(Platform 2)</strong> หรือบันไดเลื่อนหาป้าย <strong>"Platform 2 - For Hamamatsucho"</strong></span></div>
+              <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้นรถ <strong>For Hamamatsucho</strong>:
+                <div class="t-train-legend" style="margin-top:6px">
+                  <div class="t-train-item"><span class="t-train-badge" style="background:#e63946">Haneda Express</span> Last <strong>23:48</strong></div>
+                  <div class="t-train-item"><span class="t-train-badge" style="background:#1d3557">Rapid</span> Last <strong>00:10</strong></div>
+                  <div class="t-train-item"><span class="t-train-badge" style="background:#2d6a4f">Local</span> Last <strong>00:10</strong></div>
+                </div>
+              </span></div>
+              <div class="step"><span class="step-num">3</span><span class="step-text">ลง <strong>Hamamatsucho</strong> → มองป้ายเหลือง <strong>North Exit</strong> → แตะบัตรออก → ลงลิฟต์/บันไดเลื่อนชั้น 1<br><small style="color:var(--text-2)">ทริก: เดินไปหัวขบวน สังเกตป้ายเหลือง North Exit</small></span></div>
+              <div class="step"><span class="step-num">4</span><span class="step-text">ออกจากสถานีเดินตรง → เจอสี่แยก <strong>Starbucks</strong> ตรงหัวมุม → เจอป้ายลงใต้ดิน <strong>Daimon (A09)</strong> → เลือก <strong>Exit B4</strong> (มีลิฟต์ลงไป)</span></div>
+              <div class="step"><span class="step-num">5</span><span class="step-text">เข้าสถานี แตะบัตร → เดินตามป้ายสีชมพู <strong>(สาย A)</strong> เขียนว่าไป Asakusa/Oshiage</span></div>
+              <div class="step"><span class="step-num">6</span><span class="step-text">ชานชาลา 2 → นั่งไปลง <strong>Asakusabashi (A16)</strong> → ออก Exit 3 → เลี้ยวขวา → โรงแรม</span></div>
             </div>
           </div>
         </details>
@@ -500,10 +556,19 @@ details.t-detail .t-inner {
           <summary>ดูขั้นตอนเดินทาง</summary>
           <div class="t-inner">
             <div class="steps">
-              <div class="step"><span class="step-num">1</span><span class="step-text">Monorail → <strong>Hamamatsucho</strong> → ป้าย <strong>Transfer to JR Line</strong> สัญลักษณ์เขียว → เดินตามทางเชื่อม (ไม่ต้องออกตึก)</span></div>
-              <div class="step"><span class="step-num">2</span><span class="step-text">Yamanote (เขียว) / Keihin-Tohoku (ฟ้า) → <strong>ชานชาลา 4</strong> → ขึ้นขบวนไป Tokyo/Ueno → ลง <strong>Akihabara</strong></span></div>
-              <div class="step"><span class="step-num">3</span><span class="step-text">ป้ายเหลือง <strong>Chuo-Sobu Line ชานชาลา 6</strong> → ขึ้นขบวนไปทาง Chiba/Nishi-Funabashi</span></div>
-              <div class="step"><span class="step-num">4</span><span class="step-text">ลง <strong>Asakusabashi</strong> → ออก Exit 3 → เลี้ยวขวา → โรงแรม</span></div>
+              <div class="step"><span class="step-num">1</span><span class="step-text">เข้า Monorail แตะบัตร → ลิฟต์ขึ้นชั้น 3 หรือบันไดเลื่อนหาป้าย <strong>"Platform 2 - For Hamamatsucho"</strong></span></div>
+              <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้นรถ <strong>For Hamamatsucho</strong>:
+                <div class="t-train-legend" style="margin-top:6px">
+                  <div class="t-train-item"><span class="t-train-badge" style="background:#e63946">Haneda Express</span> Last <strong>23:48</strong></div>
+                  <div class="t-train-item"><span class="t-train-badge" style="background:#1d3557">Rapid</span> Last <strong>00:10</strong></div>
+                  <div class="t-train-item"><span class="t-train-badge" style="background:#2d6a4f">Local</span> Last <strong>00:10</strong></div>
+                </div>
+              </span></div>
+              <div class="step"><span class="step-num">3</span><span class="step-text">ลง <strong>Hamamatsucho</strong> → มองป้าย <strong>"Transfer to JR Line"</strong> สัญลักษณ์เขียว → เดินตามทางเชื่อม (ไม่ต้องออกตึก)</span></div>
+              <div class="step"><span class="step-num">4</span><span class="step-text">แตะบัตรผ่าน 1 ครั้ง → หาป้ายเหลือง/เลข 4 → แถบสีเขียว <strong>Yamanote Line</strong> หรือสีฟ้า <strong>Keihin-Tohoku Line</strong></span></div>
+              <div class="step"><span class="step-num">5</span><span class="step-text">ชานชาลา 4 <strong>(เป็นเกาะกลาง)</strong> — ยืนฝั่งเลข 4 → ขึ้นขบวนไป Tokyo/Ueno/<strong>Akihabara</strong> → ลง <strong>Akihabara</strong></span></div>
+              <div class="step"><span class="step-num">6</span><span class="step-text">มองป้ายเหลือง <strong>Chuo-Sobu Line</strong> → ชานชาลา 6 → ขึ้นขบวนไปทาง Chiba/Tsudanuma/Nishi-Funabashi</span></div>
+              <div class="step"><span class="step-num">7</span><span class="step-text">ลง <strong>Asakusabashi</strong> → ออก Exit 3 → <strong>เลี้ยวขวา → โรงแรม</strong></span></div>
             </div>
           </div>
         </details>
@@ -721,13 +786,13 @@ details.t-detail .t-inner {
           <summary>ดูขั้นตอนเดินทาง</summary>
           <div class="t-inner">
             <div class="t-warn">💡 มีรถรับส่งโรงแรมฟรีจาก <strong>Akihabara</strong> เช้าจนถึง 10 โมง — ช่วยประหยัดแรงมาก</div>
-            <div class="t-sub">จากโรงแรม Toyoko Inn → Tokyo Station</div>
+            <div class="t-sub">จากโรงแรม Toyoko Inn Asakusabashi ไป Tokyo Station</div>
             <div class="steps">
-              <div class="step"><span class="step-num">1</span><span class="step-text">ออกจากโรงแรมเลี้ยวซ้าย ถนน Edo-dori → เจอสี่แยกใหญ่ (มีรางรถไฟยกระดับ) → ถึงใต้ทางด่วนเลี้ยวขวา → เข้า <strong>JR Asakusabashi (East Exit)</strong></span></div>
-              <div class="step"><span class="step-num">2</span><span class="step-text">แตะบัตร → หา <strong>Platform 1 (Chou-Sobu สีเหลือง)</strong> → ไป Akihabara/Shinjuku → นั่ง 1 สถานี → ลง <strong>Akihabara</strong></span></div>
-              <div class="step"><span class="step-num">3</span><span class="step-text">ป้ายสีเขียว (Yamanote) หรือสีฟ้า (Keihin-Tohoku) → ชานชาลา 4 → ขึ้นไป <strong>Tokyo/Ueno</strong> → นั่ง 2 สถานี (ผ่าน Kanda) → ลง <strong>Tokyo Sta.</strong></span></div>
+              <div class="step"><span class="step-num">1</span><span class="step-text">ออกจากโรงแรมเลี้ยวซ้าย ถนน Edo-dori → เจอสี่แยกใหญ่ (มีรางรถไฟยกระดับด้านบน) → ถึงใต้ทางด่วนเลี้ยวขวา → เข้า <strong>JR Asakusabashi (East Exit)</strong></span></div>
+              <div class="step"><span class="step-num">2</span><span class="step-text">แตะบัตร → หา <strong>Platform 1 (Chou Sobu Line สีเหลือง)</strong> → ไป Akihabara/Shinjuku/Mitaka → นั่ง 1 สถานี → ลง <strong>Akihabara</strong><br><small style="color:var(--text-2)">ไม่ใช่สาย Asakusa Line สีชมพูใต้ดิน</small></span></div>
+              <div class="step"><span class="step-num">3</span><span class="step-text">มองป้ายสีเขียว (Yamanote) หรือสีฟ้า (Keihin-Tohoku) → ชานชาลา 4 → ขึ้นขบวนไหนก็ได้ที่ไป <strong>Tokyo/Ueno</strong> → นั่ง 2 สถานี (ผ่าน Kanda) → ลง <strong>Tokyo Sta.</strong></span></div>
               <div class="step"><span class="step-num">4</span><span class="step-text">มองป้าย <strong>Yaesu South Exit</strong> → เดินตามลูกศรออกประตูกระจกใหญ่ → เจออาคารสถานีบัส</span></div>
-              <div class="step"><span class="step-num">5</span><span class="step-text">เช็คหน้าจอประกาศว่ารถเทียบช่องไหน (ปกติ 8, 9) → ขึ้นรถ <strong>Fujikyu</strong> ป้ายข้างรถเขียนว่า Fujikyu → ลง <strong>Fujinomiya Sta.</strong></span></div>
+              <div class="step"><span class="step-num">5</span><span class="step-text">หาตู้ขายตั๋วอัตโนมัติ (ถ้ายังไม่ซื้อ) → เช็คหน้าจอว่ารถเทียบช่องไหน (ปกติ 8, 9) → ขึ้นรถ <strong>Fujikyu</strong> ป้ายข้างรถเขียนว่า Fujikyu<br><small style="color:var(--text-2)">ถ้าไม่มีป้าย ถามคนตรวจตั๋วก่อนขึ้น</small></span></div>
             </div>
           </div>
         </details>
@@ -747,11 +812,18 @@ details.t-detail .t-inner {
           <summary>ดูขั้นตอนเดินทาง</summary>
           <div class="t-inner">
             <div class="steps">
-              <div class="step"><span class="step-num">1</span><span class="step-text">Asakusabashi → Akihabara → <strong>Tokyo Sta.</strong> (ทำเหมือนทาง 1 ข้อ 1–3)</span></div>
-              <div class="step"><span class="step-num">2</span><span class="step-text">ที่ Tokyo Sta. ชั้น 2 → ป้ายสีส้ม <strong>Tokaido Line</strong> ชานชาลา 9–10 → ขึ้นขบวนไป Shizuoka/Shimada หรือ Atami/Numazu (ดูป้ายข้างตัวรถ)</span></div>
-              <div class="step"><span class="step-num">3</span><span class="step-text">ถึง <strong>Fuji Sta.</strong> → ป้ายสีแดง <strong>Minobu Line</strong> → ข้ามสะพานลอยไปชานชาลา 1–2 (ตู้ขาว-ส้ม ทุก 20–30 นาที) → ลง <strong>Fujinomiya Sta.</strong></span></div>
+              <div class="step"><span class="step-num">1</span><span class="step-text">เส้นทาง Asakusabashi → Akihabara → Tokyo Sta. เหมือนทาง 1 ข้อ 1–3</span></div>
+              <div class="step"><span class="step-num">2</span><span class="step-text">ที่ Tokyo Sta. ชั้น 2 → มองป้ายสีส้ม <strong>Tokaido Line</strong> (เลข 7–10) → หาชานชาลา 9–10 <span style="color:var(--text-2)">(คาดว่า — ดูป้ายที่ชานชาลาด้วย)</span></span></div>
+              <div class="step"><span class="step-num">3</span><span class="step-text">ขึ้นขบวนไป <strong>Atami / Numazu</strong> หรือ <strong>Shizuoka / Shimada</strong> — ดูป้ายข้างตัวรถ + ดูตารางที่ชานชาลา (ดูเวลา, ประเภทรถ, Destination)<br>
+                <small style="color:var(--text-2)">รถมี 2 แบบ: Local และ Rapid · จุดสังเกต: ตัวรถอาจมีสีส้มตัดเขียว</small>
+                <ul style="list-style:none;margin-top:6px;display:flex;flex-direction:column;gap:4px;font-size:0.85rem">
+                  <li>▸ Shizuoka/Shimada → ลง <strong>Fuji Sta.</strong> ได้เลย</li>
+                  <li>▸ Atami → ลงแล้วมองหาชานชาลาที่เขียนว่าไป <strong>Shizuoka / Shimada / Hamamatsu</strong> → เปลี่ยน Tokaido Line (ชานชาลาตรงข้าม) ขบวนเป็น <strong>JR Central สีส้มขาว</strong></li>
+                  <li>▸ Numazu → ลงแล้วเปลี่ยน มักจะจอดอยู่ <strong>ตรงข้าม หรือ</strong>ชานชาลาถัดไป ไป Shizuoka/Shimada</li>
+                </ul>
+              </span></div>
+              <div class="step"><span class="step-num">4</span><span class="step-text">ถึง <strong>Fuji Sta.</strong> → มองป้ายสีแดง <strong>Minobu Line</strong> หรือป้ายชานชาลา Fujinomiya/Kofu → ขึ้นบันไดเลื่อน<strong>ข้ามสะพานลอย</strong>ไปชานชาลา 1–2 (ตู้ขาว-ส้ม รถทุก 20–30 นาที) → ลง <strong>Fujinomiya Sta.</strong></span></div>
             </div>
-            <div class="t-warn" style="margin-top:10px">หากรถสุดที่ Atami/Numazu → ลงแล้วเปลี่ยน Tokaido Line ไป Shizuoka ชานชาลาตรงข้าม (JR Central สีส้มขาว)</div>
           </div>
         </details>
       </div>
@@ -1238,7 +1310,7 @@ details.t-detail .t-inner {
           <div class="t-inner">
             <div class="t-sub">จากโรงแรม Hotel Associa → สถานีบัส</div>
             <div class="steps">
-              <div class="step"><span class="step-num">1</span><span class="step-text">ออกจากประตูหลักโรงแรม <strong>Hotel Associa</strong> เลี้ยวซ้าย → เดินตามทางเชื่อมขนานตึก ~30 ม. → เจอ <strong>JR Shizuoka Sta. (North Exit)</strong> ทางซ้าย</span></div>
+              <div class="step"><span class="step-num">1</span><span class="step-text">ออกจากประตูหลักโรงแรม <strong>Hotel Associa</strong> เลี้ยวซ้าย → เดินตามทางเชื่อมขนานกับตึก ~30 เมตร → เจอ <strong>JR Shizuoka Sta. (North Exit)</strong> ทางซ้าย</span></div>
               <div class="step"><span class="step-num">2</span><span class="step-text">เดินตรงไปยังลานกว้าง → เจอ <strong>Bus Terminal</strong> → หาป้าย <strong>หมายเลข 12</strong> (ไม่ต้องข้ามถนนใหญ่)</span></div>
               <div class="step"><span class="step-num">3</span><span class="step-text">สังเกตป้ายเขียนว่าไป <strong>Gotemba / Kawaguchiko / Fujikyu Highland</strong> → มี 6 ป้าย ลงป้ายสุดท้าย <strong>Kawaguchiko Sta.</strong></span></div>
             </div>
@@ -1494,8 +1566,9 @@ details.t-detail .t-inner {
               <div class="step"><span class="step-num">1</span><span class="step-text">รถจอด <strong>Busta Shinjuku ชั้น 3</strong> → ลงรับกระเป๋า → ลิฟต์ลงชั้น 2 → เชื่อมต่ออาคาร JR Shinjuku (Exit New South Gate)</span></div>
               <div class="step"><span class="step-num">2</span><span class="step-text">ป้ายเหลือง <strong>Chou-Sobu Line</strong> ชานชาลา 13/16 → ขึ้นขบวนไป Akihabara/Chiba → ลง <strong>Akihabara</strong></span></div>
               <div class="step"><span class="step-num">3</span><span class="step-text">ป้าย <strong>Central Gate</strong> → ออกช่องตรวจตั๋ว JR → <strong>เลี้ยวขวาทันที</strong> → เดินออกนอกอาคาร → เห็น Yodobashi Camera → ทางเข้า TX อยู่ลานหน้าตึก</span></div>
-              <div class="step"><span class="step-num">4</span><span class="step-text">หาลิฟต์สัญลักษณ์ <strong>TX สีน้ำเงิน-แดง</strong> → ลงชั้น B4 → รอขบวนไป <strong>Asakusa/Tsukuba</strong> → นั่ง 2 สถานี → ลง <strong>Asakusa (TX03)</strong> → Exit A1 (~210¥)</span></div>
-              <div class="step"><span class="step-num">5</span><span class="step-text">ลิฟต์ขึ้นมา → เลี้ยวขวา → เดิน 850 ม. (ผ่าน <strong>Donki ขวามือ</strong> → ข้ามสี่แยก) → <strong>Hotel Little Bird</strong> อยู่ในซอยขวามือ</span></div>
+              <div class="step"><span class="step-num">4</span><span class="step-text">หาลิฟต์สัญลักษณ์ <strong>TX สีน้ำเงิน-แดง</strong> → ลงชั้น 1 → สถานี <strong>TX Akihabara</strong> → แตะบัตรเข้า</span></div>
+              <div class="step"><span class="step-num">5</span><span class="step-text">ลิฟต์ไป Platform 1, 2 (ชั้น B4) → รอขบวนไป <strong>Asakusa/Tsukuba</strong> → นั่ง 2 สถานี → ลง <strong>Asakusa (TX03)</strong> (~210¥)</span></div>
+              <div class="step"><span class="step-num">6</span><span class="step-text">หาป้ายเหลืองทางออก <strong>Exit A1</strong> → ลิฟต์ขึ้นมา → เลี้ยวขวา → เดิน 850 เมตร (ผ่าน <strong>Donki ขวามือ</strong> → ข้ามสี่แยก) → <strong>Hotel Little Bird</strong> อยู่ในซอยขวามือ</span></div>
             </div>
           </div>
         </details>
@@ -1969,10 +2042,12 @@ details.t-detail .t-inner {
           <div class="t-inner">
             <div class="steps">
               <div class="step"><span class="step-num">1</span><span class="step-text">เดินออกจากโรงแรมเลี้ยวขวา → เดินไปเรื่อยๆ → เจอสี่แยก Showa-dori → หาป้ายสถานี <strong>Iriya (Hibiya Line สีเทา)</strong><br><small style="color:var(--text-2)">ลิฟต์อยู่ฝั่งตรงข้าม ข้ามทางม้าลาย 2 จุด → หาป้าย "Elevator to Platform 1" ไปทาง Ueno/Ginza</small></span></div>
-              <div class="step"><span class="step-num">2</span><span class="step-text">แตะบัตรเข้า → ขึ้นขบวนไปทาง <strong>Ueno/Ginza/Naka-meguro</strong> → ลง <strong>Ningyocho (H14)</strong></span></div>
-              <div class="step"><span class="step-num">3</span><span class="step-text">มองป้าย <strong>A สีชมพู / Toei Asakusa Line</strong> → ข้ามไปสายสีชมพู → แตะบัตรเข้า → <strong>ชานชาลา 1</strong> ไป Haneda Airport</span></div>
-              <div class="step"><span class="step-num">4</span><span class="step-text">รอขบวน <strong>ไป Haneda Airport เท่านั้น</strong>: Airport Kaitoku (เขียว เร็วสุด) หรือ Access Express (ส้ม)<br><span style="color:#991b1b;font-weight:700">🚫 ห้ามขึ้นขบวนที่เขียนไป Nishi-magome</span></span></div>
-              <div class="step"><span class="step-num">5</span><span class="step-text">ลง <strong>Haneda Airport Terminal 3</strong> → ตามสัญลักษณ์เครื่องบิน → แตะบัตรออก → ลิฟต์ขึ้น <strong>ชั้น 3</strong> จุดเช็คอิน NH877</span></div>
+              <div class="step"><span class="step-num">2</span><span class="step-text">แตะบัตรเข้า → ขึ้นขบวนไหนก็ได้ที่ไปทาง <strong>Ueno/Ginza/Naka-meguro</strong> → ลง <strong>Ningyocho (H14)</strong></span></div>
+              <div class="step"><span class="step-num">3</span><span class="step-text">มองป้าย <strong>A สีชมพู</strong> หรือ <strong>Toei Asakusa Line</strong> → หาสัญลักษณ์ลิฟต์เพื่อข้ามไปสายสีชมพู → แตะบัตรเข้า → <strong>ชานชาลา 1</strong> เขียนว่า Nihombashi/Sengakuji/Haneda Airport</span></div>
+              <div class="step"><span class="step-num">4</span><span class="step-text">รอขบวน <strong>ไป Haneda Airport เท่านั้น</strong>:<br>
+                🟢 Airport Kaitoku (เขียว) = เร็วสุด · 🟠 Access Express (ส้ม) = เร็ว · ⬛ Local/ขาวดำ = ได้แต่ช้า<br>
+                <span style="color:#991b1b;font-weight:700">🚫 ห้ามขึ้นขบวนที่เขียนไป Nishi-magome</span></span></div>
+              <div class="step"><span class="step-num">5</span><span class="step-text">ลง <strong>Haneda Airport Terminal 3</strong> → ลากกระเป๋าตามสัญลักษณ์เครื่องบิน+ลิฟต์ → กดชั้น 1 (ออกสถานี แตะบัตรออก) → ลิฟต์ขึ้น <strong>ชั้น 3</strong> จุดเช็คอิน NH877</span></div>
             </div>
           </div>
         </details>
