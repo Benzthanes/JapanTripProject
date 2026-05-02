@@ -7,6 +7,7 @@
 | ชื่อ | ★ | ประเภท | Google Maps |
 |---|---|---|---|
 | ✅ Plan วัดเซ็นโซจิ | 4.5★ (93,603) | วัด | [Maps](https://www.google.com/maps/place/วัดเซ็นโซ/data=!4m2!3m1!1s0x60188ec1a4463df1:0x6c0d289a8292810d) |
+| ✅ Plan ศาลเจ้าอาซากุสะ | — | ศาลเจ้า | [Maps](https://maps.app.goo.gl/qiwfjrKnHvGPMqAX8) |
 | ✅ Plan ศาลเจ้าเมจิ | 4.6★ (49,428) | ศาลเจ้าชินโต | [Maps](https://www.google.com/maps/place/ศาลเจ้าเมจิ/data=!4m2!3m1!1s0x60188cb79a4c26e5:0x8fca893849103f73) |
 | ✅ Plan UENO PARK | 4.4★ (33,712) | อุทยาน | [Maps](https://www.google.com/maps/place/UENO+PARK/data=!4m2!3m1!1s0x60188e9b45906ac3:0xb1cb3623124e645a) |
 | ✅ Plan Ameyoko Market | 4.3★ (10,791) | ตลาด | [Maps](https://www.google.com/maps/place/Ameyoko+market/data=!4m2!3m1!1s0x60188f00af83b787:0x654b0a29a45fcf0a) |
