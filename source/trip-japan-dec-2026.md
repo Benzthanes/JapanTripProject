@@ -599,8 +599,10 @@
 
 | สถานที่ | ★ | Google Maps |
 |---|---|---|
-| **วัดเซ็นโซจิ + Nakamise-dori** | 4.5★ | [Maps](https://www.google.com/maps/place/วัดเซ็นโซ/data=!4m2!3m1!1s0x60188ec1a4463df1:0x6c0d289a8292810d) |
-| วัดมัตสึจิยามะโชเด็น ฮงริวอิง | 4.5★ | [Maps](https://www.google.com/maps/place/วัดมัตสึจิยามะโชเด็น+ฮงริวอิง/data=!4m2!3m1!1s0x60188ec2d70a9d4b:0x44034dcf66fc80c7) |
+| **วัดเซ็นโซจิ** | 4.5★ | [Maps](https://www.google.com/maps/place/วัดเซ็นโซ/data=!4m2!3m1!1s0x60188ec1a4463df1:0x6c0d289a8292810d) |
+| **ศาลเจ้าอาซากุสะ** | — | [Maps](https://maps.app.goo.gl/qiwfjrKnHvGPMqAX8) |
+| **Nakamise-dori** | — | [Maps](https://www.google.com/maps/place/Nakamise+Shopping+Street/data=!4m2!3m1!1s0x60188ec12dd1c34f:0xf83cdde3a40fdcb3) |
+| **วัดมัตสึจิยามะโชเด็น ฮงริวอิง** | 4.5★ | [Maps](https://www.google.com/maps/place/วัดมัตสึจิยามะโชเด็น+ฮงริวอิง/data=!4m2!3m1!1s0x60188ec2d70a9d4b:0x44034dcf66fc80c7) |
 | **Takanojin** — ร้านมีดดัง Kappabashi เดินจาก Asakusa | 4.9★ | [Maps](https://www.google.com/maps/place/Takanojin/data=!4m2!3m1!1s0x60188f49c9fd64df:0x6b8f508838611be6) |
 
 ### 🍽️ อาหาร
