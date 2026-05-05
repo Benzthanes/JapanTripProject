@@ -87,6 +87,8 @@
 | ✅ Plan Mochinyan-yaki | 4.7★ (214) | ¥1-1,000 | ของหวาน | [Maps](https://www.google.com/maps/place/もちにゃん焼き+浅草本店/data=!4m2!3m1!1s0x60188feff4678919:0x1d35cb189ad25ab2) |
 | ✅ Plan Hatoya Asakusa | 4.3★ (873) | ¥1,000-2,000 | กาแฟ | [Maps](https://www.google.com/maps/place/Hatoya+Asakusa/data=!4m2!3m1!1s0x60188d4d2096709d:0xa3f29d92f6ae1181) |
 | ✅ Plan Asakusa Chicken | 4.9★ (399) | ¥1-1,000 | food stall ไก่ทอด | [Maps](https://www.google.com/maps/place/Asakusa+Chicken/data=!4m2!3m1!1s0x60188fa5687280db:0xb5b3cc06ea2470d8) |
+| ✅ Plan Hatoya's Vegan Fruit Sandwiches | 4.8★ (179) | ¥1-1,000 | เบเกอรี่ Vegan | [Maps](https://www.google.com/maps/place/浅草+鳩家+ヴィーガンフルーツサンド/data=!4m2!3m1!1s0x60188fcc3b22528b:0x38be66a520910fcd) |
+| ✅ Plan Kamon no Kou | 4.8★ (135) | — | เครป | [Maps](https://www.google.com/maps/place/甘紋の香(かもんのこう)+-+和クレープ専門店/data=!4m2!3m1!1s0x60188ffa4df0580b:0x24ba7d3d12c40570) |
 
 ---
 
@@ -99,6 +101,9 @@
 | ✅ Plan Ichi ryu | 4.8★ (1,587) | ¥1,000-2,000 | ราเม็ง | [Maps](https://www.google.com/maps/place/麺処一龍+仲見世店/data=!4m2!3m1!1s0x60188f4c0b6b4981:0x847df59e516a5447) |
 | ✅ Plan Ramen Kamo to Negi Ueno | 4.5★ (12,991) | ¥1,000-2,000 | ราเม็งเป็ด | [Maps](https://www.google.com/maps/place/らーめん+鴨to葱+上野御徒町本店/data=!4m2!3m1!1s0x60188e9f836fe4eb:0xe59c5e732e04d0f7) |
 | ✅ Plan Menya Jojo | 4.5★ (551) | ¥1,000-2,000 | ราเม็ง | [Maps](https://www.google.com/maps/place/Menya+Jojo/data=!4m2!3m1!1s0x60188f110a713151:0x83ff4f5e5219eb36) |
+| Ramen NOBUNAGA Chicken based soup | — | ¥1,000-2,000 | ราเม็งไก่ | [Maps](https://www.google.com/maps/place/Ramen+NOBUNAGA+Chicken+based+soup/data=!4m2!3m1!1s0x60188be873b9ab3b:0x8d36f6c8b66fb8f0) |
+| Ramen Oyster And Shell | — | ¥1,000-2,000 | ราเม็งหอย | [Maps](https://www.google.com/maps/place/Ramen+Oyster+And+Shell/data=!4m2!3m1!1s0x60188b85c24c5b0f:0x268b397465264598) |
+| UTB (UDON THE BIRTH) | — | ¥1,000-2,000 | อุดัง | [Maps](https://www.google.com/maps/place/UTB(UDON+THE+BIRTH)/data=!4m2!3m1!1s0x60188b002379425d:0x1b80dd3287348d07) |
 
 ### อาหารทะเล / Tsukiji
 | ชื่อ | ★ | ราคา | ประเภท | Google Maps |
@@ -106,6 +111,7 @@
 | ✅ Plan Fish Market Tsukiji Outer Market | 4.2★ (55,498) | — | ตลาดปลา (street food) | [Maps](https://www.google.com/maps/place/Fish+Market+Tsukiji+Outer+Market/data=!4m2!3m1!1s0x60188b21cd0b675b:0xa26e24a1bf97025c) |
 | ✅ Plan Tsukiji Yaki Uo Ishikawa | 4.4★ (644) | ฿฿฿ | อาหารทะเล | [Maps](https://www.google.com/maps/place/Tsukiji+Yaki+Uo+Ishikawa/data=!4m2!3m1!1s0x60188b526bf51cff:0x31155b3d51c98e52) |
 | ✅ Plan Tsukiji Unitora Nakadori | 4.3★ (1,539) | ฿฿฿ | อาหารทะเล | [Maps](https://www.google.com/maps/place/Tsukiji+Unitora+Nakadori/data=!4m2!3m1!1s0x60188bdf270a08ed:0x6d303301c3bd21f8) |
+| WAGYU SUKIYAKI 極〜GOKU〜 東銀座築地 | — | ฿฿฿ | สุกียากิวากิว | [Maps](https://www.google.com/maps/place/WAGYU+SUKIYAKI+極〜GOKU〜+東銀座築地+HigashiGinza+Tsukiji/data=!4m2!3m1!1s0x60188b6d18d60197:0x3bfb755f6f20601b) |
 
 ### เนื้อ / อาหารหนัก
 | ชื่อ | ★ | ราคา | ประเภท | Google Maps |
@@ -126,8 +132,34 @@
 |---|---|---|---|---|
 | ✅ Plan CAFÉ Tarot | 4.7★ (469) | ¥1,000-2,000 | กาแฟ | [Maps](https://www.google.com/maps/place/CAFÉ+Tarot/data=!4m2!3m1!1s0x60188f85730b9b6b:0x95cec01b1b3f272e) |
 | ✅ Plan Lemon Pie Confectionery | 4.5★ (559) | ฿ | ขนมอบ | [Maps](https://www.google.com/maps/place/Lemon+Pie+Confectionery/data=!4m2!3m1!1s0x60188eb93490e5e9:0xade455b3e49eefa4) |
-| ✅ Plan Kamon no Kou | 4.8★ (135) | — | เครป | [Maps](https://www.google.com/maps/place/甘紋の香(かもんのこう)+-+和クレープ専門店/data=!4m2!3m1!1s0x60188ffa4df0580b:0x24ba7d3d12c40570) |
-| ✅ Plan Hatoya's Vegan Fruit Sandwiches | 4.8★ (179) | ¥1-1,000 | เบเกอรี่ Vegan | [Maps](https://www.google.com/maps/place/浅草+鳩家+ヴィーガンフルーツサンド/data=!4m2!3m1!1s0x60188fcc3b22528b:0x38be66a520910fcd) |
+
+---
+
+## 🏙️ โตเกียว — Nakameguro / Daikanyama
+
+### ขนม/คาเฟ่
+| ชื่อ | ★ | ราคา | ประเภท | Google Maps |
+|---|---|---|---|---|
+| Cheese Cake Johann | — | ¥1,000-2,000 | ชีสเค้ก | [Maps](https://www.google.com/maps/place/Cheese+Cake+Johann/data=!4m2!3m1!1s0x60188b4ed9f6e661:0xc9ef7691ecbba464) |
+| Green Bean to Bar Chocolate | — | ¥1,000-2,000 | ช็อกโกแลต | [Maps](https://www.google.com/maps/place/Green+Bean+to+Bar+Chocolate+|+Nakameguro/data=!4m2!3m1!1s0x60188b5266dc0001:0xbf11f4458ff144d6) |
+| I'm donut? Nakameguro | — | ¥1,000-2,000 | โดนัท | [Maps](https://www.google.com/maps/place/I'm+donut+?+Nakameguro/data=!4m2!3m1!1s0x60188baf0a108c8f:0x989d4f2a34381d93) |
+| Onibus Coffee | — | ¥1,000-2,000 | กาแฟ | [Maps](https://www.google.com/maps/place/Onibus+Coffee/data=!4m2!3m1!1s0x60188b49101975bd:0xa4d389d765fd2d94) |
+| Premarché Gelateria & Alternative Junk | — | ¥1,000-2,000 | เจลาโต้ | [Maps](https://www.google.com/maps/place/Premarché+Gelateria+&+Alternative+Junk/data=!4m2!3m1!1s0x60188b899dfcdda1:0x36f582f6d8bdbaab) |
+| Starbucks Reserve® Roastery Tokyo | — | ¥1,000-2,000 | กาแฟ | [Maps](https://www.google.com/maps/place/Starbucks+Reserve®+Roastery+Tokyo/data=!4m2!3m1!1s0x60188b88b7d8f7ab:0x2133080e9923eaac) |
+| getti 中目黒 | — | ¥1,000-2,000 | เจลาโต้ | [Maps](https://www.google.com/maps/place/getti中目黒/data=!4m2!3m1!1s0x60188b0079e2f253:0xe69618e44d985f05) |
+
+---
+
+## 🏙️ โตเกียว — Yanaka / Nippori
+
+### ขนม/คาเฟ่
+| ชื่อ | ★ | ราคา | ประเภท | Google Maps |
+|---|---|---|---|---|
+| Hitotema Bakery Nippori | — | ¥1-1,000 | เบเกอรี่ | [Maps](https://www.google.com/maps/place/Hitotema+Bakery,+Nippori/data=!4m2!3m1!1s0x60188da96cc42a55:0xfc75f1f92269330f) |
+| Jugetsudo Tea Shop & Cafe | — | ¥1-1,000 | ร้านชา | [Maps](https://www.google.com/maps/place/Jugetsudo+Tea+Shop+&+Cafe/data=!4m2!3m1!1s0x60188be0cb07b3bb:0xaf5f1366d7a7b34e) |
+| Yanaka Senbei | — | ¥1-1,000 | ขนมญี่ปุ่น (เซนเบ) | [Maps](https://www.google.com/maps/place/Yanaka+Senbei/data=!4m2!3m1!1s0x60188dd416cabea7:0x2f923131148fcafd) |
+| Yanaka Shippoya | — | ¥1-1,000 | ขนมญี่ปุ่น | [Maps](https://www.google.com/maps/place/Yanaka+Shippoya/data=!4m2!3m1!1s0x60188dd164777993:0x23c3cf0f272d295d) |
+| Yoshikawa | — | ¥1-1,000 | ขนมญี่ปุ่น | [Maps](https://www.google.com/maps/place/Yoshikawa/data=!4m2!3m1!1s0x60188dd17723d20f:0x5325b33ca85d11b4) |
 
 ---
 
@@ -159,6 +191,8 @@
 | ✅ Plan Patisserie Kimuraya | 4.9★ (1,301) | ¥1-1,000 | ของหวาน | [Maps](https://www.google.com/maps/place/ラ・ヴェルデュール木村屋/data=!4m2!3m1!1s0x60196078d8d009bb:0x20929fe8eee95200) |
 | ✅ Plan CAFETINO MT.FUJI | 4.8★ (622) | ¥1,000-2,000 | กาแฟวิว Fuji | [Maps](https://www.google.com/maps/place/CAFETINO+MT.FUJI/data=!4m2!3m1!1s0x60195f0e69acef3b:0x7748b4fa9ec63a21) |
 | ✅ Plan 富士吉田金精軒 富士茶庵 | 4.4★ (323) | ¥1,000-2,000 | กาแฟ / ขนม | [Maps](https://www.google.com/maps/place/富士吉田金精軒+富士茶庵/data=!4m2!3m1!1s0x6019673476e61069:0x2ab906e03b1c6716) |
+| ✅ Plan George Washington Cake Shop | 4.7★ (158) | ¥1-1,000 | เค้ก / กาแฟ | [Maps](https://www.google.com/maps/place/ケーキのジョージワシントン河口湖店/data=!4m2!3m1!1s0x60195e2a0e545555:0xf19ba6bccc1a3433) |
+| ✅ Plan Fujisan Pudding | 4.5★ (95) | ¥1-1,000 | พุดดิ้ง | [Maps](https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c) |
 
 ---
 
@@ -190,8 +224,6 @@
 | ✅ Plan 東京屋製菓 富士みずほ堂 | 5.0★ (173) | — | ขนมญี่ปุ่น | [Maps](https://www.google.com/maps/place/東京屋製菓+富士みずほ堂/data=!4m2!3m1!1s0x6019670018fe7c45:0xd0408b8e07a87f99) |
 | ✅ Plan Yamasan Strawberry Farm Cafe | 4.3★ (207) | ¥1,000-2,000 | กาแฟ สตรอว์เบอร์รี่ | [Maps](https://www.google.com/maps/place/Yamasan+Strawberry+Farm+Cafe/data=!4m2!3m1!1s0x601a3708c8e9cc0f:0xbf1cc08eaf19a313) |
 | ✅ Plan Fuso Ann | 4.7★ (376) | ¥1,000-2,000 | ของหวาน | [Maps](https://www.google.com/maps/place/不曹庵/data=!4m2!3m1!1s0x60195fb62a4b31df:0xc57ed562f2d387ea) |
-| ✅ Plan George Washington Cake Shop | 4.7★ (158) | ¥1-1,000 | เค้ก / กาแฟ | [Maps](https://www.google.com/maps/place/ケーキのジョージワシントン河口湖店/data=!4m2!3m1!1s0x60195e2a0e545555:0xf19ba6bccc1a3433) |
-| ✅ Plan Fujisan Pudding | 4.5★ (95) | ¥1-1,000 | พุดดิ้ง | [Maps](https://www.google.com/maps/place/富士山ぷりん/data=!4m2!3m1!1s0x60195f48265d4b3d:0xbd6b6497defaf90c) |
 | ✅ Plan Sandwich & Fruit Sandwich FUJIS | 4.7★ (60) | ¥1-1,000 | แซนด์วิช | [Maps](https://www.google.com/maps/place/サンドイッチ＆フルーツサンド+FUJISAND/data=!4m2!3m1!1s0x6019679534f5e1ff:0x194dc0b402c5ef2) |
 
 ---
@@ -211,6 +243,7 @@
 | ✅ Plan SafeHouse | 4.7★ (47) | ¥1,000-2,000 | อาหารอิ | [Maps](https://www.google.com/maps/place/SafeHouse/data=!4m2!3m1!1s0x601a4b6424ad7877:0x3300af0098be188a) |
 | ✅ Plan Enoki | 4.5★ (168) | ¥1,000-2,000 | อาหารอิ | [Maps](https://www.google.com/maps/place/えのき/data=!4m2!3m1!1s0x601a49d9188d7a91:0xb19b394cfe834ea1) |
 | ✅ Plan Miyamotoya | 4.7★ (182) | ¥1-1,000 | ร้านอาหาร | [Maps](https://www.google.com/maps/place/宮本屋/data=!4m2!3m1!1s0x60195e28eba9cc8d:0x79b4e12470cb2b6d) |
+| Yamauchiya Kunoyama Strawberry Farm | — | ¥1,000-2,000 | สตรอว์เบอร์รี่ / คาเฟ่ | [Maps](https://www.google.com/maps/place/Yamauchiya+Kunoyama+Strawberry+Farm/data=!4m2!3m1!1s0x601a373a6494917b:0x6dcbe31c78309b46) |
 
 ### ชาเขียว / ของหวาน
 | ชื่อ | ★ | ราคา | ประเภท | Google Maps |
