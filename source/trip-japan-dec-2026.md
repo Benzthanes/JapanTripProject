@@ -110,17 +110,17 @@
 | วัน | วันที่ | ธีม | สถานะ |
 |---|---|---|---|
 | Day 0 | 10 ธ.ค. (พฤ) | เดินทางถึงโตเกียว | ✅ |
-| Day 1 | 11 ธ.ค. (ศ) | **SHOPPING DAY** — Shinjuku + Harajuku 🛍️ | ✅ |
+| Day 1 | 11 ธ.ค. (ศ) | Shinjuku → Harajuku → Omotesando → Shibuya 🛍️ | ✅ |
 | Day 2 | 12 ธ.ค. (ส) | เดินทาง → **Fujinomiya** 🗻 | ⏳ TBD แผนเที่ยว |
 | Day 3 | 13 ธ.ค. (อา) | Fujinomiya | ⏳ TBD |
 | Day 4 | 14 ธ.ค. (จ) | เดินทาง → **Shizuoka ตัวเมือง** 🚅 | ⏳ TBD แผนเที่ยว |
 | Day 5 | 15 ธ.ค. (อ) | Shizuoka ตัวเมือง | ⏳ TBD |
 | Day 6 | 16 ธ.ค. (พ) | เดินทาง → **Kawaguchiko Day 1** 🗻 | ⏳ TBD แผนเที่ยว |
 | Day 7 | 17 ธ.ค. (พฤ) | **Kawaguchiko Day 2** 🗻 | ⏳ TBD แผนเที่ยว |
-| Day 8 | 18 ธ.ค. (ศ) | กลับโตเกียว | ⏳ TBD แผนเที่ยว |
-| Day 9 | 19 ธ.ค. (ส) | **Theme Park วันเต็ม** 🎡 (DisneySea / Disneyland) | ⏳ TBD |
-| Day 10 | 20 ธ.ค. (อา) | Tsukiji + Ueno + Ameyoko + Ginza + Odaiba | ✅ |
-| Day 11 | 21 ธ.ค. (จ) | ช้อปปิ้งสุดท้าย + Illumination คืนสุดท้าย 🎄 | ✅ |
+| Day 8 | 18 ธ.ค. (ศ) | กลับโตเกียว + Nakameguro ริมคลอง 🌊 | ✅ |
+| Day 9 | 19 ธ.ค. (ส) | Tsukiji + Tamiya + Odaiba + Tokyo Tower 🗼 | ✅ |
+| Day 10 | 20 ธ.ค. (อา) | Yanaka Ginza + Nezu Shrine + Ueno + Akihabara 🏮 | ✅ |
+| Day 11 | 21 ธ.ค. (จ) | Asakusa + Tokyo Skytree + ช้อปปิ้งสุดท้าย 🗼 | ✅ |
 | — | 22 ธ.ค. (อ) | เครื่องออก 01:25 กลับบ้าน | ✈️ |
 
 ---
@@ -228,11 +228,11 @@
 
 ---
 
-## Day 1 — 11 ธ.ค. (ศ) SHOPPING DAY 🛍️
+## Day 1 — 11 ธ.ค. (ศ) Shinjuku → Harajuku → Omotesando → Shibuya 🛍️
 
-> เป้าหมาย: ซื้อเสื้อผ้ากันหนาว ปรับตัวกับอากาศ
+> เป้าหมาย: ช้อปปิ้ง + เดินย่านดัง + ฮาจิโกะ
 
-### เช้า — Shinjuku
+### เช้า — Shinjuku ช้อปปิ้ง
 | ร้าน | สินค้า | ค่าเข้า |
 |---|---|---|
 | **Uniqlo Shinjuku** | Heattech, Ultra Light Down | ฟรี |
@@ -240,50 +240,62 @@
 - [Uniqlo Shinjuku](https://www.google.com/maps/place/UNIQLO+Shinjuku+Honten+(Flagship+Store)/data=!4m2!3m1!1s0x60188d0034883f09:0xd2a050fb0a44b058)
 - [GU Shinjuku](https://www.google.com/maps/place/GU+Bic+Camera+Shinjuku+East+Exit+Store/data=!4m2!3m1!1s0x60188cda44100001:0x73c544829526b6cd)
 
+> 💡 ซื้อ Heattech ที่นี่ก่อนเลย เพราะวันต่อๆ ไปจะหนาวมาก โดยเฉพาะ Kawaguchiko
+
 ### กลางวัน — Harajuku
-- **[ศาลเจ้าเมจิ](https://www.google.com/maps/place/ศาลเจ้าเมจิ/data=!4m2!3m1!1s0x60188cb79a4c26e5:0x8fca893849103f73)** 4.6★ — ศาลเจ้าชินโตกลางสวนป่า เงียบสงบมาก เดิน 5 นาทีจาก Harajuku Station | ฟรี
-- **Takeshita Street** — เสื้อผ้าสไตล์ญี่ปุ่น vintage ราคาไม่แพง | ฟรี
-- **Marion Crepes** — crepe ดัง ~600 เยน
-- [Takeshita Street](https://www.google.com/maps/place/Takeshita+Street/data=!4m2!3m1!1s0x60188d795a699d2f:0x3499ed0ca0a1edf9)
+- **[ศาลเจ้าเมจิ](https://www.google.com/maps/place/ศาลเจ้าเมจิ/data=!4m2!3m1!1s0x60188cb79a4c26e5:0x8fca893849103f73)** 4.6★ — เดิน 5 นาทีจาก Harajuku Station เงียบสงบมาก | ฟรี
+- **[Takeshita Street](https://www.google.com/maps/place/Takeshita+Street/data=!4m2!3m1!1s0x60188d795a699d2f:0x3499ed0ca0a1edf9)** — เสื้อผ้าสไตล์ญี่ปุ่น ของกิน street food | ฟรี
+- **[Cat St](https://www.google.com/maps/place/Cat+St/data=!4m2!3m1!1s0x60188ca30819b9d7:0x462be8cd044503d0)** — วนออก Ura-Harajuku เงียบกว่า local กว่า เดินต่อไป Omotesando ได้เลย
 
-### เย็น — ราเมงมื้อแรก 🍜
-- **Fuunji Ramen** — Tsukemen ดังมาก คิวยาว แต่คุ้ม
-- **Ichiran Ramen Shinjuku** — solo booth สุด iconic ~1,200 เยน
-- [Ichiran Ramen Shinjuku](https://www.google.com/maps/place/อิชิรัน+สาขาชินจูกุชูโอฮิงาชิกุจิ/data=!4m2!3m1!1s0x60188cda5f050cf1:0x397988c6d1296d56)
+### บ่าย — Omotesando / Aoyama
+- **[BRICK & MORTAR](https://www.google.com/maps/place/BRICK+&+MORTAR/data=!4m2!3m1!1s0x60188b462573f3f9:0x82261fddc07fcdee)** — ร้านไลฟ์สไตล์ Harajuku
+- **[ONE PIECE MUGIWARA STORE](https://www.google.com/maps/place/ONE+PIECE+MUGIWARA+STORE+HARAJUKU/data=!4m2!3m1!1s0x60188d003d0e0dfb:0xd71eca2eb037d5e1)** — ของสะสม / อนิเมะ
+- เดิน Omotesando Hills บรรยากาศดี ร้าน design ดัง
 
-### คืน — 🎄 Shinjuku Southern Terrace Illumination (ฟรี)
-- [Shinjuku Southern Terrace](https://www.google.com/maps/place/Shinjuku+Southern+Terrace/data=!4m2!3m1!1s0x60188cd021f78cf5:0x823af66c60803c01)
+### เย็น — Shibuya
+- **[ฮาจิโกะ](https://www.google.com/maps/place/ฮะจิโค+(ชิบุยะ)/data=!4m2!3m1!1s0x60188b57efbd57c7:0x217e9d9fe306fba)** — รูปปั้นหน้าสถานี ช่วงเย็นมีไฟ ถ่ายรูปสวย
+- **Shibuya Crossing** — แยกดังมาก ถ่ายรูปมุมสูงได้จาก Starbucks ชั้น 2 หน้าสถานี
 
-### 🌟 จุดเด่น / อย่าพลาด
-- **Omoide Yokocho (ตรอกความทรงจำ)** แถว Shinjuku — ซอยเล็กๆ ร้านยากิโทริควัน บรรยากาศโชวะ ถ่ายรูปสวยมาก เปิดแต่เย็น
-- **Golden Gai** — บาร์เล็กๆ หลายร้อยร้านแน่นอยู่ในซอยเดียว ไม่ต้องดื่มก็เข้าไปดูบรรยากาศได้
-- **Takeshita Street** — เดินจากปากซอยจนสุด แล้ววนออก Cat Street (Ura-Harajuku) ซึ่งเงียบกว่าและ local กว่า
-- **ซื้อ Heattech ที่ Uniqlo ก่อน** เพราะวันต่อๆ ไปจะหนาวมาก โดยเฉพาะ Kawaguchiko
+### คืน — (Optional) แวะ Shinjuku ก่อนกลับ
+- **[Shinjuku Southern Terrace](https://www.google.com/maps/place/Shinjuku+Southern+Terrace/data=!4m2!3m1!1s0x60188cd021f78cf5:0x823af66c60803c01)** 🎄 Illumination — ผ่านไปก็แวะได้ ฟรี
+- **[Omoide Yokocho](https://www.google.com/maps/place/โอโมอิเดะ+โยโกโช/data=!4m2!3m1!1s0x60188cd7058ad73f:0x908f55935cc13cd3)** / **[Golden Gai](https://www.google.com/maps/place/ชินจุกุ+โกลเด้น+ไก/data=!4m2!3m1!1s0x60188cd96586b9af:0x71a5c0e1150c1a8f)** — บรรยากาศโชวะ เดินดูก็ได้
 
 ### 🍽️ อาหารวันนี้
 | | |
 |---|---|
-| ☕ **เช้า** | ร้านสะดวกซื้อ — ก่อนออก เอา Onigiri + กาแฟ 7-Eleven |
-| 🍜 **เที่ยง** | **[Afuri Shibuya Dōgenzaka](https://www.google.com/maps/place/Afuri+Shibuya+Dōgenzaka/data=!4m2!3m1!1s0x60188b00639fa863:0xea13c2e94629f523)** ⭐4.8 — ราเม็งยูซุ ดาวสูงสุดใน list แถว Harajuku เดินได้ ~950¥ |
-| 🍜 **เที่ยง (สำรอง)** | **Fuunji Ramen** — Tsukemen ดังมาก แถว Shinjuku (คิวยาว ไปตั้งแต่ 11:00) ~950¥ |
-| 🥞 **ของกินระหว่างทาง** | Marion Crepes แถว Harajuku ~600¥ |
-| 🍜 **เย็น** | **Ichiran Ramen** Shinjuku — solo booth iconic ~1,200¥ |
-| 🥩 **เที่ยง (ตัวเลือก)** | **[Wagyu Steak Hamburger & Ramen Shinjuku](https://www.google.com/maps/place/Wagyu+Steak+Hamburger+%26+Ramen+(Halal+Vegan+Gluten+Free)+Shinjuku+Restaurant/data=!4m2!3m1!1s0x60188d0c0928ee9f:0x9c3d641e3f981830)** ⭐4.9 — วากิวฮัมเบอร์เกอร์ดาวสูงสุดใน list ~2,000¥ |
-| 🍻 **เย็น (สำรอง)** | **[Harebare Pecori Shinjuku](https://www.google.com/maps/place/Harebare+Pecori+Shinjuku/data=!4m2!3m1!1s0x60188cd79a8cb48b:0x1c2318ad6dabda6a)** ⭐4.7 — อิซาคายะบรรยากาศดี ใกล้ Shinjuku ~3,500¥ |
+| ☕ **เช้า** | 7-Eleven ก่อนออก — Onigiri + กาแฟ |
+| 🍜 **เที่ยง** | **[Afuri Shibuya Dōgenzaka](https://www.google.com/maps/place/Afuri+Shibuya+Dōgenzaka/data=!4m2!3m1!1s0x60188b00639fa863:0xea13c2e94629f523)** ⭐4.8 — ราเม็งยูซุ แถว Shibuya Dōgenzaka ~950¥ |
+| 🍜 **เที่ยง (สำรอง)** | **Fuunji Ramen** ⭐4.3 — Tsukemen ดังมาก แถว Shinjuku (คิวยาว ไปตั้งแต่ 11:00) ~950¥ |
+| 🥞 **ของกินระหว่างทาง** | **[Marion Crepes](https://www.google.com/maps/place/Marion+Crêpes+Takeshita+Street/data=!4m2!3m1!1s0x60188cbb3777fb3d:0x6d22890a2f23e178)** แถว Takeshita ~600¥ |
+| 🍜 **เย็น** | **[Ichiran Ramen Shinjuku](https://www.google.com/maps/place/อิชิรัน+สาขาชินจูกุชูโอฮิงาชิกุจิ/data=!4m2!3m1!1s0x60188cda5f050cf1:0x397988c6d1296d56)** — solo booth iconic ~1,200¥ (ระหว่างทางกลับ) |
+| 🥩 **เย็น (สำรอง)** | **[Harebare Pecori Shinjuku](https://www.google.com/maps/place/Harebare+Pecori+Shinjuku/data=!4m2!3m1!1s0x60188cd79a8cb48b:0x1c2318ad6dabda6a)** ⭐4.7 — อิซาคายะ ~3,500¥ |
 
-### 🔖 ตัวเลือกเพิ่มเติม — Shinjuku / Harajuku (จาก wishlist)
+### 🔖 ตัวเลือกเพิ่มเติม — wishlist ที่อยู่แถวนี้
 
+#### 🍽️ อาหาร — Shinjuku / Harajuku
 | ร้าน | ★ | ประเภท | Google Maps |
 |---|---|---|---|
-| Gyu Tongue Lemon Shinjuku | 4.6★ (3,903) | ลิ้นวัว | [Maps](https://www.google.com/maps/place/Gyu+Tongue+Lemon+Shinjuku/data=!4m2!3m1!1s0x60188d29c40e3255:0x148f6cd600a5a08) |
-| Japanese Steak Bowl & Beef Curry | 4.6★ (3,890) | สเต็กบาวล์ | [Maps](https://www.google.com/maps/place/ステーキライスとカレーの店+センタービーフ+西新宿店/data=!4m2!3m1!1s0x60188d2d13b16a6f:0x4cb4738aca876a63) |
-| Ichibankaraage | 4.5★ (292) | ไก่ทอด | [Maps](https://www.google.com/maps/place/Ichibankaraage/data=!4m2!3m1!1s0x60188d1a196d8f33:0xc7d4939f74fefe35) |
-| ビーフシチューとハンバーグステー | 4.4★ (227) | บีฟสตูว์+ฮัมเบอร์ก | [Maps](https://www.google.com/maps/place/ビーフシチューとハンバーグステーキのお店+BUN吉(ブンキチ)/data=!4m2!3m1!1s0x6018f2a2574bf0df:0x643fb70dbb1cd2) |
-| Shinjiko Shijimi Chūkasoba Kohaku | 4.3★ (942) | ราเม็งหอยน้ำจืด | [Maps](https://www.google.com/maps/place/Shinjiko+Shijimi+Chūkasoba+Kohaku+Main+Store/data=!4m2!3m1!1s0x601861d14a9591d9:0xcd7fdc76ad127c78) |
+| Wagyu Steak Hamburger & Ramen | 4.9★ (1,701) | วากิวฮัมเบอร์เกอร์ | [Maps](https://www.google.com/maps/place/Wagyu+Steak+Hamburger+%26+Ramen+(Halal+Vegan+Gluten+Free)+Shinjuku+Restaurant/data=!4m2!3m1!1s0x60188d0c0928ee9f:0x9c3d641e3f981830) |
 | HALAL WAGYU RAMEN SHINJUKU | 4.9★ (2,972) | ฮาลาล ราเม็ง | [Maps](https://www.google.com/maps/place/HALAL+WAGYU+RAMEN+SHINJUKU-TEI+Tokyo+Yotsuya/data=!4m2!3m1!1s0x60188d43bb6e5a53:0xde244bba260d25cb) |
 | Halal Wagyu Ramen Shinjuku-Tei | 4.9★ (3,774) | ฮาลาล | [Maps](https://www.google.com/maps/place/Halal+Wagyu+Ramen+Shinjuku-Tei+Ginza+Tokyo/data=!4m2!3m1!1s0x60188bc9548ab18f:0x8d79cd1f7b8bf906) |
-| HALAL WAGYU RAMEN SHINJUKU | 4.8★ (8,224) | ฮาลาล | [Maps](https://www.google.com/maps/place/HALAL+WAGYU+RAMEN+SHINJUKU-TEI+Tokyo+Yotsuya/data=!4m2!3m1!1s0x60188d43bb6e5a53:0xde244bba260d25cb+Tokyo) |
+| Gyu Tongue Lemon Shinjuku | 4.6★ (3,903) | ลิ้นวัว | [Maps](https://www.google.com/maps/place/Gyu+Tongue+Lemon+Shinjuku/data=!4m2!3m1!1s0x60188d29c40e3255:0x148f6cd600a5a08) |
+| Japanese Steak Bowl & Beef Curry | 4.6★ (3,890) | สเต็กบาวล์ | [Maps](https://www.google.com/maps/place/ステーキライスとカレーの店+センタービーフ+西新宿店/data=!4m2!3m1!1s0x60188d2d13b16a6f:0x4cb4738aca876a63) |
+| Shinjiko Shijimi Chūkasoba Kohaku | 4.3★ (942) | ราเม็งหอยน้ำจืด | [Maps](https://www.google.com/maps/place/Shinjiko+Shijimi+Chūkasoba+Kohaku+Main+Store/data=!4m2!3m1!1s0x601861d14a9591d9:0xcd7fdc76ad127c78) |
 | HALAL 和牛 RamenTempura KONO | 4.8★ (1,272) | ฮาลาล | [Maps](https://www.google.com/maps/place/HALAL+和牛+RamenTempura+KONOHA/data=!4m2!3m1!1s0x60188d61613c5f2b:0x5f1c5b880fc08a59) |
+
+#### 🏪 ช้อปปิ้ง / สถานที่ — Shibuya
+| สถานที่ | ประเภท | Google Maps |
+|---|---|---|
+| ฮาจิโกะ (ชิบุยะ) | รูปปั้น | [Maps](https://www.google.com/maps/place/ฮะจิโค+(ชิบุยะ)/data=!4m2!3m1!1s0x60188b57efbd57c7:0x217e9d9fe306fba) |
+
+#### 🍽️ กินเย็นแถวโรงแรม — Asakusabashi (กลับจาก Shibuya แวะได้เลย)
+| ร้าน | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| Gyutan Biyori Asakusabashi | 4.9★ (805) | ลิ้นวัว Gyutan | [Maps](https://www.google.com/maps/place/Gyutan+Biyori+Asakusabashi/data=!4m2!3m1!1s0x60188f5cdf296a85:0x13149fd430984602) |
+| なにわ食麺処 | 4.8★ (360) | อุดัง | [Maps](https://www.google.com/maps/place/なにわ食麺処/data=!4m2!3m1!1s0x60188dbbd9d05575:0x85701116bcf7433e) |
+| Maguro Bito Asakusabashi | 4.6★ (93) | ซูชิทูน่า | [Maps](https://www.google.com/maps/place/Maguro+Bito+Asakusabashi/data=!4m2!3m1!1s0x60188f000c251b41:0xe80b00701dca6d25) |
+| Gaburi Chicken Asakusabashi | 4.5★ (463) | อิซาคายะ | [Maps](https://www.google.com/maps/place/Gaburi+Chicken+Asakusabashi/data=!4m2!3m1!1s0x60188eb3cc54a34b:0x440d556da57530f5) |
+| COFFEE NOVA | 4.5★ (510) | กาแฟ | [Maps](https://www.google.com/maps/place/COFFEE+NOVA/data=!4m2!3m1!1s0x60188eb78956aaab:0x3a4270646e1bf3a5) |
 
 ---
 
@@ -573,51 +585,58 @@
 
 ---
 
-## Day 8 — 18 ธ.ค. (ศ) กลับโตเกียว
+## Day 8 — 18 ธ.ค. (ศ) กลับโตเกียว + Nakameguro 🌊
 
-### การเดินทาง ~2+ ชม.
+### การเดินทาง — Kawaguchiko → Shinjuku → Nakameguro → Oku-Asakusa
 
-**บัส Kawaguchiko → Busta Shinjuku → TX Line → Oku-Asakusa**
-
-จอง: [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction) | ลงสถานี **Busta Shinjuku (Shinjuku Express Bus Terminal)**
+จอง: [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction) | ลงสถานี **Busta Shinjuku**
 
 **จากโรงแรม Habitacion ไปสถานีบัส**
 1. ออกจากรั้วโรงแรมเลี้ยวขวาไปถนนใหญ่ → ฝั่งตรงข้ามมี 7-Eleven → เดินทิศตะวันออก → เลี้ยวขวาที่สี่แยกที่มีร้านขายของฝาก → เดินต่อจะเห็น **อาคารไม้ทรงยุโรป** = สถานี Kawaguchiko
-2. ที่สถานี ไม่ต้องเข้าไปในรถไฟ → หาลานจอดบัส → เสาป้าย **หมายเลข 3 หรือ 4** (เช็คหน้าจอ LCD ชานชาลา) → ขึ้นรถดูป้าย **Shinjuku**
+2. ที่สถานี ไม่ต้องเข้าไปในรถไฟ → หาลานจอดบัส → เสาป้าย **หมายเลข 3 หรือ 4** → ขึ้นรถดูป้าย **Shinjuku**
 
-**จาก Busta Shinjuku ไป Oku-Asakusa**
-1. รถจอดชั้น 3 → ลงรับกระเป๋า → ลิฟต์/บันไดเลื่อนลงชั้น 2 → เชื่อมต่ออาคาร **JR Shinjuku (Exit New South Gate)**
-2. มองป้ายเหลือง **Chou Sobu Line** ชานชาลา 13, 16 → ขึ้นขบวนไปทาง Akihabara/Chiba → ลง **Akihabara**
-3. มองป้าย **Central Gate** → ออกช่องตรวจตั๋ว JR เลี้ยวขวาทันที → เดินออกนอกอาคาร → เห็น Yodobashi Camera → ทางเข้า TX อยู่ลานหน้าตึก
-4. หาลิฟต์สัญลักษณ์ **TX สีน้ำเงิน-แดง** → ลงชั้น 1 → สถานี TX Akihabara → แตะบัตรเข้า
-5. ลิฟต์ไป Platform 1, 2 (ชั้น B4) → รอรถไปทาง **Asakusa/Tsukuba** → นั่ง 2 สถานี → ลง **Asakusa (TX03)**
-6. ออก Exit A1 → ลิฟต์ขึ้นมา → เลี้ยวขวา → เดิน 850 เมตร (ผ่าน Donki ขวามือ → ข้ามสี่แยก) → **Hotel Little Bird Oku-Asakusa** อยู่ในซอยขวามือ
+**จาก Busta Shinjuku → Oku-Asakusa (~40 นาที) — วางกระเป๋าก่อน**
+1. ลงบัสชั้น 3 → เชื่อมต่อ JR Shinjuku (Exit New South Gate)
+2. **Chou-Sobu Line** ไป Akihabara → ต่อ **TX Line** → ลง **Asakusa (TX03)**
+3. ออก Exit A1 → เดิน 850 เมตร → เช็คอิน Hotel Little Bird วางกระเป๋า
 
-> เช็คเอ้าต์ Kawaguchiko → เช็คอิน [Hotel Little Bird Oku-Asakusa](https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741)
+**จาก Oku-Asakusa → Nakameguro (~35–40 นาที)**
+- เดินไป **สถานี Iriya** (Hibiya Line H04) ~10 นาที → นั่งไปทาง Naka-meguro → ลง **Naka-meguro (H22)** ไม่ต้องเปลี่ยนสาย
 
-### สถานที่ (แถว Asakusa เดินถึง)
+**กลับ Nakameguro → Oku-Asakusa (~35–40 นาที)**
+- Hibiya Line กลับทิศ → ลง Iriya → เดินกลับโรงแรม
 
-| สถานที่ | ★ | Google Maps |
-|---|---|---|
-| **วัดเซ็นโซจิ** | 4.5★ | [Maps](https://www.google.com/maps/place/วัดเซ็นโซ/data=!4m2!3m1!1s0x60188ec1a4463df1:0x6c0d289a8292810d) |
-| **ศาลเจ้าอาซากุสะ** | — | [Maps](https://maps.app.goo.gl/qiwfjrKnHvGPMqAX8) |
-| **Nakamise-dori** | — | [Maps](https://www.google.com/maps/place/Nakamise+Shopping+Street/data=!4m2!3m1!1s0x60188ec12dd1c34f:0xf83cdde3a40fdcb3) |
-| **วัดมัตสึจิยามะโชเด็น ฮงริวอิง** | 4.5★ | [Maps](https://www.google.com/maps/place/วัดมัตสึจิยามะโชเด็น+ฮงริวอิง/data=!4m2!3m1!1s0x60188ec2d70a9d4b:0x44034dcf66fc80c7) |
-| **Takanojin** — ร้านมีดดัง Kappabashi เดินจาก Asakusa | 4.9★ | [Maps](https://www.google.com/maps/place/Takanojin/data=!4m2!3m1!1s0x60188f49c9fd64df:0x6b8f508838611be6) |
+> เช็คเอ้าต์ Kawaguchiko → เช็คอิน [Hotel Little Bird Oku-Asakusa](https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741) → วางกระเป๋า → ออกไป Nakameguro
 
-### 🍽️ อาหาร
+### บ่าย — Nakameguro ริมคลอง 🌊
+
+#### สถานที่
+| สถานที่ | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| **Meguro River Promenade** | — | ทางเดินริมแม่น้ำ ★ | [Maps](https://www.google.com/maps/place/Meguro+River+Cherry+Blossoms+Promenade/data=!4m2!3m1!1s0x60188b1f906d5635:0x5648e41133f6fce8) |
+| **COW BOOKS 中目黒** | — | ร้านหนังสือ | [Maps](https://www.google.com/maps/place/COW+BOOKS+中目黒/data=!4m2!3m1!1s0x60188b4de13b8607:0xaf05d90036d0b718) |
+| **Traveler's Factory Nakameguro** | — | เครื่องเขียน / สมุดเดินทาง | [Maps](https://www.google.com/maps/place/Traveler's+Factory+Nakameguro/data=!4m2!3m1!1s0x60188b4ecc010001:0xf4a3a9683ea17a82) |
+| **KINTO REC STORE Tokyo** | — | ร้านไลฟ์สไตล์ | [Maps](https://www.google.com/maps/place/KINTO+REC+STORE+Tokyo/data=!4m2!3m1!1s0x60188b0566010c7f:0xd1053594fc50a769) |
+
+#### ขนม/คาเฟ่ริมคลอง
+| ร้าน | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| **I'm donut? Nakameguro** | — | โดนัท ★ | [Maps](https://www.google.com/maps/place/I'm+donut+?+Nakameguro/data=!4m2!3m1!1s0x60188baf0a108c8f:0x989d4f2a34381d93) |
+| **Cheese Cake Johann** | — | ชีสเค้ก | [Maps](https://www.google.com/maps/place/Cheese+Cake+Johann/data=!4m2!3m1!1s0x60188b4ed9f6e661:0xc9ef7691ecbba464) |
+| **Starbucks Reserve® Roastery Tokyo** | — | กาแฟ flagship | [Maps](https://www.google.com/maps/place/Starbucks+Reserve®+Roastery+Tokyo/data=!4m2!3m1!1s0x60188b88b7d8f7ab:0x2133080e9923eaac) |
+| **Green Bean to Bar Chocolate** | — | ช็อกโกแลต | [Maps](https://www.google.com/maps/place/Green+Bean+to+Bar+Chocolate+|+Nakameguro/data=!4m2!3m1!1s0x60188b5266dc0001:0xbf11f4458ff144d6) |
+| **Onibus Coffee** | — | กาแฟ | [Maps](https://www.google.com/maps/place/Onibus+Coffee/data=!4m2!3m1!1s0x60188b49101975bd:0xa4d389d765fd2d94) |
+| **Premarché Gelateria & Alternative Junk** | — | เจลาโต้ | [Maps](https://www.google.com/maps/place/Premarché+Gelateria+&+Alternative+Junk/data=!4m2!3m1!1s0x60188b899dfcdda1:0x36f582f6d8bdbaab) |
+| **getti 中目黒** | — | เจลาโต้ | [Maps](https://www.google.com/maps/place/getti中目黒/data=!4m2!3m1!1s0x60188b0079e2f253:0xe69618e44d985f05) |
+
+### เย็น — Asakusa (หลังเช็คอิน)
 
 | | ร้าน | ★ | Google Maps |
 |---|---|---|---|
-| 🐔 **เที่ยง** | **Gyutan Biyori Asakusabashi** — ลิ้นวัว Gyutan ดาวสูง | 4.9★ | [Maps](https://www.google.com/maps/place/Gyutan+Biyori+Asakusabashi/data=!4m2!3m1!1s0x60188f5cdf296a85:0x13149fd430984602) |
-| 🍗 **Nakamise** | **Asakusa Chicken** — street food ไก่ทอด | 4.9★ | [Maps](https://www.google.com/maps/place/Asakusa+Chicken/data=!4m2!3m1!1s0x60188fa5687280db:0xb5b3cc06ea2470d8) |
 | 🥩 **เย็น** | **Kuroge Wagyu Ichinoya Asakusa** — วากิวสเต็กดีที่สุดใน list | 4.8★ | [Maps](https://www.google.com/maps/place/Kuroge+Wagyu+Ichinoya+Asakusa/data=!4m2!3m1!1s0x60188f048f799e7f:0xd3cf44241683f24b) |
-| 🍡 | **Asakusa Chaya Tabanenoshi** — ขนมหวานญี่ปุ่น traditional | 4.4★ | [Maps](https://www.google.com/maps/place/Asakusa+Chaya+Tabanenoshi/data=!4m2!3m1!1s0x60188f0aa634cc65:0x95df867bb53ebca9) |
-| 🍦 | **asakusa RARA gelateria & caffe** — เจลาโต้ ดาวสูงสุด 5.0★ | 5.0★ | [Maps](https://www.google.com/maps/place/asakusa+RARA+gelateria%EF%BC%86caffe/data=!4m2!3m1!1s0x60188f72f1e84091:0xbe72d1e5ce63102e) |
-| 🍶 **คืน (สำรอง)** | **居酒屋 風鐸 -FUTAKU-** — อิซาคายะ 5.0★ บรรยากาศดีมาก | 5.0★ | [Maps](https://www.google.com/maps/place/居酒屋+風鐸+-FUTAKU-/data=!4m2!3m1!1s0x60188fbabbdd8e91:0x1a4a8d0641e0e6c5) |
-| 🔥 **เย็น (สำรอง)** | **[Hinomaru Asakusa](https://www.google.com/maps/place/Hinomaru/data=!4m2!3m1!1s0x60188d99f52eb625:0xe197007c0cbddf40)** — ปิ้งย่าง **15,720 รีวิว** ดาวสูงสุดย่านอาซากุสะ ห้ามพลาด | 4.9★ | [Maps](https://www.google.com/maps/place/Hinomaru/data=!4m2!3m1!1s0x60188d99f52eb625:0xe197007c0cbddf40) |
-| 🐙 **Street food** | **[Tako Oji](https://www.google.com/maps/place/Tako+Oji/data=!4m2!3m1!1s0x60188bb7ddcd8e2b:0xdd4fe622e0c5332f)** — ทาโกยากิ เดินกินได้เลยแถวอาซากุสะ | 4.8★ | [Maps](https://www.google.com/maps/place/Tako+Oji/data=!4m2!3m1!1s0x60188bb7ddcd8e2b:0xdd4fe622e0c5332f) |
-| 🍳 **กลางวัน (สำรอง)** | **[Okonomiyaki Shiraiwa](https://www.google.com/maps/place/Okonomiyaki%2Fmonja+Shiraiwa+Asakusa/data=!4m2!3m1!1s0x60188f24f7f3cd9f:0x4c727d0a1a3ad8ec)** — โอโคโนมิยากิ/มอนจา 2,288 รีวิว | 4.8★ | [Maps](https://www.google.com/maps/place/Okonomiyaki%2Fmonja+Shiraiwa+Asakusa/data=!4m2!3m1!1s0x60188f24f7f3cd9f:0x4c727d0a1a3ad8ec) |
+| 🔥 **เย็น (สำรอง)** | **Hinomaru Asakusa** — ปิ้งย่าง 15,720 รีวิว | 4.9★ | [Maps](https://www.google.com/maps/place/Hinomaru/data=!4m2!3m1!1s0x60188d99f52eb625:0xe197007c0cbddf40) |
+| 🍶 **คืน (สำรอง)** | **居酒屋 風鐸 -FUTAKU-** — อิซาคายะ 5.0★ | 5.0★ | [Maps](https://www.google.com/maps/place/居酒屋+風鐸+-FUTAKU-/data=!4m2!3m1!1s0x60188fbabbdd8e91:0x1a4a8d0641e0e6c5) |
+| 🍳 **สำรอง** | **Okonomiyaki Shiraiwa** — โอโคโนมิยากิ | 4.8★ | [Maps](https://www.google.com/maps/place/Okonomiyaki%2Fmonja+Shiraiwa+Asakusa/data=!4m2!3m1!1s0x60188f24f7f3cd9f:0x4c727d0a1a3ad8ec) |
 
 ### 🔖 ตัวเลือกเพิ่มเติม — Asakusa / Asakusabashi (จาก wishlist)
 
@@ -665,76 +684,110 @@
 
 ---
 
-## Day 9 — 19 ธ.ค. (ส) Theme Park วันเต็ม 🎡
+## Day 9 — 19 ธ.ค. (ส) Tsukiji + Tamiya + Odaiba + Tokyo Tower 🗼
 
-⏳ **ยังไม่ตัดสินใจ — เลือกจาก 3 ที่นี้:**
+### เช้ามืด — Tsukiji Fish Market 🐟
 
-| ตัวเลือก | ค่าเข้า (2 คน) | เหมาะกับ |
+- **[Tsukiji Outer Market](https://www.google.com/maps/place/Fish+Market+Tsukiji+Outer+Market/data=!4m2!3m1!1s0x60188b21cd0b675b:0xa26e24a1bf97025c)** 4.2★ — เปิดตั้งแต่ 05:00 ไปถึงก่อน 07:00 ของยังไม่หมด | ฟรีเข้า
+
+| | ร้าน | ★ | Google Maps |
+|---|---|---|---|
+| 🐟 **เช้า** | **Fish Market Tsukiji Outer Market** — ซูชิเช้าสด + หอยนางรม + Tamagoyaki | 4.2★ | [Maps](https://www.google.com/maps/place/Fish+Market+Tsukiji+Outer+Market/data=!4m2!3m1!1s0x60188b21cd0b675b:0xa26e24a1bf97025c) |
+| 🦪 **สำรอง** | **Tsukiji Yaki Uo Ishikawa** — อาหารทะเล | 4.4★ | [Maps](https://www.google.com/maps/place/Tsukiji+Yaki+Uo+Ishikawa/data=!4m2!3m1!1s0x60188b526bf51cff:0x31155b3d51c98e52) |
+| 🦪 **สำรอง** | **Tsukiji Unitora Nakadori** — อาหารทะเล | 4.3★ | [Maps](https://www.google.com/maps/place/Tsukiji+Unitora+Nakadori/data=!4m2!3m1!1s0x60188bdf270a08ed:0x6d303301c3bd21f8) |
+| 🥩 **เที่ยง (Higashi-Ginza เดิน 5 นาที)** | **WAGYU SUKIYAKI 極〜GOKU〜 東銀座築地** — สุกียากิวากิว | — | [Maps](https://www.google.com/maps/place/WAGYU+SUKIYAKI+極〜GOKU〜+東銀座築地+HigashiGinza+Tsukiji/data=!4m2!3m1!1s0x60188b6d18d60197:0x3bfb755f6f20601b) |
+
+### เที่ยง — Tamiya Pla-Model Factory Tokyo (Shimbashi/Minato)
+
+- **[Tamiya Pla-Model Factory Tokyo](https://www.google.com/maps/place/Tamiya+Pla-Model+Factory+Tokyo/data=!4m2!3m1!1s0x60188bea58edd913:0x730edeb678893b36)** 4.4★ — ร้าน+โรงงานจำลอง เดินจาก Tsukiji ~15 นาที หรือ Shimbashi 1 สถานี
+
+| ร้าน (extra) | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| Hamburg : Kiwamiya Tokyo Station | 4.1★ | ฮัมเบอร์ก · แวะระหว่างทาง | [Maps](https://www.google.com/maps/place/Hamburg+:+Kiwamiya+Tokyo+Station/data=!4m2!3m1!1s0x60188b377681370b:0x5bf75a1e6ff95bf6) |
+
+### บ่าย — Odaiba 🤖
+
+```
+Shimbashi → Yurikamome Line → Odaiba (~20 นาที)
+```
+
+| สถานที่ | ★ | Google Maps |
 |---|---|---|
-| **Tokyo DisneySea** | ~21,800¥ | บรรยากาศสวย วิวดี Fantasy Springs ใหม่ 2024 |
-| **Tokyo Disneyland** | ~21,800¥ | classic มากกว่า ขี่รถไฟ ขบวนพาเหรด |
+| **DiverCity Tokyo Plaza** | 4.2★ | [Maps](https://www.google.com/maps/place/DiverCity+Tokyo+Plaza/data=!4m2!3m1!1s0x601889f9d36ebaa5:0x67f4219bfa09db77) |
+| **Unicorn Gundam** | — | [Maps](https://www.google.com/maps/place/Unicorn+Gundam/data=!4m2!3m1!1s0x601889f9ca53ac17:0xe235a48a3479cb53) |
+
+### เย็น — Shiba / Tokyo Tower 🗼
+
+```
+Odaiba → Yurikamome กลับ Shimbashi → เดินหรือ taxi ไป Tokyo Tower ~15 นาที
+```
+
+| สถานที่ | ★ | Google Maps |
+|---|---|---|
+| **โตเกียวทาวเวอร์** | — | [Maps](https://www.google.com/maps/place/โตเกียวทาวเวอร์/data=!4m2!3m1!1s0x60188bbd9009ec09:0x481a93f0d2a409dd) |
+| **Shiba Park** | — | [Maps](https://www.google.com/maps/place/Shiba+Park/data=!4m2!3m1!1s0x60188bbedd7d8b69:0x58a924b663773b45) |
+| **Tako Oji** — ทาโกยากิแถว Shiba | 4.8★ | [Maps](https://www.google.com/maps/place/Tako+Oji/data=!4m2!3m1!1s0x60188bb7ddcd8e2b:0xdd4fe622e0c5332f) |
+
+### คืน — ราเมง
+
+> ⚠️ ไม่มีราเมงใน wishlist แถว Shiba/Minato — กลับ Asakusa แล้วกิน
+
+| ร้าน | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| **Kamo to Negi** (Asakusa) | 4.8★ | ราเม็งเป็ด ★ | [Maps](https://www.google.com/maps/place/らーめん鴨to葱+浅草店/data=!4m2!3m1!1s0x60188f006f9ac585:0x67d548c734d1c58a) |
+| **Ichi ryu** (仲見世店) | 4.8★ | ราเม็ง | [Maps](https://www.google.com/maps/place/麺処一龍+仲見世店/data=!4m2!3m1!1s0x60188f4c0b6b4981:0x847df59e516a5447) |
 
 ---
 
-## Day 10 — 20 ธ.ค. (อา) Tsukiji + Ueno + Ameyoko + Ginza + Odaiba
+## Day 10 — 20 ธ.ค. (อา) Yanaka Ginza + Nezu Shrine + Ueno + Akihabara 🏮
 
-### เช้ามืด — Tsukiji Fish Market 🐟
-- **Tsukiji Outer Market** — เปิดตั้งแต่ 05:00 ซูชิเช้าสดมาก ราคาถูก | ฟรีเข้า
-- แนะนำ: ซูชิเช้า + หอยนางรม + ของทะเลสด
-- [Tsukiji Outer Market](https://www.google.com/maps/place/Fish+Market+Tsukiji+Outer+Market/data=!4m2!3m1!1s0x60188b21cd0b675b:0xa26e24a1bf97025c)
+### เช้า — Yanaka Ginza → Nezu Shrine (เดินต่อเนื่องได้)
 
-### เช้า — Ueno + Ameyoko
-| สถานที่ | ค่าเข้า |
-|---|---|
-| **Ameyoko Market** | ฟรี |
-| **Ueno Park** | ฟรี |
-
-- [Ameyoko Market](https://www.google.com/maps/place/Ameyoko+market/data=!4m2!3m1!1s0x60188f00af83b787:0x654b0a29a45fcf0a)
-
-### เย็น — Odaiba
-```
-Ginza → Odaiba (Yurikamome Line ~20 นาที)
-```
-| สถานที่ | ค่าเข้า |
-|---|---|
-| **DiverCity Tokyo** — Gundam ยักษ์ | ฟรี |
-
-- [DiverCity Tokyo Plaza](https://www.google.com/maps/place/DiverCity+Tokyo+Plaza/data=!4m2!3m1!1s0x601889f9d36ebaa5:0x67f4219bfa09db77)
-
-### 🌟 จุดเด่น / อย่าพลาด
-- **Tsukiji เปิด 05:00** — ไปช้าของหมด ไปถึงก่อน 07:00 ดีสุด ร้าน Sushizanmai เปิดแต่เช้า
-- **Tamagoyaki Tsukiji** — ไข่หวานย่างไม้ขายข้างทาง เป็น snack ชื่อดังมาก ต้องลอง ~300¥
-- **Ameyoko** — เดินจากสถานี Ueno ออกทางซ้าย ตลาดกลางแจ้งราคาถูก มีของทะเล ผลไม้ เสื้อผ้า
-
-### 🍽️ อาหารวันนี้
-| | |
-|---|---|
-| 🐟 **เช้า (Tsukiji)** | **ซูชิเช้าสด** + หอยนางรม + Tamagoyaki แถว Tsukiji Outer Market ~1,500¥ |
-| 🛍️ **กลางวัน (Ameyoko)** | กินเล่นแถวตลาด — ข้าวปั้น ผลไม้ ของทะเล ~800¥ |
-| 🥩 **กลางวัน (สำรอง Ueno)** | **[กิวคัตสุ โมโตมุระ สาขาอุเอโนะ](https://www.google.com/maps/place/กิวคัตสุ+โมโตมุระ+สาขาอุเอโนะ/data=!4m2!3m1!1s0x60188e9e48da5555:0x5aae1122eba9fa2c)** ⭐4.8 — เนื้อวัวชุบแป้งทอด ดิบใน กรอบนอก ~2,500¥ |
-| 🍜 **ราเม็ง (สำรอง Ueno)** | **[Kamo to Negi Ueno](https://www.google.com/maps/place/らーめん+鴨to葱+上野御徒町本店/data=!4m2!3m1!1s0x60188e9f836fe4eb:0xe59c5e732e04d0f7)** ⭐4.8 — ราเม็งเป็ด รีวิว 12,991 คน ดังมาก ~1,000¥ |
-| 🥩 **แวะ Akihabara** | [**Roast Beef Ōno Akihabara**](https://www.google.com/maps/place/Roast+Beef+Ōno+Akihabara/data=!4m2!3m1!1s0x60188c1d19140001:0x6bbfd1a1cafa29df) ⭐4.6 — โรสต์บีฟดัง หั่นบางกินกับข้าว คุ้มมาก ~1,500¥ |
-
-### 🔖 ตัวเลือกเพิ่มเติม — Tsukiji / Ueno / Akihabara (จาก wishlist)
-
-**🏪 สถานที่:**
+#### สถานที่ / ร้านระหว่างทาง
 | สถานที่ | ★ | ประเภท | Google Maps |
 |---|---|---|---|
-| Marunouchi Naka-dori St. | 4.4★ (438) | ถนน Illumination | [Maps](https://www.google.com/maps/place/Marunouchi+Naka-dori+St./data=!4m2!3m1!1s0x60188b39eb095801:0x64a29f9f2f81d5f7) |
+| **Hitotema Bakery Nippori** | — | เบเกอรี่ (แถวต้นทาง Nippori) | [Maps](https://www.google.com/maps/place/Hitotema+Bakery,+Nippori/data=!4m2!3m1!1s0x60188da96cc42a55:0xfc75f1f92269330f) |
+| **ยานากะ กินซ่า** | — | ย่าน / บรรยากาศ | [Maps](https://www.google.com/maps/place/ยานากะ+กินซ่า/data=!4m2!3m1!1s0x60188dd19c058c3d:0xef3d1026c2974760) |
+| **Yanaka Senbei** | — | ขนมเซนเบ | [Maps](https://www.google.com/maps/place/Yanaka+Senbei/data=!4m2!3m1!1s0x60188dd416cabea7:0x2f923131148fcafd) |
+| **Yanaka Shippoya** | — | ขนมญี่ปุ่น | [Maps](https://www.google.com/maps/place/Yanaka+Shippoya/data=!4m2!3m1!1s0x60188dd164777993:0x23c3cf0f272d295d) |
+| **Yoshikawa** | — | ขนมญี่ปุ่น | [Maps](https://www.google.com/maps/place/Yoshikawa/data=!4m2!3m1!1s0x60188dd17723d20f:0x5325b33ca85d11b4) |
+| **Yanaka Ginza Yūyake Dandan** | — | บันไดชมพระอาทิตย์ตก | [Maps](https://www.google.com/maps/place/Yanaka+Ginza+Yūyake+Dandan/data=!4m2!3m1!1s0x60188dd3e2ad0eaf:0xb7cc73e54880849b) |
+| **Bamboo Craft Shop Midoriya** | — | งานไม้ไผ่ | [Maps](https://www.google.com/maps/place/Bamboo+Craft+Shop+Midoriya/data=!4m2!3m1!1s0x60188dd15ebacb07:0x403aa2c3f5a43330) |
+| **Kanekichien** | — | งานไม้ไผ่ | [Maps](https://www.google.com/maps/place/Kanekichien/data=!4m2!3m1!1s0x60188dd17ae89b3f:0xf9212ddf0026d1c9) |
+| **Neko Action** | — | ของสะสม / ตุ๊กตา | [Maps](https://www.google.com/maps/place/Neko+Action/data=!4m2!3m1!1s0x60188dd3fe672b97:0x334a11143b43c46b) |
+| **Jugetsudo Tea Shop & Cafe** | — | ร้านชา | [Maps](https://www.google.com/maps/place/Jugetsudo+Tea+Shop+&+Cafe/data=!4m2!3m1!1s0x60188be0cb07b3bb:0xaf5f1366d7a7b34e) |
+| **Nezu Shrine** | — | ศาลเจ้าชินโต | [Maps](https://www.google.com/maps/place/Nezu+Shrine+Azalea+Garden/data=!4m2!3m1!1s0x60188c32d987a58f:0xedbbbab47b5044ba) |
 
-**🍽️ อาหาร/ร้าน:**
+### บ่าย — Ueno → Akihabara
+
+#### สถานที่
+| สถานที่ | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| **Ueno Park** | 4.4★ | อุทยาน | [Maps](https://www.google.com/maps/place/UENO+PARK/data=!4m2!3m1!1s0x60188e9b45906ac3:0xb1cb3623124e645a) |
+| **Ameyoko Market** | 4.3★ | ตลาด | [Maps](https://www.google.com/maps/place/Ameyoko+market/data=!4m2!3m1!1s0x60188f00af83b787:0x654b0a29a45fcf0a) |
+| **Kiminoen Tea Garden** | — | สวนชาเขียว | [Maps](https://www.google.com/maps/place/Kiminoen+Tea+Garden/data=!4m2!3m1!1s0x60188e9e4bc05393:0x6d6b88261fffc954) |
+| **Sankō-en Store** | — | ร้านค้า | [Maps](https://www.google.com/maps/place/Sankō-en+Store/data=!4m2!3m1!1s0x60188e9882eb388d:0x4a064460d70392a) |
+
+#### อาหาร — Ueno
 | ร้าน | ★ | ประเภท | Google Maps |
 |---|---|---|---|
-| Ramen Kamo to Negi Ueno | 4.5★ (12,991) | ราเม็งเป็ด | [Maps](https://www.google.com/maps/place/らーめん+鴨to葱+上野御徒町本店/data=!4m2!3m1!1s0x60188e9f836fe4eb:0xe59c5e732e04d0f7) |
+| **กิวคัตสุ โมโตมุระ สาขาอุเอโนะ** | 4.8★ | กิวคัตสุ ★ | [Maps](https://www.google.com/maps/place/กิวคัตสุ+โมโตมุระ+สาขาอุเอโนะ/data=!4m2!3m1!1s0x60188e9e48da5555:0x5aae1122eba9fa2c) |
+| **Kamo to Negi Ueno** | 4.5★ | ราเม็งเป็ด | [Maps](https://www.google.com/maps/place/らーめん+鴨to葱+上野御徒町本店/data=!4m2!3m1!1s0x60188e9f836fe4eb:0xe59c5e732e04d0f7) |
+| **Menya Jojo** | 4.5★ | ราเม็ง (Kuramae) | [Maps](https://www.google.com/maps/place/Menya+Jojo/data=!4m2!3m1!1s0x60188f110a713151:0x83ff4f5e5219eb36) |
+
+#### อาหาร — Akihabara
+| ร้าน | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| **Roast Beef Ōno Akihabara** | 4.6★ | โรสต์บีฟ ★ | [Maps](https://www.google.com/maps/place/Roast+Beef+Ōno+Akihabara/data=!4m2!3m1!1s0x60188c1d19140001:0x6bbfd1a1cafa29df) |
 | Tsukiji Yaki Uo Ishikawa | 4.4★ (644) | อาหารทะเล | [Maps](https://www.google.com/maps/place/Tsukiji+Yaki+Uo+Ishikawa/data=!4m2!3m1!1s0x60188b526bf51cff:0x31155b3d51c98e52) |
 | Tsukiji Unitora Nakadori | 4.3★ (1,539) | อาหารทะเล | [Maps](https://www.google.com/maps/place/Tsukiji+Unitora+Nakadori/data=!4m2!3m1!1s0x60188bdf270a08ed:0x6d303301c3bd21f8) |
 | Hamburg Kiwamiya Tokyo Station | 4.1★ (1,133) | ฮัมเบอร์ก | [Maps](https://www.google.com/maps/place/Hamburg+:+Kiwamiya+Tokyo+Station/data=!4m2!3m1!1s0x60188b377681370b:0x5bf75a1e6ff95bf6) |
 
 ---
 
-## Day 11 — 21 ธ.ค. (จ) ช้อปปิ้งสุดท้าย + Illumination คืนสุดท้าย
+## Day 11 — 21 ธ.ค. (จ) Asakusa + Tokyo Skytree + ช้อปปิ้งสุดท้าย 🗼
 
-### เช้า — Check-out + ฝากกระเป๋า
+### เช้า — Check-out + Free Time
 
 > Check-out ปกติ ~11:00 แต่เครื่องออกตี 1 ต้องอยู่ข้างนอกทั้งวัน
 
@@ -748,17 +801,34 @@ Ginza → Odaiba (Yurikamome Line ~20 นาที)
 
 > 💡 **แนะนำ:** ฝากโรงแรมเดิม แล้วแวะเก็บกระเป๋าก่อนขึ้น Keikyu ไป Haneda ตอน ~22:00
 
-### ช้อปปิ้งสุดท้าย
-- **Ginza / Shinjuku** — ซื้อของฝาก duty-free | ฟรีเข้า
+### บ่าย — Asakusa (เดินจากโรงแรม)
 
-### 🎄 Illumination คืนสุดท้าย
-| สถานที่ | ค่าเข้า |
-|---|---|
-| **Caretta Shiodome** | ฟรี |
-| **Tokyo Midtown Roppongi** | ฟรี |
+| สถานที่ | ★ | Google Maps |
+|---|---|---|
+| **วัดเซ็นโซจิ** | 4.5★ | [Maps](https://www.google.com/maps/place/วัดเซ็นโซ/data=!4m2!3m1!1s0x60188ec1a4463df1:0x6c0d289a8292810d) |
+| **ศาลเจ้าอาซากุสะ** | — | [Maps](https://maps.app.goo.gl/qiwfjrKnHvGPMqAX8) |
+| **Nakamise-dori** | — | [Maps](https://www.google.com/maps/place/Nakamise+Shopping+Street/data=!4m2!3m1!1s0x60188ec12dd1c34f:0xf83cdde3a40fdcb3) |
+| **วัดมัตสึจิยามะโชเด็น ฮงริวอิง** | 4.5★ | [Maps](https://www.google.com/maps/place/วัดมัตสึจิยามะโชเด็น+ฮงริวอิง/data=!4m2!3m1!1s0x60188ec2d70a9d4b:0x44034dcf66fc80c7) |
+| **Takanojin** — ร้านมีดดัง Kappabashi เดินจาก Asakusa | 4.9★ | [Maps](https://www.google.com/maps/place/Takanojin/data=!4m2!3m1!1s0x60188f49c9fd64df:0x6b8f508838611be6) |
 
-- [Caretta Shiodome](https://www.google.com/maps/place/Caretta+Shiodome/data=!4m2!3m1!1s0x60188bc2cb06ba63:0xaf05087c2b3738c3)
-- [Tokyo Midtown Roppongi](https://www.google.com/maps/place/Tokyo+Midtown/data=!4m2!3m1!1s0x60188b78922e6353:0xeb3e39dbe18da4d6)
+### 🍡 กินเดินแถว Nakamise / Asakusa
+
+| ร้าน | ★ | ประเภท | Google Maps |
+|---|---|---|---|
+| **Mochinyan-yaki** | 4.7★ | ของหวาน | [Maps](https://www.google.com/maps/place/もちにゃん焼き+浅草本店/data=!4m2!3m1!1s0x60188feff4678919:0x1d35cb189ad25ab2) |
+| **Asakusa Kagetsudō Melon Bread** | 4.4★ | เมล่อนปัง | [Maps](https://www.google.com/maps/place/浅草+花月堂+本店/data=!4m2!3m1!1s0x60188ec040443549:0x3dc80edf1b29be6b) |
+| **Matcha Sweets SAWAWA** | 4.4★ | ของหวานมัทชะ | [Maps](https://www.google.com/maps/place/抹茶スイーツ処+茶和々+浅草店/data=!4m2!3m1!1s0x60188ec115a6ca81:0x8d4997bf9c77bd20) |
+| **TAKOBIVA** | 4.7★ | ทาโกยากิ | [Maps](https://www.google.com/maps/place/TAKOBIVA/data=!4m2!3m1!1s0x60188bea787c2d4b:0x1bf43a3e46b76c6a) |
+| **Marcato GELATERIA BAR** | 4.7★ | เจลาโต้ | [Maps](https://www.google.com/maps/place/Marcato+GELATERIA+BAR+ジェラテリアバール+マルカート/data=!4m2!3m1!1s0x60188f0928eea409:0xcbb1912f088c5569) |
+| **bibibi** | 4.8★ | อาหาร/บาร์ | [Maps](https://www.google.com/maps/place/bibibi/data=!4m2!3m1!1s0x60188fb52e4542f5:0xd15ea7cd6d2eb6bc) |
+
+### เย็น/ดึก — Tokyo Skytree (Oshiage — 1 สถานีจาก Asakusa)
+
+| สถานที่ | ★ | Google Maps |
+|---|---|---|
+| **โตเกียวสกายทรี** | — | [Maps](https://www.google.com/maps/place/โตเกียวสกายทรี/data=!4m2!3m1!1s0x60188ed0d12f9adf:0x7d1d4fb31f43f72a) |
+
+> 💡 ขึ้น Tembo Deck (350m) หรือ Tembo Galleria (450m) ยามค่ำ วิวโตเกียวยามคืนสวยมาก | ตั๋ว ~2,100–3,400¥
 
 ### 🔖 ตัวเลือกเพิ่มเติม — Day 11 (จาก wishlist)
 
@@ -768,8 +838,7 @@ Ginza → Odaiba (Yurikamome Line ~20 นาที)
 | Gyumon Ikebukuro | 4.8★ (6,347) | ยากินิคุ ฮาลาล (Ikebukuro) | [Maps](https://www.google.com/maps/place/Gyumon+Ikebukuro/data=!4m2!3m1!1s0x60188d9450d2d5e5:0x8f80c4c94e061fc1) |
 
 ### 🌟 จุดเด่น / อย่าพลาด
-- **Caretta Shiodome** — Illumination สวยสุดในโตเกียวช่วง ธ.ค. ไฟสีน้ำเงิน+ขาว มีโชว์แสงซิงค์กับดนตรีทุก 30 นาที ฟรี
-- **Tokyo Midtown Roppongi** — Illumination ริมสวน มีต้นไม้พันไฟ เดินเล่นได้ไม่รีบ ฟรี
+- **Tokyo Skytree** — ขึ้นตอนค่ำ วิวโตเกียวยามคืนสวยมาก ตั๋ว Tembo Deck ~2,100¥ / Tembo Galleria ~3,400¥
 - **Duty Free ก่อน** — ซื้อของฝากตอนกลางวัน อย่าทิ้งไว้ตอนค่ำเพราะจะรีบ
 - ⚠️ **เวลากลับ** — Haneda จากโรงแรมใช้เวลา ~35–50 นาที ออกจากโรงแรมก่อน 22:00
 
