@@ -304,6 +304,60 @@ main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
 /* ── DIVIDER ── */
 .divider { height: 1px; background: var(--border); margin: 8px 0; }
 
+/* ── DAY DONE BUTTON ── */
+.done-btn {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px;
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  background: none;
+  color: var(--text-2);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+.done-btn:active { opacity: 0.7; }
+.done-btn.done {
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+  color: #16a34a;
+}
+.tab.done .tab-day {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.tab.done::after {
+  content: '✓';
+  font-size: 0.7rem;
+  color: #16a34a;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.tab { position: relative; }
+
+/* ── MUST EAT CHECKLIST ── */
+.eat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.eat-item input[type="checkbox"] { display: none; }
+.eat-item .eat-name { font-size: 0.92rem; font-weight: 700; color: var(--text); }
+.eat-item .eat-sub { font-size: 0.78rem; color: var(--text-2); line-height: 1.4; }
+.eat-item:has(input:checked) { background: #f0fdf4; border-color: #86efac; }
+.eat-item:has(input:checked) .eat-name { color: #16a34a; text-decoration: line-through; }
+
 /* ── EXTRA OPTIONS LIST ── */
 .extra-list { display: flex; flex-direction: column; }
 .extra-item {
@@ -418,6 +472,7 @@ details.t-detail .t-inner {
   <button class="tab" data-day="10"><span class="tab-day">Day 10</span><span class="tab-date">20/12 อา</span></button>
   <button class="tab" data-day="11"><span class="tab-day">Day 11</span><span class="tab-date">21/12 จ</span></button>
   <button class="tab" data-day="12"><span class="tab-day">✈️</span><span class="tab-date">22/12 อ</span></button>
+  <button class="tab" data-day="food"><span class="tab-day">🍜</span><span class="tab-date">ต้องกิน</span></button>
 </nav>
 
 <main>
@@ -2322,20 +2377,129 @@ details.t-detail .t-inner {
       <div style="font-size:0.88rem;color:#6b7280;margin-top:4px">Benz & Unz · Japan Dec 2026 · สร้างโดย Claude Code</div>
     </div>
   </section>
+
+  <!-- ══ MUST EAT ══ -->
+  <section class="day-section" id="day-food">
+    <div class="day-heading">
+      <div class="label">Japan Must-Eat List</div>
+      <div class="title">🍜 ของที่ต้องกินในญี่ปุ่น</div>
+      <div class="subtitle">กดติ๊กเมื่อกินแล้ว</div>
+    </div>
+
+    <div class="card" style="padding:16px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍡 ไดฟูกุ</span><span class="eat-sub">ขนมข้าวเหนียวไส้ถั่วแดง/สตรอว์เบอร์รี่</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🐙 ทาโกะยากิ</span><span class="eat-sub">ลูกกลมไส้หมึก กินร้อนๆ ระวังไหม้</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🐟 ไทยากิ</span><span class="eat-sub">ขนมรูปปลา ไส้ถั่วแดง/คัสตาร์ด</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🥞 โอโคโนมิยากิ</span><span class="eat-sub">แพนเค้กกะหล่ำปลี ราดซอส+มาโย</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍜 ราเมง</span><span class="eat-sub">โชยุ · มิโซะ · ทงคัตสึ · ชิโอะ</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍛 แกงกระหรี่</span><span class="eat-sub">กินกับข้าวหรือคัตสึ เข้มข้น หอม</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🥩 คัตสึ</span><span class="eat-sub">ทงคัตสุ / กิวคัตสุ ชุบแป้งทอด</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍣 ซูชิ</span><span class="eat-sub">กินที่ Tsukiji เช้าตรู่ สดที่สุด</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🦔 อูนิ</span><span class="eat-sub">ไข่หอยเม่น รสเข้มข้น ห้ามพลาดถ้าชอบ</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍡 โมจิ</span><span class="eat-sub">ขนมข้าวเหนียวนุ่ม หลากไส้</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🥞 เครป</span><span class="eat-sub">เครปบางพับ สไตล์ Harajuku</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍈 เมล่อนปัง</span><span class="eat-sub">ขนมปังหน้ากรอบ ดังแถว Asakusa</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🐍 ปลาไหล (Unagi)</span><span class="eat-sub">ปลาไหลย่างซอสคาบายากิ กินกับข้าว</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🥚 ไข่หวาน (Tamagoyaki)</span><span class="eat-sub">ไข่ม้วนหวาน กินสดๆ แถว Tsukiji</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🥟 เกี๊ยวซ่า</span><span class="eat-sub">ทอดกรอบด้านล่าง จิ้มน้ำส้มพริก</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍢 โอเด้ง</span><span class="eat-sub">ตุ๋นน้ำดาชิ ไข่ เต้าหู้ เนื้อ — ช่วงหนาวดีสุด</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍡 ดังโงะ</span><span class="eat-sub">ลูกกลมข้าวเหนียวเสียบไม้ ราดมิตาราชิ</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍙 โอนิกิริ</span><span class="eat-sub">ข้าวปั้นสด จาก 7-Eleven / Lawson</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍳 ยากิโซบะ</span><span class="eat-sub">เส้นผัดซอส เฉพาะ Fujinomiya มีสไตล์พิเศษ</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🐟 ปลาย่างเกลือ</span><span class="eat-sub">อาหารเช้าญี่ปุ่น / Izakaya กินกับข้าว</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🥩 ทงคัตสุ</span><span class="eat-sub">หมูชุบแป้งทอด กินกับกะหล่ำปลีฝอย</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍢 ยากิโทริ</span><span class="eat-sub">ไก่เสียบไม้ย่าง กินกับเบียร์แถว Izakaya ตอนดึก</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍦 ซอฟต์ครีมมัทชะ</span><span class="eat-sub">Shizuoka แหล่งชาเขียวที่ดีที่สุดของญี่ปุ่น</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🦐 กุ้งซากุระ</span><span class="eat-sub">เฉพาะ Shizuoka เท่านั้น ตากแห้ง / สด หาไม่ได้ที่โตเกียว</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🍓 สตรอว์เบอร์รี่ญี่ปุ่น</span><span class="eat-sub">Fujinomiya / Shizuoka ธ.ค. เริ่มออก หวานกว่าไทยมาก</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🥪 Fruit Sando</span><span class="eat-sub">แซนด์วิชผลไม้ครีม ขนมปังขาวนุ่ม หาได้ทุก Konbini</span></label>
+        <label class="eat-item"><input type="checkbox"><span class="eat-name">🫕 ชาบูชาบู / นาเบะ</span><span class="eat-sub">หม้อไฟช่วงหนาว ธ.ค. กินแล้วอบอุ่นมาก</span></label>
+      </div>
+    </div>
+
+  </section>
 </main>
 
-<script>
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
+  import { getDatabase, ref, set, onValue, update } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js';
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDUkjd_hn2L7VyIfFdbkY33FuI5FVlbBSQ",
+    authDomain: "japantrip-980e4.firebaseapp.com",
+    databaseURL: "https://japantrip-980e4-default-rtdb.firebaseio.com",
+    projectId: "japantrip-980e4",
+    storageBucket: "japantrip-980e4.firebasestorage.app",
+    messagingSenderId: "555364512057",
+    appId: "1:555364512057:web:562cb68e7f006e34b3f8e8"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  // ── Tab switching ──
   const tabs = document.querySelectorAll('.tab');
   const sections = document.querySelectorAll('.day-section');
-  tabs.forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      tabs.forEach(function(t) { t.classList.remove('active'); });
-      sections.forEach(function(s) { s.classList.remove('active'); });
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
       tab.classList.add('active');
       document.getElementById('day-' + tab.dataset.day).classList.add('active');
       tab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+  });
+
+  // ── Must-Eat Checklist ──
+  const eatRef = ref(db, 'japan-trip/eatChecked');
+  const checkboxes = document.querySelectorAll('.eat-item input[type="checkbox"]');
+
+  onValue(eatRef, snapshot => {
+    const saved = snapshot.val() || {};
+    checkboxes.forEach((cb, i) => { cb.checked = !!saved[i]; });
+  });
+
+  checkboxes.forEach((cb, i) => {
+    cb.addEventListener('change', () => {
+      update(eatRef, { [i]: cb.checked });
+    });
+  });
+
+  // ── Day Done ──
+  const doneRef = ref(db, 'japan-trip/doneDays');
+  let doneDays = [];
+
+  function updateDoneTabs() {
+    tabs.forEach(tab => tab.classList.toggle('done', doneDays.includes(tab.dataset.day)));
+    document.querySelectorAll('.done-btn').forEach(btn => {
+      const key = btn.closest('.day-section')?.id.replace('day-', '');
+      if (!key) return;
+      const isDone = doneDays.includes(key);
+      btn.className = 'done-btn' + (isDone ? ' done' : '');
+      btn.textContent = isDone ? '✅ ผ่านแล้ว' : '○ กดเพื่อทำเครื่องหมายว่าผ่านแล้ว';
+    });
+  }
+
+  onValue(doneRef, snapshot => {
+    doneDays = snapshot.val() || [];
+    updateDoneTabs();
+  });
+
+  document.querySelectorAll('.day-section').forEach(section => {
+    if (section.id === 'day-food') return;
+    const dayKey = section.id.replace('day-', '');
+    const btn = document.createElement('button');
+    btn.className = 'done-btn';
+    btn.textContent = '○ กดเพื่อทำเครื่องหมายว่าผ่านแล้ว';
+    btn.addEventListener('click', () => {
+      const newDays = doneDays.includes(dayKey)
+        ? doneDays.filter(d => d !== dayKey)
+        : [...doneDays, dayKey];
+      set(doneRef, newDays);
+    });
+    section.appendChild(btn);
   });
 </script>
 
