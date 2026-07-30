@@ -22,27 +22,30 @@
 
 ---
 
-## การเดินทาง: Haneda → Toyoko Inn Akiba Asakusabashi Station East Exit
+## การเดินทาง: Day 0 Haneda → Toyoko INN Haneda Airport 1
 
 | เส้นทาง | ราคา | หมายเหตุ |
 |---|---|---|
-| 🔴 Keikyu Airport Line → Toei Asakusa Line (ตรง) | ~610¥ | แนะนำสุด — ไม่ต้องเปลี่ยนสายถ้าขึ้นขบวน Through Asakusa |
-| ⬛ Monorail → Daimon (ใต้ดิน) → Asakusabashi | ~650¥ | ต้องถึงก่อน 23:45 (Daimon ออก 00:05) |
-| 🚂 Monorail → JR Akihabara → Asakusabashi | ~650¥ | ทางสำรอง |
+| 🚌 รถรับส่ง Toyoko INN | ฟรี | แนะนำ — ตรวจ [รอบสุดท้ายและจุดขึ้นรถ](https://www.toyoko-inn.com/eng/campaign/pickup/haneda/) ตามวันเข้าพัก |
+| 🚕 Taxi | ตามมิเตอร์ | ทางสำรอง หากผ่านเวลารถรับส่งแล้ว |
 
-> ดูรายละเอียดขั้นตอนแบบละเอียดได้ที่ **Day 0** ด้านล่าง
+> ย้ายไป Toyoko Inn Akiba Asakusabashi Station East Exit ในเช้า **Day 1** หลังพักที่ Haneda ครบ 1 คืน
 
 ---
 
 ## ที่พัก
 
-### โตเกียว (ช่วงแรก) — 2 คืน (10–11 ธ.ค. | เช็คเอ้าต์ 12 ธ.ค.)
+### Haneda — 1 คืน (10 ธ.ค. | เช็คเอ้าต์ 11 ธ.ค.)
+
+[📍 Toyoko INN Haneda Airport 1](https://maps.app.goo.gl/pn8jWgoygqfizhgR9)
+
+### โตเกียว (ช่วงแรก) — 1 คืน (11 ธ.ค. | เช็คเอ้าต์ 12 ธ.ค.)
 
 [📍 Toyoko Inn Akiba Asakusabashi Station East Exit](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) ✅ จองแล้ว
 
 ### Fujinomiya — 2 คืน (12–13 ธ.ค. | เช็คอิน 12 | เช็คเอ้าต์ 14 ธ.ค.)
 
-[📍 Kuretake Inn Premium Fujinomiya](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) ⚠️ รอจองเดือน มิ.ย.
+[📍 Kuretake Inn Premium Fujinomiya](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) ✅ จองแล้ว
 
 ### Shizuoka ตัวเมือง — 2 คืน (14–15 ธ.ค. | เช็คอิน 14 | เช็คเอ้าต์ 16 ธ.ค.)
 
@@ -90,8 +93,8 @@
 
 | คืนที่ | วันที่ | นอนที่ | หมายเหตุ |
 |---|---|---|---|
-| คืน 0 | 10 ธ.ค. | [🏨 Toyoko Inn Asakusabashi](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) | ถึง Haneda 22:10 — late check-in |
-| คืน 1 | 11 ธ.ค. | [🏨 Toyoko Inn Asakusabashi](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) | — |
+| คืน 0 | 10 ธ.ค. | [🏨 Toyoko INN Haneda Airport 1](https://maps.app.goo.gl/pn8jWgoygqfizhgR9) | ถึง Haneda 22:10 — late check-in |
+| คืน 1 | 11 ธ.ค. | [🏨 Toyoko Inn Asakusabashi](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) | ย้ายจาก Haneda → ฝากกระเป๋า/เช็คอิน |
 | คืน 2 | 12 ธ.ค. | [🗻 Kuretake Inn Premium Fujinomiya](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) | เดินทางจากโตเกียว → Fujinomiya |
 | คืน 3 | 13 ธ.ค. | [🗻 Kuretake Inn Premium Fujinomiya](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) | — |
 | คืน 4 | 14 ธ.ค. | [🏙️ Hotel Associa Shizuoka](https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f) | เดินทางจาก Fujinomiya → Shizuoka |
@@ -109,8 +112,8 @@
 
 | วัน | วันที่ | ธีม | สถานะ |
 |---|---|---|---|
-| Day 0 | 10 ธ.ค. (พฤ) | เดินทางถึงโตเกียว | ✅ |
-| Day 1 | 11 ธ.ค. (ศ) | Shinjuku → Harajuku → Omotesando → Shibuya 🛍️ | ✅ |
+| Day 0 | 10 ธ.ค. (พฤ) | เดินทางถึงโตเกียว → พัก Haneda | ✅ |
+| Day 1 | 11 ธ.ค. (ศ) | ย้ายที่พัก → Shinjuku → Harajuku → Omotesando → Shibuya 🛍️ | ✅ |
 | Day 2 | 12 ธ.ค. (ส) | เดินทาง → **Fujinomiya** 🗻 | ⏳ TBD แผนเที่ยว |
 | Day 3 | 13 ธ.ค. (อา) | Fujinomiya | ⏳ TBD |
 | Day 4 | 14 ธ.ค. (จ) | เดินทาง → **Shizuoka ตัวเมือง** 🚅 | ⏳ TBD แผนเที่ยว |
@@ -138,7 +141,7 @@
 
 > 📱 **ลงทะเบียน Visit Japan Web ก่อนออกจากไทย** จะผ่าน Immigration เร็วกว่ามาก
 
-### ซื้อ Suica Card (ทำก่อนลงรถไฟ)
+### ซื้อ Suica Card ที่สนามบิน (เตรียมไว้ใช้ Day 1)
 
 **พิกัดตู้:** ออกจาก Arrival Hall → เดินตามป้าย Tokyo Monorail → ผ่าน Information Center → **เลี้ยวซ้าย** → เจอ Seven Bank ATM / ตู้จอง JR East / ตู้ Suica เรียงกัน → เดินไปที่ **ตู้ไกลสุด** = ตู้ **Suica สีเขียว JR East**
 
@@ -161,65 +164,17 @@
 ```
 > ซื้อสำรองได้ที่ **Ninja Wifi** ชั้น 2 Terminal 3 ใกล้จุดจอดรถบัส เปิดถึง **23:45**
 
-### เดินทางไป Asakusabashi — 3 เส้นทาง
+### เดินทางไป Toyoko INN Haneda Airport 1
 
----
+1. หลังออกจาก Arrivals Hall ให้ไปยังจุดรับรถของ **Toyoko INN shuttle** ตามป้าย/ตารางของวันเข้าพัก
+2. ขึ้นรถรับส่งของโรงแรมไป [Toyoko INN Haneda Airport 1](https://maps.app.goo.gl/pn8jWgoygqfizhgR9)
+3. หากผ่านรอบสุดท้ายแล้ว ให้ใช้ Taxi จากสนามบินไปโรงแรมแทน
 
-#### 🔴 ทาง 1 — Keikyu Airport Line (แนะนำสุด) ~610¥
-
-ออกจาก Terminal 3 ชั้น 2 (ขาเข้าประเทศ) → เดินออกมาจะเห็น Information counter → ไปทางขวามือ → เจอป้ายสีแดงเขียนว่า Keikyu Line → เดินตามป้าย → เจอสถานี **Haneda Airport Terminal 3**
-
-**ซื้อตั๋ว / บัตร**
-- ตู้อัตโนมัติ: เลือก TH/EN → เลือกปลายทาง Asakusabashi → จ่ายเงินสด/บัตร ~610¥
-- Suica/Pasmo ใน Apple Wallet: Wallet → (+) → Transit Card → ค้นหา "Suica" หรือ "Pasmo" → เติมเงินผ่าน Apple Pay (รองรับ Visa/Mastercard/Amex บางประเภท)
-- ซื้อบัตร Suica (ตู้สีเขียว JR East) — ออก Arrival Hall → เดินตาม Monorail → ผ่าน Info Center → **เลี้ยวซ้าย** → ตู้ไกลสุด · เงินสด · เติม 1,000–10,000¥ · ใช้ได้ 28 วัน · **เงินเหลือคืนไม่ได้**
-  - **Name-Inscribed** (แนะนำ) = ถ้าหายออกใบใหม่ได้ / **Blank** = ถ้าหายหายเลย
-  - ขั้นตอน: กด English → เลือก "Name-Inscribed Suica" → กด Agree → กรอกชื่อ/วันเกิด/เบอร์ไทย → เลือกจำนวนเงิน (หักมัดจำ 500¥) → รับบัตรช่องซ้าย
-  - Welcome Suica ไม่มีค่ามัดจำ 500¥ แต่ออกใหม่ไม่ได้ถ้าหาย · ซื้อสำรองที่ **Ninja Wifi** ชั้น 2 Terminal 3 เปิดถึง **23:45**
-
-**ขึ้นรถไฟ**
-1. มองป้ายสีแดง "Keikyu Line" → แตะบัตรเข้าเกทที่แถบสีฟ้า (สัญลักษณ์ IC)
-2. ลงชานชาลา: บันไดเลื่อนตามป้าย "Shinagawa / Asakusa / Yokohama" (ส่วนใหญ่ชานชาลา 2) | ลิฟต์: สัญลักษณ์สีฟ้า → ชั้น 1 → Track 2
-
-**เลือกขบวนที่ถูก — สำคัญมาก**
-- มองป้ายไฟที่เขียนว่า **"Through Asakusa Line"** หรือจุดหมาย **Asakusa / Narita Airport / Inba-nihon-idai / Aoto / Oshiage** → ไม่ต้องเปลี่ยนสาย นั่งถึง **Asakusabashi (A16)** เลย
-- **ห้ามขึ้นขบวน Yokohama**
-- หากรถสุดที่ Sengakuji / Shinagawa → ลงรอที่ชานชาลาเดิม รอขบวนถัดไปที่ไปทาง Asakusa
-
-**ถึง Asakusabashi (A16)**
-- มองป้ายสีเหลือง "Exit A3" บนเพดาน/เสา → แตะบัตร Suica ออก → เดินออก Exit A3
-- ถ้าหาป้าย A3 ไม่เจอ ให้หา "Edo-dori Avenue" หรือ "JR Asakusabashi Station" ทางออกอยู่ฝั่งเดียวกัน
-- ขึ้นมาบนถนน → **เลี้ยวขวา → เดิน 150 เมตร → เจอโรงแรม**
-
----
-
-#### ⬛ ทาง 2 — Monorail → Daimon (ใต้ดิน) → Asakusabashi
-
-> ⚠️ ต้องถึง 23:45 ก่อน (Daimon ออก 00:05)
-
-1. เข้า Monorail แตะบัตร → ลิฟต์ขึ้นชั้น 3 (Platform 2) หรือบันไดเลื่อนหาป้าย Platform 2 - For Hamamatsucho
-2. ขึ้นรถ: สีแดง Haneda Express (Last 23:48) / สีน้ำเงิน Rapid (Last 00:10) / สีเขียว Local (Last 00:10) — **For Hamamatsucho**
-3. ลง Hamamatsucho → มองป้ายเหลือง North Exit → แตะบัตรออก → ลง ลิฟต์/บันไดเลื่อนชั้น 1 (ทริก: เดินไปหัวขบวน สังเกตป้ายเหลือง North Exit)
-4. ออกจากสถานีเดินตรง → เจอสี่แยก Starbucks ตรงหัวมุม → เจอป้ายลงใต้ดิน **Daimon (A09)** → เลือก Exit B4 (มีลิฟต์ลงไป)
-5. เข้าสถานี แตะบัตร → เดินตามป้ายสีชมพู (สาย A) เขียนว่าไป Asakusa/Oshiage
-6. ชานชาลา 2 → นั่งไปลง **Asakusabashi (A16)** → ออก Exit 3 → เลี้ยวขวา → โรงแรม
-
----
-
-#### 🚂 ทาง 3 — Monorail → JR Akihabara → JR Asakusabashi ~650¥
-
-1. เข้า Monorail แตะบัตร → ลิฟต์ขึ้นชั้น 3 (Platform 2) หรือบันไดเลื่อนหาป้าย Platform 2 - For Hamamatsucho
-2. ขึ้นรถ **For Hamamatsucho** (สีแดง/น้ำเงิน/เขียว)
-3. ลง Hamamatsucho → มองป้าย "Transfer to JR Line" สัญลักษณ์เขียว → เดินตามทางเชื่อม (ไม่ต้องออกตึก)
-4. แตะบัตรผ่าน 1 ครั้ง → หาป้ายเหลือง/เลข 4 → แถบสีเขียว Yamanote Line หรือสีฟ้า Keihin-Tohoku Line
-5. ชานชาลา 4 ฝั่งเลข 4 → ขึ้นขบวนไป Tokyo/Ueno/Akihabara → ลง Akihabara
-6. มองป้ายเหลือง **Chuo-Sobu Line** → ชานชาลา 6 → ขึ้นขบวนไปทาง Chiba/Tsudanuma/Nishi-Funabashi
-7. ลง **Asakusabashi** → ออก Exit 3 → เลี้ยวขวา → โรงแรม
-
+> ⚠️ เนื่องจากถึง 22:10 น. ให้ตรวจ [เวลาเที่ยวสุดท้ายของรถรับส่ง](https://www.toyoko-inn.com/eng/campaign/pickup/haneda/) ก่อนวันเดินทาง และแจ้งโรงแรมล่วงหน้าหากจะเช็คอินดึก
 
 ### เช็คอินโรงแรม
-- Late check-in ได้ปกติ แจ้งโรงแรมไว้ล่วงหน้าว่าถึงดึก
-- ถึงโรงแรมประมาณ **23:30–00:00**
+- พักที่ **Toyoko INN Haneda Airport 1** คืนแรก
+- Late check-in: แจ้งโรงแรมไว้ล่วงหน้าว่าถึงดึก
 
 ### 🍽️ อาหารวันนี้
 | | |
@@ -231,6 +186,14 @@
 ## Day 1 — 11 ธ.ค. (ศ) Shinjuku → Harajuku → Omotesando → Shibuya 🛍️
 
 > เป้าหมาย: ช้อปปิ้ง + เดินย่านดัง + ฮาจิโกะ
+
+### ก่อนเริ่มเที่ยว — ย้ายที่พัก Haneda → Asakusabashi
+
+1. เช็คเอ้าต์ [Toyoko INN Haneda Airport 1](https://maps.app.goo.gl/pn8jWgoygqfizhgR9) แล้วนั่งรถรับส่งของโรงแรมกลับ Haneda Terminal 3
+2. ขึ้น **Keikyu Airport Line** ไปทาง Asakusa (เลือกขบวน Through Asakusa Line หากมี) → ลง **Asakusabashi (A16)**
+3. ไป [Toyoko Inn Akiba Asakusabashi Station East Exit](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) เพื่อฝากกระเป๋า แล้วเริ่มเที่ยวตามแผนด้านล่าง
+
+> กลับมาเช็คอินโรงแรม Asakusabashi หลังเที่ยวเสร็จ
 
 ### เช้า — Shinjuku ช้อปปิ้ง
 | ร้าน | สินค้า | ค่าเข้า |

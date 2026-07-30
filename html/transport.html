@@ -59,7 +59,6 @@
   .topbar a.d6  { border-color: var(--r3); }
   .topbar a.d8  { border-color: var(--r4); }
   .topbar a.d11 { border-color: var(--r5); }
-
   /* ── HERO ────────────────────────────────────── */
   .hero {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
@@ -261,8 +260,15 @@
     <tbody>
       <tr>
         <td><strong>10 ธ.ค.</strong></td>
+        <td><span class="dot" style="background:var(--r0)"></span>Haneda → Toyoko INN Haneda Airport 1</td>
+        <td>รถรับส่งโรงแรม</td>
+        <td><span class="price-badge">ฟรี</span></td>
+        <td><a href="https://www.toyoko-inn.com/eng/campaign/pickup/haneda/" target="_blank" class="book-link">ตารางรถรับส่ง ↗</a></td>
+      </tr>
+      <tr>
+        <td><strong>11 ธ.ค.</strong></td>
         <td><span class="dot" style="background:var(--r0)"></span>Haneda → Asakusabashi</td>
-        <td>Keikyu + Toei Asakusa</td>
+        <td>รถรับส่งโรงแรม + Keikyu</td>
         <td><span class="price-badge">~610¥</span></td>
         <td><span style="color:var(--sub);font-size:12px">Suica (ไม่จอง)</span></td>
       </tr>
@@ -306,7 +312,7 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
-     DAY 0 — Haneda → Asakusabashi
+     DAY 0 — Haneda → Toyoko INN Haneda Airport 1
 ═══════════════════════════════════════════════════════════ -->
 <div class="section" id="d0">
   <div class="section-header">
@@ -315,15 +321,41 @@
       <span class="day-sub">ธ.ค.</span>
     </div>
     <div class="section-title">
-      <h2>Haneda Airport → Asakusabashi</h2>
-      <div class="route-line">Haneda Airport Terminal 3 → Toyoko Inn Akiba Asakusabashi</div>
+      <h2>Haneda Airport → Toyoko INN Haneda Airport 1</h2>
+      <div class="route-line">Haneda Airport Terminal 3 → Toyoko INN Haneda Airport 1</div>
       <div class="meta-pills">
         <span class="pill warn">⚠ ถึง 22:10 · ผ่าน ตม. ก่อน 23:30</span>
-        <span class="pill">3 เส้นทาง</span>
+        <span class="pill">รถรับส่งฟรี / Taxi สำรอง</span>
       </div>
     </div>
   </div>
 
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:var(--r0)">🚌</div>
+      <div>
+        <h3>รถรับส่ง Toyoko INN</h3>
+        <div class="sub">Haneda Terminal 3 → Toyoko INN Haneda Airport 1 · ฟรี</div>
+      </div>
+      <span class="badge-rec">⭐ แนะนำสุด</span>
+    </div>
+    <div class="route-card-body">
+      <div class="callout tip"><strong>หลังออกจาก Arrivals Hall</strong> ให้ไปยังจุดรับรถของ Toyoko INN shuttle ตามป้าย/ตาราง แล้วขึ้นรถไปโรงแรม</div>
+      <div class="callout danger">⚠️ ถึง 22:10 น. ให้ตรวจ <a href="https://www.toyoko-inn.com/eng/campaign/pickup/haneda/" target="_blank">รอบสุดท้ายและจุดขึ้นรถล่าสุด</a> ก่อนวันเดินทาง หากรถเต็มหรือหมดรอบ ให้ใช้ Taxi</div>
+    </div>
+  </div>
+
+  <div class="route-card">
+    <div class="route-card-header">
+      <div class="route-icon" style="background:#475569">🚕</div>
+      <div>
+        <h3>Taxi — ทางสำรอง</h3>
+        <div class="sub">ใช้เมื่อผ่านเวลารถรับส่งหรือรถเต็ม</div>
+      </div>
+    </div>
+  </div>
+
+  <template data-legacy-day-0-direct-to-asakusabashi>
   <!-- ROUTE 1 – Keikyu -->
   <div class="route-card">
     <div class="route-card-header">
@@ -488,6 +520,7 @@
       </ol>
     </div>
   </div>
+  </template>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════
@@ -925,13 +958,17 @@
         <td>รถแรก 07:39</td>
       </tr>
       <tr>
-        <td><span class="dot" style="background:var(--r0)"></span>Haneda ↔ Asakusabashi</td>
+        <td><span class="dot" style="background:var(--r0)"></span>Haneda → Toyoko INN Haneda Airport 1</td>
+        <td><a href="https://www.toyoko-inn.com/eng/campaign/pickup/haneda/" target="_blank" class="book-link">รถรับส่งฟรี ↗</a></td>
+        <td>เช็กรอบล่าสุดก่อนเดินทาง</td>
+      </tr>
+      <tr>
+        <td><span class="dot" style="background:var(--r0)"></span>Day 1: Haneda → Asakusabashi</td>
         <td>Suica (ไม่ต้องจอง)</td>
-        <td>แตะบัตรได้เลย</td>
+        <td>รถรับส่งโรงแรม + Keikyu</td>
       </tr>
     </tbody>
   </table>
 </div>
-
 </body>
 </html>

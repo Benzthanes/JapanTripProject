@@ -55,7 +55,20 @@ body {
 }
 .app-header h1 { font-size: 1.1rem; font-weight: 800; }
 .app-header span { font-size: 0.82rem; opacity: 0.55; }
-
+.language-toggle {
+  margin-left: auto;
+  flex-shrink: 0;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 18px;
+  background: rgba(255,255,255,.12);
+  color: white;
+  font: 700 0.78rem/1 'Sarabun', sans-serif;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.language-toggle:active { background: rgba(255,255,255,.24); }
 /* ── DAY TABS ── */
 .day-tabs {
   position: sticky;
@@ -101,6 +114,16 @@ main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
 
 .day-section { display: none; }
 .day-section.active { display: block; }
+.transport-frame {
+  display: block;
+  width: 100%;
+  min-height: 640px;
+  height: calc(100vh - 150px);
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
 
 /* ── DAY HEADING ── */
 .day-heading { margin-bottom: 14px; }
@@ -456,6 +479,7 @@ details.t-detail .t-inner {
 <header class="app-header">
   <h1>🇯🇵 Japan Trip</h1>
   <span>Benz & Unz · 10–22 ธ.ค. 2026</span>
+  <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English">English</button>
 </header>
 
 <nav class="day-tabs" id="dayTabs">
@@ -472,23 +496,35 @@ details.t-detail .t-inner {
   <button class="tab" data-day="10"><span class="tab-day">Day 10</span><span class="tab-date">20/12 อา</span></button>
   <button class="tab" data-day="11"><span class="tab-day">Day 11</span><span class="tab-date">21/12 จ</span></button>
   <button class="tab" data-day="12"><span class="tab-day">✈️</span><span class="tab-date">22/12 อ</span></button>
+  <button class="tab" data-day="transport"><span class="tab-day">🚆</span><span class="tab-date">เดินทาง</span></button>
+  <button class="tab" data-day="summary"><span class="tab-day">🗺️</span><span class="tab-date">สรุปทริป</span></button>
   <button class="tab" data-day="food"><span class="tab-day">🍜</span><span class="tab-date">ต้องกิน</span></button>
 </nav>
 
 <main>
+  <!-- ══ TRANSPORT ══ -->
+  <section class="day-section" id="day-transport">
+    <div class="day-heading">
+      <div class="label">คู่มือเดินทาง</div>
+      <div class="title">🚆 เส้นทางตลอดทริป</div>
+      <div class="subtitle">รายละเอียดการเดินทาง รถไฟ และรถบัส</div>
+    </div>
+    <iframe class="transport-frame" src="transport.html" title="คู่มือเดินทางญี่ปุ่น" loading="lazy"></iframe>
+  </section>
+
   <!-- ══ DAY 0 ══ -->
   <section class="day-section active" id="day-0">
     <div class="day-heading">
       <div class="label">Day 0 · 10 ธ.ค. 2026 · พฤหัสบดี</div>
       <div class="title">✈️ เดินทางถึงโตเกียว</div>
-      <div class="subtitle">NH878 · ถึง Haneda 22:10 · นอน Asakusabashi</div>
+      <div class="subtitle">NH878 · ถึง Haneda 22:10 · พักใกล้สนามบิน 1 คืน</div>
     </div>
 
-    <a class="card hotel" href="https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03" target="_blank">
+    <a class="card hotel" href="https://maps.app.goo.gl/pn8jWgoygqfizhgR9" target="_blank">
       <span class="icon">🏨</span>
       <div>
-        <div class="name">Toyoko Inn Asakusabashi</div>
-        <div class="meta">2 คืน (10–11 ธ.ค.) · Late check-in ได้ ✅ จองแล้ว</div>
+        <div class="name">Toyoko INN Haneda Airport 1</div>
+        <div class="meta">คืนแรก (10 ธ.ค.) · Late check-in</div>
       </div>
     </a>
 
@@ -498,13 +534,38 @@ details.t-detail .t-inner {
       <ul>
         <li>ลงเครื่อง Terminal 3 → เดินตาม Immigration → ยื่น Passport + Visit Japan Web QR</li>
         <li>รับกระเป๋า → ผ่าน Customs → ออก Arrivals Hall ชั้น 1</li>
-        <li>ซื้อ <strong>Suica (ตู้สีเขียว JR East)</strong> ก่อนลงรถไฟ</li>
+        <li>ซื้อ <strong>Suica (ตู้สีเขียว JR East)</strong> เตรียมไว้ใช้ย้ายที่พักใน Day 1</li>
         <li>เลือก <strong>Name-Inscribed</strong> — ถ้าหายออกใหม่ได้ (ค่ามัดจำ 500¥) · Blank = ถ้าหายหายเลย</li>
         <li>ซื้อสำรองได้ที่ Ninja Wifi ชั้น 2 เปิดถึง 23:45</li>
       </ul>
     </div>
 
     <div class="sec"><div class="sec-label">เดินทางไปที่พัก</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚌</span>
+        <div class="info">
+          <div class="name">รถรับส่ง Toyoko INN ⭐</div>
+          <div class="meta">ฟรี · Haneda Terminal 3 → Toyoko INN Haneda Airport 1</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="t-callout-tip">หลังออกจาก Arrivals Hall ให้ไปจุดรับรถตามป้ายของ <strong>Toyoko INN shuttle</strong> แล้วขึ้นรถไปโรงแรม</div>
+        <p style="margin-top:8px">⚠️ ถึง 22:10 น. ให้เช็ก <a href="https://www.toyoko-inn.com/eng/campaign/pickup/haneda/" target="_blank">รอบสุดท้ายและจุดขึ้นรถ</a> ก่อนวันเดินทาง หากไม่ทันให้ใช้ Taxi</p>
+      </div>
+    </div>
+
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🚕</span>
+        <div class="info">
+          <div class="name">Taxi — ทางสำรอง</div>
+          <div class="meta">ใช้เมื่อผ่านเวลารถรับส่งหรือรถเต็ม</div>
+        </div>
+      </div>
+    </div>
+
+    <template data-legacy-day-0-direct-to-asakusabashi>
     <div class="card transport">
       <div class="card-head">
         <span class="icon">🔴</span>
@@ -629,6 +690,7 @@ details.t-detail .t-inner {
         </details>
       </div>
     </div>
+    </template>
 
     <div class="sec"><div class="sec-label">อาหาร</div></div>
     <div class="card food">
@@ -649,17 +711,35 @@ details.t-detail .t-inner {
   <section class="day-section" id="day-1">
     <div class="day-heading">
       <div class="label">Day 1 · 11 ธ.ค. 2026 · ศุกร์</div>
-      <div class="title">🛍️ Shinjuku → Harajuku → Omotesando → Shibuya</div>
-      <div class="subtitle">ช้อปปิ้ง · เดินย่านดัง · ฮาจิโกะ</div>
+      <div class="title">🧳 ย้ายที่พัก → Shinjuku → Harajuku → Omotesando → Shibuya</div>
+      <div class="subtitle">ฝากกระเป๋า · ช้อปปิ้ง · เดินย่านดัง · ฮาจิโกะ</div>
     </div>
 
     <a class="card hotel" href="https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03" target="_blank">
       <span class="icon">🏨</span>
       <div>
         <div class="name">Toyoko Inn Asakusabashi</div>
-        <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
+        <div class="meta">คืนที่ 1 · Check-out พรุ่งนี้</div>
       </div>
     </a>
+
+    <div class="sec"><div class="sec-label">ก่อนเริ่มเที่ยว — ย้ายที่พัก</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🧳</span>
+        <div class="info">
+          <div class="name">Haneda → Asakusabashi</div>
+          <div class="meta">รถรับส่งโรงแรม → Keikyu Airport Line · ฝากกระเป๋า</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><span class="step-text">เช็คเอ้าต์ Toyoko INN Haneda Airport 1 แล้วนั่งรถรับส่งของโรงแรมกลับ Haneda Terminal 3</span></div>
+          <div class="step"><span class="step-num">2</span><span class="step-text">ขึ้น Keikyu Airport Line ไปทาง Asakusa — เลือกขบวน Through Asakusa Line หากมี — ลง <strong>Asakusabashi (A16)</strong></span></div>
+          <div class="step"><span class="step-num">3</span><span class="step-text">ไป Toyoko Inn Asakusabashi เพื่อฝากกระเป๋า แล้วเริ่มเที่ยว Shinjuku</span></div>
+        </div>
+      </div>
+    </div>
 
     <div class="sec"><div class="sec-label">เช้า — Shinjuku ช้อปปิ้ง</div></div>
     <div class="card food">
@@ -891,7 +971,7 @@ details.t-detail .t-inner {
       <span class="icon">🗻</span>
       <div>
         <div class="name">Kuretake Inn Premium Fujinomiya</div>
-        <div class="meta">2 คืน (12–13 ธ.ค.) · ⚠️ รอจองเดือน มิ.ย.</div>
+        <div class="meta">2 คืน (12–13 ธ.ค.) · ✅ จองแล้ว</div>
       </div>
     </a>
 
@@ -2419,11 +2499,853 @@ details.t-detail .t-inner {
     </div>
 
   </section>
+
+  <!-- ══ TRIP SUMMARY ══ -->
+  <section class="day-section" id="day-summary">
+    <div class="day-heading">
+      <div class="label">ภาพรวม</div>
+      <div class="title">🗺️ สรุปทริป · 10–22 ธ.ค. 2026</div>
+      <div class="subtitle">เส้นทาง ที่พัก และเรื่องสำคัญที่ควรรู้ก่อนออกเดินทาง</div>
+    </div>
+
+    <div class="sec"><div class="sec-label">เส้นทาง 13 วัน</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🧭</span>
+        <div class="info">
+          <div class="name">Tokyo → Fujinomiya → Shizuoka → Kawaguchiko → Tokyo</div>
+          <div class="meta">ย้ายเมืองแบบค่อยเป็นค่อยไป · มีคืนพักทุกจุด</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="steps">
+          <div class="step"><span class="step-num">0–1</span><span class="step-text"><strong>Haneda → Asakusabashi</strong> — ถึงดึก พักใกล้สนามบิน 1 คืน แล้วฝากกระเป๋าที่ Asakusabashi ก่อนเที่ยว Tokyo</span></div>
+          <div class="step"><span class="step-num">2–3</span><span class="step-text"><strong>Fujinomiya</strong> — ศาลเจ้า น้ำตก Shiraito และวิวภูเขาฟูจิ</span></div>
+          <div class="step"><span class="step-num">4–5</span><span class="step-text"><strong>Shizuoka / Shimizu</strong> — Nihondaira, Kunozan, ป่าสน Miho และซีฟู้ดสด</span></div>
+          <div class="step"><span class="step-num">6–7</span><span class="step-text"><strong>Kawaguchiko</strong> — ดูฟูจิตอนเช้า, Chureito และกระเช้า Mt. Tenjo</span></div>
+          <div class="step"><span class="step-num">8–11</span><span class="step-text"><strong>Tokyo</strong> — Nakameguro, Tsukiji, Odaiba, Yanaka, Ueno, Akihabara, Asakusa และ Skytree</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label">ที่พัก</div></div>
+    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">10 ธ.ค. · Toyoko INN Haneda Airport 1</div><div class="meta">คืนแรกหลังถึงสนามบิน</div></div></div>
+    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">11 ธ.ค. · Toyoko Inn Asakusabashi</div><div class="meta">ฐานเที่ยว Tokyo ช่วงต้นทริป</div></div></div>
+    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">12–13 ธ.ค. · Kuretake Inn Fujinomiya</div><div class="meta">2 คืนสำหรับโซนภูเขาฟูจิฝั่ง Fujinomiya</div></div></div>
+    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">14–15 ธ.ค. · Hotel Associa Shizuoka</div><div class="meta">2 คืน ใกล้ Shizuoka Station</div></div></div>
+    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">16–17 ธ.ค. · Hotel Habitacion Kawaguchiko</div><div class="meta">2 คืนสำหรับดูฟูจิและเที่ยวรอบทะเลสาบ</div></div></div>
+    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">18–20 ธ.ค. · Hotel Little Bird, Oku-Asakusa</div><div class="meta">3 คืนสุดท้ายก่อนบินกลับ</div></div></div>
+
+    <div class="sec"><div class="sec-label">ควรจองล่วงหน้า</div></div>
+    <div class="card tip">
+      <div class="tip-title">📅 จองก่อน = เที่ยวง่ายขึ้น</div>
+      <ul>
+        <li><strong>Tokyo → Fujinomiya bus</strong> (ถ้าเลือกเส้นทางรถบัส) — จองที่ shizuokabus.co.jp ล่วงหน้าราว 1 เดือน</li>
+        <li><strong>Shizuoka → Kawaguchiko bus</strong> — จองที่ sekitori.jp ล่วงหน้า 1 เดือน มีเพียง 2 รอบ/วัน</li>
+        <li><strong>Kawaguchiko → Busta Shinjuku bus</strong> — จองที่ highwaybus.com โดยเฉพาะวันหยุด</li>
+        <li>ร้านดังและมื้อพิเศษ เช่น Wagyu / Yakiniku — จองล่วงหน้าหากไปเสาร์–อาทิตย์</li>
+      </ul>
+    </div>
+
+    <div class="sec"><div class="sec-label">จำ 3 เรื่องนี้</div></div>
+    <div class="card tip">
+      <div class="tip-title">⚠️ จุดที่พลาดแล้วกระทบทั้งวัน</div>
+      <ul>
+        <li><strong>วันถึง Haneda:</strong> เช็กรอบสุดท้ายของรถรับส่ง Toyoko INN ก่อนเดินทาง เพราะถึงสนามบิน 22:10</li>
+        <li><strong>วันดูภูเขาฟูจิ:</strong> ออกเช้าที่สุดเสมอ — เมฆมักบังวิวในช่วงบ่าย</li>
+        <li><strong>คืน 21 ธ.ค.:</strong> เที่ยวบินออก 01:25 ให้เดินทางไปสนามบินไม่เกิน 21:00</li>
+      </ul>
+    </div>
+  </section>
 </main>
 
 <script type="module">
   import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
   import { getDatabase, ref, set, onValue, update } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-database.js';
+
+  const englishTexts = String.raw`
+Benz & Unz · Dec. 10–22, 2026
+10/12 Thu
+11/12 Fri
+12/12 Sat
+13/12 Sun
+14/12 Mon
+15/12 Tue
+16/12 Wed
+17/12 Thu
+18/12 Fri
+19/12 Sat
+20/12 Sun
+21/12 Mon
+22/12 Tue
+Transport
+Trip Summary
+Must Eat
+Travel Guide
+🚆 Route for the Entire Trip
+Travel, train, and bus details
+Day 0 · Dec. 10, 2026 · Thursday
+✈️ Arrive in Tokyo
+NH878 · Arrive at Haneda 22:10 · Stay near the airport for 1 night
+First night (Dec. 10) · Late check-in
+Airport steps
+📋 Follow this order
+Arrive at Terminal 3 → follow signs for Immigration → present your passport + Visit Japan Web QR
+Collect luggage → pass Customs → exit to the Arrivals Hall, Level 1
+Buy
+Suica (green JR East machine)
+to use when moving hotels on Day 1
+Choose
+— it can be reissued if lost (¥500 deposit) · Blank = cannot be replaced if lost
+An additional card is available at Ninja Wifi, Level 2, open until 23:45
+Getting to the hotel
+Toyoko INN shuttle ⭐
+Free · Haneda Terminal 3 → Toyoko INN Haneda Airport 1
+After leaving the Arrivals Hall, follow the signs to the
+and take it to the hotel
+⚠️ As you arrive at 22:10, check the
+last service and boarding point
+before departure day. If you miss it, take a taxi.
+Taxi — backup option
+Use if the shuttle has finished or is full
+Option 1 — Keikyu Line → Asakusabashi ⭐
+⭐ Best option · no transfers · ~¥610 · ~35 min
+View travel directions
+Starting point
+— Terminal 3, Level 2 (international arrivals) → walk out to the Information Counter → turn right → find the red sign
+→ follow the signs → enter
+Buy a ticket / card (choose one)
+💳 Ticket machine
+Select TH / EN → choose destination
+→ pay cash / credit card (selected machines only) ~¥610
+📱 Suica / Pasmo in Apple Wallet
+Wallet → (+) → Transit Card → search “Suica” or “Pasmo” → top up with Apple Pay (selected Visa / Mastercard / Amex cards supported) → tap your phone at the gate
+🟢 Buy a Suica card (green JR East machine) — recommended
+Location:
+Exit the Arrivals Hall → follow Tokyo Monorail signs → pass the Information Center →
+turn left
+→ you will find a Seven Bank ATM, JR East reservation machines, and Suica machines in a row →
+the farthest machine = the green one
+Cash only · top up ¥1,000–10,000 · valid for 28 days ·
+unused balance is non-refundable
+· An additional card is available at
+Level 2, Terminal 3, near the bus stop, open until
+⚠️ Choose from 2 types:
+✅ Name-Inscribed Suica (recommended)
+— your name is printed on the card and it can be replaced if lost
+— no name; it cannot be replaced if lost
+Steps (Name-Inscribed):
+Press English (top right) → choose “Name-Inscribed Suica” → press Agree (accept terms) → enter first and last name (as in passport) / gender + date of birth (YYYY-MM-DD) / phone number (a Thai number is accepted) → choose an amount (for example ¥1,000 / 2,000 / 5,000 / 10,000 — including a ¥500 deposit) → pay by inserting notes or coins into the illuminated slot → collect the card from the left slot
+Welcome Suica has no ¥500 deposit; all money paid becomes card balance, but it cannot be replaced if lost
+Board the train
+Look for the red sign
+— the entrance is beside it in the same hall → tap your card at the blue IC reader; the gate will open
+Go down to the platform:
+· Escalator: follow signs for
+usually Platform 2
+· Elevator: near the ticket gates; look for the blue elevator sign. It has one stop → Level 1 → exit toward
+⚡ Choose the correct train — very important
+Look for a departure board saying
+or a destination of
+or check the platform screen at the airport → ride directly to
+no transfer required
+Do not board a Yokohama-bound train
+— if the train terminates at Sengakuji / Shinagawa, get off and wait on the same platform for the next Asakusa-bound train
+Do not board Airport Rapid Express (dark green)
+— it skips Asakusabashi. Use only Rapid Express / Limited Express / Local trains
+Arrive at Asakusabashi (A16) → hotel
+Look for the yellow sign
+on the ceiling/pillars → tap out with Suica → exit via
+If you cannot find Exit A3, look for “Edo-dori Avenue” or “JR Asakusabashi Station”; the exit is on the same side
+Come up to street level →
+turn right → walk 150 m → hotel
+Option 2 — Monorail → Daimon → Asakusabashi
+~¥650 · ⚠️ You must reach Daimon before 00:05
+⏰ Reach the Monorail station before 23:45 — last train from Daimon departs 00:05
+View travel directions
+Enter the Monorail and tap your card → take the elevator to Level 3
+or take the escalator and look for
+Board a train
+Get off at
+→ look for the yellow sign
+→ tap out → take the elevator/escalator down to Level 1
+Tip: walk toward the front of the train and look for the yellow North Exit sign
+Exit the station and walk straight → at the intersection, find
+on the corner → find the underground entrance sign for
+→ choose
+(has an elevator down)
+Enter the station and tap in → follow the pink signs
+(Line A)
+for Asakusa/Oshiage
+Platform 2 → ride to
+→ Exit 3 → turn right → hotel
+Option 3 — Monorail → JR Akihabara → Asakusabashi
+~¥650 · backup option
+View travel directions
+Enter the Monorail and tap your card → take the elevator to Level 3 or use the escalator and look for
+Board a train
+Get off at
+→ look for the sign
+green symbol → follow the connecting passage (do not leave the building)
+Tap once through the gates → find the yellow sign/number 4 → green-striped
+or light blue
+Platform 4
+(an island platform)
+— stand on the Track 4 side → board a Tokyo/Ueno/
+→ get off at
+Look for the yellow sign
+→ Platform 6 → board a train for Chiba/Tsudanuma/Nishi-Funabashi
+Get off at
+→ Exit 3 →
+turn right → hotel
+Food
+🌙 Late night · arrive late, no need to search for a restaurant · ~¥600
+Lawson Chicken + Onigiri + snacks; available at every branch near the hotel
+Day 1 · Dec. 11, 2026 · Friday
+🧳 Move hotels → Shinjuku → Harajuku → Omotesando → Shibuya
+Leave luggage · shopping · explore famous neighbourhoods · Hachikō
+Night 1 · Check out tomorrow
+Before sightseeing — move hotels
+Hotel shuttle → Keikyu Airport Line · leave luggage
+Check out of Toyoko INN Haneda Airport 1, then take the hotel shuttle back to Haneda Terminal 3
+Take the Keikyu Airport Line toward Asakusa — choose a Through Asakusa Line train if available — get off at
+Go to Toyoko Inn Asakusabashi to leave your luggage, then begin sightseeing in Shinjuku
+Morning — Shinjuku shopping
+7-Eleven near the hotel
+☀️ Morning · Onigiri + coffee
+Opens 10:00 · free entry
+Buy this first!
+Free entry
+Heattech + Ultra Light Down — the following days will be very cold, especially Kawaguchiko
+Fashion, cheaper than Uniqlo · free entry
+Midday — Harajuku
+Meiji Shrine
+⭐ 4.6 · free entry · 5-minute walk from the station
+A Shinto shrine in a forest; peaceful with a wonderful atmosphere
+Japanese-style clothing · street food · free entry
+Snacks while walking · ~¥600
+An alternative exit from Takeshita · more local and quieter · continue walking to Omotesando
+Afternoon — Omotesando / Aoyama
+⭐ 4.8 · yuzu ramen · ~¥950
+Top recommendation
+Harajuku lifestyle store
+Harajuku collectibles / anime
+Evening — Shibuya
+Hachikō Statue
+In front of Shibuya Station · beautiful for photos in the evening
+Famous crossing · take elevated photos from Starbucks, Level 2
+Night — (Optional) stop by Shinjuku before returning
+⭐ 4.5 · Solo booth · ~¥1,200 · on the way back
+Iconic solo ramen — sit in your own private booth and customise the soup richness
+Christmas illumination · free · easy to visit in passing
+Free
+— smoky yakitori alley with a Showa-era atmosphere; open evenings only
+— hundreds of tiny bars in one alley; stroll for the atmosphere without drinking
+Restaurant options — Shinjuku / Harajuku
+⭐ 4.3 · very popular tsukemen · go before 11:00; long queue · ~¥950
+⭐ 4.9 · Wagyu hamburger · ~¥2,000 · Halal
+⭐ 4.7 · atmospheric izakaya · ~¥3,500
+⭐ 4.6 · beef tongue
+⭐ 4.6 · steak bowl
+⭐ 4.3 · freshwater-clam ramen
+Dinner near the hotel — Asakusabashi
+⭐ 4.9 · beef tongue · exceptionally highly rated
+⭐ 4.8 · udon · next to the hotel
+⭐ 4.6 · tuna sushi
+⭐ 4.5 · izakaya
+⭐ 4.5 · coffee
+Day 2 · Dec. 12, 2026 · Saturday
+🗻 Travel → Fujinomiya
+2 nights (Dec. 12–13) · ✅ Booked
+Morning — travel
+Option 1 — Tokyo Station → Fujinomiya bus ⭐
+¥2,400–2,750 · ~2h 30m · direct, no transfer
+📅 Book at shizuokabus.co.jp · 1 month in advance · first departure 08:10
+View travel directions
+💡 A free hotel shuttle runs from
+in the morning until 10:00 — a great energy saver
+From Toyoko Inn Asakusabashi to Tokyo Station
+Exit the hotel and turn left onto Edo-dori → reach a large intersection (elevated railway tracks above) → turn right beneath the expressway → enter
+Tap in → find
+Platform 1 (yellow Chuo-Sobu Line)
+→ for Akihabara/Shinjuku/Mitaka → ride 1 stop → get off at
+Not the pink underground Asakusa Line
+Look for green (Yamanote) or light-blue (Keihin-Tohoku) signs → Platform 4 → take any train for
+→ ride 2 stops (via Kanda) → get off at
+Look for the sign
+→ follow the arrows through the large glass doors → find the bus terminal building
+Find the ticket machine (if you have not bought a ticket) → check the screen for the departure bay (usually 8 or 9) → board the
+The sign on the side of the bus says Fujikyu
+If there is no sign, ask the ticket inspector before boarding
+Option 2 — JR Tokaido Line → Fuji → Minobu Line
+Backup option · pay with Suica · transfer required
+View travel directions
+The Asakusabashi → Akihabara → Tokyo Station route is the same as Option 1, steps 1–3
+At Tokyo Station, Level 2 → look for the orange sign
+(Tracks 7–10) → find Platform 9–10
+(expected — also check the platform signs)
+Board a train for
+or
+— check the sign on the train and the timetable on the platform (time, train type, destination)
+There are two train types: Local and Rapid · clue: trains may be orange and green
+▸ Shizuoka/Shimada → get off at
+directly
+▸ Atami → get off and find the platform signed for
+→ change to the Tokaido Line (opposite platform); train is
+orange and white JR Central
+▸ Numazu → get off and transfer; it is usually
+opposite or
+the next platform, for Shizuoka/Shimada
+Arrive at
+→ look for the red sign
+or a Fujinomiya/Kofu platform sign → take the escalator
+across the footbridge
+to Platforms 1–2 (white-and-orange train every 20–30 minutes) → get off at
+Midday — central Fujinomiya
+Fujisan Hongū Sengen Taisha Shrine
+⭐ 4.4 · main shrine of Mount Fuji · walk from the hotel
+Nijiya Mimi — Fujinomiya yakisoba
+⭐ 4.2 · lunch · ~¥800 · near the shrine
+Must eat
+Fujinomiya’s distinctive yakisoba; have lunch here before leaving the city
+Afternoon — outside the city (~20 min)
+Shiraito Falls
+⭐ 4.4 · UNESCO white-curtain waterfall
+⭐ 4.5 · Mount Fuji reflected in the lake · continue by bus from Shiraito
+Evening — back in town
+⭐ 4.8 · yakiniku · pork + chicken + beef
+All restaurant options — Fujinomiya
+⭐ 4.5 · aged steak · Fujinomiya
+⭐ 4.8 · local Japanese food
+⭐ 4.5 · green tea (stop en route)
+⭐ 4.4 · tonkatsu
+⭐ 4.3 · ramen
+Day 3 · Dec. 13, 2026 · Sunday
+Night 2 · Check out tomorrow
+Morning — Fuji City (Minobu Line)
+⭐ 4.3 · Mount Fuji view · walk ~2 km from Fuji Station
+Midday — around Fuji Station
+⭐ 4.4 · pork tonkatsu · in front of Fuji Station
+Afternoon — Iriyamase Station
+⭐ 4.3 · emerald pool · stop at Iriyamase on the way back
+⭐ 4.4 · bridge in the valley · near Ryuganbuchi
+Evening — back to Fujinomiya
+⭐ 4.8 · local gem; highest rating
+Recommended
+⭐ 4.8 · local Japanese food · backup
+All restaurant options
+⭐ 4.8 · Japanese food
+⭐ 4.4 · upscale
+⭐ 4.4 · Western food
+Tomorrow
+📋 Get ready
+Check out in the morning → train departs
+for Shizuoka
+Pack tonight, otherwise the morning will be rushed
+Day 4 · Dec. 14, 2026 · Monday
+🚅 Travel → Shizuoka
+2 nights (Dec. 14–15) · ✅ Booked
+Morning — before departure
+⭐ 4.7 · bus from Fujinomiya Station · ⚠️ check opening hours first
+Travel → Shizuoka
+~¥1,400 · ~1h 10m · 1 transfer · first train 07:39
+View travel directions
+Leave the hotel
+turn left and walk 200 m → find
+on the left → elevator to Level 2 → tap in
+Find
+Platform 1
+sign says for
+→ take the Minobu Line → get off at
+(~25 min / ~¥420)
+At Fuji Station → orange sign
+for Shizuoka/Hamamatsu → Platform 3 or 4
+Board a train for
+(~45 min / ~¥990)
+Get off at
+→ yellow sign
+→ turn right outside → walk 1 minute →
+Midday — central Shizuoka
+Sawayaka (Shizuoka branch)
+⭐ 4.3 · hamburg steak · lunch · near Tamiya
+If you have not eaten it yet
+⭐ 4.3 · green-tea ice cream, levels 1–7 · dessert after lunch
+Have it after Sawayaka before leaving town; level 7 is very bitter
+Afternoon — Nihondaira (~30 min from town)
+⭐ 4.3 · 360-degree viewpoint · Nihondaira summit
+⭐ 4.4 · summit shrine · visit directly after Nihondaira
+⭐ 4.4 · strawberry farm · Kunozan area
+Night — back in town
+⭐ 5.0 · long-established oden · city centre
+Do not miss
+A small alley with several oden restaurants; counter seating and a very local atmosphere
+All restaurant options — Shizuoka
+⭐ 4.6 · home-style and welcoming
+⭐ 4.4 · oysters
+⭐ 4.0 · seafood market
+Day 5 · Dec. 15, 2026 · Tuesday
+Shrine · UNESCO pine forest · fresh seafood
+Night 2 · Check out tomorrow
+Morning — city centre
+Shizuoka Sengen Shrine
+⭐ 4.3 · walkable from the hotel
+⭐ 4.4 · Tamiya headquarters · near Shizuoka Station
+Midday–afternoon — Shimizu (~30 min)
+Miho no Matsubara
+⭐ 4.2 · UNESCO coastal pine forest · Mount Fuji view
+UNESCO coastal pine forest; wonderful photos of Mount Fuji framed by pines, before eating at the port
+⭐ 4.6 · fresh seafood · Shimizu Port · eat after the pine forest walk
+Very fresh fish
+At Shimizu Port; stop here right after Miho without returning to town
+All restaurant options
+⭐ 4.7 · city centre
+⭐ 4.5 · city centre
+⭐ 4.4 · oysters · city centre
+⭐ 4.0 · seafood market · Shimizu
+Tomorrow
+📋 Get ready
+Check out in the morning → direct bus to
+There are 2 services
+Book in advance at sekitori.jp — seats fill quickly
+Day 6 · Dec. 16, 2026 · Wednesday
+🗻 Travel → Kawaguchiko
+2 nights (Dec. 16–17) · ✅ Booked
+Travel from Shizuoka → Kawaguchiko
+Shizuoka → Kawaguchiko bus (direct)
+¥3,000 · ~2h 10m · no transfer · 2 services/day
+📅 Book at sekitori.jp · 1 month in advance · arrive 15 minutes early
+🕐 Morning service
+Departs 07:40 → arrives 09:50
+🕑 Afternoon service
+Departs 15:00 → arrives 17:10
+View travel directions
+From Hotel Associa → bus terminal
+Leave through the hotel’s main entrance
+turn left → follow the walkway alongside the building for ~30 m → find
+on the left
+Walk straight to the open plaza → find
+→ look for stop
+number 12
+(no need to cross the main road)
+Look for the sign for
+→ there are 6 stops; get off at the last stop
+Midday — after arriving in Kawaguchiko
+⭐ 4.6 · miso Hoto noodles + tempura · Kawaguchiko specialty
+Afternoon — Lake Kawaguchi shore
+⭐ 4.8 · coffee with a Mount Fuji view · visit immediately after check-in
+⭐ 4.4 · lakeside garden · Mount Fuji photo spot
+Lakeside Mount Fuji viewpoint at Lake Kawaguchi
+Evening — near the hotel
+⭐ 4.8 · Japanese food · near the hotel
+⭐ 4.8 · seafood izakaya · backup
+All restaurant options — Kawaguchiko
+⭐ 4.7 · izakaya
+⭐ 4.5 · Mount Fuji-shaped pudding
+⭐ 4.9 · café
+⭐ 4.9 · desserts
+⭐ 4.8 · Japanese food
+⭐ 4.7 · good atmosphere; ideal after 20:00
+⭐ 4.6 · relaxed Mount Fuji atmosphere
+⭐ 4.6 · miso Hoto noodles + tempura
+⭐ 4.7 · café / desserts
+Things to know
+Clouds often obscure Mount Fuji
+in the afternoon
+— always plan to see Mount Fuji in the morning
+Buy
+~¥1,600/day; valid on all lines
+Day 7 · Dec. 17, 2026 · Thursday
+Chureito · Mt. Tenjo ropeway · Mount Fuji views
+Night 2 · Check out tomorrow
+☁️ Mount Fuji tips + backup plan
+See Mount Fuji
+in the morning
+Clouds often block the view in the afternoon — leave as early as possible
+Buy
+~¥1,600/day; valid on all lines, so no need to count change
+If you prefer Fuji-Q Highland instead
+— skip Chureito + ropeway. Fuji-Q takes a full day, ~¥6,000–7,000/person; booking online is recommended
+Early morning — Fujiyoshida (~15 min from the hotel)
+⭐ 4.7 · 398 steps · Mount Fuji + pagoda view · 07:00–08:30
+Do not miss
+Free
+Japan’s most iconic Mount Fuji-and-pagoda photo spot. Morning light is best; climb 398 steps.
+Late morning — ropeway
+Ropeway + Mt. Tenjo
+Take the ropeway for a 360-degree panoramic Mount Fuji view
+📍 Ropeway
+📍 Mt. Tenjo
+Afternoon–evening — back to Kawaguchiko
+⭐ 4.9 · desserts · a treat on the way back
+Highest rating in the area
+⭐ 4.7 · good atmosphere · ideal after 20:00
+All options — Kawaguchiko
+⭐ 4.9 · café · Fujiyoshida (near Chureito)
+⭐ 4.7 · local teppanyaki
+⭐ 4.7 · café / desserts
+⭐ 4.7 · cakes
+⭐ 4.2 · Hoto noodles
+~¥6,000–7,000 · roller-coaster theme park · if you choose this, do it instead of Chureito + Oshino
+Day 8 · Dec. 18, 2026 · Friday
+🌊 Return to Tokyo + Nakameguro
+3 nights (Dec. 18–20) · ✅ Booked
+Morning — travel
+Kawaguchiko bus → Busta Shinjuku → TX → Oku-Asakusa
+~¥2,200 bus · ~2h+ · book at highwaybus.com
+📅 Book at highwaybus.com · get off at Busta Shinjuku
+View travel directions
+Part 1 — Hotel Habitacion → Kawaguchiko bus terminal
+Leave the hotel gate and turn right to the main road → 7-Eleven is opposite → walk east → turn right at the intersection with a souvenir shop → find
+European-style wooden building = Kawaguchiko Station
+At the station
+do not enter the train station
+→ find the bus parking area → bus-stop post
+number 3 or 4
+(check the LCD screen) → board the bus with the sign
+Part 2 — Busta Shinjuku → Oku-Asakusa; drop luggage first (~40 min)
+The bus stops at
+Busta Shinjuku, Level 3
+→ collect luggage → connect to JR Shinjuku (New South Gate Exit)
+Yellow sign
+→ board a train for Akihabara → get off at
+→ transfer to the TX Line → get off at
+Exit A1 → walk 850 m →
+Check in at Hotel Little Bird and leave luggage
+Part 3 — Oku-Asakusa → Nakameguro (~35–40 min · no transfer)
+Walk to
+Iriya Station (Hibiya Line H04)
+~10 min
+Board a train toward
+→ stay on the train, no transfer → get off at
+Afternoon — Nakameguro canal 🌊
+Riverside promenade · shops and cafés on both sides
+Famous doughnuts ★ must eat
+Popular
+Canal-side cheesecake
+Flagship canal-side coffee shop · 4 floors
+Shopping / cafés — Nakameguro
+Chocolate
+Specialty coffee
+Gelato
+Gelato
+Bookstore
+Stationery / travel journals
+Lifestyle store
+Evening — Asakusa (after check-in)
+⭐ 4.8 · Wagyu steak · best on this list
+Do not miss
+Reservations required on weekends
+~¥3,300–5,000/person; walk-ins are possible on weekdays; call to reserve on holidays
+⭐ 4.9 · grilled meat · 15,720 reviews · backup
+Night — after dinner
+⭐ 5.0 · gelato · a perfect nightcap
+All restaurant options — Asakusa
+⭐ 4.9 · Kobe-beef izakaya
+⭐ 4.9 · Halal · Wagyu udon + ramen
+⭐ 4.8 · ramen · in Nakamise
+⭐ 5.0 · izakaya with a fantastic atmosphere
+⭐ 4.8 · okonomiyaki/monjayaki
+⭐ 4.4 · very popular melon bread
+Day 9 · Dec. 19, 2026 · Saturday
+Morning fish market · models · Gundam · tower
+Night 2
+Early morning — Tsukiji Fish Market 🐟
+⭐ 4.2 · opens 05:00 · arrive before 07:00 · free entry
+Go early!
+Free entry
+Fresh breakfast sushi + oysters + tamagoyaki around the market · ~¥1,500
+⭐ 4.4 · seafood
+⭐ 4.3 · seafood
+Wagyu sukiyaki · 5-minute walk from Higashi-Ginza
+Chicken ramen · check location
+Clam ramen · check location
+Udon · closest to Tsukiji
+Midday — Tamiya Pla-Model Factory Tokyo
+⭐ 4.4 · Shimbashi/Minato area · ~15-minute walk from Tsukiji
+⭐ 4.1 · hamburg steak · stop by on the way
+Afternoon — Odaiba 🤖
+~20 min · ~¥330
+⭐ 4.2 · free entry
+Free entry
+Giant Gundam statue · in front of DiverCity · free
+Free
+Evening — Shiba / Tokyo Tower 🗼
+Yurikamome back to Shimbashi → Tokyo Tower (~15 min)
+Walk or take a taxi from Shimbashi to Shiba
+Park · beside Tokyo Tower · free
+Free
+Tokyo Tower
+Night view · beautiful illumination
+⭐ 4.8 · takoyaki · Shiba area
+Night — ramen (back in Asakusa)
+💡 No ramen on the wishlist around Shiba
+Return to Oku-Asakusa and choose a nearby ramen restaurant
+⭐ 4.8 · duck ramen ★
+⭐ 4.8 · ramen
+Day 10 · Dec. 20, 2026 · Sunday
+Explore old neighbourhoods · shrine · market · Akihabara
+Night 3
+Morning — Yanaka Ginza → Nezu Shrine
+Bakery · near Nippori starting point
+Yanaka Ginza
+Old shopping street · Showa-era atmosphere · free
+Free
+Snacks and shopping around Yanaka Ginza
+Senbei crackers
+Japanese sweets
+Japanese sweets
+Bamboo crafts
+Bamboo crafts
+Collectibles / dolls
+Sunset stairs · famous photo spot
+Tea shop · take a break while walking
+Shinto shrine · torii tunnel · free entry
+Free
+Afternoon — Ueno
+⭐ 4.4 · free entry
+Free
+Gyukatsu Motomura, Ueno branch
+⭐ 4.8 · breaded beef cutlet · ~¥2,500
+Recommended
+⭐ 4.3 · open-air market · seafood, fruit, clothes · free entry
+Free
+Ueno green-tea garden
+Ueno shops
+⭐ 4.5 · duck ramen
+⭐ 4.5 · ramen · Kuramae
+Evening — Akihabara
+⭐ 4.6 · thin-sliced roast beef + rice · ~¥1,500
+Very popular
+Day 11 · Dec. 21, 2026 · Monday
+🗼 Asakusa + Skytree + last shopping
+Check out · Asakusa · Skytree · flight departs 01:25 tonight
+⚠️ Important day — flight departs at 1 a.m.
+Check out around 11:00, but the flight is at 1 a.m. — you will be out all day
+Leave luggage at the hotel
+(free; tell the concierge before check-out) — highly recommended
+Leave the hotel for the airport
+by 21:00 at the latest
+journey takes ~35–50 min
+Buy duty-free souvenirs
+during the day
+do not leave it until the evening
+Afternoon — Asakusa (walk from the hotel)
+Sensō-ji Temple
+⭐ 4.5 · free entry · especially beautiful in the afternoon
+Asakusa Shrine
+Free entry · beside Sensō-ji Temple
+Souvenir street · gifts · connects the temples
+Matsuchiyama Shōden Honryūin Temple
+⭐ 4.5 · free entry · walk from Sensō-ji
+Takanojin — Kappabashi knife shop
+⭐ 4.9 · walk from Asakusa
+Walking snacks around Nakamise / Asakusa
+⭐ 4.7 · desserts · Nakamise
+⭐ 4.4 · melon bread · Nakamise
+⭐ 4.4 · matcha desserts
+⭐ 4.7 · takoyaki
+⭐ 4.7 · gelato
+⭐ 4.8 · food/bar
+Evening/late night — Tokyo Skytree (Oshiage · 1 stop from Asakusa)
+Tokyo Skytree
+Tokyo night view · Tembo Deck 350 m ~¥2,100 / Galleria 450 m ~¥3,400
+Night — final meal
+Great Wagyu / yakiniku — final meal
+Celebrate the end of the trip · ~¥4,000/person
+Final meal
+⭐ 4.8 · Halal yakiniku
+~21:00 — travel to Haneda Airport
+Option 1 — Hibiya Line → Ningyocho → Haneda ⭐
+⭐ Recommended · Suica · leave by 21:00 · ~35–50 min
+View travel directions
+Exit the hotel and turn right → continue walking → reach the Showa-dori intersection → find the station sign for
+Iriya (grey Hibiya Line)
+The elevator is across the road. Cross two pedestrian crossings → look for “Elevator to Platform 1” for Ueno/Ginza
+Tap in → take any train toward
+→ get off at
+Look for the sign
+pink A
+or
+→ find the elevator symbol to cross to the pink line → tap in →
+Platform 1
+signed for Nihombashi/Sengakuji/Haneda Airport
+Wait for a train
+only for Haneda Airport
+🟢 Airport Kaitoku (green) = fastest · 🟠 Access Express (orange) = fast · ⬛ Local/black-and-white = works but slower
+🚫 Do not board a train marked for Nishi-magome
+Get off at
+→ follow the plane + elevator symbols with your luggage → take the elevator to Level 1 (exit station and tap out) → elevator up to
+Level 3
+NH877 check-in counters
+Option 2 — walk to Asakusa Station → Toei Asakusa Line
+Backup option · Suica · ~15-minute walk
+View travel directions
+Walk from the hotel to
+→ look for
+→ elevator
+opposite the hotel
+Take the elevator down to B1 (ticket-gate level) → tap in → follow signs to
+Platform 1
+for Haneda Airport
+Follow Option 1, steps 4–5 — wait for Airport Kaitoku (green) or Access Express (orange) → get off at
+Day 12 · Dec. 22, 2026 · Tuesday
+✈️ Fly home
+NH877 · departs 01:25 · arrives BKK 06:30
+✈️ Return flight
+Airline
+Departs Haneda Terminal 3 ·
+Arrives Suvarnabhumi (BKK) ·
+Check in 2 hours before departure — counters open ~23:00
+🧳 Things to do before boarding
+Return Suica — at a JR machine or Midori no Madoguchi; receive the ¥500 deposit back
+Duty-free shopping at the airport (open late)
+Exchange remaining yen at the airport
+Tax Refund Counter, Level 4, before Security
+Thank you for using this plan
+Benz & Unz · Japan Dec 2026 · Created with Claude Code
+🍜 Must-eat foods in Japan
+Tick when you have tried it
+🍡 Daifuku
+Soft rice cake filled with red bean paste / strawberry
+🐙 Takoyaki
+Round octopus-filled balls; eat hot and take care not to burn yourself
+🐟 Taiyaki
+Fish-shaped pastry filled with red bean paste / custard
+🥞 Okonomiyaki
+Cabbage pancake topped with sauce + mayo
+🍜 Ramen
+Shoyu · miso · tonkotsu · shio
+🍛 Curry rice
+With rice or katsu; rich and fragrant
+🥩 Katsu
+Tonkatsu / gyukatsu, breaded and fried
+🍣 Sushi
+Have it early in the morning at Tsukiji for the freshest experience
+🦔 Uni
+Sea urchin roe; rich flavour — do not miss it if you like it
+🍡 Mochi
+Soft chewy rice cakes with many fillings
+🥞 Crêpe
+Thin folded crêpe, Harajuku style
+🍈 Melon bread
+Crisp-topped bread, famous around Asakusa
+🐍 Eel (Unagi)
+Grilled eel with kabayaki sauce and rice
+🥚 Sweet omelette (Tamagoyaki)
+Sweet rolled egg; have it fresh around Tsukiji
+🥟 Gyoza
+Crispy on the bottom; dip in vinegar-chilli sauce
+🍢 Oden
+Simmered in dashi: egg, tofu, meat — best in cold weather
+🍡 Dango
+Chewy rice dumplings on a skewer with mitarashi sauce
+🍙 Onigiri
+Fresh rice balls from 7-Eleven / Lawson
+🍳 Yakisoba
+Stir-fried noodles with sauce; Fujinomiya has a special style
+🐟 Salt-grilled fish
+Japanese breakfast / izakaya dish with rice
+🥩 Tonkatsu
+Breaded fried pork with shredded cabbage
+🍢 Yakitori
+Grilled chicken skewers with beer at an izakaya late at night
+🍦 Matcha soft serve
+Shizuoka is Japan’s best green-tea region
+🦐 Sakura shrimp
+Available only in Shizuoka, dried or fresh; not found in Tokyo
+🍓 Japanese strawberries
+Fujinomiya / Shizuoka · season begins in December; much sweeter than Thai strawberries
+Creamy fruit sandwich on soft white bread; available at every konbini
+🫕 Shabu-shabu / nabe
+Winter hot pot; especially warming in December
+Overview
+🗺️ Trip summary · Dec. 10–22, 2026
+Route, hotels, and the key things to know before departure
+13-day route
+Gradual city changes · an overnight stay at every stop
+— Arrive late, stay near the airport for one night, then leave luggage at Asakusabashi before sightseeing in Tokyo
+— Shrines, Shiraito Falls, and Mount Fuji views
+— Nihondaira, Kunozan, Miho pine forest, and fresh seafood
+— See Mount Fuji in the morning, Chureito, and the Mt. Tenjo ropeway
+— Nakameguro, Tsukiji, Odaiba, Yanaka, Ueno, Akihabara, Asakusa, and Skytree
+Hotels
+Dec. 10 · Toyoko INN Haneda Airport 1
+First night after arriving at the airport
+Dec. 11 · Toyoko Inn Asakusabashi
+Tokyo base at the start of the trip
+Dec. 12–13 · Kuretake Inn Fujinomiya
+2 nights for the Fujinomiya side of Mount Fuji
+Dec. 14–15 · Hotel Associa Shizuoka
+2 nights near Shizuoka Station
+Dec. 16–17 · Hotel Habitacion Kawaguchiko
+2 nights for Mount Fuji views and lakeside sightseeing
+Dec. 18–20 · Hotel Little Bird, Oku-Asakusa
+Final 3 nights before the return flight
+Book in advance
+📅 Book first = travel more easily
+(if using the bus route) — book at shizuokabus.co.jp about 1 month in advance
+— book at sekitori.jp 1 month in advance; only 2 services/day
+— book at highwaybus.com, especially for holidays
+Popular restaurants and special meals such as Wagyu / yakiniku — reserve in advance for weekends
+Remember these 3 things
+⚠️ Mistakes here affect the whole day
+Haneda arrival day:
+Check the final Toyoko INN shuttle before departure because you arrive at the airport at 22:10
+Mount Fuji viewing day:
+Always leave as early as possible — clouds often block the view in the afternoon
+Night of Dec. 21:
+Flight departs at 01:25; leave for the airport by 21:00 at the latest
+`.trim().split('\n');
+
+  const languageToggle = document.getElementById('languageToggle');
+  const thaiTextNodes = [];
+  function collectThaiTextNodes(root) {
+    root.childNodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        if (/[ก-๙]/.test(node.nodeValue)) thaiTextNodes.push(node);
+        return;
+      }
+      if (node.nodeType !== Node.ELEMENT_NODE || ['SCRIPT', 'STYLE'].includes(node.tagName)) return;
+      collectThaiTextNodes(node.tagName === 'TEMPLATE' ? node.content : node);
+    });
+  }
+  collectThaiTextNodes(document.body);
+
+  const thaiTexts = thaiTextNodes.map(node => node.nodeValue);
+  let currentLanguage = 'th';
+  const englishTitle = 'Japan Trip · Benz & Unz · December 2026';
+  const thaiTitle = document.title;
+  const transportFrame = document.querySelector('.transport-frame');
+
+  if (thaiTextNodes.length !== englishTexts.length) {
+    console.error(`Language translation count mismatch: ${thaiTextNodes.length} Thai texts, ${englishTexts.length} English texts.`);
+  }
+
+  function setLanguage(language) {
+    currentLanguage = language;
+    thaiTextNodes.forEach((node, index) => {
+      const original = thaiTexts[index];
+      if (language === 'th') {
+        node.nodeValue = original;
+        return;
+      }
+      const leadingWhitespace = original.match(/^\s*/)[0];
+      const trailingWhitespace = original.match(/\s*$/)[0];
+      node.nodeValue = leadingWhitespace + (englishTexts[index] ?? original.trim()) + trailingWhitespace;
+    });
+    document.documentElement.lang = language;
+    document.title = language === 'en' ? englishTitle : thaiTitle;
+    if (transportFrame) {
+      transportFrame.title = language === 'en' ? 'Japan travel guide' : 'คู่มือเดินทางญี่ปุ่น';
+    }
+    languageToggle.textContent = language === 'en' ? 'ภาษาไทย' : 'English';
+    languageToggle.setAttribute('aria-label', language === 'en' ? 'เปลี่ยนเป็นภาษาไทย' : 'Switch to English');
+    updateDoneTabs();
+  }
+
+  languageToggle.addEventListener('click', () => {
+    setLanguage(currentLanguage === 'th' ? 'en' : 'th');
+  });
 
   const firebaseConfig = {
     apiKey: "AIzaSyDUkjd_hn2L7VyIfFdbkY33FuI5FVlbBSQ",
@@ -2478,7 +3400,9 @@ details.t-detail .t-inner {
       if (!key) return;
       const isDone = doneDays.includes(key);
       btn.className = 'done-btn' + (isDone ? ' done' : '');
-      btn.textContent = isDone ? '✅ ผ่านแล้ว' : '○ กดเพื่อทำเครื่องหมายว่าผ่านแล้ว';
+      btn.textContent = isDone
+        ? (currentLanguage === 'en' ? '✅ Completed' : '✅ ผ่านแล้ว')
+        : (currentLanguage === 'en' ? '○ Mark as completed' : '○ กดเพื่อทำเครื่องหมายว่าผ่านแล้ว');
     });
   }
 
@@ -2488,11 +3412,11 @@ details.t-detail .t-inner {
   });
 
   document.querySelectorAll('.day-section').forEach(section => {
-    if (section.id === 'day-food') return;
+    if (['day-food', 'day-transport', 'day-summary'].includes(section.id)) return;
     const dayKey = section.id.replace('day-', '');
     const btn = document.createElement('button');
     btn.className = 'done-btn';
-    btn.textContent = '○ กดเพื่อทำเครื่องหมายว่าผ่านแล้ว';
+    btn.textContent = currentLanguage === 'en' ? '○ Mark as completed' : '○ กดเพื่อทำเครื่องหมายว่าผ่านแล้ว';
     btn.addEventListener('click', () => {
       const newDays = doneDays.includes(dayKey)
         ? doneDays.filter(d => d !== dayKey)
