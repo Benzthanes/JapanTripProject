@@ -27,6 +27,9 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  html.embedded,
+  html.embedded body { overflow: visible; }
+
   body {
     font-family: 'Sarabun', 'Segoe UI', system-ui, -apple-system, sans-serif;
     background: var(--bg);
@@ -216,10 +219,103 @@
   .book-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); font-size: 13.5px; }
   .book-table tr:last-child td { border-bottom: none; }
 
+  /* ── EMBEDDED IN ITINERARY ───────────────────── */
+  /* The parent tab already supplies the page title and day navigation. */
+  body.embedded .topbar,
+  body.embedded .hero { display: none; }
+  body.embedded .overview-wrap { padding-top: 0; }
+  body.embedded .overview-wrap,
+  body.embedded .section,
+  body.embedded .book-section {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   /* ── DIVIDER ─────────────────────────────────── */
   hr.soft { border: none; border-top: 1px solid var(--border); margin: 22px 0; }
 
   /* ── RESPONSIVE ──────────────────────────────── */
+  @media (max-width: 599px) {
+    .overview-wrap h2,
+    .book-section h2 { padding: 0 2px; }
+
+    .section-header {
+      align-items: flex-start;
+      gap: 10px;
+      margin: 28px 0 14px;
+      padding-bottom: 12px;
+    }
+    .day-badge { width: 48px; height: 48px; border-radius: 12px; }
+    .day-badge .day-num { font-size: 18px; }
+    .section-title { min-width: 0; }
+    .section-title h2 { font-size: 18px; overflow-wrap: anywhere; }
+    .section-title .route-line { overflow-wrap: anywhere; }
+
+    .route-card { border-radius: 12px; margin-bottom: 14px; }
+    .route-card-header { align-items: flex-start; gap: 10px; padding: 12px; }
+    .route-card-header > div:not(.route-icon) { flex: 1; min-width: 0; }
+    .route-card-header h3,
+    .route-card-header .sub,
+    .step-body,
+    .callout,
+    .ticket-item { overflow-wrap: anywhere; }
+    .route-card-body { padding: 14px; }
+    .badge-rec { margin-left: 0; font-size: 10px; padding: 3px 7px; }
+    .steps li { gap: 10px; }
+    .step-body { min-width: 0; }
+
+    /* Tables become labelled cards so every detail stays readable. */
+    .ov-table,
+    .book-table,
+    .ov-table tbody,
+    .book-table tbody,
+    .ov-table tr,
+    .book-table tr,
+    .ov-table td,
+    .book-table td { display: block; width: 100%; }
+    .ov-table,
+    .book-table { background: transparent; box-shadow: none; overflow: visible; }
+    .ov-table thead,
+    .book-table thead { display: none; }
+    .ov-table tr,
+    .book-table tr {
+      margin-bottom: 10px;
+      padding: 6px 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    }
+    .ov-table td,
+    .book-table td {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 7px 12px;
+      border: 0;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+    .ov-table td::before,
+    .book-table td::before {
+      flex: 0 0 78px;
+      color: var(--sub);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .35px;
+    }
+    .ov-table td:nth-child(1)::before { content: 'วัน'; }
+    .ov-table td:nth-child(2)::before { content: 'เส้นทาง'; }
+    .ov-table td:nth-child(3)::before { content: 'วิธี'; }
+    .ov-table td:nth-child(4)::before { content: 'ราคา/คน'; }
+    .ov-table td:nth-child(5)::before { content: 'จองที่'; }
+    .book-table td:nth-child(1)::before { content: 'เส้นทาง'; }
+    .book-table td:nth-child(2)::before { content: 'เว็บจอง'; }
+    .book-table td:nth-child(3)::before { content: 'หมายเหตุ'; }
+  }
+
   @media (min-width: 600px) {
     .ticket-grid { flex-direction: row; flex-wrap: wrap; }
     .ticket-item { flex: 1 1 calc(50% - 4px); }
@@ -970,5 +1066,42 @@
     </tbody>
   </table>
 </div>
+<script>
+  (() => {
+    const embedded = new URLSearchParams(window.location.search).has('embedded');
+    if (!embedded) return;
+
+    document.documentElement.classList.add('embedded');
+    document.body.classList.add('embedded');
+
+    const reportHeight = () => {
+      const height = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight
+      );
+      window.parent.postMessage({ type: 'transport-guide-height', height }, '*');
+    };
+
+    new ResizeObserver(reportHeight).observe(document.body);
+    window.addEventListener('load', reportHeight);
+    window.addEventListener('resize', reportHeight);
+    window.addEventListener('message', event => {
+      if (event.data?.type === 'transport-guide-request-height') reportHeight();
+    });
+    requestAnimationFrame(reportHeight);
+
+    document.querySelectorAll('.topbar a').forEach(link => {
+      link.addEventListener('click', event => {
+        const target = document.querySelector(link.hash);
+        if (!target) return;
+        event.preventDefault();
+        window.parent.postMessage({
+          type: 'transport-guide-navigate',
+          targetOffset: target.getBoundingClientRect().top + window.scrollY
+        }, '*');
+      });
+    });
+  })();
+</script>
 </body>
 </html>
