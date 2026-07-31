@@ -117,8 +117,8 @@ main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
 .transport-frame {
   display: block;
   width: 100%;
-  min-height: 640px;
-  height: calc(100vh - 150px);
+  height: 1px;
+  min-height: 0;
   border: 0;
   border-radius: var(--radius);
   background: var(--card);
@@ -509,7 +509,7 @@ details.t-detail .t-inner {
       <div class="title">🚆 เส้นทางตลอดทริป</div>
       <div class="subtitle">รายละเอียดการเดินทาง รถไฟ และรถบัส</div>
     </div>
-    <iframe class="transport-frame" src="transport.html" title="คู่มือเดินทางญี่ปุ่น" loading="lazy"></iframe>
+    <iframe class="transport-frame" src="transport.html?embedded=1" title="คู่มือเดินทางญี่ปุ่น" loading="lazy" scrolling="no"></iframe>
   </section>
 
   <!-- ══ DAY 0 ══ -->
@@ -3316,6 +3316,26 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
   const englishTitle = 'Japan Trip · Benz & Unz · December 2026';
   const thaiTitle = document.title;
   const transportFrame = document.querySelector('.transport-frame');
+
+  // The travel guide is a same-site document, but it should scroll as part of
+  // this itinerary—not as a second, fixed-height scrolling area.
+  window.addEventListener('message', event => {
+    if (event.source !== transportFrame?.contentWindow) return;
+    const { type, height, targetOffset } = event.data || {};
+    if (type === 'transport-guide-height' && Number.isFinite(height)) {
+      transportFrame.style.height = `${Math.max(1, Math.ceil(height))}px`;
+    }
+    if (type === 'transport-guide-navigate' && Number.isFinite(targetOffset)) {
+      const frameTop = transportFrame.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: frameTop + targetOffset - 12, behavior: 'smooth' });
+    }
+  });
+
+  function requestTransportGuideHeight() {
+    transportFrame?.contentWindow?.postMessage({ type: 'transport-guide-request-height' }, '*');
+  }
+  transportFrame?.addEventListener('load', requestTransportGuideHeight);
+  requestTransportGuideHeight();
 
   if (thaiTextNodes.length !== englishTexts.length) {
     console.error(`Language translation count mismatch: ${thaiTextNodes.length} Thai texts, ${englishTexts.length} English texts.`);
