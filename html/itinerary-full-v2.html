@@ -250,6 +250,235 @@ main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
 .card.hotel .name { font-size: 0.9rem; font-weight: 700; color: var(--hotel); }
 .card.hotel .meta { font-size: 0.78rem; color: var(--text-2); margin-top: 2px; }
 
+/* ── HOTEL TICKET CARD & BADGE ── */
+.card.hotel.ticket-card {
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-left-color 0.16s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.card.hotel.ticket-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.18);
+  border-left-color: #6d28d9;
+}
+.card.hotel.ticket-card:active {
+  transform: translateY(0);
+}
+.ticket-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--hotel-bg);
+  color: var(--hotel);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: all 0.16s ease;
+  margin-left: 6px;
+  flex-shrink: 0;
+}
+.card.hotel.ticket-card:hover .ticket-badge {
+  background: var(--hotel);
+  color: #ffffff;
+}
+.ticket-btn-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--hotel-bg);
+  color: var(--hotel);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+  margin-left: auto;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.ticket-btn-inline:hover {
+  background: var(--hotel);
+  color: #ffffff;
+}
+
+/* ── TICKET LIGHTBOX MODAL ── */
+.ticket-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+}
+.ticket-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.ticket-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.ticket-modal-content {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  max-height: 92vh;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: scale(0.95) translateY(12px);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.ticket-modal.open .ticket-modal-content {
+  transform: scale(1) translateY(0);
+}
+.ticket-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fafafa;
+}
+.ticket-modal-app {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--hotel);
+  color: white;
+  margin-bottom: 4px;
+}
+.ticket-modal-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.3;
+}
+.ticket-modal-sub {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-top: 2px;
+  line-height: 1.35;
+}
+.ticket-modal-close {
+  background: rgba(0, 0, 0, 0.06);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #374151;
+  flex-shrink: 0;
+  margin-left: 10px;
+  transition: background 0.15s;
+}
+.ticket-modal-close:hover {
+  background: rgba(0, 0, 0, 0.14);
+}
+.ticket-modal-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+}
+.ticket-tab-btn {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.ticket-tab-btn.active {
+  background: var(--hotel);
+  color: #ffffff;
+  border-color: var(--hotel);
+}
+.ticket-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #0f172a08;
+  min-height: 240px;
+}
+.ticket-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 64vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+.ticket-modal-footer {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+.modal-ext-btn, .modal-close-btn {
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.modal-ext-btn {
+  flex: 1;
+  background: #f9fafb;
+  color: var(--hotel);
+  border: 1px solid #e5e7eb;
+}
+.modal-close-btn {
+  background: var(--hotel);
+  color: #ffffff;
+  border: none;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+
 /* ── MAP BUTTON ── */
 .map-btn {
   display: flex;
@@ -522,10 +751,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://maps.app.goo.gl/pn8jWgoygqfizhgR9" target="_blank">
       <span class="icon">🏨</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Toyoko INN Haneda Airport 1</div>
-        <div class="meta">คืนแรก (10 ธ.ค.) · Late check-in</div>
+        <div class="meta">คืนแรก (10 ธ.ค.) · ✅ จองแล้ว (Agoda - ในอีเมล)</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(0);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">ขั้นตอนสนามบิน</div></div>
@@ -717,10 +947,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03" target="_blank">
       <span class="icon">🏨</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Toyoko Inn Asakusabashi</div>
-        <div class="meta">คืนที่ 1 · Check-out พรุ่งนี้</div>
+        <div class="meta">คืนที่ 1 · ✅ จองแล้ว (Trip.com)</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(1);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">ก่อนเริ่มเที่ยว — ย้ายที่พัก</div></div>
@@ -969,10 +1200,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f" target="_blank">
       <span class="icon">🗻</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Kuretake Inn Premium Fujinomiya</div>
-        <div class="meta">2 คืน (12–13 ธ.ค.) · ✅ จองแล้ว</div>
+        <div class="meta">2 คืน (12–13 ธ.ค.) · ✅ จองแล้ว (Trip.com)</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(2);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — เดินทาง</div></div>
@@ -1126,10 +1358,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f" target="_blank">
       <span class="icon">🗻</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Kuretake Inn Premium Fujinomiya</div>
         <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(2);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — Fuji City (Minobu Line)</div></div>
@@ -1243,10 +1476,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f" target="_blank">
       <span class="icon">🏙️</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Hotel Associa Shizuoka</div>
-        <div class="meta">2 คืน (14–15 ธ.ค.) · ✅ จองแล้ว</div>
+        <div class="meta">2 คืน (14–15 ธ.ค.) · ✅ จองแล้ว (Trip.com)</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(3);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — ก่อนออกเดินทาง</div></div>
@@ -1395,10 +1629,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f" target="_blank">
       <span class="icon">🏙️</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Hotel Associa Shizuoka</div>
         <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(3);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — ใจกลางเมือง</div></div>
@@ -1489,10 +1724,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce" target="_blank">
       <span class="icon">🏔️</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Habitacion Station Mobile Cottage</div>
-        <div class="meta">2 คืน (16–17 ธ.ค.) · ✅ จองแล้ว</div>
+        <div class="meta">2 คืน (16–17 ธ.ค.) · ✅ จองแล้ว (จองใน Agoda)</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(4);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">เดินทาง Shizuoka → Kawaguchiko</div></div>
@@ -1643,10 +1879,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce" target="_blank">
       <span class="icon">🏔️</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Habitacion Station Mobile Cottage</div>
-        <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
+        <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้ · (จองใน Agoda)</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(4);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="card tip">
@@ -1741,10 +1978,11 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741" target="_blank">
       <span class="icon">🏨</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Hotel Little Bird Oku-Asakusa</div>
-        <div class="meta">3 คืน (18–20 ธ.ค.) · ✅ จองแล้ว</div>
+        <div class="meta">3 คืน (18–20 ธ.ค.) · ✅ จองแล้ว (Booking.com)</div>
       </div>
+      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(5);" data-no-translate>📄 ดูใบจอง</button>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — เดินทาง</div></div>
@@ -2529,12 +2767,12 @@ details.t-detail .t-inner {
     </div>
 
     <div class="sec"><div class="sec-label">ที่พัก</div></div>
-    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">10 ธ.ค. · Toyoko INN Haneda Airport 1</div><div class="meta">คืนแรกหลังถึงสนามบิน</div></div></div>
-    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">11 ธ.ค. · Toyoko Inn Asakusabashi</div><div class="meta">ฐานเที่ยว Tokyo ช่วงต้นทริป</div></div></div>
-    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">12–13 ธ.ค. · Kuretake Inn Fujinomiya</div><div class="meta">2 คืนสำหรับโซนภูเขาฟูจิฝั่ง Fujinomiya</div></div></div>
-    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">14–15 ธ.ค. · Hotel Associa Shizuoka</div><div class="meta">2 คืน ใกล้ Shizuoka Station</div></div></div>
-    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">16–17 ธ.ค. · Hotel Habitacion Kawaguchiko</div><div class="meta">2 คืนสำหรับดูฟูจิและเที่ยวรอบทะเลสาบ</div></div></div>
-    <div class="card hotel"><span class="icon">🏨</span><div><div class="name">18–20 ธ.ค. · Hotel Little Bird, Oku-Asakusa</div><div class="meta">3 คืนสุดท้ายก่อนบินกลับ</div></div></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(0)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">10 ธ.ค. · Toyoko INN Haneda Airport 1</div><div class="meta">คืนแรกหลังถึงสนามบิน · (Agoda - ในอีเมล)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(1)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">11 ธ.ค. · Toyoko Inn Asakusabashi</div><div class="meta">ฐานเที่ยว Tokyo ช่วงต้นทริป · (Trip.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(2)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">12–13 ธ.ค. · Kuretake Inn Fujinomiya</div><div class="meta">2 คืนสำหรับโซนภูเขาฟูจิฝั่ง Fujinomiya · (Trip.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(3)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">14–15 ธ.ค. · Hotel Associa Shizuoka</div><div class="meta">2 คืน ใกล้ Shizuoka Station · (Trip.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(4)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">16–17 ธ.ค. · Habitacion Station Mobile Cottage</div><div class="meta">2 คืนสำหรับดูฟูจิและเที่ยวรอบทะเลสาบ · (Agoda)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(5)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">18–20 ธ.ค. · Hotel Little Bird, Oku-Asakusa</div><div class="meta">3 คืนสุดท้ายก่อนบินกลับ · (Booking.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
 
     <div class="sec"><div class="sec-label">ควรจองล่วงหน้า</div></div>
     <div class="card tip">
@@ -2557,6 +2795,29 @@ details.t-detail .t-inner {
       </ul>
     </div>
   </section>
+
+  <!-- ══ HOTEL TICKET LIGHTBOX MODAL ══ -->
+  <div id="hotelTicketModal" class="ticket-modal" data-no-translate aria-hidden="true">
+    <div class="ticket-modal-backdrop" onclick="closeHotelTicket()"></div>
+    <div class="ticket-modal-content">
+      <div class="ticket-modal-header">
+        <div class="ticket-modal-info">
+          <div class="ticket-modal-app" id="modalHotelApp">Trip.com</div>
+          <h3 class="ticket-modal-title" id="modalHotelTitle">Hotel Name</h3>
+          <div class="ticket-modal-sub" id="modalHotelSub">Dates · Booking ID</div>
+        </div>
+        <button class="ticket-modal-close" onclick="closeHotelTicket()" aria-label="Close" type="button">✕</button>
+      </div>
+      <div class="ticket-modal-tabs" id="modalImageTabs" style="display:none;"></div>
+      <div class="ticket-modal-body">
+        <img id="modalTicketImg" src="" alt="Hotel Booking Voucher" class="ticket-img" />
+      </div>
+      <div class="ticket-modal-footer">
+        <a id="modalOpenExternal" href="" target="_blank" class="modal-ext-btn">🔍 ดูรูปขนาดเต็ม</a>
+        <button class="modal-close-btn" onclick="closeHotelTicket()" type="button">ปิด</button>
+      </div>
+    </div>
+  </div>
 </main>
 
 <script type="module">
@@ -3305,7 +3566,7 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
         if (/[ก-๙]/.test(node.nodeValue)) thaiTextNodes.push(node);
         return;
       }
-      if (node.nodeType !== Node.ELEMENT_NODE || ['SCRIPT', 'STYLE'].includes(node.tagName)) return;
+      if (node.nodeType !== Node.ELEMENT_NODE || ['SCRIPT', 'STYLE'].includes(node.tagName) || node.hasAttribute?.('data-no-translate') || node.closest?.('[data-no-translate]')) return;
       collectThaiTextNodes(node.tagName === 'TEMPLATE' ? node.content : node);
     });
   }
@@ -3444,6 +3705,115 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
       set(doneRef, newDays);
     });
     section.appendChild(btn);
+  });
+
+  // ── Hotel Ticket Lightbox ──
+  const hotelTickets = [
+    {
+      title: 'Toyoko INN Haneda Airport 1',
+      dates: '10–11 ธ.ค. 2026 · คืนแรก (1 คืน)',
+      app: 'Agoda',
+      appColor: '#0284c7',
+      bookingId: 'Booking ID: 2035829279 (จองในอีเมล ไม่ได้ล็อกอิน)',
+      images: ['../ticket/00_toyoko_inn_haneda_airport_1.png']
+    },
+    {
+      title: 'Toyoko Inn Akiba Asakusabashi Station East Exit',
+      dates: '11–12 ธ.ค. 2026 · คืนที่ 1 (1 คืน)',
+      app: 'Trip.com',
+      appColor: '#2563eb',
+      bookingId: 'หมายเลขการจอง: 1622929209529335',
+      images: [
+        '../ticket/01_toyoko_inn_asakusabashi_1.png',
+        '../ticket/01_toyoko_inn_asakusabashi_2.png'
+      ]
+    },
+    {
+      title: 'Kuretake Inn Premium Fujinomiya',
+      dates: '12–14 ธ.ค. 2026 · คืนที่ 2–3 (2 คืน)',
+      app: 'Trip.com',
+      appColor: '#2563eb',
+      bookingId: 'หมายเลขการจอง: 1622929199596134',
+      images: ['../ticket/02_kuretake_inn_fujinomiya.png']
+    },
+    {
+      title: 'Hotel Associa Shizuoka',
+      dates: '14–16 ธ.ค. 2026 · คืนที่ 4–5 (2 คืน)',
+      app: 'Trip.com',
+      appColor: '#2563eb',
+      bookingId: 'หมายเลขการจอง: 1622926590924030',
+      images: ['../ticket/03_hotel_associa_shizuoka.png']
+    },
+    {
+      title: 'Habitacion Station Mobile Cottage',
+      dates: '16–18 ธ.ค. 2026 · คืนที่ 6–7 (2 คืน)',
+      app: 'Agoda',
+      appColor: '#0284c7',
+      bookingId: 'Booking ID: 2001122119',
+      images: ['../ticket/04_habitacion_station_kawaguchiko.png']
+    },
+    {
+      title: 'Hotel Little Bird Oku-Asakusa',
+      dates: '18–21 ธ.ค. 2026 · คืนที่ 8–10 (3 คืน)',
+      app: 'Booking.com',
+      appColor: '#003580',
+      bookingId: 'ยืนยันแล้ว · เช็คอิน 18 ธ.ค. - เช็คเอาท์ 21 ธ.ค.',
+      images: ['../ticket/05_hotel_little_bird_oku_asakusa.png']
+    }
+  ];
+
+  window.openHotelTicket = function(idx) {
+    const hotel = hotelTickets[idx];
+    if (!hotel) return;
+    const modal = document.getElementById('hotelTicketModal');
+    const appBadge = document.getElementById('modalHotelApp');
+    appBadge.textContent = hotel.app;
+    appBadge.style.background = hotel.appColor || '#7c3aed';
+    document.getElementById('modalHotelTitle').textContent = hotel.title;
+    document.getElementById('modalHotelSub').textContent = `${hotel.dates} · ${hotel.bookingId}`;
+    
+    const tabsContainer = document.getElementById('modalImageTabs');
+    const imgElement = document.getElementById('modalTicketImg');
+    const extLink = document.getElementById('modalOpenExternal');
+
+    if (hotel.images.length > 1) {
+      tabsContainer.style.display = 'flex';
+      tabsContainer.innerHTML = '';
+      hotel.images.forEach((imgUrl, i) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'ticket-tab-btn' + (i === 0 ? ' active' : '');
+        btn.textContent = `หน้า ${i + 1}${i === 0 ? ' (ข้อมูลการจอง)' : ' (รายละเอียดห้อง)'}`;
+        btn.onclick = () => {
+          tabsContainer.querySelectorAll('.ticket-tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          imgElement.src = imgUrl;
+          extLink.href = imgUrl;
+        };
+        tabsContainer.appendChild(btn);
+      });
+    } else {
+      tabsContainer.style.display = 'none';
+      tabsContainer.innerHTML = '';
+    }
+
+    imgElement.src = hotel.images[0];
+    extLink.href = hotel.images[0];
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.closeHotelTicket = function() {
+    const modal = document.getElementById('hotelTicketModal');
+    if (!modal) return;
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeHotelTicket();
   });
 </script>
 

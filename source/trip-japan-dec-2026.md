@@ -37,27 +37,27 @@
 
 ### Haneda — 1 คืน (10 ธ.ค. | เช็คเอ้าต์ 11 ธ.ค.)
 
-[📍 Toyoko INN Haneda Airport 1](https://maps.app.goo.gl/pn8jWgoygqfizhgR9)
+[📍 Toyoko INN Haneda Airport 1](https://maps.app.goo.gl/pn8jWgoygqfizhgR9) ✅ จองแล้ว (Agoda - ในอีเมล ไม่ได้ล็อกอิน) · [📄 ดูใบจอง](../ticket/00_toyoko_inn_haneda_airport_1.png)
 
 ### โตเกียว (ช่วงแรก) — 1 คืน (11 ธ.ค. | เช็คเอ้าต์ 12 ธ.ค.)
 
-[📍 Toyoko Inn Akiba Asakusabashi Station East Exit](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) ✅ จองแล้ว
+[📍 Toyoko Inn Akiba Asakusabashi Station East Exit](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) ✅ จองแล้ว (Trip.com) · [📄 ดูใบจองหน้า 1](../ticket/01_toyoko_inn_asakusabashi_1.png) · [📄 ดูใบจองหน้า 2](../ticket/01_toyoko_inn_asakusabashi_2.png)
 
 ### Fujinomiya — 2 คืน (12–13 ธ.ค. | เช็คอิน 12 | เช็คเอ้าต์ 14 ธ.ค.)
 
-[📍 Kuretake Inn Premium Fujinomiya](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) ✅ จองแล้ว
+[📍 Kuretake Inn Premium Fujinomiya](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) ✅ จองแล้ว (Trip.com) · [📄 ดูใบจอง](../ticket/02_kuretake_inn_fujinomiya.png)
 
 ### Shizuoka ตัวเมือง — 2 คืน (14–15 ธ.ค. | เช็คอิน 14 | เช็คเอ้าต์ 16 ธ.ค.)
 
-[📍 Hotel Associa Shizuoka](https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f) ✅ จองแล้ว
+[📍 Hotel Associa Shizuoka](https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f) ✅ จองแล้ว (Trip.com) · [📄 ดูใบจอง](../ticket/03_hotel_associa_shizuoka.png)
 
 ### Kawaguchiko — 2 คืน (16–17 ธ.ค. | เช็คอิน 16 | เช็คเอ้าต์ 18 ธ.ค.)
 
-[📍 Habitacion Station Mobile Cottage](https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce) ✅ จองแล้ว
+[📍 Habitacion Station Mobile Cottage](https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce) ✅ จองแล้ว (Agoda) · [📄 ดูใบจอง](../ticket/04_habitacion_station_kawaguchiko.png)
 
 ### โตเกียว (ช่วงสอง) — 3 คืน (18–20 ธ.ค. | เช็คอิน 18 | เช็คเอ้าต์ 21 ธ.ค.)
 
-[📍 Hotel Little Bird Oku-Asakusa](https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741) ✅ จองแล้ว
+[📍 Hotel Little Bird Oku-Asakusa](https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741) ✅ จองแล้ว (Booking.com) · [📄 ดูใบจอง](../ticket/05_hotel_little_bird_oku_asakusa.png)
 
 ---
 
@@ -68,7 +68,7 @@
 | **Tokyo DisneySea / Disneyland** | Day 9 | ✅ **จองก่อนเสมอ** | ¥7,900–10,900 | ไม่มีขายหน้าประตู จองผ่านแอป Tokyo Disney Resort |
 | **Fuji-Q Highland** | Day 6–7 | ⚠️ แนะนำจองล่วงหน้า | ¥6,000–7,000 | จองออนไลน์ได้ ช่วง ธ.ค. ไม่แน่นมาก |
 | **Kuroge Wagyu Ichinoya Asakusa** | Day 8 | ⚠️ เสาร์-อาทิตย์ต้องโทรจอง | ¥3,300–5,000 | วันธรรมดา walk-in ได้ วันหยุดจองก่อน |
-| **Habitacion Station Mobile Cottage** | Day 6–7 | ✅ จองแล้ว | — | เช็คอิน 16 ธ.ค. |
+| **Habitacion Station Mobile Cottage** | Day 6–7 | ✅ จองแล้ว (Agoda) | — | เช็คอิน 16 ธ.ค. |
 
 ---
 
