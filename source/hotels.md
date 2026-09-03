@@ -2,13 +2,14 @@
 
 ## ✅ ที่พักที่จองแล้ว
 
-| คืน | วันที่ | โรงแรม | Google Maps |
-|---|---|---|---|
-| คืน 0–1 | 10–11 ธ.ค. | Toyoko Inn Akiba Asakusabashi Station East Exit ✅ | [📍 Maps](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) |
-| คืน 2–3 | 12–13 ธ.ค. | Kuretake Inn Premium Fujinomiya ⚠️ รอจองมิ.ย. | [📍 Maps](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) |
-| คืน 4–5 | 14–15 ธ.ค. | Hotel Associa Shizuoka ✅ | [📍 Maps](https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f) |
-| คืน 6–7 | 16–17 ธ.ค. | Habitacion Station Mobile Cottage ✅ | [📍 Maps](https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce) |
-| คืน 8–10 | 18–20 ธ.ค. | Hotel Little Bird Oku-Asakusa ✅ | [📍 Maps](https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741) |
+| คืน | วันที่ | โรงแรม | ช่องทางจอง | ใบจอง / หลักฐาน | Google Maps |
+|---|---|---|---|---|---|
+| คืน 0 | 10 ธ.ค. | Toyoko INN Haneda Airport 1 ✅ | Agoda (ในอีเมล - ไม่ได้ล็อกอิน) | [`00_toyoko_inn_haneda_airport_1.png`](../ticket/00_toyoko_inn_haneda_airport_1.png) | [📍 Maps](https://maps.app.goo.gl/pn8jWgoygqfizhgR9) |
+| คืน 1 | 11 ธ.ค. | Toyoko Inn Akiba Asakusabashi Station East Exit ✅ | Trip.com | [`01_toyoko_inn_asakusabashi_1.png`](../ticket/01_toyoko_inn_asakusabashi_1.png), [`01_toyoko_inn_asakusabashi_2.png`](../ticket/01_toyoko_inn_asakusabashi_2.png) | [📍 Maps](https://www.google.com/maps/place/Toyoko+Inn+Akiba+Asakusabashi+Station+East+Exit/data=!4m2!3m1!1s0x60188eb155d8e2e1:0xb64dade3b9c9df03) |
+| คืน 2–3 | 12–13 ธ.ค. | Kuretake Inn Premium Fujinomiya ✅ | Trip.com | [`02_kuretake_inn_fujinomiya.png`](../ticket/02_kuretake_inn_fujinomiya.png) | [📍 Maps](https://www.google.com/maps/place/Kuretake+Inn+Premium+Fujinomiya/data=!4m2!3m1!1s0x601bd1661b5c0f23:0x15590c059cfe1e0f) |
+| คืน 4–5 | 14–15 ธ.ค. | Hotel Associa Shizuoka ✅ | Trip.com | [`03_hotel_associa_shizuoka.png`](../ticket/03_hotel_associa_shizuoka.png) | [📍 Maps](https://www.google.com/maps/place/Hotel+Associa+Shizuoka/data=!4m2!3m1!1s0x601a49f9ea59def1:0xdc0fab120be13b2f) |
+| คืน 6–7 | 16–17 ธ.ค. | Habitacion Station Mobile Cottage ✅ | Agoda | [`04_habitacion_station_kawaguchiko.png`](../ticket/04_habitacion_station_kawaguchiko.png) | [📍 Maps](https://www.google.com/maps/place/Habitacion+station+mobile+cottage%E3%80%90%E3%83%9B%E3%83%86%E3%83%AB%2F%E5%AE%BF%E6%B3%8A%E3%80%91/data=!4m2!3m1!1s0x60196168f6f8fd29:0x91438e471a44d8ce) |
+| คืน 8–10 | 18–20 ธ.ค. | Hotel Little Bird Oku-Asakusa ✅ | Booking.com | [`05_hotel_little_bird_oku_asakusa.png`](../ticket/05_hotel_little_bird_oku_asakusa.png) | [📍 Maps](https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741) |
 
 ---
 
