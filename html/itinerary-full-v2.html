@@ -311,6 +311,130 @@ main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
   color: #ffffff;
 }
 
+/* ── HOTEL RIGHT BADGES & PRICE TAGS ── */
+.hotel-right-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.hotel-price-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #f5f3ff;
+  color: #6d28d9;
+  font-weight: 700;
+  font-size: 0.76rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  border: 1px solid rgba(124, 58, 237, 0.22);
+}
+.hotel-price-badge.sub {
+  background: #f8fafc;
+  color: #64748b;
+  border-color: #e2e8f0;
+  font-weight: 500;
+}
+.hotel-summary-card {
+  background: linear-gradient(135deg, #6d28d9 0%, #4f46e5 100%);
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 12px 0 16px;
+  box-shadow: 0 4px 16px rgba(109, 40, 217, 0.22);
+}
+.hotel-summary-card .hsc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.hotel-summary-card .hsc-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hotel-summary-card .hsc-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.hotel-summary-card .hsc-title {
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+.hotel-summary-card .hsc-sub {
+  font-size: 0.76rem;
+  opacity: 0.85;
+  margin-top: 1px;
+}
+.hotel-summary-card .hsc-price-total {
+  text-align: right;
+}
+.hotel-summary-card .hsc-yen {
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  display: block;
+}
+.hotel-summary-card .hsc-thb {
+  font-size: 0.76rem;
+  opacity: 0.92;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-top: 2px;
+}
+.hotel-summary-card .hsc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 8px;
+}
+.hotel-summary-card .hsc-item {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.hotel-summary-card .hsc-label {
+  font-size: 0.7rem;
+  opacity: 0.82;
+}
+.hotel-summary-card .hsc-val {
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+.hotel-summary-card .hsc-val small {
+  font-size: 0.72rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+.hotel-summary-card .hsc-status {
+  color: #a7f3d0;
+}
+.ticket-modal-price {
+  margin-top: 6px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #065f46;
+  background: #ecfdf5;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
 /* ── TICKET LIGHTBOX MODAL ── */
 .ticket-modal {
   position: fixed;
@@ -755,7 +879,10 @@ details.t-detail .t-inner {
         <div class="name">Toyoko INN Haneda Airport 1</div>
         <div class="meta">คืนแรก (10 ธ.ค.) · ✅ จองแล้ว (Agoda - ในอีเมล)</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(0);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge">12,345 ¥</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(0);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">ขั้นตอนสนามบิน</div></div>
@@ -951,7 +1078,10 @@ details.t-detail .t-inner {
         <div class="name">Toyoko Inn Asakusabashi</div>
         <div class="meta">คืนที่ 1 · ✅ จองแล้ว (Trip.com)</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(1);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge">12,546 ¥</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(1);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">ก่อนเริ่มเที่ยว — ย้ายที่พัก</div></div>
@@ -1204,7 +1334,10 @@ details.t-detail .t-inner {
         <div class="name">Kuretake Inn Premium Fujinomiya</div>
         <div class="meta">2 คืน (12–13 ธ.ค.) · ✅ จองแล้ว (Trip.com)</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(2);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge">25,404 ¥ (2 คืน)</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(2);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — เดินทาง</div></div>
@@ -1362,7 +1495,10 @@ details.t-detail .t-inner {
         <div class="name">Kuretake Inn Premium Fujinomiya</div>
         <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(2);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge sub">รวมใน 25,404 ¥</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(2);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — Fuji City (Minobu Line)</div></div>
@@ -1480,7 +1616,10 @@ details.t-detail .t-inner {
         <div class="name">Hotel Associa Shizuoka</div>
         <div class="meta">2 คืน (14–15 ธ.ค.) · ✅ จองแล้ว (Trip.com)</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(3);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge">25,440 ¥ (2 คืน)</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(3);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — ก่อนออกเดินทาง</div></div>
@@ -1633,7 +1772,10 @@ details.t-detail .t-inner {
         <div class="name">Hotel Associa Shizuoka</div>
         <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(3);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge sub">รวมใน 25,440 ¥</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(3);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — ใจกลางเมือง</div></div>
@@ -1728,7 +1870,10 @@ details.t-detail .t-inner {
         <div class="name">Habitacion Station Mobile Cottage</div>
         <div class="meta">2 คืน (16–17 ธ.ค.) · ✅ จองแล้ว (จองใน Agoda)</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(4);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge">33,242 ¥ (2 คืน)</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(4);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">เดินทาง Shizuoka → Kawaguchiko</div></div>
@@ -1883,7 +2028,10 @@ details.t-detail .t-inner {
         <div class="name">Habitacion Station Mobile Cottage</div>
         <div class="meta">คืนที่ 2 · Check-out พรุ่งนี้ · (จองใน Agoda)</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(4);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge sub">รวมใน 33,242 ¥</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(4);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="card tip">
@@ -1982,7 +2130,10 @@ details.t-detail .t-inner {
         <div class="name">Hotel Little Bird Oku-Asakusa</div>
         <div class="meta">3 คืน (18–20 ธ.ค.) · ✅ จองแล้ว (Booking.com)</div>
       </div>
-      <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(5);" data-no-translate>📄 ดูใบจอง</button>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge">40,000 ¥ (3 คืน)</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(5);">📄 ดูใบจอง</button>
+      </div>
     </a>
 
     <div class="sec"><div class="sec-label">เช้า — เดินทาง</div></div>
@@ -2152,9 +2303,13 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741" target="_blank">
       <span class="icon">🏨</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Hotel Little Bird Oku-Asakusa</div>
         <div class="meta">คืนที่ 2</div>
+      </div>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge sub">รวมใน 40,000 ¥</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(5);">📄 ดูใบจอง</button>
       </div>
     </a>
 
@@ -2320,9 +2475,13 @@ details.t-detail .t-inner {
 
     <a class="card hotel" href="https://www.google.com/maps/place/HOTEL+LITTLE+BIRD+OKU-ASAKUSA/data=!4m2!3m1!1s0x60188f176fe20cad:0x20049644f85f4741" target="_blank">
       <span class="icon">🏨</span>
-      <div>
+      <div style="flex:1;min-width:0">
         <div class="name">Hotel Little Bird Oku-Asakusa</div>
         <div class="meta">คืนที่ 3</div>
+      </div>
+      <div class="hotel-right-badges" data-no-translate>
+        <span class="hotel-price-badge sub">รวมใน 40,000 ¥</span>
+        <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(5);">📄 ดูใบจอง</button>
       </div>
     </a>
 
@@ -2767,12 +2926,45 @@ details.t-detail .t-inner {
     </div>
 
     <div class="sec"><div class="sec-label">ที่พัก</div></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(0)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">10 ธ.ค. · Toyoko INN Haneda Airport 1</div><div class="meta">คืนแรกหลังถึงสนามบิน · (Agoda - ในอีเมล)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(1)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">11 ธ.ค. · Toyoko Inn Asakusabashi</div><div class="meta">ฐานเที่ยว Tokyo ช่วงต้นทริป · (Trip.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(2)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">12–13 ธ.ค. · Kuretake Inn Fujinomiya</div><div class="meta">2 คืนสำหรับโซนภูเขาฟูจิฝั่ง Fujinomiya · (Trip.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(3)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">14–15 ธ.ค. · Hotel Associa Shizuoka</div><div class="meta">2 คืน ใกล้ Shizuoka Station · (Trip.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(4)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">16–17 ธ.ค. · Habitacion Station Mobile Cottage</div><div class="meta">2 คืนสำหรับดูฟูจิและเที่ยวรอบทะเลสาบ · (Agoda)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(5)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">18–20 ธ.ค. · Hotel Little Bird, Oku-Asakusa</div><div class="meta">3 คืนสุดท้ายก่อนบินกลับ · (Booking.com)</div></div><span class="ticket-badge" data-no-translate>📄 ดูใบจอง</span></div>
+    <div class="hotel-summary-card" data-no-translate>
+      <div class="hsc-header">
+        <div class="hsc-title-wrap">
+          <span class="hsc-icon">🏨</span>
+          <div>
+            <div class="hsc-title">สรุปยอดรวมค่าที่พักทั้งหมด (11 คืน)</div>
+            <div class="hsc-sub">6 ที่พัก · ครบทุกคืนตลอดทริป · รวม 2 คน</div>
+          </div>
+        </div>
+        <div class="hsc-price-total">
+          <span class="hsc-yen">148,977 ¥</span>
+          <span class="hsc-thb">≈ 34,265 บาท</span>
+        </div>
+      </div>
+      <div class="hsc-grid">
+        <div class="hsc-item">
+          <span class="hsc-label">เฉลี่ยต่อคืน (11 คืน)</span>
+          <span class="hsc-val">~13,543 ¥ <small>(~3,115 บ.)</small></span>
+        </div>
+        <div class="hsc-item">
+          <span class="hsc-label">เฉลี่ยต่อคน (2 คน)</span>
+          <span class="hsc-val">~74,489 ¥ <small>(~17,132 บ.)</small></span>
+        </div>
+        <div class="hsc-item">
+          <span class="hsc-label">อัตราแลกเปลี่ยนอ้างอิง</span>
+          <span class="hsc-val">100¥ ≈ 23.0 บ.</span>
+        </div>
+        <div class="hsc-item">
+          <span class="hsc-label">สถานะการจอง</span>
+          <span class="hsc-val hsc-status">✅ จองแล้วครบ 100%</span>
+        </div>
+      </div>
+    </div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(0)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">10 ธ.ค. · Toyoko INN Haneda Airport 1</div><div class="meta">คืนแรกหลังถึงสนามบิน · (Agoda - ในอีเมล)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">12,345 ¥</span><span class="ticket-badge">📄 ดูใบจอง</span></div></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(1)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">11 ธ.ค. · Toyoko Inn Asakusabashi</div><div class="meta">ฐานเที่ยว Tokyo ช่วงต้นทริป · (Trip.com)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">12,546 ¥</span><span class="ticket-badge">📄 ดูใบจอง</span></div></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(2)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">12–13 ธ.ค. · Kuretake Inn Fujinomiya</div><div class="meta">2 คืนสำหรับโซนภูเขาฟูจิฝั่ง Fujinomiya · (Trip.com)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">25,404 ¥ (2 คืน)</span><span class="ticket-badge">📄 ดูใบจอง</span></div></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(3)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">14–15 ธ.ค. · Hotel Associa Shizuoka</div><div class="meta">2 คืน ใกล้ Shizuoka Station · (Trip.com)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">25,440 ¥ (2 คืน)</span><span class="ticket-badge">📄 ดูใบจอง</span></div></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(4)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">16–17 ธ.ค. · Habitacion Station Mobile Cottage</div><div class="meta">2 คืนสำหรับดูฟูจิและเที่ยวรอบทะเลสาบ · (Agoda)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">33,242 ¥ (2 คืน)</span><span class="ticket-badge">📄 ดูใบจอง</span></div></div>
+    <div class="card hotel ticket-card" onclick="openHotelTicket(5)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">18–20 ธ.ค. · Hotel Little Bird, Oku-Asakusa</div><div class="meta">3 คืนสุดท้ายก่อนบินกลับ · (Booking.com)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">40,000 ¥ (3 คืน)</span><span class="ticket-badge">📄 ดูใบจอง</span></div></div>
 
     <div class="sec"><div class="sec-label">ควรจองล่วงหน้า</div></div>
     <div class="card tip">
@@ -2805,6 +2997,7 @@ details.t-detail .t-inner {
           <div class="ticket-modal-app" id="modalHotelApp">Trip.com</div>
           <h3 class="ticket-modal-title" id="modalHotelTitle">Hotel Name</h3>
           <div class="ticket-modal-sub" id="modalHotelSub">Dates · Booking ID</div>
+          <div class="ticket-modal-price" id="modalHotelPrice"></div>
         </div>
         <button class="ticket-modal-close" onclick="closeHotelTicket()" aria-label="Close" type="button">✕</button>
       </div>
@@ -3714,6 +3907,9 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
       dates: '10–11 ธ.ค. 2026 · คืนแรก (1 คืน)',
       app: 'Agoda',
       appColor: '#0284c7',
+      price: '12,345 ¥',
+      priceThb: '~2,839 บาท',
+      priceNote: '1 คืน',
       bookingId: 'Booking ID: 2035829279 (จองในอีเมล ไม่ได้ล็อกอิน)',
       images: ['../ticket/00_toyoko_inn_haneda_airport_1.png']
     },
@@ -3722,6 +3918,9 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
       dates: '11–12 ธ.ค. 2026 · คืนที่ 1 (1 คืน)',
       app: 'Trip.com',
       appColor: '#2563eb',
+      price: '12,546 ¥',
+      priceThb: '~2,886 บาท',
+      priceNote: '1 คืน',
       bookingId: 'หมายเลขการจอง: 1622929209529335',
       images: [
         '../ticket/01_toyoko_inn_asakusabashi_1.png',
@@ -3733,6 +3932,9 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
       dates: '12–14 ธ.ค. 2026 · คืนที่ 2–3 (2 คืน)',
       app: 'Trip.com',
       appColor: '#2563eb',
+      price: '25,404 ¥',
+      priceThb: '~5,843 บาท',
+      priceNote: '2 คืน · เฉลี่ย 12,702 ¥/คืน',
       bookingId: 'หมายเลขการจอง: 1622929199596134',
       images: ['../ticket/02_kuretake_inn_fujinomiya.png']
     },
@@ -3741,6 +3943,9 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
       dates: '14–16 ธ.ค. 2026 · คืนที่ 4–5 (2 คืน)',
       app: 'Trip.com',
       appColor: '#2563eb',
+      price: '25,440 ¥',
+      priceThb: '~5,851 บาท',
+      priceNote: '2 คืน · เฉลี่ย 12,720 ¥/คืน',
       bookingId: 'หมายเลขการจอง: 1622926590924030',
       images: ['../ticket/03_hotel_associa_shizuoka.png']
     },
@@ -3749,6 +3954,9 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
       dates: '16–18 ธ.ค. 2026 · คืนที่ 6–7 (2 คืน)',
       app: 'Agoda',
       appColor: '#0284c7',
+      price: '33,242 ¥',
+      priceThb: '~7,646 บาท',
+      priceNote: '2 คืน · เฉลี่ย 16,621 ¥/คืน',
       bookingId: 'Booking ID: 2001122119',
       images: ['../ticket/04_habitacion_station_kawaguchiko.png']
     },
@@ -3757,6 +3965,9 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
       dates: '18–21 ธ.ค. 2026 · คืนที่ 8–10 (3 คืน)',
       app: 'Booking.com',
       appColor: '#003580',
+      price: '40,000 ¥',
+      priceThb: '~9,200 บาท',
+      priceNote: '3 คืน · เฉลี่ย 13,333 ¥/คืน',
       bookingId: 'ยืนยันแล้ว · เช็คอิน 18 ธ.ค. - เช็คเอาท์ 21 ธ.ค.',
       images: ['../ticket/05_hotel_little_bird_oku_asakusa.png']
     }
@@ -3771,6 +3982,7 @@ Flight departs at 01:25; leave for the airport by 21:00 at the latest
     appBadge.style.background = hotel.appColor || '#7c3aed';
     document.getElementById('modalHotelTitle').textContent = hotel.title;
     document.getElementById('modalHotelSub').textContent = `${hotel.dates} · ${hotel.bookingId}`;
+    document.getElementById('modalHotelPrice').textContent = `💰 ยอดชำระ: ${hotel.price} (${hotel.priceThb})${hotel.priceNote ? ' · ' + hotel.priceNote : ''}`;
     
     const tabsContainer = document.getElementById('modalImageTabs');
     const imgElement = document.getElementById('modalTicketImg');
