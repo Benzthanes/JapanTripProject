@@ -956,107 +956,6 @@ details.t-detail .t-inner {
 }
 .app-header h1 { font-size: 1.15rem; font-weight: 800; line-height: 1.2; margin: 0; }
 .header-subtitle { font-size: 0.8rem; opacity: 0.7; }
-.header-search-bar {
-  position: relative;
-  width: 100%;
-}
-.search-input-wrap {
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 10px;
-  padding: 2px 10px;
-  transition: all 0.2s ease;
-}
-.search-input-wrap:focus-within {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: #60a5fa;
-  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.25);
-}
-.search-icon {
-  font-size: 0.9rem;
-  margin-right: 6px;
-  opacity: 0.8;
-}
-.search-input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  font-family: inherit;
-  font-size: 0.88rem;
-  padding: 6px 0;
-}
-.search-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.search-clear-btn {
-  background: rgba(255, 255, 255, 0.2);
-  border: none;
-  color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  font-size: 0.75rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 6px;
-}
-.search-dropdown {
-  position: absolute;
-  top: calc(100% + 6px);
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  color: #111827;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.35);
-  max-height: 380px;
-  overflow-y: auto;
-  z-index: 1000;
-  border: 1px solid #e5e7eb;
-}
-.search-result-item {
-  padding: 10px 12px;
-  border-bottom: 1px solid #f3f4f6;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  transition: background 0.15s;
-}
-.search-result-item:hover { background: #f8fafc; }
-.search-result-item:last-child { border-bottom: none; }
-.search-res-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #1e293b;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.search-res-sub {
-  font-size: 0.78rem;
-  color: #64748b;
-}
-.search-res-badge {
-  font-size: 0.72rem;
-  padding: 2px 7px;
-  border-radius: 999px;
-  background: #eff6ff;
-  color: #2563eb;
-  font-weight: 700;
-}
-.search-no-results {
-  padding: 16px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #94a3b8;
-}
 
 .header-quick-jump {
   display: flex;
@@ -1097,17 +996,6 @@ details.t-detail .t-inner {
 .quick-day-select option {
   background: #1a1a2e;
   color: #ffffff;
-}
-
-/* Highlight flash animation when navigating from search */
-@keyframes highlightPulse {
-  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.8); transform: scale(1.01); }
-  50% { box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.4); transform: scale(1.01); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); transform: scale(1); }
-}
-.highlight-flash {
-  animation: highlightPulse 1.8s ease-out;
-  border-color: #2563eb !important;
 }
 
 /* ── JAPANESE BADGES WITH 1-TAP COPY ── */
@@ -1474,15 +1362,6 @@ details.t-detail .t-inner {
     <div class="header-right-btns">
       <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English">English</button>
     </div>
-  </div>
-
-  <div class="header-search-bar">
-    <div class="search-input-wrap">
-      <span class="search-icon">🔍</span>
-      <input type="search" id="quickSearchInput" class="search-input" placeholder="ค้นหาสถานที่, อาหาร, รถไฟ, ย่าน..." data-placeholder-en="Search places, food, trains, areas..." autocomplete="off">
-      <button id="searchClearBtn" class="search-clear-btn" type="button" aria-label="ล้างการค้นหา" style="display:none;">✕</button>
-    </div>
-    <div id="searchResultsDropdown" class="search-dropdown" style="display:none;"></div>
   </div>
 
   <div class="header-quick-jump">
@@ -4626,101 +4505,6 @@ details.t-detail .t-inner {
     const hash = window.location.hash.replace('#day-', '');
     if (hash && document.getElementById('day-' + hash)) {
       switchTab(hash, false);
-    }
-  });
-
-  // ── Real-Time Quick Search ──
-  const searchInput = document.getElementById('quickSearchInput');
-  const searchClear = document.getElementById('searchClearBtn');
-  const searchDropdown = document.getElementById('searchResultsDropdown');
-
-  // Build searchable index from cards
-  function buildSearchIndex() {
-    const items = [];
-    document.querySelectorAll('.day-section').forEach(section => {
-      const dayId = section.id.replace('day-', '');
-      const dayTitle = section.querySelector('.day-heading .title')?.textContent.trim() || `Day ${dayId}`;
-
-      section.querySelectorAll('.card, .extra-item').forEach(card => {
-        const nameEl = card.querySelector('.name, .ei-name');
-        if (!nameEl) return;
-        const name = nameEl.textContent.trim();
-        const meta = card.querySelector('.meta, .ei-meta')?.textContent.trim() || '';
-        const desc = card.querySelector('.card-body p')?.textContent.trim() || '';
-        const jp = card.querySelector('.jp-txt')?.textContent.trim() || '';
-
-        items.push({
-          dayId,
-          dayTitle,
-          name,
-          meta,
-          desc,
-          jp,
-          element: card,
-          fullText: `${name} ${meta} ${desc} ${jp} ${dayTitle}`.toLowerCase()
-        });
-      });
-    });
-    return items;
-  }
-
-  let searchIndex = null;
-
-  function doSearch(q) {
-    if (!searchIndex) searchIndex = buildSearchIndex();
-    const query = q.trim().toLowerCase();
-
-    if (!query) {
-      searchDropdown.style.display = 'none';
-      searchClear.style.display = 'none';
-      return;
-    }
-
-    searchClear.style.display = 'block';
-    const matches = searchIndex.filter(item => item.fullText.includes(query)).slice(0, 15);
-
-    if (matches.length === 0) {
-      searchDropdown.innerHTML = `<div class="search-no-results">ไม่พบข้อมูลที่ตรงกับ "${q}"</div>`;
-      searchDropdown.style.display = 'block';
-      return;
-    }
-
-    searchDropdown.innerHTML = matches.map(m => `
-      <div class="search-result-item" data-day="${m.dayId}">
-        <div class="search-res-title">
-          <span>${m.name}</span>
-          <span class="search-res-badge">Day ${m.dayId}</span>
-        </div>
-        <div class="search-res-sub">${m.meta || m.dayTitle}</div>
-      </div>
-    `).join('');
-
-    searchDropdown.style.display = 'block';
-
-    searchDropdown.querySelectorAll('.search-result-item').forEach((itemEl, idx) => {
-      itemEl.addEventListener('click', () => {
-        const match = matches[idx];
-        searchDropdown.style.display = 'none';
-        switchTab(match.dayId, false);
-        setTimeout(() => {
-          match.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          match.element.classList.add('highlight-flash');
-          setTimeout(() => match.element.classList.remove('highlight-flash'), 2000);
-        }, 150);
-      });
-    });
-  }
-
-  searchInput?.addEventListener('input', (e) => doSearch(e.target.value));
-  searchClear?.addEventListener('click', () => {
-    searchInput.value = '';
-    doSearch('');
-    searchInput.focus();
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.header-search-bar')) {
-      if (searchDropdown) searchDropdown.style.display = 'none';
     }
   });
 
