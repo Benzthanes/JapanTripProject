@@ -40,26 +40,21 @@
 }
 
 /* ── BASE ── */
-html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
 body {
   font-family: 'Sarabun', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.55;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
-
-/* ── APP HEADER ── */
-.app-header {
-  background: #1a1a2e;
-  color: white;
-  padding: 14px 16px 12px;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-}
-.app-header h1 { font-size: 1.1rem; font-weight: 800; }
-.app-header span { font-size: 0.82rem; opacity: 0.55; }
 .language-toggle {
   margin-left: auto;
   flex-shrink: 0;
@@ -115,7 +110,12 @@ body {
 .tab.active .tab-date { opacity: 0.55; }
 
 /* ── MAIN ── */
-main { padding: 14px 12px 80px; max-width: 560px; margin: 0 auto; }
+main {
+  padding: 14px 12px 80px;
+  max-width: 560px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
 
 .day-section { display: none; }
 .day-section.active { display: block; }
@@ -945,6 +945,8 @@ details.t-detail .t-inner {
   flex-direction: column;
   gap: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .app-header-top {
   display: flex;
@@ -1063,15 +1065,21 @@ details.t-detail .t-inner {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   padding: 4px 8px;
+  min-width: 0;
+  max-width: 100%;
 }
 .quick-jump-label {
   font-size: 0.76rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.8);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .quick-day-select {
   flex: 1;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
@@ -1082,6 +1090,9 @@ details.t-detail .t-inner {
   font-weight: 600;
   outline: none;
   cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .quick-day-select option {
   background: #1a1a2e;
@@ -1354,6 +1365,16 @@ details.t-detail .t-inner {
 }
 @media (max-width: 480px) {
   .emergency-grid { grid-template-columns: 1fr; }
+  .card.hotel {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .hotel-right-badges {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 6px;
+    margin-left: 0;
+  }
 }
 .emergency-btn {
   display: flex;
