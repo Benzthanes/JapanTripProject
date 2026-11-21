@@ -5,10 +5,10 @@
 | วัน | เส้นทาง | วิธี | ราคา (ต่อคน) | จองที่ |
 |---|---|---|---|---|
 | 10 ธ.ค. | Haneda → Asakusabashi | Keikyu + Toei Asakusa | ~610¥ | ไม่ต้องจอง (Suica) |
-| 12 ธ.ค. | Tokyo → Fujinomiya | Highway Bus | 2,400–2,750¥ | shizuokabus.co.jp |
-| 14 ธ.ค. | Fujinomiya → Shizuoka | JR Minobu + Tokaido | ~1,400¥ | Suica |
-| 16 ธ.ค. | Shizuoka → Kawaguchiko | Highway Bus | 3,000¥ | sekitori.jp |
-| 18 ธ.ค. | Kawaguchiko → Oku-Asakusa | Bus + TX Line | ~2,000¥ | highwaybus.com |
+| 12 ธ.ค. | Tokyo → Fujinomiya | Highway Bus | 2,400–2,750¥ | shizuokabus.co.jp (จองล่วงหน้า 1 เดือน) |
+| 14 ธ.ค. | Fujinomiya → Shizuoka | JR Minobu + Tokaido | ~1,400¥ | Suica (ไม่ต้องจอง) |
+| 16 ธ.ค. | Shizuoka → Kawaguchiko | Highway Bus | 3,000¥ | ✅ **จองแล้ว** (15:00 → 17:10) · [Fujiyama Connect](https://www.fujiyamaconnect.jp/) |
+| 18 ธ.ค. | Kawaguchiko → Oku-Asakusa | Bus + TX Line | ~2,000¥ | ✅ **จองแล้ว** (11:50 → 13:35) · [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile) |
 | 21 ธ.ค. | Oku-Asakusa → Haneda | Hibiya + Toei Asakusa | — | ไม่ต้องจอง (Suica) |
 
 ---
@@ -135,26 +135,39 @@
 
 ## เส้นทางที่ 3 — Shizuoka → Kawaguchiko | 16 ธ.ค.
 
-**บัส Shizuoka → Kawaguchiko (ตรง ไม่ต้องเปลี่ยน)** ~2:10 ชม. / 3,000¥
+**บัส Shizuoka → Kawaguchiko (ตรง ไม่ต้องเปลี่ยน) ✅ จองแล้ว (รอบ 15:00 → 17:10)**
 
-จอง: **[sekitori.jp](https://sekitori.jp/en/)** — จองล่วงหน้า 1 เดือน | มี 2 รอบ: **07:40** (ถึง 09:50) / **15:00** (ถึง 17:10) | ถึงก่อน 15 นาที | มี 6 ป้าย ลงป้ายสุดท้าย **Kawaguchiko Sta.**
+| รายละเอียด | ข้อมูล |
+|---|---|
+| **รถบัส** | Fujikyu Shizuoka Bus (富士急静岡バス株式会社) \| 便番号: 4 |
+| **เวลา** | **15:00** (ออก Shizuoka Sta. North Exit) → **17:10** (ถึง Kawaguchiko Sta.) |
+| **ที่นั่ง** | 1号車 \| **05D, 05C** (ผู้ใหญ่ 2 คน: ชาย 1, หญิง 1) |
+| **เลขการจอง** | 予約番号: **3404674** \| サービス注文番号: AR0000187216 |
+| **การแสดงตั๋ว** | ⚠️ **ต้องล็อกอินเปิด QR Code สดผ่านเว็บ [Fujiyama Connect](https://www.fujiyamaconnect.jp/)** ให้คนขับสแกน<br>🚫 **ห้ามใช้รูปแคปหน้าจอ (Screenshots not allowed)**<br>🔑 รหัสผ่านเข้าเว็บอยู่ใน **Note LINE ของ Un** |
+| **หลักฐานการจอง** | [📄 หน้า QR Code](../ticket/06_bus_shizuoka_kawaguchiko_qr.png) · [📄 รายละเอียดตั๋ว](../ticket/06_bus_shizuoka_kawaguchiko_details.png) |
 
 1. ออกจากประตูหลักโรงแรม **Hotel Associa** เลี้ยวซ้าย → เดินตามทางเชื่อมขนานกับตึก ~30 เมตร → เจอ **JR Shizuoka Sta. (North Exit)** ทางซ้าย
-2. เดินตรงต่อไปยังลานกว้าง → เจอ **Bus Terminal** → หาป้าย **หมายเลข 12** (ไม่ต้องข้ามถนนใหญ่)
-3. สังเกตป้ายเขียนว่าไป **Gotemba / Kawaguchiko / Fujikyu Highland**
+2. เดินตรงต่อไปยังลานกว้าง → เจอ **Bus Terminal** → หาป้าย **หมายเลข 12** (ไม่ต้องข้ามถนนใหญ่ ป้ายเขียน Gotemba / Kawaguchiko / Fujikyu Highland)
+3. ควรไปถึงป้ายก่อนเวลาอย่างน้อย 15 นาที (~14:45) เตรียมล็อกอินแสดงตั๋ว QR Code
 
 ---
 
 ## เส้นทางที่ 4 — Kawaguchiko → Oku-Asakusa | 18 ธ.ค.
 
-**บัส Kawaguchiko → Busta Shinjuku → TX Line → Oku-Asakusa** ~2+ ชม.
+**บัส Kawaguchiko → Busta Shinjuku ✅ จองแล้ว (รอบ 11:50 → 13:35) → ต่อ TX Line → Oku-Asakusa**
 
-จอง: **[highwaybus.com](https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction)** | ลงสถานี **Busta Shinjuku (Shinjuku Express Bus Terminal)**
+| รายละเอียด | ข้อมูล |
+|---|---|
+| **สายรถบัส** | ชินจูกุ - ฟูจิโกโกะ (แม่น้ำ 5 สาย) \| หมายเลขเที่ยวรถ: 1404 (คันที่ 1) |
+| **เวลา** | **11:50** (ออก สถานีคาวากุจิโกะ) → **13:35** (ถึง บัสตา ชินจูกุ ชั้น 3) |
+| **ที่นั่ง** | 1号車 \| **01C (ชาย), 01D (หญิง)** (เบาะหน้าสุด) |
+| **ผู้โดยสาร** | 2 คน (Thanes Sriamornruttanakul) |
+| **ตั๋วโดยสาร** | [📱 เปิดตั๋วออนไลน์ Mobile Ticket (highwaybus.com)](https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile) |
 
-**จากโรงแรม Habitacion ไปสถานีบัส**
+**จากโรงแรม Habitacion ไปสถานีบัส Kawaguchiko**
 
 1. ออกจากรั้วโรงแรมเลี้ยวขวาไปถนนใหญ่ → ฝั่งตรงข้ามมี 7-Eleven → เดินทิศตะวันออก → เลี้ยวขวาที่สี่แยกที่มีร้านขายของฝาก → เดินต่อจะเห็น **อาคารไม้ทรงยุโรป** = สถานี Kawaguchiko
-2. ที่สถานี ไม่ต้องเข้าไปในรถไฟ → หาลานจอดบัส → เสาป้าย **หมายเลข 3 หรือ 4** (เช็คหน้าจอ LCD ชานชาลา) → ขึ้นรถดูป้าย **Shinjuku**
+2. ที่สถานี ไม่ต้องเข้าไปในรถไฟ → หาลานจอดบัส → ชานชาลา **หมายเลข 3 หรือ 4** (เช็คหน้าจอ LCD ชานชาลา) → ขึ้นรถดูป้าย **Shinjuku** (ควรไปถึงก่อนเวลาอย่างน้อย 15 นาที ~11:35)
 
 **จาก Busta Shinjuku ไป Oku-Asakusa**
 
@@ -201,7 +214,7 @@
 | เส้นทาง | เว็บจอง | หมายเหตุ |
 |---|---|---|
 | Tokyo → Fujinomiya (บัส) | [shizuokabus.co.jp](https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare) | จองล่วงหน้า 1 เดือน |
-| Shizuoka → Kawaguchiko | [sekitori.jp](https://sekitori.jp/en/) | จองล่วงหน้า 1 เดือน |
-| Kawaguchiko → Shinjuku | [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction) | จองล่วงหน้า |
+| Shizuoka → Kawaguchiko | [fujiyamaconnect.jp](https://www.fujiyamaconnect.jp/) | ✅ **จองแล้ว** (16 ธ.ค. 15:00 → 17:10 \| 1号車 05D, 05C \| ห้ามแคปจอ) |
+| Kawaguchiko → Shinjuku | [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile) | ✅ **จองแล้ว** (18 ธ.ค. 11:50 → 13:35 \| 1号車 01C, 01D) |
 | Fujinomiya → Shizuoka | Suica (ไม่ต้องจอง) | ซื้อที่ตู้สถานีได้ |
 | Haneda ↔ Asakusabashi | Suica (ไม่ต้องจอง) | แตะบัตรได้เลย |

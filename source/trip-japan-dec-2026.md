@@ -22,6 +22,19 @@
 
 ---
 
+## 🛡️ ข้อมูลประกันการเดินทาง (Sompo TravelJoy)
+
+| รายการ | รายละเอียด |
+|---|---|
+| **บริษัทประกัน** | Sompo Insurance (Thailand) |
+| **แผนประกัน** | TravelJoy Standard Plus |
+| **ระยะเวลาคุ้มครอง** | 10 ธ.ค. 2026 – 22 ธ.ค. 2026 (ครอบคลุมตลอดทริป) |
+| **หมายเลขอ้างอิง (Ref No.)** | `B120261100198950` |
+| **ผู้เอาประกันคนที่ 1 (Benz)** | **MR. THANES SRIAMORNRUTTANAKUL**<br>• เลขกรมธรรม์: `HQ-SHJ-0071809-ONL06-2026-12`<br>• อีเมล: Benz.thanes@gmail.com · [📄 ดูหน้ากรมธรรม์](../ticket/07_insurance_sompo_benz.jpg) |
+| **ผู้เอาประกันคนที่ 2 (Un)** | **MISS MANANYA PIANMANAKIT**<br>• เลขกรมธรรม์: `HQ-SHJ-0071810-ONL06-2026-12`<br>• อีเมล: Mananya.un@gmail.com · [📄 ดูหน้ากรมธรรม์](../ticket/07_insurance_sompo_un.jpg) |
+
+---
+
 ## การเดินทาง: Day 0 Haneda → Toyoko INN Haneda Airport 1
 
 | เส้นทาง | ราคา | หมายเหตุ |
@@ -65,6 +78,8 @@
 
 | สถานที่ | วัน | ต้องจองไหม | ราคา (ต่อคน) | หมายเหตุ |
 |---|---|---|---|---|
+| **Highway Bus (Shizuoka → Kawaguchiko)** | Day 6 (16 ธ.ค.) | ✅ **จองแล้ว** (15:00 → 17:10) | — | 1号車 ที่นั่ง 05D, 05C · [Fujiyama Connect](https://www.fujiyamaconnect.jp/) (รหัสใน Line Un) · [📄 ดูตั๋ว/QR](../ticket/06_bus_shizuoka_kawaguchiko_qr.png) |
+| **Highway Bus (Kawaguchiko → Shinjuku)** | Day 8 (18 ธ.ค.) | ✅ **จองแล้ว** (11:50 → 13:35) | — | คันที่ 1 ที่นั่ง 01C, 01D · [📱 ตั๋วออนไลน์](https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile) |
 | **Tokyo DisneySea / Disneyland** | Day 9 | ✅ **จองก่อนเสมอ** | ¥7,900–10,900 | ไม่มีขายหน้าประตู จองผ่านแอป Tokyo Disney Resort |
 | **Fuji-Q Highland** | Day 6–7 | ⚠️ แนะนำจองล่วงหน้า | ¥6,000–7,000 | จองออนไลน์ได้ ช่วง ธ.ค. ไม่แน่นมาก |
 | **Kuroge Wagyu Ichinoya Asakusa** | Day 8 | ⚠️ เสาร์-อาทิตย์ต้องโทรจอง | ¥3,300–5,000 | วันธรรมดา walk-in ได้ วันหยุดจองก่อน |
@@ -447,26 +462,32 @@
 
 ## Day 6 — 16 ธ.ค. (พ) เดินทาง Shizuoka → Kawaguchiko Day 1 🗻
 
-### การเดินทาง ~2:10 ชม. / ~2,200¥
+### การเดินทาง: Shizuoka → Kawaguchiko ✅ จองแล้ว (รอบ 15:00 → 17:10)
 
-**บัส Shizuoka → Kawaguchiko (ตรง ไม่ต้องเปลี่ยน)**
+| รายละเอียด | ข้อมูล |
+|---|---|
+| **รถบัส** | Fujikyu Shizuoka Bus (富士急静岡バス株式会社) \| 便番号: 4 |
+| **เวลา** | **15:00** (ออก Shizuoka Sta. North Exit ป้าย 12) → **17:10** (ถึง Kawaguchiko Sta.) |
+| **ที่นั่ง** | 1号車 (Car 1) \| **05D, 05C** (ผู้ใหญ่ 2 คน: ชาย 1, หญิง 1) |
+| **เลขการจอง** | 予約番号: **3404674** \| サービス注文番号: AR0000187216 |
+| **การแสดงตั๋ว** | ⚠️ **ต้องล็อกอินเปิด QR Code สดผ่านเว็บ [Fujiyama Connect](https://www.fujiyamaconnect.jp/)** ให้คนขับสแกน<br>🚫 **ห้ามใช้รูปแคปหน้าจอเด็ดขาด (Screenshots not allowed)**<br>🔑 รหัสผ่านเข้าเว็บอยู่ใน **Note LINE ของ Un** |
+| **หลักฐานการจอง** | [📄 ดูหน้า QR Code](../ticket/06_bus_shizuoka_kawaguchiko_qr.png) · [📄 ดูรายละเอียดตั๋ว](../ticket/06_bus_shizuoka_kawaguchiko_details.png) |
 
-จอง: [sekitori.jp](https://sekitori.jp/en/) — จองล่วงหน้า 1 เดือน | มี 2 รอบ: **07:40 / 14:40–15:00** | ถึงก่อน 15 นาที | มี 6 ป้าย ลงป้ายสุดท้าย **Kawaguchiko Sta.**
+**ขั้นตอนการขึ้นรถที่ Shizuoka Station:**
+1. เดินออกจากโรงแรม Hotel Associa เลี้ยวซ้าย → เดินตามทางเชื่อมขนานกับตึก ~30 เมตร → เจอ **JR Shizuoka Sta. (North Exit)** ทางซ้าย
+2. เดินตรงต่อไปยังลานกว้าง Bus Terminal → หาป้าย **หมายเลข 12** (ไม่ต้องข้ามถนนใหญ่ ป้ายเขียน Gotemba / Kawaguchiko / Fujikyu Highland)
+3. ควรไปถึงป้ายก่อนเวลาอย่างน้อย 15 นาที (~14:45) เตรียมล็อกอินหน้าเว็บตั๋วให้พร้อมแสดง QR Code
 
-1. ออกจากประตูหลักโรงแรม Hotel Associa เลี้ยวซ้าย → เดินตามทางเชื่อมขนานกับตึก ~30 เมตร → เจอ **JR Shizuoka Sta. (North Exit)** ทางซ้าย
-2. เดินตรงต่อไปยังลานกว้าง → เจอ **Bus Terminal** → หาป้าย **หมายเลข 12** (ไม่ต้องข้ามถนนใหญ่)
-3. สังเกตป้ายเขียนว่าไป **Gotemba / Kawaguchiko / Fujikyu Highland**
+> 🏨 ถึงสถานี Kawaguchiko (17:10 น. ฟ้าจะเริ่มมืดแล้ว) เดินเข้าเช็คอิน [Habitacion Station Mobile Cottage](https://maps.app.goo.gl/gPLj4KmZWxYpLCsH9) (~2–3 นาทีจากสถานี) วางกระเป๋าแล้วไปทานอาหารเย็น
 
-> เช็คเอ้าต์ Shizuoka → เช็คอิน [Habitacion Station Mobile Cottage](https://maps.app.goo.gl/gPLj4KmZWxYpLCsH9)
+### สถานที่ (ช่วงค่ำ / หรือเก็บไว้ Day 7 เช้า)
 
-### สถานที่ (ช่วงบ่ายหลังเช็คอิน)
+| สถานที่ | ★ | Google Maps | หมายเหตุ |
+|---|---|---|---|
+| Yagizaki Park | 4.4★ | [Maps](https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415) | สวนริมทะเลสาบ (แนะนำไปเช้า Day 7 วิวฟูจิสวยกว่า) |
+| Ubuyagasaki | — | [Maps](https://maps.app.goo.gl/c8Z8ANEnTMfWqwjB6) | จุดชมวิวฟูจิสะท้อนน้ำ (แนะนำช่วงเช้า) |
 
-| สถานที่ | ★ | Google Maps |
-|---|---|---|
-| Yagizaki Park | 4.4★ | [Maps](https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415) |
-| Ubuyagasaki | — | [Maps](https://maps.app.goo.gl/c8Z8ANEnTMfWqwjB6) |
-
-> ⚠️ **Fuji tip:** เมฆมักบัง Fuji ตอนบ่าย — วางแผนดู Fuji ตอนเช้า
+> ⚠️ **Fuji tip:** ธันวาคมพระอาทิตย์ตก ~16:30 น. ช่วง 17:10 จะมืดแล้ว เมฆมักบังฟูจิตอนบ่าย — จุดชมวิวเน้นช่วงเช้า Day 7
 
 ### 🍽️ อาหาร Day 6
 
@@ -552,16 +573,24 @@
 
 ### การเดินทาง — Kawaguchiko → Shinjuku → Nakameguro → Oku-Asakusa
 
-จอง: [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction) | ลงสถานี **Busta Shinjuku**
+**บัส Kawaguchiko → Busta Shinjuku ✅ จองแล้ว (รอบ 11:50 → 13:35)**
 
-**จากโรงแรม Habitacion ไปสถานีบัส**
+| รายละเอียด | ข้อมูล |
+|---|---|
+| **สายรถบัส** | ชินจูกุ - ฟูจิโกโกะ (แม่น้ำ 5 สาย) \| หมายเลขเที่ยวรถ: 1404 (คันที่ 1) |
+| **เวลา** | **11:50** (ออก สถานีคาวากุจิโกะ) → **13:35** (ถึง สถานีรถบัสด่วนพิเศษชินจูกุ / บัสตา ชินจูกุ) |
+| **ที่นั่ง** | 1号車 \| **01C (ชาย), 01D (หญิง)** (เบาะหน้าสุด) |
+| **ผู้โดยสาร** | 2 คน (Thanes Sriamornruttanakul) |
+| **ตั๋วโดยสาร** | [📱 เปิดตั๋วออนไลน์ Mobile Ticket (highwaybus.com)](https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile) |
+
+**จากโรงแรม Habitacion ไปสถานีบัส Kawaguchiko**
 1. ออกจากรั้วโรงแรมเลี้ยวขวาไปถนนใหญ่ → ฝั่งตรงข้ามมี 7-Eleven → เดินทิศตะวันออก → เลี้ยวขวาที่สี่แยกที่มีร้านขายของฝาก → เดินต่อจะเห็น **อาคารไม้ทรงยุโรป** = สถานี Kawaguchiko
-2. ที่สถานี ไม่ต้องเข้าไปในรถไฟ → หาลานจอดบัส → เสาป้าย **หมายเลข 3 หรือ 4** → ขึ้นรถดูป้าย **Shinjuku**
+2. ที่สถานี ไม่ต้องเข้าไปในส่วนรถไฟ → หาลานจอดบัส → ชานชาลา **หมายเลข 3 หรือ 4** (เช็คหน้าจอ LCD) → ขึ้นรถดูป้าย **Shinjuku** (ควรไปถึงก่อนเวลาอย่างน้อย 15 นาที ~11:35)
 
 **จาก Busta Shinjuku → Oku-Asakusa (~40 นาที) — วางกระเป๋าก่อน**
-1. ลงบัสชั้น 3 → เชื่อมต่อ JR Shinjuku (Exit New South Gate)
+1. รถจอดชั้น 3 Busta Shinjuku → เดินลงบันไดเลื่อนเชื่อมต่อ JR Shinjuku (Exit New South Gate)
 2. **Chou-Sobu Line** ไป Akihabara → ต่อ **TX Line** → ลง **Asakusa (TX03)**
-3. ออก Exit A1 → เดิน 850 เมตร → เช็คอิน Hotel Little Bird วางกระเป๋า
+3. ออก Exit A1 → เดิน 850 เมตร → เช็คอิน Hotel Little Bird Oku-Asakusa วางกระเป๋า (~14:30–15:00)
 
 **จาก Oku-Asakusa → Nakameguro (~35–40 นาที)**
 - เดินไป **สถานี Iriya** (Hibiya Line H04) ~10 นาที → นั่งไปทาง Naka-meguro → ลง **Naka-meguro (H22)** ไม่ต้องเปลี่ยนสาย
