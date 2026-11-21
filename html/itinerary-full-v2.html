@@ -1473,14 +1473,14 @@ details.t-detail .t-inner {
         <td><span class="dot" style="background:var(--r3)"></span>Shizuoka → Kawaguchiko</td>
         <td>Highway Bus</td>
         <td><span class="price-badge">3,000¥</span></td>
-        <td><a href="https://sekitori.jp/en/" target="_blank" class="book-link">sekitori.jp ↗</a></td>
+        <td><span class="tag tag-free" style="display:inline-block">✅ จองแล้ว 15:00</span> <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋ว/QR</button></td>
       </tr>
       <tr>
         <td><strong>18 ธ.ค.</strong></td>
         <td><span class="dot" style="background:var(--r4)"></span>Kawaguchiko → Oku-Asakusa</td>
         <td>Bus + TX Line</td>
         <td><span class="price-badge">~2,000¥</span></td>
-        <td><a href="https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction" target="_blank" class="book-link">highwaybus.com ↗</a></td>
+        <td><span class="tag tag-free" style="display:inline-block">✅ จองแล้ว 11:50</span> <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="book-link" style="color:#0284c7;font-weight:700">📱 ตั๋วออนไลน์ ↗</a></td>
       </tr>
       <tr>
         <td><strong>21 ธ.ค.</strong></td>
@@ -1750,8 +1750,8 @@ details.t-detail .t-inner {
       <div class="route-line">Hotel Associa Shizuoka → Habitacion Station Mobile Cottage</div>
       <div class="meta-pills">
         <span class="pill price">🚌 Bus 3,000¥</span>
-        <span class="pill time">⏱ ~2h 10m</span>
-        <span class="pill book">📅 จองล่วงหน้า 1 เดือน</span>
+        <span class="pill time">⏱ 15:00 → 17:10 (~2h 10m)</span>
+        <span class="pill" style="background:#dcfce7;color:#15803d;font-weight:700">✅ จองแล้ว (ที่นั่ง 05D, 05C)</span>
       </div>
     </div>
   </div>
@@ -1759,29 +1759,27 @@ details.t-detail .t-inner {
   <div class="route-card">
     <div class="route-card-header">
       <div class="route-icon" style="background:var(--r3)">🚌</div>
-      <div>
+      <div style="flex:1">
         <h3>Highway Bus — ตรงไม่ต้องเปลี่ยน</h3>
-        <div class="sub">Shizuoka Station Bus Terminal → Kawaguchiko Sta.</div>
+        <div class="sub">Shizuoka Station Bus Terminal (North Exit ป้าย 12) → Kawaguchiko Sta.</div>
+      </div>
+      <div class="hotel-right-badges" data-no-translate>
+        <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋วบัส / QR</button>
       </div>
     </div>
     <div class="route-card-body">
-      <div class="callout warn">
-        <strong>📅 จอง: <a href="https://sekitori.jp/en/" target="_blank">sekitori.jp ↗</a></strong>
-        จองล่วงหน้า 1 เดือน · ถึงรถก่อน 15 นาที · มี 6 ป้าย ลงป้ายสุดท้าย <strong>Kawaguchiko Sta.</strong>
-      </div>
-
-      <div class="ticket-grid" style="margin-bottom:16px">
-        <div class="ticket-item">
-          <div class="ti-title">🕐 รอบเช้า</div>
-          <div class="ti-detail"><strong>07:40</strong> ออก → ถึง Kawaguchiko <strong>09:50</strong></div>
-        </div>
-        <div class="ticket-item">
-          <div class="ti-title">🕑 รอบบ่าย</div>
-          <div class="ti-detail"><strong>15:00</strong> ออก → ถึง Kawaguchiko <strong>17:10</strong></div>
+      <div class="callout tip">
+        <strong>✅ จองแล้วเรียบร้อย — รอบบ่าย 15:00 → 17:10 (ตัดตัวเลือกรอบเช้าออก)</strong>
+        <strong>รถบัส:</strong> Fujikyu Shizuoka Bus · 便番号: 4 · 1号車 ที่นั่ง <strong>05D, 05C</strong> (2 ที่นั่ง)<br>
+        <strong>เลขจอง:</strong> 予約番号 <strong>3404674</strong> · 注文番号 AR0000187216<br>
+        <strong>⚠️ วิธีแสดงตั๋ว:</strong> ต้องล็อกอินเปิด QR Code สดผ่านเว็บ <a href="https://www.fujiyamaconnect.jp/" target="_blank"><strong>Fujiyama Connect ↗</strong></a> ให้คนขับสแกน<br>
+        <strong style="color:#b91c1c">🚫 ห้ามใช้รูปแคปหน้าจอเด็ดขาด (Screenshots not allowed)</strong> · รหัสผ่านเว็บอยู่ใน Note LINE ของ Un
+        <div style="margin-top:10px">
+          <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูหลักฐานการจอง / QR Code</button>
         </div>
       </div>
 
-      <div class="sub-label">จากโรงแรม Hotel Associa ไปสถานีบัส</div>
+      <div class="sub-label">จากโรงแรม Hotel Associa ไปสถานีบัส (ถึงก่อน 14:45)</div>
       <ol class="steps">
         <li>
           <span class="step-num" style="background:var(--r3)">1</span>
@@ -1789,11 +1787,11 @@ details.t-detail .t-inner {
         </li>
         <li>
           <span class="step-num" style="background:var(--r3)">2</span>
-          <div class="step-body">เดินตรงต่อไปยังลานกว้าง → เจอ <strong>Bus Terminal</strong> → หาป้าย <strong>หมายเลข 12</strong><br><span class="note">ไม่ต้องข้ามถนนใหญ่</span></div>
+          <div class="step-body">เดินตรงต่อไปยังลานกว้าง → เจอ <strong>Bus Terminal</strong> → หาป้าย <strong>หมายเลข 12</strong><br><span class="note">ไม่ต้องข้ามถนนใหญ่ ป้ายเขียน Gotemba / Kawaguchiko / Fujikyu Highland</span></div>
         </li>
         <li>
           <span class="step-num" style="background:var(--r3)">3</span>
-          <div class="step-body">สังเกตป้ายเขียนว่าไป <strong>Gotemba / Kawaguchiko / Fujikyu Highland</strong></div>
+          <div class="step-body">ขึ้นรถบัส 1号車 แสดง QR Code สดให้คนขับสแกน นั่งที่ 05D, 05C → ถึง Kawaguchiko Sta. 17:10 น.</div>
         </li>
       </ol>
     </div>
@@ -1814,15 +1812,18 @@ details.t-detail .t-inner {
       <div class="route-line">Habitacion Station → Hotel Little Bird Oku-Asakusa</div>
       <div class="meta-pills">
         <span class="pill price">🚌 Bus+TX ~2,000¥</span>
-        <span class="pill time">⏱ ~2h+</span>
-        <span class="pill book">📅 จองล่วงหน้า</span>
+        <span class="pill time">⏱ 11:50 → 13:35 (~1h 45m)</span>
+        <span class="pill" style="background:#dcfce7;color:#15803d;font-weight:700">✅ จองแล้ว (ที่นั่ง 01C, 01D)</span>
       </div>
     </div>
   </div>
 
-  <div class="callout warn">
-    <strong>📅 จอง Bus: <a href="https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction" target="_blank">highwaybus.com ↗</a></strong>
-    ลงสถานี <strong>Busta Shinjuku (Shinjuku Express Bus Terminal)</strong>
+  <div class="callout tip">
+    <strong>✅ จองบัสแล้วเรียบร้อย — รอบ 11:50 → 13:35 (ถึง Busta Shinjuku)</strong>
+    สายชินจูกุ - ฟูจิโกโกะ เที่ยว 1404 (คันที่ 1) · ที่นั่ง <strong>01C (ชาย), 01D (หญิง)</strong><br>
+    <div style="margin-top:10px">
+      <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="book-link" style="background:#e0f2fe;color:#0284c7;padding:5px 12px;border-radius:8px;font-weight:700">📱 เปิดตั๋วออนไลน์ Mobile Ticket (highwaybus.com) ↗</a>
+    </div>
   </div>
 
   <div class="route-card">
@@ -2040,13 +2041,13 @@ details.t-detail .t-inner {
       </tr>
       <tr>
         <td><span class="dot" style="background:var(--r3)"></span>Shizuoka → Kawaguchiko</td>
-        <td><a href="https://sekitori.jp/en/" target="_blank" class="book-link">sekitori.jp ↗</a></td>
-        <td>จองล่วงหน้า 1 เดือน · 2 รอบ</td>
+        <td><a href="https://www.fujiyamaconnect.jp/" target="_blank" class="book-link" style="color:#16a34a;font-weight:700">Fujiyama Connect ↗</a></td>
+        <td>✅ <strong>จองแล้ว</strong> (16 ธ.ค. 15:00 → 17:10 | 1号車 05D, 05C | ห้ามแคปจอ) <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋ว/QR</button></td>
       </tr>
       <tr>
         <td><span class="dot" style="background:var(--r4)"></span>Kawaguchiko → Shinjuku</td>
-        <td><a href="https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction" target="_blank" class="book-link">highwaybus.com ↗</a></td>
-        <td>จองล่วงหน้า</td>
+        <td><a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="book-link" style="color:#16a34a;font-weight:700">highwaybus.com ↗</a></td>
+        <td>✅ <strong>จองแล้ว</strong> (18 ธ.ค. 11:50 → 13:35 | 1号車 01C, 01D) <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="ticket-btn-inline" style="text-decoration:none">📱 เปิดตั๋ว</a></td>
       </tr>
       <tr>
         <td><span class="dot" style="background:var(--r2)"></span>Fujinomiya → Shizuoka</td>
@@ -3003,10 +3004,12 @@ details.t-detail .t-inner {
 
     <div class="sec"><div class="sec-label" data-en="พรุ่งนี้">พรุ่งนี้</div></div>
     <div class="card tip">
-      <div class="tip-title">📋 เตรียมพร้อม</div>
+      <div class="tip-title">📋 เตรียมพร้อม Day 6</div>
       <ul>
-        <li>Check-out เช้า → บัสตรงไป <strong>Kawaguchiko</strong> มี 2 รอบ <strong>07:40 / 14:40</strong></li>
-        <li>จองล่วงหน้าที่ sekitori.jp — ที่นั่งเต็มเร็ว</li>
+        <li>Check-out โรงแรม Hotel Associa ก่อน 11:00 น. (ฝากกระเป๋าไว้ที่โรงแรมก่อนได้)</li>
+        <li><strong>บัสไป Kawaguchiko:</strong> ✅ <strong>จองแล้ว รอบ 15:00 → 17:10 น.</strong> (1号車 ที่นั่ง 05D, 05C)</li>
+        <li>ขึ้นรถที่ <strong>JR Shizuoka Station North Exit ป้าย 12</strong> (ควรถึงป้ายก่อน 14:45 น.)</li>
+        <li>⚠️ <strong>เตรียมเปิดเว็บ Fujiyama Connect แสดง QR สด (ห้ามแคปจอ)</strong> <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูหลักฐานการจอง</button></li>
       </ul>
     </div>
   </section>
@@ -3063,58 +3066,33 @@ details.t-detail .t-inner {
       </div>
     </div>
 
-    <div class="sec"><div class="sec-label" data-en="กลางวัน — หลังถึง Kawaguchiko">กลางวัน — หลังถึง Kawaguchiko</div></div>
+    <div class="sec"><div class="sec-label" data-en="เช้า–กลางวัน (ก่อนเดินทาง)">เช้า–กลางวัน (ก่อนเดินทางที่ Shizuoka)</div></div>
     <div class="card food">
       <div class="card-head">
-        <span class="icon">🍜</span>
+        <span class="icon">🍱</span>
         <div class="info">
-          <div class="name">Hoto Tempura Wakana <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, 'ほうとう・天ぷら わかな');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">ほうとう・天ぷら わかな</span> <span class="jp-icon">📋</span></span></div>
-          <div class="meta">⭐ 4.6 · Hoto เส้นแป้งมิโซะ + เทมปุระ · เมนูขึ้นชื่อ Kawaguchiko</div>
+          <div class="name">มื้อกลางวันในเมือง Shizuoka / ใกล้สถานี</div>
+          <div class="meta">Check-out โรงแรม Hotel Associa ฝากกระเป๋า · ทานมื้อเที่ยงสบายๆ ก่อนขึ้นบัส 15:00 น.</div>
         </div>
       </div>
       <div class="card-body">
-        <a class="map-btn food" href="https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8" target="_blank">📍 Google Maps</a>
-      </div>
-    </div>
-
-    <div class="sec"><div class="sec-label" data-en="บ่าย — ริมทะเลสาบ Kawaguchi">บ่าย — ริมทะเลสาบ Kawaguchi</div></div>
-    <div class="card food">
-      <div class="card-head">
-        <span class="icon">☕</span>
-        <div class="info">
-          <div class="name">CAFETINO MT.FUJI <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, 'CAFETINO MT.FUJI');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">CAFETINO MT.FUJI</span> <span class="jp-icon">📋</span></span></div>
-          <div class="meta">⭐ 4.8 · กาแฟวิวฟูจิ · แวะทันทีหลังเช็คอิน</div>
+        <div style="font-size:0.85rem;color:var(--text-2);line-height:1.6">
+          ตัวเลือกร้านในเมือง: Sawayaka Hamburg หรือ Kashi-no-Ichi ตลาดปลา หรือร้านรอบสถานี Shizuoka (เดินไปป้าย 12 ได้ทันเวลา 14:45 น.)
         </div>
       </div>
-      <div class="card-body">
-        <a class="map-btn food" href="https://www.google.com/maps/place/CAFETINO+MT.FUJI/data=!4m2!3m1!1s0x60195f0e69acef3b:0x7748b4fa9ec63a21" target="_blank">📍 Google Maps</a>
-      </div>
     </div>
 
-
+    <div class="sec"><div class="sec-label" data-en="เย็น (17:10) — ถึง Kawaguchiko & เช็คอิน">เย็น (17:10) — ถึง Kawaguchiko & เช็คอิน</div></div>
     <div class="card place">
       <div class="card-head">
-        <span class="icon">🌲</span>
+        <span class="icon">🏨</span>
         <div class="info">
-          <div class="name">Yagizaki Park <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, '八木崎公園');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">八木崎公園</span> <span class="jp-icon">📋</span></span></div>
-          <div class="meta">⭐ 4.4 · สวนริมทะเลสาบ · ถ่ายรูปฟูจิได้</div>
+          <div class="name">เช็คอิน Habitacion Station Mobile Cottage</div>
+          <div class="meta">เดิน 2–3 นาทีจากสถานีบัส Kawaguchiko · วางกระเป๋าแล้วไปทานมื้อเย็น</div>
         </div>
       </div>
       <div class="card-body">
-        <a class="map-btn place" href="https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415" target="_blank">📍 Google Maps</a>
-      </div>
-    </div>
-
-    <div class="card place">
-      <div class="card-head">
-        <span class="icon">🌅</span>
-        <div class="info">
-          <div class="name">Ubuyagasaki <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, '産屋ヶ崎 (河口湖)');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">産屋ヶ崎 (河口湖)</span> <span class="jp-icon">📋</span></span></div>
-          <div class="meta">จุดชมวิวฟูจิริมทะเลสาบ Kawaguchi</div>
-        </div>
-      </div>
-      <div class="card-body">
-        <a class="map-btn place" href="https://maps.app.goo.gl/c8Z8ANEnTMfWqwjB6" target="_blank">📍 Google Maps</a>
+        <div style="font-size:0.85rem;color:var(--text-2)">⚠️ ช่วง 17:10 น. ฟ้าจะมืดแล้ว จุดชมวิวริมทะเลสาบ (Yagizaki Park, Ubuyagasaki) และคาเฟ่ริมทะเลสาบ ยกยอดไปเช้า Day 7 แสงเช้าจะเห็นวิวฟูจิชัดเจนและสวยที่สุด</div>
       </div>
     </div>
 
@@ -3232,7 +3210,47 @@ details.t-detail .t-inner {
       </div>
     </div>
 
-    <div class="sec"><div class="sec-label" data-en="บ่าย–เย็น — กลับ Kawaguchiko">บ่าย–เย็น — กลับ Kawaguchiko</div></div>
+    <div class="sec"><div class="sec-label" data-en="กลางวัน — อาหารขึ้นชื่อ Kawaguchiko">กลางวัน — อาหารขึ้นชื่อ Kawaguchiko</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">🍜</span>
+        <div class="info">
+          <div class="name">Hoto Tempura Wakana <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, 'ほうとう・天ぷら わかな');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">ほうとう・天ぷら わかな</span> <span class="jp-icon">📋</span></span></div>
+          <div class="meta">⭐ 4.6 · Hoto เส้นแป้งมิโซะ + เทมปุระ · เมนูขึ้นชื่อต้องกิน</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="sec"><div class="sec-label" data-en="บ่าย — ริมทะเลสาบ Kawaguchi">บ่าย — ริมทะเลสาบ Kawaguchi</div></div>
+    <div class="card food">
+      <div class="card-head">
+        <span class="icon">☕</span>
+        <div class="info">
+          <div class="name">CAFETINO MT.FUJI <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, 'CAFETINO MT.FUJI');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">CAFETINO MT.FUJI</span> <span class="jp-icon">📋</span></span></div>
+          <div class="meta">⭐ 4.8 · กาแฟวิวฟูจิริมทะเลสาบ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn food" href="https://www.google.com/maps/place/CAFETINO+MT.FUJI/data=!4m2!3m1!1s0x60195f0e69acef3b:0x7748b4fa9ec63a21" target="_blank">📍 Google Maps</a>
+      </div>
+    </div>
+
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">🌲</span>
+        <div class="info">
+          <div class="name">Yagizaki Park & Ubuyagasaki <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, '八木崎公園');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">八木崎公園</span> <span class="jp-icon">📋</span></span></div>
+          <div class="meta">⭐ 4.4 · สวนริมทะเลสาบและจุดถ่ายรูปฟูจิสะท้อนน้ำ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <a class="map-btn place" href="https://www.google.com/maps/place/Yagizaki+Park/data=!4m2!3m1!1s0x60195fb5fc351951:0x8fe48d241af7b415" target="_blank">📍 Yagizaki Park</a>
+        <a class="map-btn place" href="https://maps.app.goo.gl/c8Z8ANEnTMfWqwjB6" target="_blank">📍 Ubuyagasaki</a>
+      </div>
+    </div>
     <div class="card food">
       <div class="card-head">
         <span class="icon">🍰</span>
@@ -4242,15 +4260,15 @@ details.t-detail .t-inner {
             </tr>
           </thead>
           <tbody>
-            <tr class="direct-row">
+            <tr class="direct-row" style="background:#f0fdf4">
               <td>
                 <div class="dest-title"><strong>Shizuoka → Kawaguchiko</strong></div>
-                <div style="font-size:0.75rem;color:var(--text-2)">Highway Bus (ตรง)</div>
+                <div style="font-size:0.75rem;color:var(--text-2)">Highway Bus (รอบ 15:00 → 17:10)</div>
               </td>
-              <td>ล่วงหน้า 1 เดือน</td>
-              <td><a href="https://sekitori.jp/en/" target="_blank" class="book-link" style="font-size:0.8rem">sekitori.jp ↗</a></td>
+              <td><span class="tag tag-free">✅ จองแล้ว</span></td>
+              <td><button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋วบัส / QR</button></td>
               <td style="text-align:center">
-                <span class="transfer-badge" style="background:#fee2e2;color:#991b1b" data-en="High (2 trips/day)">🔴 สำคัญมาก (มี 2 รอบ/วัน)</span>
+                <span class="transfer-badge" style="background:#dcfce7;color:#15803d;font-weight:700">✅ จองแล้ว (1号車 05D, 05C)</span>
               </td>
             </tr>
             <tr>
@@ -4264,15 +4282,15 @@ details.t-detail .t-inner {
                 <span class="transfer-badge" style="background:#fef3c7;color:#92400e" data-en="Medium (08:10)">🟡 ปานกลาง (รอบ 08:10)</span>
               </td>
             </tr>
-            <tr>
+            <tr style="background:#f0fdf4">
               <td>
                 <div class="dest-title"><strong>Kawaguchiko → Shinjuku</strong></div>
-                <div style="font-size:0.75rem;color:var(--text-2)">Highway Bus สู่ Busta Shinjuku</div>
+                <div style="font-size:0.75rem;color:var(--text-2)">Highway Bus สู่ Busta Shinjuku (รอบ 11:50 → 13:35)</div>
               </td>
-              <td>ล่วงหน้า 1 เดือน</td>
-              <td><a href="https://www.highwaybus.com/gp/inbound/inbPlanList?mode=search#direction" target="_blank" class="book-link" style="font-size:0.8rem">highwaybus.com ↗</a></td>
+              <td><span class="tag tag-free">✅ จองแล้ว</span></td>
+              <td><a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="ticket-btn-inline" style="text-decoration:none">📱 เปิดตั๋วออนไลน์ ↗</a></td>
               <td style="text-align:center">
-                <span class="transfer-badge" style="background:#fef3c7;color:#92400e" data-en="Medium (Weekends)">🟡 ปานกลาง (วันหยุดคนเยอะ)</span>
+                <span class="transfer-badge" style="background:#dcfce7;color:#15803d;font-weight:700">✅ จองแล้ว (1号車 01C, 01D)</span>
               </td>
             </tr>
             <tr>

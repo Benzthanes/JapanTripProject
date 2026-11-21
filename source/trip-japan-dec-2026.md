@@ -491,12 +491,11 @@
 
 ### 🍽️ อาหาร Day 6
 
-| | ร้าน | ★ | Google Maps |
-|---|---|---|---|
-| 🍜 **กลางวัน** | **Hoto Tempura Wakana** — Hoto เส้นแป้งมิโซะ + เทมปุระ | 4.6★ | [Maps](https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8) |
-| ☕ **บ่าย** | **CAFETINO MT.FUJI** — กาแฟวิว Fuji ริมทะเลสาบ | 4.8★ | [Maps](https://www.google.com/maps/place/CAFETINO+MT.FUJI/data=!4m2!3m1!1s0x60195f0e69acef3b:0x7748b4fa9ec63a21) |
-| 🍱 **เย็น** | **Amano Japanese Restaurant** — ญี่ปุ่น รีวิวดีมาก | 4.8★ | [Maps](https://www.google.com/maps/place/割烹天野/data=!4m2!3m1!1s0x60196168c0b980c7:0x7b024ba20cc67d2f) |
-| 🍶 **เย็น (สำรอง)** | **Akasaka** — อิซาคายะ บรรยากาศดี | 4.8★ | [Maps](https://www.google.com/maps/place/海鮮料理赤坂/data=!4m2!3m1!1s0x6019609bb23b896f:0xe4213ccf70294f67) |
+| มื้อ | ร้าน | ★ | Google Maps | หมายเหตุ |
+|---|---|---|---|---|
+| 🍱 **กลางวัน** | **ร้านในเมือง Shizuoka** (ก่อนขึ้นบัส 15:00) | — | [Shizuoka Sta.](https://maps.app.goo.gl/uXj9N385jC1Z1M2M7) | Check-out ฝากกระเป๋า ทานมื้อเที่ยงที่ Shizuoka สบายๆ ก่อนขึ้นรถ |
+| 🍱 **เย็น** | **Amano Japanese Restaurant** — ญี่ปุ่น รีวิวดีมาก | 4.8★ | [Maps](https://www.google.com/maps/place/割烹天野/data=!4m2!3m1!1s0x60196168c0b980c7:0x7b024ba20cc67d2f) | ใกล้ที่พัก Habitacion หลังเช็คอิน 17:15 น. |
+| 🍶 **เย็น (สำรอง)** | **Akasaka** — อิซาคายะ บรรยากาศดี | 4.8★ | [Maps](https://www.google.com/maps/place/海鮮料理赤坂/data=!4m2!3m1!1s0x6019609bb23b896f:0xe4213ccf70294f67) | ตัวเลือกสำรองใกล้สถานี Kawaguchiko |
 
 ---
 
@@ -530,11 +529,13 @@
 
 ### 🍽️ อาหาร Day 7
 
-| | ร้าน | ★ | Google Maps |
-|---|---|---|---|
-| 🥩 **กลางวัน** | **鉄焼 (Tetsuyaki)** — เทปันยากิ local | 4.7★ | [Maps](https://www.google.com/maps/place/鉄焼Tetsuyaki/data=!4m2!3m1!1s0x60195e29daa0ce4b:0x58630a1c66491ce1) |
-| 🍰 **บ่าย** | **Patisserie Kimuraya** — ขนมหวาน ดาวสูงสุดในย่าน | 4.9★ | [Maps](https://www.google.com/maps/place/ラ・ヴェルデュール木村屋/data=!4m2!3m1!1s0x60196078d8d009bb:0x20929fe8eee95200) |
-| 🍽️ **เย็น (หลัง Illumination)** | **[toe (トー)](https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee)** — ร้านเย็น บรรยากาศดี เหมาะหลัง 20:00 | 4.7★ | [Maps](https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee) |
+| | ร้าน | ★ | Google Maps | หมายเหตุ |
+|---|---|---|---|---|
+| 🍜 **กลางวัน (แนะนำ 1)** | **Hoto Tempura Wakana** — Hoto เส้นแป้งมิโซะ + เทมปุระ | 4.6★ | [Maps](https://www.google.com/maps/place/ほうとう天ぷら+和花/data=!4m2!3m1!1s0x60195fd822740ccb:0x440abcfe745d2dd8) | อาหารขึ้นชื่อ Kawaguchiko ต้องลอง |
+| 🥩 **กลางวัน (แนะนำ 2)** | **鉄焼 (Tetsuyaki)** — เทปันยากิ local | 4.7★ | [Maps](https://www.google.com/maps/place/鉄焼Tetsuyaki/data=!4m2!3m1!1s0x60195e29daa0ce4b:0x58630a1c66491ce1) | เทปันยากิเนื้อ/หมู |
+| ☕ **บ่าย** | **CAFETINO MT.FUJI** — กาแฟวิว Fuji ริมทะเลสาบ | 4.8★ | [Maps](https://www.google.com/maps/place/CAFETINO+MT.FUJI/data=!4m2!3m1!1s0x60195f0e69acef3b:0x7748b4fa9ec63a21) | คาเฟ่ริมทะเลสาบ |
+| 🍰 **บ่าย (ขนม)** | **Patisserie Kimuraya** — ขนมหวาน ดาวสูงสุดในย่าน | 4.9★ | [Maps](https://www.google.com/maps/place/ラ・ヴェルデュール木村屋/data=!4m2!3m1!1s0x60196078d8d009bb:0x20929fe8eee95200) | ขนมหวานระหว่างทางกลับ |
+| 🍽️ **เย็น (หลัง Illumination)** | **[toe (トー)](https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee)** — ร้านเย็น บรรยากาศดี เหมาะหลัง 20:00 | 4.7★ | [Maps](https://www.google.com/maps/place/toe（トー）/data=!4m2!3m1!1s0x6019613f00ab930f:0xc0a1e1849943b4ee) | ดินเนอร์บรรยากาศดี |
 
 ### 🔖 ตัวเลือกเพิ่มเติม — Kawaguchiko Day 6–7 (จาก wishlist)
 
