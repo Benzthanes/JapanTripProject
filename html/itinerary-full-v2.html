@@ -281,6 +281,26 @@ main {
   background: var(--hotel);
   color: #ffffff;
 }
+.card.hotel.ticket-card.bus {
+  border-left-color: #0284c7;
+}
+.card.hotel.ticket-card.bus .name {
+  color: #0369a1;
+}
+.card.hotel.ticket-card.bus:hover {
+  border-left-color: #0369a1;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.18);
+}
+.card.hotel.ticket-card.insurance {
+  border-left-color: #dc2626;
+}
+.card.hotel.ticket-card.insurance .name {
+  color: #b91c1c;
+}
+.card.hotel.ticket-card.insurance:hover {
+  border-left-color: #b91c1c;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.18);
+}
 .ticket-btn-inline {
   display: inline-flex;
   align-items: center;
@@ -1210,7 +1230,7 @@ details.t-detail .t-inner {
     border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow);
   }
   .ov-table td, .book-table td {
-    display: flex; align-items: flex-start; gap: 10px;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
     padding: 6px 12px; border: 0; font-size: 0.84rem;
   }
   .ov-table td::before, .book-table td::before {
@@ -1257,7 +1277,7 @@ details.t-detail .t-inner {
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  .hotel-right-badges {
+  .card.hotel .hotel-right-badges {
     width: 100%;
     justify-content: flex-start;
     margin-top: 6px;
@@ -1473,14 +1493,14 @@ details.t-detail .t-inner {
         <td><span class="dot" style="background:var(--r3)"></span>Shizuoka → Kawaguchiko</td>
         <td>Highway Bus</td>
         <td><span class="price-badge">3,000¥</span></td>
-        <td><span class="tag tag-free" style="display:inline-block">✅ จองแล้ว 15:00</span> <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋ว/QR</button></td>
+        <td><div style="display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap"><span class="tag tag-free" style="display:inline-block">✅ จองแล้ว 15:00</span> <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋ว/QR</button></div></td>
       </tr>
       <tr>
         <td><strong>18 ธ.ค.</strong></td>
         <td><span class="dot" style="background:var(--r4)"></span>Kawaguchiko → Oku-Asakusa</td>
         <td>Bus + TX Line</td>
         <td><span class="price-badge">~2,000¥</span></td>
-        <td><span class="tag tag-free" style="display:inline-block">✅ จองแล้ว 11:50</span> <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="book-link" style="color:#0284c7;font-weight:700">📱 ตั๋วออนไลน์ ↗</a></td>
+        <td><div style="display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap"><span class="tag tag-free" style="display:inline-block">✅ จองแล้ว 11:50</span> <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="book-link" style="color:#0284c7;font-weight:700">📱 ตั๋วออนไลน์ ↗</a></div></td>
       </tr>
       <tr>
         <td><strong>21 ธ.ค.</strong></td>
@@ -1763,9 +1783,6 @@ details.t-detail .t-inner {
         <h3>Highway Bus — ตรงไม่ต้องเปลี่ยน</h3>
         <div class="sub">Shizuoka Station Bus Terminal (North Exit ป้าย 12) → Kawaguchiko Sta.</div>
       </div>
-      <div class="hotel-right-badges" data-no-translate>
-        <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋วบัส / QR</button>
-      </div>
     </div>
     <div class="route-card-body">
       <div class="callout tip">
@@ -1774,8 +1791,9 @@ details.t-detail .t-inner {
         <strong>เลขจอง:</strong> 予約番号 <strong>3404674</strong> · 注文番号 AR0000187216<br>
         <strong>⚠️ วิธีแสดงตั๋ว:</strong> ต้องล็อกอินเปิด QR Code สดผ่านเว็บ <a href="https://www.fujiyamaconnect.jp/" target="_blank"><strong>Fujiyama Connect ↗</strong></a> ให้คนขับสแกน<br>
         <strong style="color:#b91c1c">🚫 ห้ามใช้รูปแคปหน้าจอเด็ดขาด (Screenshots not allowed)</strong> · รหัสผ่านเว็บอยู่ใน Note LINE ของ Un
-        <div style="margin-top:10px">
-          <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูหลักฐานการจอง / QR Code</button>
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);" style="margin-left:0">📄 ดูหลักฐานการจอง / QR Code</button>
+          <a class="ticket-btn-inline" href="https://www.fujiyamaconnect.jp/" target="_blank" style="margin-left:0;text-decoration:none">🌐 เปิดเว็บ Fujiyama Connect ↗</a>
         </div>
       </div>
 
@@ -3042,9 +3060,6 @@ details.t-detail .t-inner {
           <div class="name">บัส Shizuoka → Kawaguchiko (ตรง) <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, '静岡駅 → 河口湖駅 (高速バス)');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">静岡駅 → 河口湖駅 (高速バス)</span> <span class="jp-icon">📋</span></span></div>
           <div class="meta">3,000¥ · ~2h10m · ไม่ต้องเปลี่ยน · รอบ 15:00 → 17:10</div>
         </div>
-        <div class="hotel-right-badges" data-no-translate>
-          <button class="ticket-btn-inline" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(6);">📄 ดูตั๋วบัส / QR</button>
-        </div>
       </div>
       <div class="card-body">
         <div class="tags">
@@ -3052,7 +3067,11 @@ details.t-detail .t-inner {
           <span class="tag tag-price">1号車 ที่นั่ง 05D, 05C</span>
           <span class="tag tag-must">⚠️ สแกน QR สดเว็บ Fujiyama Connect (ห้ามแคปจอ)</span>
         </div>
-        <details class="t-detail">
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);" style="margin-left:0">📄 ดูรูปตั๋ว / QR Code</button>
+          <a class="ticket-btn-inline" href="https://www.fujiyamaconnect.jp/" target="_blank" style="margin-left:0;text-decoration:none">🌐 เปิดเว็บ Fujiyama Connect ↗</a>
+        </div>
+        <details class="t-detail" style="margin-top:10px">
           <summary>ดูขั้นตอนเดินทาง</summary>
           <div class="t-inner">
             <div class="t-sub">จากโรงแรม Hotel Associa → สถานีบัส</div>
@@ -3320,16 +3339,16 @@ details.t-detail .t-inner {
           <div class="name">บัส Kawaguchiko → Busta Shinjuku → TX → Oku-Asakusa <span class="jp-badge" onclick="event.preventDefault(); event.stopPropagation(); copyJpText(this, '河口湖 → バスタ新宿 → 浅草');" title="คลิกเพื่อคัดลอกภาษาญี่ปุ่น"><span class="jp-txt">河口湖 → バスタ新宿 → 浅草</span> <span class="jp-icon">📋</span></span></div>
           <div class="meta">~2,200¥ บัส · ~2h+ · รอบ 11:50 → 13:35</div>
         </div>
-        <div class="hotel-right-badges" data-no-translate>
-          <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="ticket-btn-inline" style="text-decoration:none">📱 เปิดตั๋วออนไลน์ ↗</a>
-        </div>
       </div>
+      <div class="card-body">
         <div class="tags">
           <span class="tag tag-free">✅ จองแล้ว รอบ 11:50 → 13:35</span>
           <span class="tag tag-price">1号車 ที่นั่ง 01C, 01D</span>
-          <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="tag tag-book" style="text-decoration:none;font-weight:700">📱 เปิดตั๋วออนไลน์ ↗</a>
         </div>
-        <details class="t-detail">
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="ticket-btn-inline" style="margin-left:0;text-decoration:none">📱 เปิดตั๋วออนไลน์ Mobile Ticket (highwaybus.com) ↗</a>
+        </div>
+        <details class="t-detail" style="margin-top:10px">
           <summary>ดูขั้นตอนเดินทาง</summary>
           <div class="t-inner">
             <div class="t-sub">Part 1 — จากโรงแรม Habitacion → สถานีบัส Kawaguchiko</div>
@@ -4243,10 +4262,10 @@ details.t-detail .t-inner {
     <div class="card hotel ticket-card" onclick="openHotelTicket(5)" role="button" tabindex="0" title="คลิกเพื่อดูรูปใบจอง"><span class="icon">🏨</span><div style="flex:1;min-width:0"><div class="name">18–20 ธ.ค. · Hotel Little Bird, Oku-Asakusa</div><div class="meta">3 คืนสุดท้ายก่อนบินกลับ · (Booking.com)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">40,000 ¥ (3 คืน)</span><span class="ticket-badge">📄 ดูใบจอง</span></div></div>
 
     <div class="sec"><div class="sec-label" data-en="ตั๋วเดินทาง & ประกันภัย">ตั๋วเดินทาง & ประกันภัยที่จองแล้ว</div></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(6)" role="button" tabindex="0" title="คลิกเพื่อดูรูปตั๋วบัส / QR"><span class="icon">🚌</span><div style="flex:1;min-width:0"><div class="name">16 ธ.ค. · Highway Bus: Shizuoka → Kawaguchiko (15:00)</div><div class="meta">1号車 ที่นั่ง 05D, 05C · (Fujiyama Connect)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">3,000 ¥/คน</span><span class="ticket-badge" style="background:#0284c7;color:#fff">📄 ดูตั๋ว/QR</span></div></div>
-    <a class="card hotel ticket-card" href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" title="คลิกเพื่อเปิดตั๋วออนไลน์" style="text-decoration:none"><span class="icon">🚌</span><div style="flex:1;min-width:0"><div class="name">18 ธ.ค. · Highway Bus: Kawaguchiko → Shinjuku (11:50)</div><div class="meta">1号車 ที่นั่ง 01C, 01D · (highwaybus.com)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">~2,200 ¥</span><span class="ticket-badge" style="background:#0284c7;color:#fff">📱 ตั๋วออนไลน์ ↗</span></div></a>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(7)" role="button" tabindex="0" title="คลิกเพื่อดูกรมธรรม์"><span class="icon">🛡️</span><div style="flex:1;min-width:0"><div class="name">ประกัน Sompo TravelJoy — เบนซ์ (Mr. Thanes)</div><div class="meta">คุ้มครอง 10–22 ธ.ค. 2026 · Standard Plus · Ref: B120261100198950</div></div><div class="hotel-right-badges" data-no-translate><span class="ticket-badge" style="background:#dc2626;color:#fff">📄 ดูกรมธรรม์</span></div></div>
-    <div class="card hotel ticket-card" onclick="openHotelTicket(8)" role="button" tabindex="0" title="คลิกเพื่อดูกรมธรรม์"><span class="icon">🛡️</span><div style="flex:1;min-width:0"><div class="name">ประกัน Sompo TravelJoy — อัน (Miss Mananya)</div><div class="meta">คุ้มครอง 10–22 ธ.ค. 2026 · Standard Plus · Ref: B120261100198950</div></div><div class="hotel-right-badges" data-no-translate><span class="ticket-badge" style="background:#dc2626;color:#fff">📄 ดูกรมธรรม์</span></div></div>
+    <div class="card hotel ticket-card bus" onclick="openHotelTicket(6)" role="button" tabindex="0" title="คลิกเพื่อดูรูปตั๋วบัส / QR"><span class="icon">🚌</span><div style="flex:1;min-width:0"><div class="name">16 ธ.ค. · Highway Bus: Shizuoka → Kawaguchiko (15:00)</div><div class="meta">1号車 ที่นั่ง 05D, 05C · (Fujiyama Connect)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">3,000 ¥/คน</span><span class="ticket-badge" style="background:#0284c7;color:#fff">📄 ดูตั๋ว/QR</span></div></div>
+    <a class="card hotel ticket-card bus" href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" title="คลิกเพื่อเปิดตั๋วออนไลน์" style="text-decoration:none"><span class="icon">🚌</span><div style="flex:1;min-width:0"><div class="name">18 ธ.ค. · Highway Bus: Kawaguchiko → Shinjuku (11:50)</div><div class="meta">1号車 ที่นั่ง 01C, 01D · (highwaybus.com)</div></div><div class="hotel-right-badges" data-no-translate><span class="hotel-price-badge">~2,200 ¥</span><span class="ticket-badge" style="background:#0284c7;color:#fff">📱 ตั๋วออนไลน์ ↗</span></div></a>
+    <div class="card hotel ticket-card insurance" onclick="openHotelTicket(7)" role="button" tabindex="0" title="คลิกเพื่อดูกรมธรรม์"><span class="icon">🛡️</span><div style="flex:1;min-width:0"><div class="name">ประกัน Sompo TravelJoy — เบนซ์ (Mr. Thanes)</div><div class="meta">คุ้มครอง 10–22 ธ.ค. 2026 · Standard Plus · Ref: B120261100198950</div></div><div class="hotel-right-badges" data-no-translate><span class="ticket-badge" style="background:#dc2626;color:#fff">📄 ดูกรมธรรม์</span></div></div>
+    <div class="card hotel ticket-card insurance" onclick="openHotelTicket(8)" role="button" tabindex="0" title="คลิกเพื่อดูกรมธรรม์"><span class="icon">🛡️</span><div style="flex:1;min-width:0"><div class="name">ประกัน Sompo TravelJoy — อัน (Miss Mananya)</div><div class="meta">คุ้มครอง 10–22 ธ.ค. 2026 · Standard Plus · Ref: B120261100198950</div></div><div class="hotel-right-badges" data-no-translate><span class="ticket-badge" style="background:#dc2626;color:#fff">📄 ดูกรมธรรม์</span></div></div>
     <div class="card tip">
       <div class="tip-title">📅 จองก่อน = เที่ยวง่ายขึ้น</div>
       <div class="dest-table-wrap" style="margin-top:10px">
@@ -4265,8 +4284,11 @@ details.t-detail .t-inner {
                 <div class="dest-title"><strong>Shizuoka → Kawaguchiko</strong></div>
                 <div style="font-size:0.75rem;color:var(--text-2)">Highway Bus (รอบ 15:00 → 17:10)</div>
               </td>
-              <td><span class="tag tag-free">✅ จองแล้ว</span></td>
-              <td><button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);">📄 ดูตั๋วบัส / QR</button></td>
+              <td>ล่วงหน้า 1 เดือน</td>
+              <td>
+                <a href="https://www.fujiyamaconnect.jp/" target="_blank" class="book-link" style="font-size:0.8rem">Fujiyama Connect ↗</a><br>
+                <button class="ticket-btn-inline" type="button" onclick="openHotelTicket(6);" style="margin-top:4px">📄 ดูตั๋วบัส / QR</button>
+              </td>
               <td style="text-align:center">
                 <span class="transfer-badge" style="background:#dcfce7;color:#15803d;font-weight:700">✅ จองแล้ว (1号車 05D, 05C)</span>
               </td>
@@ -4287,8 +4309,11 @@ details.t-detail .t-inner {
                 <div class="dest-title"><strong>Kawaguchiko → Shinjuku</strong></div>
                 <div style="font-size:0.75rem;color:var(--text-2)">Highway Bus สู่ Busta Shinjuku (รอบ 11:50 → 13:35)</div>
               </td>
-              <td><span class="tag tag-free">✅ จองแล้ว</span></td>
-              <td><a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="ticket-btn-inline" style="text-decoration:none">📱 เปิดตั๋วออนไลน์ ↗</a></td>
+              <td>ล่วงหน้า 1 เดือน</td>
+              <td>
+                <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="book-link" style="font-size:0.8rem;color:#0284c7;font-weight:700">highwaybus.com ↗</a><br>
+                <a href="https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile" target="_blank" class="ticket-btn-inline" style="text-decoration:none;font-size:0.75rem;margin-top:4px">📱 เปิดตั๋วออนไลน์ ↗</a>
+              </td>
               <td style="text-align:center">
                 <span class="transfer-badge" style="background:#dcfce7;color:#15803d;font-weight:700">✅ จองแล้ว (1号車 01C, 01D)</span>
               </td>
