@@ -5,7 +5,7 @@
 | วัน | เส้นทาง | วิธี | ราคา (ต่อคน) | จองที่ |
 |---|---|---|---|---|
 | 10 ธ.ค. | Haneda → Asakusabashi | Keikyu + Toei Asakusa | ~610¥ | ไม่ต้องจอง (Suica) |
-| 12 ธ.ค. | Tokyo → Fujinomiya | Highway Bus | 2,400–2,750¥ | shizuokabus.co.jp (จองล่วงหน้า 1 เดือน) |
+| 12 ธ.ค. | Tokyo → Fujinomiya | JR Tokaido + Minobu | ~2,640¥ | ไม่ต้องจอง (Suica) |
 | 14 ธ.ค. | Fujinomiya → Shizuoka | JR Minobu + Tokaido | ~1,400¥ | Suica (ไม่ต้องจอง) |
 | 16 ธ.ค. | Shizuoka → Kawaguchiko | Highway Bus | 3,000¥ | ✅ **จองแล้ว** (15:00 → 17:10) · [Fujiyama Connect](https://www.fujiyamaconnect.jp/) |
 | 18 ธ.ค. | Kawaguchiko → Oku-Asakusa | Bus + TX Line | ~2,000¥ | ✅ **จองแล้ว** (11:50 → 13:35) · [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile) |
@@ -91,33 +91,20 @@
 
 ## เส้นทางที่ 1 — Tokyo → Fujinomiya | 12 ธ.ค.
 
-> 💡 มีรถรับส่งโรงแรมถึง Akihabara เช้าจนถึง 10 โมง
+> 💡 มีรถรับส่งโรงแรมถึง Akihabara เช้าจนถึง 10 โมง — หรือแตะ Suica นั่ง JR จากหน้าโรงแรมได้เลย
 
----
+### 🚂 รถไฟ JR Tokaido Line → Fuji → Minobu Line (~2,640¥ / ~2:30 ชม.)
+*จ่าย Suica แตะผ่านได้เลย ไม่ต้องจองล่วงหน้า*
 
-### 🚌 ทาง 1 — บัส (แนะนำ) 2,400–2,750¥ / 2:30 ชม.
-
-จอง: **[shizuokabus.co.jp](https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare)** — จองล่วงหน้า 1 เดือน | รอบแรก ~08:10 | ลงสถานี **Fujinomiya Sta.**
-
-**จากโรงแรม Toyoko Inn Asakusabashi ไป Tokyo Station**
-
-1. ออกจากโรงแรมเลี้ยวซ้าย ถนน Edo-dori → เจอสี่แยกใหญ่ (มีรางรถไฟยกระดับด้านบน) → ถึงใต้ทางด่วนเลี้ยวขวา → เข้า **JR Asakusabashi (East Exit / Hagashiguchi)**
-2. แตะบัตร → หา **Platform 1 (Chou Sobu Line สีเหลือง)** → ไป Akihabara/Shinjuku/Mitaka (ไม่ใช่สาย Asakusa Line สีชมพูใต้ดิน) → นั่ง 1 สถานี → ลง **Akihabara**
-3. มองป้ายสีเขียว (Yamanote) หรือสีฟ้า (Keihin-Tohoku) → ชานชาลา 4 → ขึ้นขบวนไหนก็ได้ที่ไป **Tokyo/Ueno** → นั่ง 2 สถานี (ผ่าน Kanda) → ลง **Tokyo Sta.**
-4. มองป้าย **Yaesu South Exit** → เดินตามลูกศรออกประตูกระจกใหญ่ → เจออาคารสถานีบัส
-5. หาตู้ขายตั๋วอัตโนมัติ (ถ้ายังไม่ซื้อ) → เช็คหน้าจอประกาศว่ารถเทียบช่องไหน (ปกติ 8, 9) → ขึ้นรถ **Fujikyu** ป้ายข้างรถเขียนว่า Fujikyu (ถ้าไม่มีป้าย ถามคนตรวจตั๋วก่อนขึ้น)
-
----
-
-### 🚂 ทาง 2 — รถไฟ (สำรอง) จ่ายผ่าน Suica
-
-1. เส้นทาง Asakusabashi → Akihabara → Tokyo Sta. เหมือนทาง 1 ข้อ 1–3
-2. ที่ Tokyo Sta. ชั้น 2 → มองป้ายสีส้ม **Tokaido Line** (เลข 7–10) → หาชานชาลา 9–10 (คาดว่า — ดูป้ายที่ชานชาลาด้วย)
-3. ขึ้นขบวนไป **Atami / Numazu** หรือ **Shizuoka / Shimada** — ดูป้ายข้างตัวรถ + ดูตารางที่ชานชาลา (ดูเวลา, ประเภทรถ, Destination) รถไฟมี 2 แบบ Local และ Rapid จุดสังเกต: ตัวรถอาจมีสีส้มตัดเขียว
-   - **Shizuoka/Shimada** → ลง **Fuji Sta.** ได้เลย
-   - **Atami** → ลงแล้วมองหาชานชาลาที่เขียนว่าไป **Shizuoka / Shimada / Hamamatsu** → เปลี่ยน Tokaido Line (ชานชาลาตรงข้าม) ขบวนเป็น **JR Central สีส้มขาว**
-   - **Numazu** → ลงแล้วเปลี่ยน มักจะจอดอยู่ตรงข้าม หรือชานชาลาถัดไป ไป Shizuoka/Shimada
-4. ถึง **Fuji Sta.** → มองป้ายสีแดง **Minobu Line** หรือป้ายชานชาลา Fujinomiya/Kofu → ขึ้นบันไดเลื่อนข้ามไปชานชาลา 1–2 (ตู้ขาว-ส้ม รถมีทุก 20–30 นาที) → ลง **Fujinomiya Sta.**
+1. ออกจากโรงแรมเลี้ยวซ้าย ถนน Edo-dori เข้า **JR Asakusabashi (East Exit)**
+2. แตะบัตร Suica เข้า **Platform 1 (Chuo-Sobu Line สีเหลือง)** → ไป Akihabara/Shinjuku → นั่ง 1 สถานี → ลง **Akihabara**
+3. ที่ Akihabara มองป้ายสีเขียว (Yamanote) หรือสีฟ้า (Keihin-Tohoku) ชานชาลา 4 → นั่ง 2 สถานี (ผ่าน Kanda) → ลง **Tokyo Sta.**
+4. ที่ Tokyo Sta. ชั้น 2 → มองป้ายสีส้ม **Tokaido Line** (เลข 7–10) → ขึ้นชานชาลา 9–10
+5. ตรวจดูป้ายปลายทางที่ขบวนรถ (สาย JR Tokaido Line ตู้สีส้มตัดเขียว):
+   - **Shizuoka / Shimada** → ⭐ แนะนำสุด นั่งยาวรวดเดียวไปลง **Fuji Sta.** ได้เลย ไม่ต้องเปลี่ยนขบวน
+   - **Atami** → ลงสถานี Atami แล้วข้ามชานชาลาตรงข้าม ต่อรถไฟ JR Central (ตู้สีส้มขาว) ไปลง **Fuji Sta.**
+   - **Numazu** → ลงสถานี Numazu แล้วเปลี่ยนขบวนไป Shizuoka เพื่อไปลง **Fuji Sta.**
+6. ถึง **Fuji Sta.** → มองป้ายสีแดง **Minobu Line** หรือป้ายชานชาลา Fujinomiya/Kofu → ขึ้นบันไดเลื่อนข้ามสะพานลอยไปชานชาลา 1–2 (ตู้ขาว-ส้ม รถมีทุก 20–30 นาที) → ลง **Fujinomiya Sta.** (เดิน 200 ม. ถึงโรงแรม Kuretake Inn)
 
 ---
 
@@ -213,8 +200,8 @@
 
 | เส้นทาง | เว็บจอง | หมายเหตุ |
 |---|---|---|
-| Tokyo → Fujinomiya (บัส) | [shizuokabus.co.jp](https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare) | จองล่วงหน้า 1 เดือน |
+| Tokyo → Fujinomiya (รถไฟ JR) | Suica (ไม่ต้องจอง) | แตะบัตรได้เลย (Chuo-Sobu → Tokaido → Minobu) |
 | Shizuoka → Kawaguchiko | [fujiyamaconnect.jp](https://www.fujiyamaconnect.jp/) | ✅ **จองแล้ว** (16 ธ.ค. 15:00 → 17:10 \| 1号車 05D, 05C \| ห้ามแคปจอ) |
 | Kawaguchiko → Shinjuku | [highwaybus.com](https://www.highwaybus.com/gp/inbound/inbWebticketPrint?eb7742a0e2852121948e209bffe236dc&lang=TH&ticket_type=mobile) | ✅ **จองแล้ว** (18 ธ.ค. 11:50 → 13:35 \| 1号車 01C, 01D) |
-| Fujinomiya → Shizuoka | Suica (ไม่ต้องจอง) | ซื้อที่ตู้สถานีได้ |
+| Fujinomiya → Shizuoka | Suica (ไม่ต้องจอง) | ซื้อที่ตู้สถานีหรือแตะบัตรได้ |
 | Haneda ↔ Asakusabashi | Suica (ไม่ต้องจอง) | แตะบัตรได้เลย |

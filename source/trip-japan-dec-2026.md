@@ -279,33 +279,22 @@
 
 ## Day 2 — 12 ธ.ค. (ส) เดินทางไป Fujinomiya 🗻
 
-### การเดินทาง
+### การเดินทาง (รถไฟ JR ล้วน · แตะ Suica)
 
-> 💡 มีรถรับส่งโรงแรมถึง Akihabara เช้าจนถึง 10 โมง — ช่วยให้เหนื่อยน้อยลง
+> 💡 มีรถรับส่งโรงแรมถึง Akihabara เช้าจนถึง 10 โมง — หรือแตะ Suica นั่ง JR จากหน้าโรงแรมได้เลย
 
----
+#### 🚂 รถไฟ JR Tokaido Line → Fuji → Minobu Line (~2,640¥ / ~2:30 ชม.)
+*จ่าย Suica แตะผ่านได้เลย ไม่ต้องจองล่วงหน้า*
 
-#### 🚌 ทาง 1 — บัส (แนะนำ) ~2,000¥ / 2:30 ชม.
-
-จอง: [shizuokabus.co.jp](https://www.shizuokabus.co.jp/foreigner/en/express/fujifujinomiya.html#fare) — จองล่วงหน้า 1 เดือน | รอบแรก ~08:10 | ลงสถานี **Fujinomiya Sta.**
-
-1. ออกจากโรงแรมเลี้ยวซ้าย ถนน Edo-dori → เจอสี่แยกใหญ่ (มีรางรถไฟยกระดับ) → ถึงใต้ทางด่วนเลี้ยวขวา → เข้า **JR Asakusabashi (East Exit / Hagashiguchi)**
-2. แตะบัตร → หา Platform 1 **(Chou Sobu Line สีเหลือง)** → ไป Akihabara/Shinjuku/Mitaka (ไม่ใช่สาย Asakusa Line สีชมพู) → นั่ง 1 สถานี → ลง Akihabara
-3. มองป้ายสีเขียว (Yamanote) หรือสีฟ้า (Keihin-Tohoku) → ชานชาลา 4 → ขึ้นขบวนไป Tokyo/Ueno → นั่ง 2 สถานี (ผ่าน Kanda) → ลง **Tokyo Sta.**
-4. มองป้าย **Yaesu South Exit** → ออกประตูกระจกใหญ่ → เจออาคารสถานีบัส
-5. หาตู้ขายตั๋ว (ถ้ายังไม่ซื้อ) → เช็คหน้าจอว่ารถเทียบช่องไหน (ปกติ 8, 9) → ขึ้นรถ Fujikyu ป้ายข้างรถเขียนว่า Fujikyu (ถ้าไม่มีป้าย ถามคนตรวจตั๋วก่อนขึ้น)
-
----
-
-#### 🚂 ทาง 2 — รถไฟ (สำรอง) จ่ายผ่าน Suica
-
-1. เส้นทาง Asakusabashi → Akihabara → Tokyo Sta. เหมือนทาง 1 ข้อ 1–3
-2. ที่ Tokyo Sta. ชั้น 2 → มองป้ายสีส้ม **Tokaido Line** (เลข 7–10) → หาชานชาลา 9–10
-3. ขึ้นขบวนไป **Atami / Numazu** หรือ **Shizuoka / Shimada** (ดูป้ายข้างตัวรถ)
-   - Shizuoka/Shimada → ลง **Fuji Sta.** ได้เลย
-   - Atami → ลงแล้วเปลี่ยน Tokaido Line ไป Shizuoka/Shimada (ชานชาลาตรงข้าม) ขบวนเป็น **JR Central สีส้มขาว**
-   - Numazu → ลงแล้วเปลี่ยนชานชาลาถัดไปไป Shizuoka/Shimada
-4. ถึง **Fuji Sta.** → มองป้ายสีแดง **Minobu Line** หรือป้ายชานชาลา Fujinomiya/Kofu → ขึ้นบันไดเลื่อนข้ามไปชานชาลา 1–2 (ตู้ขาว-ส้ม รถมีทุก 20–30 นาที) → ลง **Fujinomiya Sta.**
+1. ออกจากโรงแรมเลี้ยวซ้าย ถนน Edo-dori → เข้า **JR Asakusabashi (East Exit)**
+2. แตะบัตร Suica → หา Platform 1 **(Chuo-Sobu Line สีเหลือง)** → ไป Akihabara/Shinjuku → นั่ง 1 สถานี → ลง **Akihabara**
+3. ที่ Akihabara มองป้ายสีเขียว (Yamanote) หรือสีฟ้า (Keihin-Tohoku) ชานชาลา 4 → นั่ง 2 สถานี (ผ่าน Kanda) → ลง **Tokyo Sta.**
+4. ที่ Tokyo Sta. ชั้น 2 → มองป้ายสีส้ม **Tokaido Line** (เลข 7–10) → ขึ้นชานชาลา 9–10
+5. ตรวจดูป้ายปลายทางที่ขบวนรถ (สาย JR Tokaido Line ตู้สีส้มตัดเขียว):
+   - **Shizuoka / Shimada** → ⭐ แนะนำสุด นั่งยาวรวดเดียวไปลง **Fuji Sta.** ได้เลย ไม่ต้องเปลี่ยนขบวน
+   - **Atami** → ลงสถานี Atami แล้วข้ามชานชาลาตรงข้าม ต่อรถไฟ JR Central (ตู้สีส้มขาว) ไปลง **Fuji Sta.**
+   - **Numazu** → ลงสถานี Numazu แล้วเปลี่ยนขบวนไป Shizuoka เพื่อไปลง **Fuji Sta.**
+6. ถึง **Fuji Sta.** → มองป้ายสีแดง **Minobu Line** (ป้าย Fujinomiya/Kofu) → ขึ้นบันไดเลื่อนข้ามสะพานลอยไปชานชาลา 1–2 (ตู้ขาว-ส้ม รถมีทุก 20–30 นาที) → ลง **Fujinomiya Sta.** (เดิน 200 ม. ถึงโรงแรม Kuretake Inn)
 
 > Check-out Toyoko Inn → เช็คอิน Kuretake Inn Premium Fujinomiya
 
