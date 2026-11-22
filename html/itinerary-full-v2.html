@@ -4,9 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#1a1a2e">
+<meta name="theme-color" id="metaThemeColor" content="#1a1a2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script>
+  (function() {
+    try {
+      const saved = localStorage.getItem('japan-trip-theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    } catch(e) {}
+  })();
+</script>
 
 <title>Japan Trip · Benz & Unz · ธ.ค. 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,6 +59,466 @@
   --shadow-sm:     0 2px 8px -2px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.04);
   --shadow:        0 4px 16px -2px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
   --shadow-hover:  0 12px 24px -4px rgba(15, 23, 42, 0.1), 0 4px 10px -2px rgba(15, 23, 42, 0.06);
+}
+
+/* ── DARK THEME VARIABLES ── */
+[data-theme="dark"] {
+  --bg:            #0b0f19;
+  --bg-soft:       #111827;
+  --card:          #151e2e;
+  --card-border:   rgba(255, 255, 255, 0.08);
+  --transport:     #818cf8;
+  --transport-light: #a5b4fc;
+  --transport-bg:  rgba(99, 102, 241, 0.16);
+  --place:         #34d399;
+  --place-light:   #6ee7b7;
+  --place-bg:      rgba(16, 185, 129, 0.16);
+  --food:          #fb923c;
+  --food-light:    #fdba74;
+  --food-bg:       rgba(249, 115, 22, 0.16);
+  --tip:           #fbbf24;
+  --tip-bg:        rgba(245, 158, 11, 0.16);
+  --hotel:         #a78bfa;
+  --hotel-bg:      rgba(139, 92, 246, 0.16);
+  --text:          #f8fafc;
+  --text-2:        #cbd5e1;
+  --text-3:        #94a3b8;
+  --border:        #233044;
+  --shadow-sm:     0 2px 8px -2px rgba(0, 0, 0, 0.45);
+  --shadow:        0 4px 16px -2px rgba(0, 0, 0, 0.55);
+  --shadow-hover:  0 12px 24px -4px rgba(0, 0, 0, 0.7);
+}
+
+body, .card, .day-heading, .cat-chip, .ticket-modal-content, .dest-table-wrap, .ov-table, .book-table, .route-card, .eat-item, .emergency-btn {
+  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
+}
+
+/* ── DARK MODE COMPONENT OVERRIDES ── */
+[data-theme="dark"] .day-heading {
+  background: #151e2e;
+  border-color: #233044;
+}
+[data-theme="dark"] .day-heading .label {
+  background: rgba(99, 102, 241, 0.22);
+  color: #a5b4fc;
+}
+
+[data-theme="dark"] .cat-chip {
+  background: #151e2e;
+  border-color: #233044;
+  color: #cbd5e1;
+}
+[data-theme="dark"] .cat-chip:hover {
+  border-color: #475569;
+  color: #f8fafc;
+}
+[data-theme="dark"] .cat-chip.active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.4);
+}
+[data-theme="dark"] .filter-empty-msg {
+  background: #151e2e;
+  border-color: #233044;
+  color: #94a3b8;
+}
+
+/* Card Accents in Dark Mode */
+[data-theme="dark"] .card-body {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+[data-theme="dark"] .card.transport .card-head {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.18) 0%, rgba(79, 70, 229, 0.25) 100%);
+}
+[data-theme="dark"] .card.transport .card-head .name {
+  color: #a5b4fc;
+}
+[data-theme="dark"] .card.place .card-head {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.16) 0%, rgba(5, 150, 105, 0.24) 100%);
+}
+[data-theme="dark"] .card.place .card-head .name {
+  color: #6ee7b7;
+}
+[data-theme="dark"] .card.food .card-head {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.16) 0%, rgba(234, 88, 12, 0.24) 100%);
+}
+[data-theme="dark"] .card.food .card-head .name {
+  color: #fdba74;
+}
+[data-theme="dark"] .card.tip {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(217, 119, 6, 0.18) 100%);
+  border-color: rgba(245, 158, 11, 0.35);
+}
+[data-theme="dark"] .card.tip .tip-title {
+  color: #fcd34d;
+}
+[data-theme="dark"] .card.tip li {
+  color: #fef3c7;
+}
+[data-theme="dark"] .card.hotel {
+  background: #151e2e;
+}
+[data-theme="dark"] .card.hotel .name {
+  color: #c4b5fd;
+}
+[data-theme="dark"] .card.hotel.ticket-card.bus .name {
+  color: #38bdf8;
+}
+[data-theme="dark"] .card.hotel.ticket-card.insurance .name {
+  color: #f87171;
+}
+
+/* Flight and Transport Cards */
+[data-theme="dark"] .card.transport .card-head[style*="linear-gradient"] {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.35) 0%, rgba(15, 23, 42, 0.5) 100%) !important;
+}
+[data-theme="dark"] .card.hotel.ticket-card .name[style*="color:#00205b"],
+[data-theme="dark"] .card.hotel.ticket-card .name[style*="color: #00205b"],
+[data-theme="dark"] .card.transport .name[style*="color:#00205b"] {
+  color: #93c5fd !important;
+}
+[data-theme="dark"] .card.hotel.ticket-card .name[style*="color:#0284c7"] {
+  color: #38bdf8 !important;
+}
+[data-theme="dark"] [style*="color:#0f172a"],
+[data-theme="dark"] [style*="color: #0f172a"] {
+  color: #f8fafc !important;
+}
+[data-theme="dark"] [style*="border-bottom:1px dashed #cbd5e1"] {
+  border-bottom-color: #334155 !important;
+}
+[data-theme="dark"] [style*="background:#f0fdf4"] {
+  background: rgba(16, 185, 129, 0.12) !important;
+}
+[data-theme="dark"] [style*="background:#f1f5f9;color:#475569"] {
+  background: #1e293b !important;
+  color: #cbd5e1 !important;
+  border-color: #334155 !important;
+}
+[data-theme="dark"] [style*="background:#ffedd5;color:#c2410c"] {
+  background: rgba(249, 115, 22, 0.2) !important;
+  color: #fdba74 !important;
+  border-color: rgba(249, 115, 22, 0.4) !important;
+}
+[data-theme="dark"] [style*="background:#ffedd5;color:#9a3412"] {
+  background: rgba(249, 115, 22, 0.2) !important;
+  color: #fdba74 !important;
+}
+[data-theme="dark"] [style*="background:#fee2e2;color:#991b1b"] {
+  background: rgba(239, 68, 68, 0.22) !important;
+  color: #fca5a5 !important;
+}
+[data-theme="dark"] [style*="color:#b91c1c"] {
+  color: #f87171 !important;
+}
+[data-theme="dark"] [style*="background:#f8fafc"] {
+  background: #101726 !important;
+}
+[data-theme="dark"] [style*="background:#ede9fe;color:#6d28d9"] {
+  background: rgba(139, 92, 246, 0.2) !important;
+  color: #c4b5fd !important;
+}
+[data-theme="dark"] .hotel-price-badge {
+  background: rgba(139, 92, 246, 0.2);
+  color: #c4b5fd;
+  border-color: rgba(139, 92, 246, 0.35);
+}
+[data-theme="dark"] .hotel-price-badge.sub {
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+[data-theme="dark"] .hotel-price-badge[style*="background:#f0f7ff"] {
+  background: rgba(30, 58, 138, 0.35) !important;
+  color: #93c5fd !important;
+  border-color: rgba(147, 197, 253, 0.3) !important;
+}
+[data-theme="dark"] .hotel-price-badge[style*="background:#f0f9ff"] {
+  background: rgba(2, 132, 199, 0.3) !important;
+  color: #7dd3fc !important;
+  border-color: rgba(125, 211, 252, 0.3) !important;
+}
+
+/* Lightbox Modal Dark */
+[data-theme="dark"] .ticket-modal-content {
+  background: #131b2e;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
+}
+[data-theme="dark"] .ticket-modal-header {
+  background: #172239;
+  border-bottom-color: #233044;
+}
+[data-theme="dark"] .ticket-modal-title { color: #f8fafc; }
+[data-theme="dark"] .ticket-modal-sub { color: #94a3b8; }
+[data-theme="dark"] .ticket-modal-close {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+}
+[data-theme="dark"] .ticket-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+[data-theme="dark"] .ticket-modal-tabs {
+  background: #0f172a;
+  border-bottom-color: #233044;
+}
+[data-theme="dark"] .ticket-tab-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+[data-theme="dark"] .ticket-tab-btn.active {
+  background: var(--hotel);
+  color: #ffffff;
+  border-color: var(--hotel);
+}
+[data-theme="dark"] .ticket-modal-body {
+  background: #0b0f19;
+}
+[data-theme="dark"] .ticket-modal-footer {
+  background: #172239;
+  border-top-color: #233044;
+}
+[data-theme="dark"] .modal-ext-btn {
+  background: #1e293b;
+  color: #c4b5fd;
+  border-color: #334155;
+}
+[data-theme="dark"] .modal-ext-btn:hover {
+  background: #27354f;
+}
+
+/* Japanese 1-tap badges */
+[data-theme="dark"] .jp-badge {
+  background: #1e293b;
+  color: #cbd5e1;
+  border-color: #334155;
+}
+[data-theme="dark"] .jp-badge:hover {
+  background: #27354f;
+  border-color: #475569;
+}
+[data-theme="dark"] .jp-badge.copied {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: #10b981;
+}
+
+/* Tables Dark */
+[data-theme="dark"] .dest-table-wrap {
+  background: #151e2e;
+  border-color: #233044;
+}
+[data-theme="dark"] .dest-table th {
+  background: #101726;
+  color: #94a3b8;
+  border-bottom-color: #233044;
+}
+[data-theme="dark"] .dest-table td {
+  border-bottom-color: #233044;
+  color: #e2e8f0;
+}
+[data-theme="dark"] .dest-table tr.direct-row {
+  background: rgba(16, 185, 129, 0.08);
+}
+[data-theme="dark"] .dest-title { color: #f8fafc; }
+[data-theme="dark"] .dest-pill.best {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+[data-theme="dark"] .transfer-badge.direct {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+}
+[data-theme="dark"] .transfer-badge.transfer {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+}
+
+/* Transport Guide & Route Cards Dark */
+[data-theme="dark"] .t-subnav-btn {
+  background: #151e2e;
+  border-color: #233044;
+  color: #cbd5e1;
+}
+[data-theme="dark"] .t-subnav-btn:hover {
+  background: #1e293b;
+  color: #818cf8;
+  border-color: #818cf8;
+}
+[data-theme="dark"] .route-card {
+  background: #151e2e;
+  border-color: #233044;
+}
+[data-theme="dark"] .route-card-header {
+  background: #101726;
+  border-bottom-color: #233044;
+}
+[data-theme="dark"] .ov-table,
+[data-theme="dark"] .book-table {
+  background: #151e2e;
+  border-color: #233044;
+}
+[data-theme="dark"] .ov-table th,
+[data-theme="dark"] .book-table th {
+  background: #0f172a;
+  color: #94a3b8;
+}
+[data-theme="dark"] .ov-table td,
+[data-theme="dark"] .book-table td {
+  border-bottom-color: #233044;
+  color: #e2e8f0;
+}
+[data-theme="dark"] .price-badge {
+  background: #1e293b;
+  color: #cbd5e1;
+}
+[data-theme="dark"] .book-link {
+  color: #60a5fa;
+}
+[data-theme="dark"] .pill {
+  background: #1e293b;
+  color: #cbd5e1;
+}
+[data-theme="dark"] .pill.price {
+  background: rgba(16, 185, 129, 0.18);
+  color: #6ee7b7;
+}
+[data-theme="dark"] .pill.time {
+  background: rgba(59, 130, 246, 0.18);
+  color: #93c5fd;
+}
+[data-theme="dark"] .pill.warn {
+  background: rgba(245, 158, 11, 0.18);
+  color: #fcd34d;
+}
+[data-theme="dark"] .pill.book {
+  background: rgba(168, 85, 247, 0.18);
+  color: #d8b4fe;
+}
+[data-theme="dark"] .callout.warn {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: #f59e0b;
+  color: #fef3c7;
+}
+[data-theme="dark"] .callout.tip {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: #22c55e;
+  color: #dcfce7;
+}
+[data-theme="dark"] .callout.danger {
+  background: rgba(239, 68, 68, 0.14);
+  border-color: #ef4444;
+  color: #fee2e2;
+}
+[data-theme="dark"] .t-callout-tip {
+  background: rgba(34, 197, 94, 0.12);
+  border-left-color: #22c55e;
+  color: #dcfce7;
+}
+[data-theme="dark"] .t-warn {
+  background: rgba(245, 158, 11, 0.12);
+  border-left-color: #f59e0b;
+  color: #fef3c7;
+}
+[data-theme="dark"] .t-danger {
+  background: rgba(239, 68, 68, 0.14);
+  border-left-color: #ef4444;
+  color: #fca5a5;
+}
+[data-theme="dark"] .alert-row {
+  background: rgba(239, 68, 68, 0.14);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+}
+[data-theme="dark"] .badge-rec {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fde68a;
+}
+[data-theme="dark"] .t-ticket-item,
+[data-theme="dark"] .t-ticket {
+  border-color: #233044;
+  background: #111827;
+  color: #e2e8f0;
+}
+
+/* Food Checklist Dark */
+[data-theme="dark"] .eat-item {
+  background: #151e2e;
+  border-color: #233044;
+}
+[data-theme="dark"] .eat-item:hover {
+  background: #1a2538;
+}
+[data-theme="dark"] .eat-item:has(input:checked) {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+[data-theme="dark"] .eat-item:has(input:checked) .eat-name {
+  color: #34d399;
+}
+[data-theme="dark"] .extra-item:active {
+  background: #1a2538;
+}
+[data-theme="dark"] .extra-item {
+  border-bottom-color: #233044;
+}
+[data-theme="dark"] .extra-item .ei-map {
+  background: rgba(16, 185, 129, 0.18);
+  color: #6ee7b7;
+}
+
+/* Emergency Dark */
+[data-theme="dark"] .emergency-btn {
+  background: #151e2e;
+  border-color: #233044;
+}
+[data-theme="dark"] .emergency-btn:hover {
+  background: #1a2538;
+  border-color: #334155;
+}
+[data-theme="dark"] .emergency-btn .em-num {
+  color: #f8fafc;
+}
+[data-theme="dark"] .emergency-btn.police .em-num { color: #60a5fa; }
+[data-theme="dark"] .emergency-btn.ambulance .em-num { color: #f87171; }
+[data-theme="dark"] .emergency-btn.embassy .em-num,
+[data-theme="dark"] .emergency-btn.embassy-hotline .em-num { color: #34d399; }
+[data-theme="dark"] .emergency-help-box {
+  background: #151e2e;
+  border-color: #233044;
+}
+[data-theme="dark"] .emergency-help-box .eh-title {
+  color: #f8fafc;
+}
+[data-theme="dark"] .emergency-help-box p {
+  color: #cbd5e1;
+}
+
+/* Done Button Dark */
+[data-theme="dark"] .done-btn {
+  background: #151e2e;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+[data-theme="dark"] .done-btn:hover {
+  border-color: #475569;
+  color: #f8fafc;
+}
+[data-theme="dark"] .done-btn.done {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #34d399;
+}
+
+/* Tags Dark */
+[data-theme="dark"] .tag-must  { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border-color: rgba(239, 68, 68, 0.4); }
+[data-theme="dark"] .tag-free  { background: rgba(34, 197, 94, 0.2); color: #86efac; border-color: rgba(34, 197, 94, 0.4); }
+[data-theme="dark"] .tag-book  { background: rgba(245, 158, 11, 0.2); color: #fde68a; border-color: rgba(245, 158, 11, 0.4); }
+[data-theme="dark"] .tag-price { background: #1e293b; color: #cbd5e1; border-color: #334155; }
+[data-theme="dark"] .tag-rate  { background: rgba(234, 179, 8, 0.2); color: #fef08a; border-color: rgba(234, 179, 8, 0.4); }
 }
 
 /* ── BASE ── */
@@ -92,6 +565,33 @@ body {
 .language-toggle:active {
   background: rgba(255,255,255,0.28);
   transform: translateY(0);
+}
+.theme-toggle {
+  min-height: 36px;
+  width: 36px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 1.05rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  user-select: none;
+}
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px) scale(1.05);
+}
+.theme-toggle:active {
+  background: rgba(255, 255, 255, 0.28);
+  transform: translateY(0) scale(0.96);
 }
 
 /* ── DAY TABS ── */
@@ -1636,7 +2136,8 @@ details.t-detail .t-inner {
       <h1 data-en="🇯🇵 Japan Trip">🇯🇵 Japan Trip</h1>
       <span class="header-subtitle" data-en="Benz &amp; Unz · Dec 10–22, 2026">Benz &amp; Unz · 10–22 ธ.ค. 2026</span>
     </div>
-    <div class="header-right-btns">
+    <div class="header-right-btns" style="display:flex;align-items:center;gap:8px">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="สลับโหมดมืด/สว่าง">🌙</button>
       <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English">English</button>
     </div>
   </div>
@@ -4808,6 +5309,43 @@ details.t-detail .t-inner {
   languageToggle.addEventListener('click', () => {
     setLanguage(currentLanguage === 'th' ? 'en' : 'th');
   });
+
+  // ── Dark Mode Theme Management ──
+  const themeToggle = document.getElementById('themeToggle');
+  const metaThemeColor = document.getElementById('metaThemeColor');
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (themeToggle) {
+      themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+      themeToggle.setAttribute('title', theme === 'dark' ? 'สลับเป็นโหมดสว่าง (Light Mode)' : 'สลับเป็นโหมดมืด (Dark Mode)');
+      themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', theme === 'dark' ? '#0b0f19' : '#1a1a2e');
+    }
+    try {
+      localStorage.setItem('japan-trip-theme', theme);
+    } catch(e) {}
+  }
+
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  applyTheme(currentTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const active = document.documentElement.getAttribute('data-theme') || 'light';
+      applyTheme(active === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('japan-trip-theme')) {
+        applyTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+  }
 
   // ── Tab & Navigation Management ──
   const tabs = document.querySelectorAll('.tab');
