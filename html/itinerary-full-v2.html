@@ -829,6 +829,7 @@ main {
   align-items: flex-start;
   gap: 12px;
   padding: 13px 16px;
+  flex-wrap: wrap;
 }
 .card-head .icon {
   font-size: 1.25rem;
@@ -836,12 +837,59 @@ main {
   flex-shrink: 0;
   padding-top: 1px;
 }
-.card-head .info { flex: 1; min-width: 0; }
+.card-head .info { flex: 1 1 180px; min-width: 0; }
 .card-head .info .name {
   font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: -0.01em;
+}
+
+/* ── FLIGHT CARD HEADER RESPONSIVE (ANTI-SQUEEZE) ── */
+.flight-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px 14px;
+  flex-wrap: wrap;
+}
+.flight-head-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 1 240px;
+  min-width: 0;
+}
+.flight-head-left .icon {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+.flight-head-left .info {
+  flex: 1;
+  min-width: 0;
+}
+.flight-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+@media (max-width: 560px) {
+  .flight-head-left {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .flight-badges {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 32px;
+    margin-top: 4px;
+    justify-content: flex-start;
+  }
 }
 .card-head .info .meta {
   font-size: 0.85rem;
@@ -1477,12 +1525,13 @@ ol.steps li::marker, ul.steps li::marker, .steps li::marker {
 }
 .info-row:last-child { border-bottom: none; padding-bottom: 0; }
 .info-row .lbl {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 800;
   color: var(--text-3);
-  min-width: 48px;
+  min-width: 78px;
   flex-shrink: 0;
   padding-top: 1px;
+  line-height: 1.35;
 }
 .info-row .val { flex: 1; line-height: 1.5; }
 
@@ -2828,14 +2877,16 @@ details.t-detail .t-inner {
     </div>
 
     <!-- ── FLIGHT CARD BKK -> HND ── -->
-    <div class="card transport" style="border-left: 4px solid #00205b;">
-      <div class="card-head" style="background: linear-gradient(135deg, #f0f7ff 0%, #e0edfe 100%);">
-        <span class="icon">✈️</span>
-        <div class="info">
-          <div class="name" style="color:#00205b">เที่ยวบินขาไป — ANA (All Nippon Airways) NH878</div>
-          <div class="meta">10 ธ.ค. 2026 · กรุงเทพฯ (BKK) ✈️ โตเกียว ฮาเนดะ (HND)</div>
+    <div class="card transport flight-card" style="border-left: 4px solid #00205b;">
+      <div class="card-head flight-card-head" style="background: linear-gradient(135deg, #f0f7ff 0%, #e0edfe 100%);">
+        <div class="flight-head-left">
+          <span class="icon">✈️</span>
+          <div class="info">
+            <div class="name" style="color:#00205b">เที่ยวบินขาไป — ANA (All Nippon Airways) NH878</div>
+            <div class="meta">10 ธ.ค. 2026 · กรุงเทพฯ (BKK) ✈️ โตเกียว ฮาเนดะ (HND)</div>
+          </div>
         </div>
-        <div class="hotel-right-badges" data-no-translate>
+        <div class="hotel-right-badges flight-badges" data-no-translate>
           <button class="ticket-btn-inline" style="background:#00205b;color:#ffffff;border:none;padding:5px 10px;font-size:0.76rem" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(9);">📄 ตั๋วเบนซ์ (26J)</button>
           <button class="ticket-btn-inline" style="background:#0284c7;color:#ffffff;border:none;padding:5px 10px;font-size:0.76rem" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(10);">📄 ตั๋วอัน (26K)</button>
         </div>
@@ -2844,17 +2895,17 @@ details.t-detail .t-inner {
         <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 6px;margin-bottom:10px;border-bottom:1px dashed #cbd5e1;">
           <div style="text-align:left">
             <div style="font-size:1.35rem;font-weight:800;color:#0f172a">14:20</div>
-            <div style="font-size:0.8rem;font-weight:700;color:#0284c7">BKK · สุวรรณภูมิ</div>
+            <div style="font-size:0.8rem;font-weight:700;color:#0284c7;white-space:nowrap">BKK · สุวรรณภูมิ</div>
             <div style="font-size:0.72rem;color:#64748b">กรุงเทพฯ</div>
           </div>
           <div style="text-align:center;padding:0 8px">
-            <div style="font-size:0.72rem;font-weight:700;color:#64748b">~5 ชม. 50 นาที</div>
+            <div style="font-size:0.72rem;font-weight:700;color:#64748b;white-space:nowrap">~5 ชม. 50 นาที</div>
             <div style="color:#0284c7;font-size:1.05rem;line-height:1.1">✈ ─────── ▸</div>
-            <div style="font-size:0.7rem;color:#64748b;font-weight:600">บินตรง (Direct)</div>
+            <div style="font-size:0.7rem;color:#64748b;font-weight:600;white-space:nowrap">บินตรง (Direct)</div>
           </div>
           <div style="text-align:right">
             <div style="font-size:1.35rem;font-weight:800;color:#0f172a">22:10</div>
-            <div style="font-size:0.8rem;font-weight:700;color:#0284c7">HND · Terminal 3</div>
+            <div style="font-size:0.8rem;font-weight:700;color:#0284c7;white-space:nowrap">HND · Terminal 3</div>
             <div style="font-size:0.72rem;color:#64748b">โตเกียว ฮาเนดะ</div>
           </div>
         </div>
@@ -4832,14 +4883,16 @@ details.t-detail .t-inner {
     </div>
 
     <!-- ── FLIGHT CARD HND -> BKK ── -->
-    <div class="card transport" style="border-left: 4px solid #00205b;">
-      <div class="card-head" style="background: linear-gradient(135deg, #f0f7ff 0%, #e0edfe 100%);">
-        <span class="icon">✈️</span>
-        <div class="info">
-          <div class="name" style="color:#00205b">เที่ยวบินขากลับ — ANA (All Nippon Airways) NH877</div>
-          <div class="meta">22 ธ.ค. 2026 · โตเกียว ฮาเนดะ (HND) ✈️ กรุงเทพฯ (BKK)</div>
+    <div class="card transport flight-card" style="border-left: 4px solid #00205b;">
+      <div class="card-head flight-card-head" style="background: linear-gradient(135deg, #f0f7ff 0%, #e0edfe 100%);">
+        <div class="flight-head-left">
+          <span class="icon">✈️</span>
+          <div class="info">
+            <div class="name" style="color:#00205b">เที่ยวบินขากลับ — ANA (All Nippon Airways) NH877</div>
+            <div class="meta">22 ธ.ค. 2026 · โตเกียว ฮาเนดะ (HND) ✈️ กรุงเทพฯ (BKK)</div>
+          </div>
         </div>
-        <div class="hotel-right-badges" data-no-translate>
+        <div class="hotel-right-badges flight-badges" data-no-translate>
           <button class="ticket-btn-inline" style="background:#00205b;color:#ffffff;border:none;padding:5px 10px;font-size:0.76rem" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(9);">📄 ตั๋วเบนซ์ (30J)</button>
           <button class="ticket-btn-inline" style="background:#0284c7;color:#ffffff;border:none;padding:5px 10px;font-size:0.76rem" onclick="event.preventDefault(); event.stopPropagation(); openHotelTicket(10);">📄 ตั๋วอัน (30K)</button>
         </div>
@@ -4848,17 +4901,17 @@ details.t-detail .t-inner {
         <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 6px;margin-bottom:10px;border-bottom:1px dashed #cbd5e1;">
           <div style="text-align:left">
             <div style="font-size:1.35rem;font-weight:800;color:#0f172a">01:25</div>
-            <div style="font-size:0.8rem;font-weight:700;color:#0284c7">HND · Terminal 3</div>
+            <div style="font-size:0.8rem;font-weight:700;color:#0284c7;white-space:nowrap">HND · Terminal 3</div>
             <div style="font-size:0.72rem;color:#64748b">โตเกียว ฮาเนดะ</div>
           </div>
           <div style="text-align:center;padding:0 8px">
-            <div style="font-size:0.72rem;font-weight:700;color:#64748b">~6 ชม. 05 นาที</div>
+            <div style="font-size:0.72rem;font-weight:700;color:#64748b;white-space:nowrap">~6 ชม. 05 นาที</div>
             <div style="color:#0284c7;font-size:1.05rem;line-height:1.1">✈ ─────── ▸</div>
-            <div style="font-size:0.7rem;color:#64748b;font-weight:600">บินตรง (Direct)</div>
+            <div style="font-size:0.7rem;color:#64748b;font-weight:600;white-space:nowrap">บินตรง (Direct)</div>
           </div>
           <div style="text-align:right">
             <div style="font-size:1.35rem;font-weight:800;color:#0f172a">06:30</div>
-            <div style="font-size:0.8rem;font-weight:700;color:#0284c7">BKK · สุวรรณภูมิ</div>
+            <div style="font-size:0.8rem;font-weight:700;color:#0284c7;white-space:nowrap">BKK · สุวรรณภูมิ</div>
             <div style="font-size:0.72rem;color:#64748b">กรุงเทพฯ</div>
           </div>
         </div>
