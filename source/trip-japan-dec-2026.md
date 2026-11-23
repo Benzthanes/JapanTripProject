@@ -51,7 +51,7 @@
 - **ซิมไทย (FINN MOBILE):** มือถือจะแยก 2 ท่อสัญญาณ
   1. *ท่อโทรศัพท์/SMS:* เราเปิดสวิตช์ซิมไว้ (`Turn On This Line: On`) เพื่อรอรับ SMS / OTP ฟรี
   2. *ท่อเน็ต:* เราปิดโรมมิ่ง (`Data Roaming: Off`) เพื่อล็อคไม่ให้เน็ตไทยรั่วแม้แต่บาทเดียว
-- **eSIM ญี่ปุ่น (Travel):** ตั้งให้เป็นเน็ตหลัก (`Cellular Data: Travel`) และเปิด `Data Roaming: On`
+- **eSIM ญี่ปุ่น (Vacay Japan):** ตั้งให้เป็นเน็ตหลัก (`Cellular Data: Vacay Japan`) และเปิด `Data Roaming: On`
 - **ห้ามเครื่องสลับเน็ตเอง:** ตั้งปิด `Allow Cellular Data Switching: Off` เด็ดขาด เพื่อไม่ให้เครื่องแอบไปดึงเน็ตซิมไทยเวลาสัญญาณ eSIM อ่อน
 
 ---
