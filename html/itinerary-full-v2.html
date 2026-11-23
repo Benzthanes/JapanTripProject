@@ -2233,6 +2233,7 @@ details.t-detail .t-inner {
       <option value="transport" data-en="🚆 Transit Guide">🚆 คู่มือเดินทาง</option>
       <option value="summary" data-en="🗺️ Summary &amp; Hotels">🗺️ สรุปทริป &amp; โรงแรม</option>
       <option value="food" data-en="🍜 Must-Eat (28 items)">🍜 ของที่ต้องกิน (28 อย่าง)</option>
+      <option value="esim" data-en="📶 eSIM Guide (Vacay)">📶 วิธีใช้ eSIM (Vacay)</option>
     </select>
   </div>
 </header>
@@ -2254,6 +2255,7 @@ details.t-detail .t-inner {
   <button class="tab" data-day="transport"><span class="tab-day">🚆</span><span class="tab-date"><span data-en="Transport">เดินทาง</span></span></button>
   <button class="tab" data-day="summary"><span class="tab-day">🗺️</span><span class="tab-date"><span data-en="Summary">สรุปทริป</span></span></button>
   <button class="tab" data-day="food"><span class="tab-day">🍜</span><span class="tab-date"><span data-en="Must Eat">ต้องกิน</span></span></button>
+  <button class="tab" data-day="esim"><span class="tab-day">📶</span><span class="tab-date"><span data-en="eSIM Guide">eSIM</span></span></button>
 </nav>
 
 <div class="cat-filter-wrapper">
@@ -5245,6 +5247,163 @@ details.t-detail .t-inner {
     </div>
   </section>
 
+  <!-- ══ ESIM GUIDE (VACAY SOFTBANK) ══ -->
+  <section class="day-section" id="day-esim">
+    <div class="day-heading">
+      <div class="label" data-en="Network &amp; Connectivity">การเชื่อมต่ออินเทอร์เน็ต &amp; ซิมการ์ด</div>
+      <div class="title" data-en="📶 eSIM Vacay Japan Guide">📶 คู่มือการใช้งาน eSIM Vacay (SoftBank)</div>
+      <div class="subtitle" data-en="Setup instructions, billing cycle &amp; dual SIM settings">ขั้นตอนตั้งค่าซิมคู่ (Dual SIM), การคำนวณวัน และวิธีใช้งานละเอียด</div>
+    </div>
+
+    <!-- Summary Box / Highlight -->
+    <div class="card" style="padding:16px;border-left:5px solid #6366f1;background:var(--card);">
+      <div style="display:flex;align-items:flex-start;gap:12px;">
+        <span style="font-size:2rem;line-height:1;">💡</span>
+        <div>
+          <div style="font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:6px;">สรุปตัวเลือกที่ต้องซื้อ: <span style="color:#6366f1;">แบบรองรับ 2 เครือข่าย (KDDI au + SoftBank)</span> · <span style="color:#059669;">12 วัน</span></div>
+          <div style="font-size:0.9rem;color:var(--text-2);line-height:1.6;">
+            • <strong>เครือข่ายที่เลือก:</strong> <strong>รองรับ 2 เครือข่าย (KDDI au + SoftBank)</strong> — เหมาะกับทริปนี้ที่สุด เพราะมีเที่ยวรอบฟูจิ (Fujinomiya / Kawaguchiko) และ Shizuoka ซึ่งเสา <strong>KDDI au</strong> ครอบคลุมพื้นที่ป่าเขา/นอกเมืองแน่นและเสถียรที่สุด สลับเสาอัตโนมัติ ไม่หลุดแมพ<br>
+            • <strong>จำนวนวัน:</strong> <strong>12 วัน</strong> (นับรอบละ 24 ชม. เริ่ม 10 ธ.ค. เวลา ~21:00 น.)<br>
+            • <strong>เหตุผลที่ต้อง 12 วัน:</strong> หากซื้อ 11 วัน เน็ตจะตัดตอน 21:00 น. ของคืนวันที่ 21 ธ.ค. ซึ่งเป็นช่วงกำลังเดินทางและเช็คอินสนามบิน <strong>ซื้อ 12 วันจะคุ้มครองยาวถึง 21:00 น. ของวันที่ 22 ธ.ค.</strong> ครอบคลุมตลอดจนขึ้นเครื่องกลับอย่างปลอดภัย
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 1: อยู่ไทย -->
+    <div class="sec"><div class="sec-label" data-en="1. Preparation in Thailand">📍 1. ตอนอยู่ไทย (ก่อนเดินทาง 1–2 วัน)</div></div>
+    <div class="card transport">
+      <div class="card-head">
+        <span class="icon">🇹🇭</span>
+        <div class="info">
+          <div class="name">สิ่งที่ต้องทำที่ไทยก่อนบิน (ไม่ต้องกลัวเริ่มนับวัน)</div>
+          <div class="meta">เชื่อมต่อ Wi-Fi ที่บ้านให้พร้อมก่อนเริ่มทำ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul style="padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:0.92rem;color:var(--text-2);line-height:1.6;">
+          <li><strong>1. ติดตั้ง eSIM Vacay ลงในเครื่อง:</strong><br>
+            เข้าไปที่ <code>การตั้งค่า (Settings)</code> → <code>เซลลูลาร์ (Cellular)</code> → แตะที่ปุ่มสีฟ้าด้านล่าง <strong>"เพิ่ม eSIM (Add eSIM)"</strong><br>
+            ⚠️ <em>ข้อควรระวัง: ห้ามกดปุ่ม "แปลงเป็น eSIM (Convert to eSIM)" เด็ดขาด เพราะนั่นคือการแปลงซิมจริง FINN MOBILE ของคุณ</em>
+          </li>
+          <li><strong>2. สแกน QR Code:</strong><br>
+            เลือก <strong>"ใช้รหัส QR (Use QR Code)"</strong> นำกล้องส่องสแกน QR Code ที่ได้รับจากอีเมล Vacay (เปิดจากคอมพิวเตอร์, แท็บเล็ต หรือมือถืออีกเครื่อง)
+          </li>
+          <li><strong>3. ตั้งชื่อป้ายกำกับ eSIM:</strong><br>
+            ระบบจะให้ตั้งชื่อ ให้เลือกหรือพิมพ์ตั้งชื่อว่า <strong>"Travel"</strong> หรือ <strong>"Vacay Japan"</strong> เพื่อให้จำและแยกกับซิมไทยได้ง่าย
+          </li>
+          <li><strong>4. ปิดสวิตช์ eSIM ไว้ก่อนทันที:</strong><br>
+            เมื่อเพิ่มเสร็จ ให้แตะที่ชื่อ <strong>Travel</strong> → เลื่อนปิด <strong>"เปิดใช้สายนี้ (Turn On This Line)" ให้เป็นสีเทา (Off)</strong><br>
+            ✅ <em>มั่นใจได้ 100%: ระบบของ Vacay SoftBank จะเริ่มนับวันเมื่อไปจับสัญญาณเสาเครือข่าย SoftBank ที่ญี่ปุ่นเท่านั้น การแอดไว้และปิดสวิตช์จะไม่เริ่มนับวัน</em>
+          </li>
+          <li><strong>5. ตรวจสอบการตั้งค่าซิมไทย (Physical SIM - FINN MOBILE / DTAC):</strong><br>
+            • <strong>โรมมิ่งข้อมูล (Data Roaming):</strong> ปิดอยู่ (Off) ❌ <em>(ป้องกันเน็ตรั่ว)</em><br>
+            • <strong>โทรผ่าน Wi-Fi (Wi-Fi Calling):</strong> เปิดไว้ (On) ✅ <em>(โทรออก-รับสาย และรับ SMS OTP ฟรีผ่านเน็ต)</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Step 2: ถึงญี่ปุ่น -->
+    <div class="sec"><div class="sec-label" data-en="2. Arrival in Japan">🇯🇵 2. ตอนถึงสนามบินญี่ปุ่น (10 ธ.ค. เวลา ~21:00 น.)</div></div>
+    <div class="card place">
+      <div class="card-head">
+        <span class="icon">✈️</span>
+        <div class="info">
+          <div class="name">เปิดใช้งานอินเทอร์เน็ตที่ญี่ปุ่น (ทำเพียง 3 ขั้นตอน)</div>
+          <div class="meta">เมื่อเครื่องแตะรันเวย์ ปิด Airplane Mode แล้วทำตามนี้</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul style="padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:0.92rem;color:var(--text-2);line-height:1.6;">
+          <li><strong>1. เปิดสวิตช์ eSIM Vacay:</strong><br>
+            เข้า <code>Settings</code> → <code>Cellular</code> → แตะที่ <strong>Travel</strong> → เลื่อนเปิด <strong>"เปิดใช้สายนี้ (Turn On This Line)" ให้เป็นสีเขียว (On)</strong>
+          </li>
+          <li><strong>2. เปิด Data Roaming บน eSIM Vacay:</strong><br>
+            ในหน้าของ <strong>Travel</strong> → เลื่อนเปิด <strong>"โรมมิ่งข้อมูล (Data Roaming)" ให้เป็นสีเขียว (On)</strong>
+          </li>
+          <li><strong>3. สลับเน็ตหลักเป็น Travel:</strong><br>
+            ย้อนกลับมาหน้า <code>Cellular</code> → แตะที่แถวด้านบนสุด <strong>"ข้อมูลเซลลูลาร์ (Cellular Data)"</strong> → ติ๊กเลือก <strong>"Travel"</strong>
+          </li>
+          <li><strong>4. ปิดสลับข้อมูลเซลลูลาร์ (สำคัญมาก!):</strong><br>
+            ในหน้าเดิม ปิดสวิตช์ <strong>"อนุญาตให้สลับข้อมูลเซลลูลาร์ (Allow Cellular Data Switching)" ให้เป็นสีเทา (Off)</strong> เพื่อไม่ให้เครื่องแอบดูดเน็ตจากซิมไทยเวลาสัญญาณ eSIM อ่อน ป้องกันเน็ตรั่ว 100%
+          </li>
+        </ul>
+        <div style="margin-top:14px;padding:14px 16px;background:var(--place-bg);border:1px solid rgba(16,185,129,0.3);border-radius:12px;font-size:0.9rem;color:var(--text);line-height:1.6;">
+          <div style="font-weight:700;color:#059669;margin-bottom:6px;font-size:0.98rem;display:flex;align-items:center;gap:6px;">
+            <span>📩</span> การรับข้อความ SMS และรหัส OTP จากไทย (ฟรี 100%)
+          </div>
+          • <strong>รับ SMS ฟรี ไม่เสียเงิน:</strong> การรับข้อความ SMS ที่ต่างประเทศ (ทั้ง OTP บัตรเครดิต, ธนาคาร, รหัสยืนยันตัวตน) <u>ไม่มีค่าบริการ</u> ทุกค่ายของไทยให้รับฟรีเสมอ<br>
+          • <strong>ซิมไทยยังจับสัญญาณปกติ:</strong> เพราะเราเปิดสวิตช์ซิมไทยไว้ (Turn On This Line: On) และปิดแค่ Data Roaming สัญญาณโทรศัพท์จึงยังเข้าเครื่องได้ตลอด<br>
+          • <strong>Wi-Fi Calling ช่วยให้เสถียรขึ้น:</strong> เมื่อเปิด Wi-Fi Calling ไว้ หากจุดไหนสัญญาณค่ายไทยอ่อน ระบบจะดึงเน็ตจาก eSIM Vacay หรือ Wi-Fi โรงแรมมารับ OTP ได้ทันใจ<br>
+          • ⚠️ <strong>ข้อควรระวัง:</strong> อย่าส่ง SMS ออก หรือกดรับสายโทรเข้าแปลกๆ (เช่น แก๊ง Call Center) เพราะการโทรเข้า-ออก หรือส่ง SMS ออกจากต่างประเทศจะมีค่าบริการตามอัตราโรมมิ่ง (แต่ <em>การรับ SMS เข้าอย่างเดียว ฟรีแน่นอน</em>)
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: บินกลับถึงไทย -->
+    <div class="sec"><div class="sec-label" data-en="3. Returning to Thailand">🏠 3. ตอนกลับถึงไทย (22 ธ.ค.)</div></div>
+    <div class="card hotel">
+      <div class="card-head">
+        <span class="icon">🛬</span>
+        <div class="info">
+          <div class="name">สลับกลับมาใช้ซิมไทยตามปกติ</div>
+          <div class="meta">เมื่อเดินทางถึงสนามบินสุวรรณภูมิ</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul style="padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:0.92rem;color:var(--text-2);line-height:1.6;">
+          <li><strong>1. สลับเน็ตกลับเป็นซิมไทย:</strong><br>
+            เข้า <code>Settings</code> → <code>Cellular</code> → <code>ข้อมูลเซลลูลาร์ (Cellular Data)</code> → เลือกกลับมาเป็น <strong>เบอร์หลัก (Primary / FINN MOBILE)</strong>
+          </li>
+          <li><strong>2. ลบ eSIM Travel ออกจากเครื่อง:</strong><br>
+            แตะที่ชื่อ <strong>Travel</strong> → เลื่อนลงมาล่างสุด แตะ <strong>"ลบ eSIM (Delete eSIM)"</strong> ได้เลย เพราะแพ็กเกจหมดอายุแล้ว ไม่สามารถเติมเงินซ้ำได้ เป็นอันเสร็จสิ้น
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Checklist Table -->
+    <div class="sec"><div class="sec-label" data-en="Settings Summary Table">📋 ตารางสรุปสถานะการตั้งค่า (iPhone / iPad)</div></div>
+    <div class="card" style="padding:14px;overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:0.88rem;text-align:left;">
+        <thead>
+          <tr style="border-bottom:2px solid var(--border);color:var(--text);">
+            <th style="padding:8px 6px;">เมนู / การตั้งค่า</th>
+            <th style="padding:8px 6px;">ซิมไทย (FINN MOBILE)</th>
+            <th style="padding:8px 6px;">eSIM ญี่ปุ่น (Travel)</th>
+          </tr>
+        </thead>
+        <tbody style="color:var(--text-2);">
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 6px;font-weight:600;">เปิดใช้สายนี้ (Turn On This Line)</td>
+            <td style="padding:8px 6px;color:#059669;font-weight:600;">✅ เปิด (On)</td>
+            <td style="padding:8px 6px;color:#059669;font-weight:600;">✅ เปิด (On) เมื่อถึงญี่ปุ่น</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 6px;font-weight:600;">โรมมิ่งข้อมูล (Data Roaming)</td>
+            <td style="padding:8px 6px;color:#dc2626;font-weight:600;">❌ ปิด (Off) เด็ดขาด</td>
+            <td style="padding:8px 6px;color:#059669;font-weight:600;">✅ เปิด (On)</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 6px;font-weight:600;">ข้อมูลเซลลูลาร์ (Cellular Data)</td>
+            <td style="padding:8px 6px;">—</td>
+            <td style="padding:8px 6px;color:#4f46e5;font-weight:600;">🔵 เลือกตัวนี้เป็นเน็ตหลัก</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);">
+            <td style="padding:8px 6px;font-weight:600;">โทรผ่าน Wi-Fi (Wi-Fi Calling)</td>
+            <td style="padding:8px 6px;color:#059669;font-weight:600;">✅ เปิด (On)</td>
+            <td style="padding:8px 6px;">—</td>
+          </tr>
+          <tr>
+            <td style="padding:8px 6px;font-weight:600;">Allow Data Switching</td>
+            <td colspan="2" style="padding:8px 6px;color:#dc2626;font-weight:600;">❌ ปิด (Off) สวิตช์รวม</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
   <!-- ══ HOTEL TICKET LIGHTBOX MODAL ══ -->
   <div id="hotelTicketModal" class="ticket-modal" data-no-translate aria-hidden="true">
     <div class="ticket-modal-backdrop" onclick="closeHotelTicket()"></div>
@@ -5454,7 +5613,7 @@ details.t-detail .t-inner {
     const activeSection = document.querySelector('.day-section.active');
     if (!activeSection) return;
 
-    if (['day-transport', 'day-summary', 'day-food'].includes(activeSection.id)) {
+    if (['day-transport', 'day-summary', 'day-food', 'day-esim'].includes(activeSection.id)) {
       if (catFilterWrap) catFilterWrap.style.display = 'none';
       return;
     }
@@ -5511,7 +5670,7 @@ details.t-detail .t-inner {
     sections.forEach(s => s.classList.toggle('active', s.id === 'day-' + dayId));
     if (quickSelect) quickSelect.value = dayId;
 
-    const isDay = !['transport', 'summary', 'food'].includes(dayId);
+    const isDay = !['transport', 'summary', 'food', 'esim'].includes(dayId);
     if (catFilterWrap) {
       catFilterWrap.style.display = isDay ? 'block' : 'none';
     }
