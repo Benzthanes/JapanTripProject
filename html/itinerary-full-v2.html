@@ -5270,6 +5270,26 @@ details.t-detail .t-inner {
       </div>
     </div>
 
+    <!-- Concept Explainer: ทำไมซิมไทยถึงรับ OTP ได้โดยเน็ตไม่รั่ว -->
+    <div class="card" style="padding:16px;background:var(--card);border-left:5px solid #059669;margin-bottom:12px;">
+      <div style="font-weight:700;font-size:1.05rem;color:var(--text);margin-bottom:8px;display:flex;align-items:center;gap:6px;">
+        <span>💡</span> ไขข้อข้องใจ: ซิมไทยตั้งค่ายังไง? ทำไมถึงรับ SMS OTP ได้ฟรีโดยเน็ตไม่รั่ว?
+      </div>
+      <div style="font-size:0.9rem;color:var(--text-2);line-height:1.65;">
+        ในซิมการ์ด 1 ใบ มือถือจะแยกการทำงานออกเป็น <strong>2 ท่อสัญญาณ</strong> ชัดเจน:
+        <ul style="padding-left:18px;margin:6px 0 10px 0;">
+          <li>📞 <strong>ท่อที่ 1 (สัญญาณโทรศัพท์/SMS):</strong> เอาไว้รับสาย-โทรออก และ <u>รับข้อความ SMS / รหัส OTP</u> ซึ่งค่ายมือถือไทยทุกค่าย <strong>เปิดให้รับ SMS ฟรีทั่วโลก ไม่มีค่าบริการ</strong></li>
+          <li>🌐 <strong>ท่อที่ 2 (อินเทอร์เน็ตเซลลูลาร์ / Data Roaming):</strong> เอาไว้เชื่อมต่อเน็ต ท่อนี้แหละที่ถ้าเผลอเปิด roaming จะโดนคิดเงินแพง</li>
+        </ul>
+        <strong>หลักการตั้งค่าแบบเซฟ 100%:</strong>
+        <div style="background:var(--bg-soft);padding:10px 14px;border-radius:8px;margin-top:6px;border:1px dashed var(--border);">
+          1. <strong>ซิมไทย (FINN MOBILE):</strong> เรากด <strong>"เปิดใช้สายนี้ (On)"</strong> ทิ้งไว้ เพื่อเปิดท่อที่ 1 (รับ SMS OTP ฟรี) แต่เรากด <strong>"ปิด Data Roaming (Off)"</strong> เพื่อล็อคท่อที่ 2 ไม่ให้เน็ตไทยรั่วแม้แต่บาทเดียว<br>
+          2. <strong>eSIM ญี่ปุ่น (Travel):</strong> เราตั้งค่าให้เป็น <strong>"ข้อมูลเซลลูลาร์หลัก (Cellular Data)"</strong> และเปิด <strong>"Data Roaming (On)"</strong> เพื่อให้เครื่องดึงเน็ตจาก eSIM ญี่ปุ่นอย่างเดียว 100%<br>
+          3. <strong>สวิตช์ปิดสลับเน็ต (Allow Cellular Data Switching = Off):</strong> ปิดไว้เพื่อสั่งห้ามเครื่องแอบสลับไปใช้เน็ตซิมไทยเวลา eSIM สัญญาณแกว่ง
+        </div>
+      </div>
+    </div>
+
     <!-- Step 1: อยู่ไทย -->
     <div class="sec"><div class="sec-label" data-en="1. Preparation in Thailand">📍 1. ตอนอยู่ไทย (ก่อนเดินทาง 1–2 วัน)</div></div>
     <div class="card transport">
